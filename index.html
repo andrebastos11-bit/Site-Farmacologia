@@ -50,7 +50,7 @@
             border-color: var(--primary-color);
         }
         .atc-group {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
@@ -60,27 +60,50 @@
         .atc-header {
             background-color: var(--primary-light);
             color: var(--primary-color);
-            padding: 12px 20px;
+            padding: 15px 20px;
             font-weight: bold;
             font-size: 1.1rem;
-            border-bottom: 1px solid #cbd5e1;
+            cursor: pointer; /* Mãozinha para indicar que é clicável */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background-color 0.2s;
         }
+        .atc-header:hover {
+            background-color: #99f6e4;
+        }
+        /* Seta indicativa no cabeçalho */
+        .atc-header::after {
+            content: '▼';
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+        .atc-group.active .atc-header::after {
+            transform: rotate(180deg);
+        }
+
         .drug-list {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: none; /* Escondido por predefinição */
         }
+        .atc-group.active .drug-list {
+            display: block; /* Mostra quando o grupo está ativo/clicado */
+        }
+
         .drug-item {
             padding: 15px 20px;
             border-bottom: 1px solid #f1f5f9;
-            cursor: pointer; /* Transforma o cartão inteiro numa área clicável */
+            cursor: pointer;
             transition: background-color 0.2s;
         }
         .drug-item:last-child {
             border-bottom: none;
         }
         .drug-item:hover {
-            background-color: #f1f5f9;
+            background-color: #f8fafc;
         }
         .drug-info h3 {
             margin: 0 0 5px 0;
@@ -174,7 +197,7 @@
                 <p><strong>Indicações Oficiais:</strong> <span id="modalIndicacoes"></span></p>
             </div>
 
-            <!-- Secção de Vídeos (Farmacocinética e Farmacodinâmica) -->
+            <!-- Secção de Vídeos -->
             <div class="video-section">
                 <h3>Multimédia Educativa</h3>
                 
@@ -206,7 +229,7 @@
                 document.getElementById('catalogContainer').innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar a base de dados de medicamentos.</p>';
             });
 
-        function renderizarCatalogo(lista) {
+        function renderizarCatalogo(lista, expandirTudo = false) {
             const container = document.getElementById('catalogContainer');
             container.innerHTML = '';
 
@@ -229,10 +252,19 @@
             for (const [grupo, farmacos] of Object.entries(grupos)) {
                 let grupoDiv = document.createElement('div');
                 grupoDiv.className = 'atc-group';
+                if (expandirTudo) {
+                    grupoDiv.classList.add('active'); // Se houver pesquisa, mostra os resultados automaticamente
+                }
 
                 let headerDiv = document.createElement('div');
                 headerDiv.className = 'atc-header';
                 headerDiv.textContent = grupo;
+                
+                // Ao clicar no cabeçalho, alterna entre mostrar/esconder os fármacos deste grupo
+                headerDiv.onclick = () => {
+                    grupoDiv.classList.toggle('active');
+                };
+
                 grupoDiv.appendChild(headerDiv);
 
                 let ul = document.createElement('ul');
@@ -241,8 +273,6 @@
                 farmacos.forEach(f => {
                     let li = document.createElement('li');
                     li.className = 'drug-item';
-                    
-                    // Ao clicar no cartão, abre a função de detalhes passando o nome do fármaco
                     li.onclick = () => abrirDetalhes(f.nome);
 
                     li.innerHTML = `
@@ -259,7 +289,6 @@
             }
         }
 
-        // Função para abrir o modal e preencher com os dados do JSON
         function abrirDetalhes(nomeFarmaco) {
             const farmaco = farmacosData.find(f => f.nome === nomeFarmaco);
             if (!farmaco) return;
@@ -269,7 +298,6 @@
             document.getElementById('modalMecanismo').textContent = farmaco.mecanismo;
             document.getElementById('modalIndicacoes').textContent = farmaco.indicacoes.join(', ');
 
-            // Atribuir os links dos vídeos
             if (farmaco.videos) {
                 document.getElementById('videoDinamica').src = farmaco.videos.farmacodinamica || "";
                 document.getElementById('videoCinetica').src = farmaco.videos.farmacocinetica || "";
@@ -278,15 +306,12 @@
             document.getElementById('modalDetalhes').style.display = "block";
         }
 
-        // Função para fechar o modal
         function fecharModal() {
             document.getElementById('modalDetalhes').style.display = "none";
-            // Limpa os vídeos para pararem de reproduzir ao fechar
             document.getElementById('videoDinamica').src = "";
             document.getElementById('videoCinetica').src = "";
         }
 
-        // Fecha o modal se clicar fora dele
         window.onclick = function(event) {
             const modal = document.getElementById('modalDetalhes');
             if (event.target == modal) {
@@ -297,6 +322,12 @@
         // Função de Filtragem em Tempo Real
         function filtrarFarmacos() {
             const termo = document.getElementById('searchInput').value.toLowerCase();
+            
+            if (termo.trim() === "") {
+                renderizarCatalogo(farmacosData, false); // Se apagar a pesquisa, recolhe tudo
+                return;
+            }
+
             const filtrados = farmacosData.filter(f => 
                 f.nome.toLowerCase().includes(termo) ||
                 f.atc.toLowerCase().includes(termo) ||
@@ -304,7 +335,8 @@
                 f.grupo.toLowerCase().includes(termo) ||
                 f.indicacoes.some(ind => ind.toLowerCase().includes(termo))
             );
-            renderizarCatalogo(filtrados);
+            
+            renderizarCatalogo(filtrados, true); // Se estiver a pesquisar, abre automaticamente os grupos para veres o resultado
         }
     </script>
 </body>
