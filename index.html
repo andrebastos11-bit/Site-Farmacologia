@@ -347,7 +347,6 @@
                 
                 mainHeader.onclick = () => {
                     const jaAtivo = mainDiv.classList.contains('active');
-                    // Fecha todos os outros grupos principais do mesmo nível (acordeão exclusivo)
                     document.querySelectorAll('.atc-main-group').forEach(el => el.classList.remove('active'));
                     if (!jaAtivo) {
                         mainDiv.classList.add('active');
@@ -369,7 +368,6 @@
                     sub2Header.onclick = (e) => {
                         e.stopPropagation();
                         const jaAtivo = sub2Item.classList.contains('active');
-                        // Fecha os outros sub2 irmãos
                         sub2Container.querySelectorAll('.atc-sub2-item').forEach(el => el.classList.remove('active'));
                         if (!jaAtivo) {
                             sub2Item.classList.add('active');
@@ -391,7 +389,6 @@
                         sub3Header.onclick = (e) => {
                             e.stopPropagation();
                             const jaAtivo = sub3Item.classList.contains('active');
-                            // Fecha os outros sub3 irmãos
                             sub3Container.querySelectorAll('.atc-sub3-item').forEach(el => el.classList.remove('active'));
                             if (!jaAtivo) {
                                 sub3Item.classList.add('active');
