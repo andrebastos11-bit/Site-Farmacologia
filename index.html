@@ -50,7 +50,7 @@
             border-color: var(--primary-color);
         }
 
-        /* Nível 1: Grupo Principal ATC (Raiz) */
+        /* Nível 1: Grupo Principal ATC */
         .atc-main-group {
             margin-bottom: 8px;
             background: #ffffff;
@@ -93,12 +93,12 @@
             display: block;
         }
 
-        /* Nível 2: Subgrupo de 3 Dígitos (ex: A01) - Em Maiúsculas */
+        /* Nível 2: Subgrupo de 3 Caracteres (ex: A02) */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
         .atc-sub2-header {
-            padding: 10px 16px 10px 30px;
+            padding: 10px 16px 10px 25px;
             font-size: 0.95rem;
             font-weight: 600;
             color: #334155;
@@ -130,14 +130,14 @@
             display: block;
         }
 
-        /* Nível 3: Subgrupo de 4/5 Dígitos (ex: A01AA, A01AD) */
+        /* Nível 3: Subgrupo de 4 Caracteres Intermédio (ex: A02A, A02B) */
         .atc-sub3-item {
             border-bottom: 1px solid #f8fafc;
         }
         .atc-sub3-header {
-            padding: 8px 16px 8px 45px;
+            padding: 9px 16px 9px 35px;
             font-size: 0.9rem;
-            font-weight: 500;
+            font-weight: 600;
             color: #475569;
             cursor: pointer;
             display: flex;
@@ -158,15 +158,51 @@
             content: '-';
         }
 
-        /* Nível 4: Lista de Medicamentos */
+        .sub4-container {
+            display: none;
+            background-color: #fafafa;
+        }
+        .atc-sub3-item.active .sub4-container {
+            display: block;
+        }
+
+        /* Nível 4: Subgrupo de 5 Caracteres (ex: A02AA) */
+        .atc-sub4-item {
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .atc-sub4-header {
+            padding: 8px 16px 8px 45px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #64748b;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fafafa;
+            transition: background-color 0.2s;
+        }
+        .atc-sub4-header:hover {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+        }
+        .atc-sub4-header::after {
+            content: '+';
+            font-size: 0.75rem;
+        }
+        .atc-sub4-item.active .atc-sub4-header::after {
+            content: '-';
+        }
+
+        /* Lista de Medicamentos */
         .drug-list {
             list-style: none;
             padding: 0;
             margin: 0;
             display: none;
-            background-color: #fcfdfd;
+            background-color: #ffffff;
         }
-        .atc-sub3-item.active .drug-list {
+        .atc-sub4-item.active .drug-list {
             display: block;
         }
         .drug-item {
@@ -182,7 +218,7 @@
         }
         .drug-info h3 {
             margin: 0 0 2px 0;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: var(--text-color);
         }
         .drug-meta {
@@ -304,10 +340,16 @@
     <script>
         let farmacosData = [];
 
-        // Dicionário oficial rigoroso para o Nível 2 (3 caracteres) em maiúsculas
+        // Dicionário para o Nível 2 (3 caracteres) em maiúsculas
         const descricoesATC3 = {
             "A01": "A01 - PREPARAÇÕES PARA USO ESTOMATOLÓGICO",
             "A02": "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        };
+
+        // Dicionário para o Nível 3 intermédio (4 caracteres)
+        const descricoesATC4 = {
+            "A02A": "A02A - Antiácidos",
+            "A02B": "A02B - Fármacos para o Tratamento da Úlcera Péptica e do Refluxo Gastroesofágico"
         };
 
         function formatarTextoCapitalizado(texto) {
@@ -358,30 +400,30 @@
                 const g1 = f.grupo || "Outros";
                 const atc = f.atc || "";
                 
-                // Nível 2 exato: Primeiros 3 caracteres (ex: A01, A02)
+                // Nível 2: 3 caracteres (ex: A02)
                 const k3 = atc.length >= 3 ? atc.substring(0, 3) : "A00";
                 
-                // Nível 3 exato: Subgrupo de 4 ou 5 caracteres (ex: A01AA, A02B)
-                const k4 = atc.length >= 5 ? atc.substring(0, 5) : (atc.length >= 4 ? atc.substring(0, 4) : k3);
+                // Nível 3: 4 caracteres intermédio (ex: A02A, A02B)
+                const k4 = atc.length >= 4 ? atc.substring(0, 4) : k3;
 
-                // Obter nome formatado do Nível 2 (forçado a maiúsculas conforme pedido)
-                let g2Nome = descricoesATC3[k3];
-                if (!g2Nome) {
-                    g2Nome = `${k3} - OUTRAS PREPARAÇÕES`;
-                }
+                // Nível 4: 5 caracteres específico (ex: A02AA)
+                const k5 = atc.length >= 5 ? atc.substring(0, 5) : k4;
 
-                // Obter nome formatado do Nível 3
-                let g3Bruto = f.subgrupo3 || `${k4} - Outros Agentes`;
-                if (!g3Bruto.toUpperCase().startsWith(k4)) {
-                    g3Bruto = `${k4} - ${g3Bruto}`;
+                let g2Nome = descricoesATC3[k3] || `${k3} - OUTRAS PREPARAÇÕES`;
+                let g3Nome = descricoesATC4[k4] || `${k4} - Outros Subgrupos`;
+                
+                let g4Bruto = f.subgrupo3 || `${k5} - Outros Agentes`;
+                if (!g4Bruto.toUpperCase().startsWith(k5)) {
+                    g4Bruto = `${k5} - ${g4Bruto}`;
                 }
-                const g3Nome = formatarTextoCapitalizado(g3Bruto);
+                let g4Nome = formatarTextoCapitalizado(g4Bruto);
 
                 if (!estrutura[g1]) estrutura[g1] = {};
                 if (!estrutura[g1][g2Nome]) estrutura[g1][g2Nome] = {};
-                if (!estrutura[g1][g2Nome][g3Nome]) estrutura[g1][g2Nome][g3Nome] = [];
+                if (!estrutura[g1][g2Nome][g3Nome]) estrutura[g1][g2Nome][g3Nome] = {};
+                if (!estrutura[g1][g2Nome][g3Nome][g4Nome]) estrutura[g1][g2Nome][g3Nome][g4Nome] = [];
                 
-                estrutura[g1][g2Nome][g3Nome].push(f);
+                estrutura[g1][g2Nome][g3Nome][g4Nome].push(f);
             });
 
             for (const [g1Nome, sub2s] of Object.entries(estrutura)) {
@@ -396,9 +438,7 @@
                 mainHeader.onclick = () => {
                     const jaAtivo = mainDiv.classList.contains('active');
                     document.querySelectorAll('.atc-main-group').forEach(el => el.classList.remove('active'));
-                    if (!jaAtivo) {
-                        mainDiv.classList.add('active');
-                    }
+                    if (!jaAtivo) mainDiv.classList.add('active');
                 };
                 mainDiv.appendChild(mainHeader);
 
@@ -416,18 +456,15 @@
                     sub2Header.onclick = (e) => {
                         e.stopPropagation();
                         const jaAtivo = sub2Item.classList.contains('active');
-                        // Acordeão: fecha os restantes sub2 irmãos
                         sub2Container.querySelectorAll('.atc-sub2-item').forEach(el => el.classList.remove('active'));
-                        if (!jaAtivo) {
-                            sub2Item.classList.add('active');
-                        }
+                        if (!jaAtivo) sub2Item.classList.add('active');
                     };
                     sub2Item.appendChild(sub2Header);
 
                     let sub3Container = document.createElement('div');
                     sub3Container.className = 'sub3-container';
 
-                    for (const [g3Nome, farmacos] of Object.entries(sub3s)) {
+                    for (const [g3Nome, sub4s] of Object.entries(sub3s)) {
                         let sub3Item = document.createElement('div');
                         sub3Item.className = 'atc-sub3-item';
                         if (expandirTudo) sub3Item.classList.add('active');
@@ -438,35 +475,55 @@
                         sub3Header.onclick = (e) => {
                             e.stopPropagation();
                             const jaAtivo = sub3Item.classList.contains('active');
-                            // Acordeão: fecha os restantes sub3 irmãos dentro do mesmo sub2
                             sub3Container.querySelectorAll('.atc-sub3-item').forEach(el => el.classList.remove('active'));
-                            if (!jaAtivo) {
-                                sub3Item.classList.add('active');
-                            }
+                            if (!jaAtivo) sub3Item.classList.add('active');
                         };
                         sub3Item.appendChild(sub3Header);
 
-                        let ul = document.createElement('ul');
-                        ul.className = 'drug-list';
+                        let sub4Container = document.createElement('div');
+                        sub4Container.className = 'sub4-container';
 
-                        farmacos.forEach(f => {
-                            let li = document.createElement('li');
-                            li.className = 'drug-item';
-                            li.onclick = (e) => {
+                        for (const [g4Nome, farmacos] of Object.entries(sub4s)) {
+                            let sub4Item = document.createElement('div');
+                            sub4Item.className = 'atc-sub4-item';
+                            if (expandirTudo) sub4Item.classList.add('active');
+
+                            let sub4Header = document.createElement('div');
+                            sub4Header.className = 'atc-sub4-header';
+                            sub4Header.textContent = g4Nome;
+                            sub4Header.onclick = (e) => {
                                 e.stopPropagation();
-                                abrirDetalhes(f.nome);
+                                const jaAtivo = sub4Item.classList.contains('active');
+                                sub4Container.querySelectorAll('.atc-sub4-item').forEach(el => el.classList.remove('active'));
+                                if (!jaAtivo) sub4Item.classList.add('active');
                             };
+                            sub4Item.appendChild(sub4Header);
 
-                            li.innerHTML = `
-                                <div class="drug-info">
-                                    <h3>${f.nome} <span class="atc-badge">${f.atc}</span></h3>
-                                    <div class="drug-meta"><strong>Classe:</strong> ${f.classe} | <strong>Indicações:</strong> ${f.indicacoes.join(', ')}</div>
-                                </div>
-                            `;
-                            ul.appendChild(li);
-                        });
+                            let ul = document.createElement('ul');
+                            ul.className = 'drug-list';
 
-                        sub3Item.appendChild(ul);
+                            farmacos.forEach(f => {
+                                let li = document.createElement('li');
+                                li.className = 'drug-item';
+                                li.onclick = (e) => {
+                                    e.stopPropagation();
+                                    abrirDetalhes(f.nome);
+                                };
+
+                                li.innerHTML = `
+                                    <div class="drug-info">
+                                        <h3>${f.nome} <span class="atc-badge">${f.atc}</span></h3>
+                                        <div class="drug-meta"><strong>Classe:</strong> ${f.classe} | <strong>Indicações:</strong> ${f.indicacoes.join(', ')}</div>
+                                    </div>
+                                `;
+                                ul.appendChild(li);
+                            });
+
+                            sub4Item.appendChild(ul);
+                            sub4Container.appendChild(sub4Item);
+                        }
+
+                        sub3Item.appendChild(sub4Container);
                         sub3Container.appendChild(sub3Item);
                     }
 
@@ -515,14 +572,11 @@
 
         window.onclick = function(event) {
             const modal = document.getElementById('modalDetalhes');
-            if (event.target == modal) {
-                fecharModal();
-            }
+            if (event.target == modal) fecharModal();
         }
 
         function filtrarFarmacos() {
             const termo = document.getElementById('searchInput').value.toLowerCase();
-            
             if (termo.trim() === "") {
                 renderizarCatalogo(farmacosData, false);
                 return;
