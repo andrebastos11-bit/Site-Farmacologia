@@ -180,28 +180,124 @@
       }
     },
     {
-      "nome": "Hidróxido de alumínio + Hidróxido de magnésio",
+      "nome": "Hidróxido de magnésio",
+      "atc": "A02AA04",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AA - Compostos de magnésio",
+      "produtos": [
+        {
+          "nome": "Leite Magnesia Phillips®",
+          "forma": "Suspensão oral (83 mg/ml)"
+        }
+      ],
+      "classe": "Antiácido neutralizante e laxante osmótico",
+      "mecanismo": "Atua reagindo diretamente com o ácido clorídrico gástrico para formar cloreto de magnésio e água, elevando o pH do estômago e aliviando rapidamente a azia. No intestino delgado, os iões magnésio não absorvidos exercem uma pressão osmótica, atraindo e retendo água no lúmen intestinal, o que estimula o peristaltismo e facilita a evacuação.<br><em>Mg(OH)₂ + 2 HCl → MgCl₂ + 2 H₂O</em>",
+      "indicacoes": ["Pirose", "Hiperacidez gástrica", "Obstipação"],
+      "alvoPrincipal": "Ácido clorídrico e água intestinal",
+      "rcm": {
+        "substancia": "Hidróxido de magnésio",
+        "descricao": "Antiácido neutralizante e laxante osmótico."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Hidróxido de alumínio",
+      "atc": "A02AB01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AB - Compostos de alumínio",
+      "produtos": [
+        {
+          "nome": "Pepsamar®",
+          "forma": "Comprimido para mastigar (240 mg)"
+        }
+      ],
+      "classe": "Antiácido neutralizante e protetor da mucosa",
+      "mecanismo": "Reage de forma gradual com o ácido clorídrico gástrico, formando cloreto de alumínio e reduzindo a acidez estomacal sem provocar pico alcalino. Os iões alumínio libertados reduzem a motilidade gástrica e inativam a pepsina ao elevar o pH acima de 3,5. Apresenta também capacidade de ligação aos sais biliares, protegendo a mucosa de agressões alcalinas refluídas.<br><em>Al(OH)₃ + 3 HCl → AlCl₃ + 3 H₂O</em>",
+      "indicacoes": ["Pirose", "Hiperacidez gástrica", "Gastrite"],
+      "alvoPrincipal": "Ácido clorídrico",
+      "rcm": {
+        "substancia": "Hidróxido de alumínio",
+        "descricao": "Antiácido neutralizante e protetor da mucosa."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Carbonato de di-hidróxido de alumínio e sódio",
+      "atc": "A02AB04",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AB - Compostos de alumínio",
+      "produtos": [
+        {
+          "nome": "Kompensan®",
+          "forma": "Comprimido para chupar (340 mg)"
+        }
+      ],
+      "classe": "Antiácido tampão de ação rápida e efeito protetor prolongado",
+      "mecanismo": "Neutraliza o ácido clorídrico através da libertação de iões alumínio e sódio e consumo de protões H+, promovendo uma subida imediata do pH gástrico para a faixa ideal de 3-5. Forma uma camada coloidal protetora sobre a mucosa gástrica e duodenal, isolando as lesões do contacto direto com o suco gástrico e prevenindo o \"efeito rebound\" ácido.<br><em>NaAl(OH)₂CO₃ + 4 HCl → NaCl + AlCl₃ + CO₂ + 3 H₂O</em>",
+      "indicacoes": ["Pirose", "Pirose na gravidez"],
+      "alvoPrincipal": "Ácido clorídrico",
+      "rcm": {
+        "substancia": "Carbonato de di-hidróxido de alumínio e sódio",
+        "descricao": "Antiácido tampão de ação rápida e efeito protetor prolongado."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Magaldrato",
+      "atc": "A02AD02",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
+      "produtos": [
+        {
+          "nome": "Riopan®",
+          "forma": "Comprimido (800 mg) e Gel Oral (800 mg/10 ml)"
+        }
+      ],
+      "classe": "Antiácido complexo aluminomagnesiano de rede em grelha e protetor da mucosa",
+      "mecanismo": "Atua neutralizando diretamente o ácido clorídrico de forma autorregulada, mantendo o pH gástrico ideal entre 3 e 5. Adsorve e inativa diretamente a pepsina e os ácidos biliares no suco gástrico, além de formar uma película protetora sobre as paredes da mucosa lesionada.<br><em>Al₂Mg₆(OH)₁₆SO₄ + 16 HCl → 2 AlCl₃ + 6 MgCl₂ + MgSO₄ + 16 H₂O</em>",
+      "indicacoes": ["Pirose", "Hiperacidez gástrica", "Gastrite"],
+      "alvoPrincipal": "Ácido clorídrico, pepsina e ácidos biliares",
+      "rcm": {
+        "substancia": "Magaldrato",
+        "descricao": "Antiácido complexo aluminomagnesiano e protetor da mucosa."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Carbonato de Cálcio + Carbonato de Magnésio",
       "atc": "A02AD01",
       "grupo": "A - Aparelho digestivo e metabolismo",
       "subgrupo2": "A02A - Antiácidos",
       "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
       "produtos": [
         {
-          "nome": "Maalox®",
-          "forma": "Comprimidos mastigáveis e Suspensão oral"
-        },
-        {
-          "nome": "Aaloxan®",
-          "forma": "Comprimidos e Suspensão oral"
+          "nome": "Rennie Digestif®",
+          "forma": "Comprimido para mastigar (680 mg + 80 mg)"
         }
       ],
-      "classe": "Antiácido de ação local",
-      "mecanismo": "Associação de hidróxido de alumínio e hidróxido de magnésio que atuam por neutralização química direta do ácido clorídrico (HCl) presente no estômago, elevando o pH gástrico. <br>• O hidróxido de magnésio tem uma ação rápida e pode causar laxação;<br>• O hidróxido de alumínio atua de forma mais lenta e tem um efeito adstringente, com tendência a causar obstipação (o que contrabalança o efeito do magnésio).",
-      "indicacoes": ["Azia", "Dispepsia", "Gastrite", "Úlcera péptica (alívio sintomático)"],
-      "alvoPrincipal": "Ácido clorídrico (HCl) gástrico",
+      "classe": "Combinação antiácida de neutralização direta e rápida",
+      "mecanismo": "Reage quimicamente com o ácido clorídrico no estômago, convertendo-o em água e sais solúveis de cloreto de cálcio e cloreto de magnésio. Promove uma rápida subida do pH gástrico; o componente de magnésio previne a obstipação habitualmente associada aos sais de cálcio.<br><em>CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂</em><br><em>MgCO₃ + 2 HCl → MgCl₂ + H₂O + CO₂</em>",
+      "indicacoes": ["Hiperacidez gástrica", "Refluxo gastroesofágico"],
+      "alvoPrincipal": "Ácido clorídrico",
       "rcm": {
-        "substancia": "Hidróxido de alumínio + Hidróxido de magnésio",
-        "descricao": "Alívio sintomático da acidez gástrica, azia e pirose."
+        "substancia": "Carbonato de Cálcio + Carbonato de Magnésio",
+        "descricao": "Combinação antiácida de neutralização direta e rápida."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -209,24 +305,24 @@
       }
     },
     {
-      "nome": "Carbonato de cálcio + Carbonato de magnésio",
-      "atc": "A02AX",
+      "nome": "Carbonato de di-hidróxido de alumínio e sódio + Dimeticone",
+      "atc": "A02AB01",
       "grupo": "A - Aparelho digestivo e metabolismo",
       "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AX - Outras associações de antiácidos",
+      "subgrupo3": "A02AB - Compostos de alumínio",
       "produtos": [
         {
-          "nome": "Rennie®",
-          "forma": "Comprimidos para chupar ou mastigar"
+          "nome": "Kompensan Trieffect®",
+          "forma": "Comprimido para chupar (340 mg + 30 mg)"
         }
       ],
-      "classe": "Antiácido de ação rápida",
-      "mecanismo": "Associação de sais de cálcio e magnésio que neutralizam rapidamente o ácido clorídrico estomacal através de uma reação de neutralização química direta, convertendo-o em cloretos, água e dióxido de carbono. Promovem um alívio quase imediato dos sintomas de hiperacidez.",
-      "indicacoes": ["Azia", "Indigestão ácida", "Piroses associadas à gravidez"],
-      "alvoPrincipal": "Ácido clorídrico (HCl) gástrico",
+      "classe": "Antiácido tampão combinado e antiflatulento",
+      "mecanismo": "Associação de um antiácido e um antiflatulento:<br>• <strong>Carbonato de di-hidróxido de alumínio e sódio:</strong> Antiácido tampão combinado que neutraliza o ácido clorídrico, fixando os protões H+ e promovendo um efeito tampão prolongado (<em>NaAl(OH)₂CO₃ + 4 HCl → NaCl + AlCl₃ + CO₂ + 3 H₂O</em>).<br>• <strong>Dimeticone:</strong> Antiflatulento que reduz a tensão superficial das bolhas de gás gastrointestinais, promovendo a sua rutura e facilitando a eliminação do gás preso.",
+      "indicacoes": ["Pirose", "Flatulência", "Meteorismo"],
+      "alvoPrincipal": "Ácido clorídrico e bolhas de gás",
       "rcm": {
-        "substancia": "Carbonato de cálcio + Carbonato de magnésio",
-        "descricao": "Tratamento sintomático de afeções gástricas devidas a hiperacidez."
+        "substancia": "Carbonato de di-hidróxido de alumínio e sódio + Dimeticone",
+        "descricao": "Antiácido tampão combinado com ação antiflatulenta."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -234,7 +330,7 @@
       }
     },
     {
-      "nome": "Hidróxido de alumínio + Hidróxido de magnésio + Dimeticona",
+      "nome": "Hidróxido de Alumínio + Hidróxido de magnésio + Dimeticone",
       "atc": "A02AF02",
       "grupo": "A - Aparelho digestivo e metabolismo",
       "subgrupo2": "A02A - Antiácidos",
@@ -242,16 +338,45 @@
       "produtos": [
         {
           "nome": "Maalox Plus®",
-          "forma": "Comprimidos mastigáveis e Suspensão oral"
+          "forma": "Comprimido para mastigar (200 mg + 200 mg + 26.25 mg)"
         }
       ],
-      "classe": "Antiácido associado a antiflatulento",
-      "mecanismo": "Associação que conjuga a ação neutralizante do ácido gástrico (hidróxidos de alumínio e magnésio) com a ação da **dimeticona**, um agente tensoativo de silicone que diminui a tensão superficial das bolhas de gás no trato gastrointestinal, fazendo com que se aglutinem e sejam eliminadas mais facilmente (reduzindo a distensão abdominal e o meteorismo).",
-      "indicacoes": ["Azia", "Flatulência", "Meteorismo associado a hiperacidez", "Dispepsia"],
-      "alvoPrincipal": "Ácido clorídrico gástrico e bolhas de gás gastrointestinais",
+      "classe": "Antiácido duplo e antiflatulento",
+      "mecanismo": "Associação que neutraliza o ácido clorídrico gástrico através do hidróxido de alumínio e do hidróxido de magnésio, equilibrando o trânsito intestinal através do balanço entre o efeito obstipante do alumínio e laxante do magnésio (<em>Al(OH)₃ + 3 HCl → AlCl₃ + 3 H₂O</em> e <em>Mg(OH)₂ + 2 HCl → MgCl₂ + 2 H₂O</em>). O simeticone/dimeticone atua alterando a tensão superficial das bolhas de gás, fazendo com que se aglutinem e sejam expelidas mais facilmente, aliviando o enfartamento.",
+      "indicacoes": ["Hiperacidez gástrica", "Pirose", "Meteorismo"],
+      "alvoPrincipal": "Ácido clorídrico e bolhas de gás",
       "rcm": {
-        "substancia": "Hidróxido de alumínio + Hidróxido de magnésio + Dimeticona",
-        "descricao": "Alívio sintomático da acidez gástrica e dos sintomas associados a gases."
+        "substancia": "Hidróxido de Alumínio + Hidróxido de magnésio + Dimeticone",
+        "descricao": "Antiácido duplo associado a antiflatulento."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Bicarbonato de sódio",
+      "atc": "A02AH01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AH - Antiácidos com sódio",
+      "produtos": [
+        {
+          "nome": "Bicarbonato de sódio Labesfal®",
+          "forma": "Cápsula (1000 mg)"
+        },
+        {
+          "nome": "Alka-Seltzer®",
+          "forma": "Comprimido efervescente (2081.8 mg)"
+        }
+      ],
+      "classe": "Antiácido sistémico de ação imediata (incluindo formulação efervescente com ácido cítrico)",
+      "mecanismo": "Reage de forma quase instantânea com o ácido clorídrico gástrico, consumindo protões para formar cloreto de sódio, água e dióxido de carbono. Neutraliza rapidamente o pH gástrico, mas a libertação de CO₂ pode causar eructação e distensão do estômago (<em>NaHCO₃ + HCl → NaCl + H₂O + CO₂</em>). Na versão efervescente com ácido cítrico, ao dissolver-se em água o bicarbonato reage com o ácido cítrico libertando CO₂ e formando citrato de sódio, que neutraliza o ácido clorídrico e acelera o esvaziamento gástrico.",
+      "indicacoes": ["Hiperacidez gástrica", "Pirose", "Indigestão e desconforto gástrico"],
+      "alvoPrincipal": "Ácido clorídrico",
+      "rcm": {
+        "substancia": "Bicarbonato de sódio",
+        "descricao": "Antiácido sistémico de ação imediata."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
