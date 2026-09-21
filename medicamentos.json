@@ -178,6 +178,85 @@
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
         "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
       }
+    },
+    {
+      "nome": "Hidróxido de alumínio + Hidróxido de magnésio",
+      "atc": "A02AD01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
+      "produtos": [
+        {
+          "nome": "Maalox®",
+          "forma": "Comprimidos mastigáveis e Suspensão oral"
+        },
+        {
+          "nome": "Aaloxan®",
+          "forma": "Comprimidos e Suspensão oral"
+        }
+      ],
+      "classe": "Antiácido de ação local",
+      "mecanismo": "Associação de hidróxido de alumínio e hidróxido de magnésio que atuam por neutralização química direta do ácido clorídrico (HCl) presente no estômago, elevando o pH gástrico. <br>• O hidróxido de magnésio tem uma ação rápida e pode causar laxação;<br>• O hidróxido de alumínio atua de forma mais lenta e tem um efeito adstringente, com tendência a causar obstipação (o que contrabalança o efeito do magnésio).",
+      "indicacoes": ["Azia", "Dispepsia", "Gastrite", "Úlcera péptica (alívio sintomático)"],
+      "alvoPrincipal": "Ácido clorídrico (HCl) gástrico",
+      "rcm": {
+        "substancia": "Hidróxido de alumínio + Hidróxido de magnésio",
+        "descricao": "Alívio sintomático da acidez gástrica, azia e pirose."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Carbonato de cálcio + Carbonato de magnésio",
+      "atc": "A02AX",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AX - Outras associações de antiácidos",
+      "produtos": [
+        {
+          "nome": "Rennie®",
+          "forma": "Comprimidos para chupar ou mastigar"
+        }
+      ],
+      "classe": "Antiácido de ação rápida",
+      "mecanismo": "Associação de sais de cálcio e magnésio que neutralizam rapidamente o ácido clorídrico estomacal através de uma reação de neutralização química direta, convertendo-o em cloretos, água e dióxido de carbono. Promovem um alívio quase imediato dos sintomas de hiperacidez.",
+      "indicacoes": ["Azia", "Indigestão ácida", "Piroses associadas à gravidez"],
+      "alvoPrincipal": "Ácido clorídrico (HCl) gástrico",
+      "rcm": {
+        "substancia": "Carbonato de cálcio + Carbonato de magnésio",
+        "descricao": "Tratamento sintomático de afeções gástricas devidas a hiperacidez."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Hidróxido de alumínio + Hidróxido de magnésio + Dimeticona",
+      "atc": "A02AF02",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02A - Antiácidos",
+      "subgrupo3": "A02AF - Antiácidos com antiflatulentos",
+      "produtos": [
+        {
+          "nome": "Maalox Plus®",
+          "forma": "Comprimidos mastigáveis e Suspensão oral"
+        }
+      ],
+      "classe": "Antiácido associado a antiflatulento",
+      "mecanismo": "Associação que conjuga a ação neutralizante do ácido gástrico (hidróxidos de alumínio e magnésio) com a ação da **dimeticona**, um agente tensoativo de silicone que diminui a tensão superficial das bolhas de gás no trato gastrointestinal, fazendo com que se aglutinem e sejam eliminadas mais facilmente (reduzindo a distensão abdominal e o meteorismo).",
+      "indicacoes": ["Azia", "Flatulência", "Meteorismo associado a hiperacidez", "Dispepsia"],
+      "alvoPrincipal": "Ácido clorídrico gástrico e bolhas de gás gastrointestinais",
+      "rcm": {
+        "substancia": "Hidróxido de alumínio + Hidróxido de magnésio + Dimeticona",
+        "descricao": "Alívio sintomático da acidez gástrica e dos sintomas associados a gases."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
     }
   ]
 }
