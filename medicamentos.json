@@ -42,7 +42,7 @@
         }
       ],
       "classe": "Anti-infecioso e anti-séptico tópico oral",
-      "mecanismo": "Associação de glicosídeos antraquinónicos (ruibarbo) e ácido salicílico[cite: 8, 9]:<br>• <strong>Ruibarbo:</strong> Ação anti-inflamatória, antibacteriana e vasoconstritora[cite: 8]. As antraquinonas ligam-se às proteínas das membranas inflamadas, promovendo precipitação proteica (efeito adstringente) que cria uma capa protetora isolando as terminações nervosas expostas[cite: 8, 9].<br>• <strong>Ácido salicílico:</strong> Ação anti-inflamatória (inibição de COX-1 e COX-2) e efeito queratolítico que facilita a penetração das antraquinonas nas mucosas[cite: 9].",
+      "mecanismo": "Associação de glicosídeos antraquinónicos (ruibarbo) e ácido salicílico:<br>• <strong>Ruibarbo:</strong> Ação anti-inflamatória, antibacteriana e vasoconstritora. As antraquinonas ligam-se às proteínas das membranas inflamadas, promovendo precipitação proteica (efeito adstringente) que cria uma capa protetora isolando as terminações nervosas expostas.<br>• <strong>Ácido salicílico:</strong> Ação anti-inflamatória (inibição de COX-1 e COX-2) e efeito queratolítico que facilita a penetração das antraquinonas nas mucosas.",
       "indicacoes": ["Inflamações agudas e crónicas da mucosa oral", "Aftas"],
       "alvoPrincipal": "COX-1, COX-2 e proteínas das membranas inflamadas",
       "rcm": {
@@ -67,7 +67,7 @@
         }
       ],
       "classe": "Antisséptico de ação local",
-      "mecanismo": "Antisséptico de ação local com efeito rápido e prolongado, antimicrobiano e antifúngico de largo espetro[cite: 9]. O seu mecanismo baseia-se na interferência com os processos metabólicos essenciais dos microrganismos, atuando por competição com a tiamina (vitamina B1), nutriente indispensável ao crescimento microbiano[cite: 8, 9].",
+      "mecanismo": "Antisséptico de ação local com efeito rápido e prolongado, antimicrobiano e antifúngico de largo espetro. O seu mecanismo baseia-se na interferência com os processos metabólicos essenciais dos microrganismos, atuando por competição com a tiamina (vitamina B1), nutriente indispensável ao crescimento microbiano.",
       "indicacoes": ["Infeções e inflamações orais", "Halitose", "Higiene oral"],
       "alvoPrincipal": "Metabolismo da Tiamina (vitamina B1) dos microrganismos",
       "rcm": {
@@ -88,11 +88,11 @@
       "produtos": [
         {
           "nome": "Tantum Verde®",
-          "forma": "Solução para lavagem da boca (1.5 mg/ml) / Solução para pulverização bucal (1.5 mg/ml e 3 mg/ml)"
+          "forma": "Solução para lavagem da boca (1.5 mg/ml) e Solução para pulverização bucal (1.5 mg/ml e 3 mg/ml)"
         }
       ],
       "classe": "Anti-inflamatório, analgésico e anestésico local",
-      "mecanismo": "Inibição da libertação de mediadores inflamatórios (como as citocinas TNF-alfa e IL-1), sem atuar de forma clássica sobre a ciclo-oxigenase como outros AINEs[cite: 10, 11]. Possui também um efeito anestésico local por bloquear canais de sódio e reduzir a permeabilidade capilar[cite: 10, 11].",
+      "mecanismo": "Inibição da libertação de mediadores inflamatórios (como as citocinas TNF-alfa e IL-1), sem atuar de forma clássica sobre a ciclo-oxigenase como outros AINEs. Possui também um efeito anestésico local por bloquear canais de sódio e reduzir a permeabilidade capilar.",
       "indicacoes": ["Inflamação oral e da orofaringe", "Higiene oral"],
       "alvoPrincipal": "Citocinas pró-inflamatórias (TNF-alfa e IL-1) e canais de Na+",
       "rcm": {
@@ -117,7 +117,7 @@
         }
       ],
       "classe": "Antisséptico e anti-inflamatório tópico oral",
-      "mecanismo": "Associação de álcool 2,4-diclorobenzil (antisséptico de largo espetro que atua por desnaturação de proteínas da parede celular microbiana, reduzindo carga viral e bacteriana) com benzidamina (ação anti-inflamatória por inibição de citocinas TNF-alfa/IL-1 e efeito anestésico local por bloqueio de canais de sódio)[cite: 10, 11].",
+      "mecanismo": "Associação de álcool 2,4-diclorobenzil (antisséptico de largo espetro que atua por desnaturação de proteínas da parede celular microbiana, reduzindo carga viral e bacteriana) com benzidamina (ação anti-inflamatória por inibição de citocinas TNF-alfa/IL-1 e efeito anestésico local por bloqueio de canais de sódio).",
       "indicacoes": ["Inflamação oral e da orofaringe"],
       "alvoPrincipal": "Proteínas e lípidos da parede celular microbiana, citocinas e canais de Na+",
       "rcm": {
@@ -142,7 +142,7 @@
         }
       ],
       "classe": "Anti-inflamatório não esteroide (AINE)",
-      "mecanismo": "AINE que atua ao inibir a enzima ciclo-oxigenase (COX-1 e COX-2), responsável pela produção de prostaglandinas, que são mediadores da inflamação, dor e edema[cite: 10, 12]. Ao bloquear a via da cascata do ácido araquidónico, reduz a sensibilidade dos nociceptores (receptores de dor)[cite: 12].",
+      "mecanismo": "AINE que atua ao inibir a enzima ciclo-oxigenase (COX-1 e COX-2), responsável pela produção de prostaglandinas, que são mediadores da inflamação, dor e edema. Ao bloquear a via da cascata do ácido araquidónico, reduz a sensibilidade dos nociceptores (receptores de dor).",
       "indicacoes": ["Inflamação oral e da orofaringe"],
       "alvoPrincipal": "COX-1 e COX-2",
       "rcm": {
@@ -167,7 +167,7 @@
         }
       ],
       "classe": "Adstringente e antisséptico",
-      "mecanismo": "Atua como adstringente, promovendo a contração das proteínas superficiais dos tecidos (o que ajuda a reduzir a inflamação e o edema) e como antisséptico ao inibir enzimas bacterianas que degradam proteínas, ajudando no controle da placa[cite: 10, 12]. O zinco liga-se também aos precursores do mau hálito (gases de enxofre), neutralizando-os[cite: 10, 12].",
+      "mecanismo": "Atua como adstringente, promovendo a contração das proteínas superficiais dos tecidos (o que ajuda a reduzir a inflamação e o edema) e como antisséptico ao inibir enzimas bacterianas que degradam proteínas, ajudando no controle da placa. O zinco liga-se também aos precursores do mau hálito (gases de enxofre), neutralizando-os.",
       "indicacoes": ["Inflamação oral e da orofaringe", "Higiene oral"],
       "alvoPrincipal": "Compostos Voláteis de Enxofre, enzimas proteolíticas microbianas e proteínas das membranas inflamadas",
       "rcm": {
