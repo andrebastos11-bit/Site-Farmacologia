@@ -17,7 +17,7 @@
         }
       ],
       "classe": "Agente profilático da cárie",
-      "mecanismo": "O flúor atua diretamente sobre o esmalte e a placa bacteriana:<br>• Promoção da remineralização (interage com a <strong style='color:#ef4444;'>hidroxiapatite</strong>, formando fluoroapatite)[cite: 5];<br>• Inibição da desmineralização e efeito bactericida ao inibir a enzima <strong style='color:#ef4444;'>enolase</strong> nas bactérias da placa (ex: <i>Streptococcus mutans</i>), reduzindo a produção de ácido[cite: 5].",
+      "mecanismo": "O flúor atua diretamente sobre o esmalte e a placa bacteriana:<br>• Promoção da remineralização (interage com a hidroxiapatite, formando fluoroapatite);<br>• Inibição da desmineralização e efeito bactericida ao inibir a enzima enolase nas bactérias da placa (ex: <i>Streptococcus mutans</i>), reduzindo a produção de ácido.",
       "indicacoes": ["Prevenção da cárie dentária"],
       "alvoPrincipal": "Hidroxiapatite e Enolase",
       "rcm": {
@@ -30,24 +30,49 @@
       }
     },
     {
-      "nome": "Omeprazol",
-      "atc": "A02BC01",
+      "nome": "Ácido salicílico + Ruibarbo",
+      "atc": "A01AB11",
       "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B - Fármacos para a úlcera péptica e do refluxo gastroesofágico (DRGE)",
-      "subgrupo3": "A02BC - Inibidores da bomba de protões",
+      "subgrupo2": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
+      "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos",
       "produtos": [
         {
-          "nome": "Omeprazol Generis®",
-          "forma": "Cápsula gastrorresistente (20 mg)"
+          "nome": "Pyralvex®",
+          "forma": "Solução bucal (10 mg/ml + 50 mg/ml)"
         }
       ],
-      "classe": "Inibidor da Bomba de Protões (IBP)",
-      "mecanismo": "Inibe a enzima H+/K+-ATPase nas células parietais gástricas, bloqueando a secreção de ácido gástrico.",
-      "indicacoes": ["Úlcera duodenal e gástrica", "Refluxo gastroesofágico", "Erradicação do Helicobacter pylori"],
-      "alvoPrincipal": "H+/K+-ATPase (Bomba de Protões)",
+      "classe": "Anti-infecioso e anti-séptico tópico oral",
+      "mecanismo": "Associação de glicosídeos antraquinónicos (ruibarbo) e ácido salicílico[cite: 8, 9]:<br>• <strong>Ruibarbo:</strong> Ação anti-inflamatória, antibacteriana e vasoconstritora[cite: 8]. As antraquinonas ligam-se às proteínas das membranas inflamadas, promovendo precipitação proteica (efeito adstringente) que cria uma capa protetora isolando as terminações nervosas expostas[cite: 8, 9].<br>• <strong>Ácido salicílico:</strong> Ação anti-inflamatória (inibição de COX-1 e COX-2) e efeito queratolítico que facilita a penetração das antraquinonas nas mucosas[cite: 9].",
+      "indicacoes": ["Inflamações agudas e crónicas da mucosa oral", "Aftas"],
+      "alvoPrincipal": "COX-1, COX-2 e proteínas das membranas inflamadas",
       "rcm": {
-        "substancia": "Omeprazol",
-        "descricao": "Tratamento de úlceras duodenais e gástricas, doença do refluxo gastroesofágico sintomática."
+        "substancia": "Ácido salicílico + Ruibarbo",
+        "descricao": "Tratamento de afeções inflamatórias e dolorosas da mucosa oral."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Hexetidina",
+      "atc": "A01AB12",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
+      "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos",
+      "produtos": [
+        {
+          "nome": "Hextril®",
+          "forma": "Solução bucal (1 mg/ml)"
+        }
+      ],
+      "classe": "Antisséptico de ação local",
+      "mecanismo": "Antisséptico de ação local com efeito rápido e prolongado, antimicrobiano e antifúngico de largo espetro[cite: 9]. O seu mecanismo baseia-se na interferência com os processos metabólicos essenciais dos microrganismos, atuando por competição com a tiamina (vitamina B1), nutriente indispensável ao crescimento microbiano[cite: 8, 9].",
+      "indicacoes": ["Infeções e inflamações orais", "Halitose", "Higiene oral"],
+      "alvoPrincipal": "Metabolismo da Tiamina (vitamina B1) dos microrganismos",
+      "rcm": {
+        "substancia": "Hexetidina",
+        "descricao": "Desinfeção e alívio de inflamações na cavidade oral e faringe."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
