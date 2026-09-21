@@ -324,16 +324,40 @@
                 return;
             }
 
+            // Mapeamentos automáticos baseados nos prefixos ATC para garantir hierarquia estricta
+            const descSub2 = {};
+            const descSub3 = {};
+
+            lista.forEach(f => {
+                const atc = f.atc || "";
+                if (atc.length >= 4) {
+                    const k2 = atc.substring(0, 4);
+                    if (f.subgrupo2 && f.subgrupo2.startsWith(k2)) descSub2[k2] = f.subgrupo2;
+                    else if (f.subgrupo3 && f.subgrupo3.startsWith(k2)) descSub2[k2] = f.subgrupo3;
+                }
+                if (atc.length >= 5) {
+                    const k3 = atc.substring(0, 5);
+                    if (f.subgrupo2 && f.subgrupo2.startsWith(k3)) descSub3[k3] = f.subgrupo2;
+                    else if (f.subgrupo3 && f.subgrupo3.startsWith(k3)) descSub3[k3] = f.subgrupo3;
+                }
+            });
+
             const estrutura = {};
             lista.forEach(f => {
                 const g1 = f.grupo || "Outros";
-                const g2 = f.subgrupo2 || "Geral";
-                const g3 = f.subgrupo3 || "Específico";
+                const atc = f.atc || "";
+                
+                const k2 = atc.length >= 4 ? atc.substring(0, 4) : "Geral";
+                const k3 = atc.length >= 5 ? atc.substring(0, 5) : k2;
+                
+                const g2Nome = descSub2[k2] || (f.subgrupo2 && f.subgrupo2.length <= 5 ? f.subgrupo2 : k2);
+                const g3Nome = descSub3[k3] || f.subgrupo3 || k3;
                 
                 if (!estrutura[g1]) estrutura[g1] = {};
-                if (!estrutura[g1][g2]) estrutura[g1][g2] = {};
-                if (!estrutura[g1][g2][g3]) estrutura[g1][g2][g3] = [];
-                estrutura[g1][g2][g3].push(f);
+                if (!estrutura[g1][g2Nome]) estrutura[g1][g2Nome] = {};
+                if (!estrutura[g1][g2Nome][g3Nome]) estrutura[g1][g2Nome][g3Nome] = [];
+                
+                estrutura[g1][g2Nome][g3Nome].push(f);
             });
 
             for (const [g1Nome, sub2s] of Object.entries(estrutura)) {
