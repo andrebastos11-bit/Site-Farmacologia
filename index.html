@@ -50,7 +50,7 @@
             border-color: var(--primary-color);
         }
 
-        /* Nível 1: Grupo Principal ATC (Raiz) - Letras Maiúsculas */
+        /* Nível 1: Grupo Principal ATC (Raiz) - Totalmente em Maiúsculas */
         .atc-main-group {
             margin-bottom: 8px;
             background: #ffffff;
@@ -93,7 +93,7 @@
             display: block;
         }
 
-        /* Nível 2: Subgrupo 2 (4 dígitos / ex: A01A) */
+        /* Nível 2: Subgrupo de 4 Dígitos (ex: A01A) */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
@@ -129,7 +129,7 @@
             display: block;
         }
 
-        /* Nível 3: Subgrupo 3 (5 dígitos / ex: A01AB) */
+        /* Nível 3: Subgrupo de 5 Dígitos (ex: A01AD) */
         .atc-sub3-item {
             border-bottom: 1px solid #f8fafc;
         }
@@ -303,24 +303,54 @@
     <script>
         let farmacosData = [];
 
-        // Função para formatar texto: 1ª letra de cada palavra em maiúscula, exceto palavras com 1 ou 2 letras
+        // Mapeamento oficial dos códigos ATC de 4 dígitos (Nível 2)
+        const descricoesATC4 = {
+            "A01A": "Preparações para Uso Estomatológico",
+            "A02A": "Antiácidos",
+            "A02B": "Agentes para o Tratamento da Úlcera Péptica e do Refluxo Gastroesofágico",
+            "A03A": "Agentes para Distúrbios Funcionais Gastrointestinais",
+            "A04A": "Antieméticos e Antinauseantes",
+            "A05A": "Terapia Biliar",
+            "A06A": "Medicamentos para a Obstipação",
+            "A07A": "Anti-infeciosos Intestinais",
+            "A10A": "Insulinas e Análogos",
+            "A10B": "Medicamentos Usados na Diabetes, Excluindo Insulinas",
+            "A11A": "Multivitaminas, Associações",
+            "A12A": "Cálcio"
+        };
+
+        // Função para testar se uma string corresponde exatamente ao código ATC pretendido
+        function correspondeCodigoATC(texto, codigoExato) {
+            if (!texto || !codigoExato) return false;
+            const limpo = texto.trim();
+            if (!limpo.toUpperCase().startsWith(codigoExato.toUpperCase())) return false;
+            if (limpo.length === codigoExato.length) return true;
+            const charSeguinte = limpo.charAt(codigoExato.length);
+            return !/[a-zA-Z0-9]/.test(charSeguinte);
+        }
+
+        // Função para formatar o texto com maiúsculas/minúsculas corretas
         function formatarTextoCapitalizado(texto) {
             if (!texto) return "";
-            // Se o texto já vier no formato "A01A - Preparações...", separa o código do texto descritivo
             const partes = texto.split(' - ');
-            const codigo = partes[0];
-            const descricao = partes.slice(1).join(' - ') || codigo;
+            const codigo = partes[0].trim();
+            const descricao = partes.slice(1).join(' - ').trim();
 
-            const palavrasIgnoradas = ["e", "de", "do", "da", "dos", "das", "em", "por", "com", "ao", "aos", "ou", "a", "o", "as", "os", "um", "uma", "uns", "umas"];
+            if (!descricao) return codigo;
 
-            const descFormatada = descricao.toLowerCase().split(' ').map((palavra, index) => {
-                if (palavrasIgnoradas.includes(palavra) && index > 0) {
+            // Palavras de ligação que ficam em minúsculas (a menos que sejam a 1ª palavra)
+            const palavrasMinusculas = ["e", "de", "do", "da", "dos", "das", "em", "por", "com", "ao", "aos", "ou", "a", "o", "as", "os", "um", "uma", "uns", "umas", "para"];
+
+            const palavras = descricao.toLowerCase().split(' ');
+            const descFormatada = palavras.map((palavra, index) => {
+                if (!palavra) return "";
+                if (index > 0 && palavrasMinusculas.includes(palavra)) {
                     return palavra;
                 }
                 return palavra.charAt(0).toUpperCase() + palavra.slice(1);
             }).join(' ');
 
-            return partes.length > 1 ? `${codigo} - ${descFormatada}` : descFormatada;
+            return `${codigo} - ${descFormatada}`;
         }
 
         fetch('medicamentos.json')
@@ -344,7 +374,6 @@
                 return;
             }
 
-            // Dicionários para mapear descrições oficiais de 4 e 5 dígitos
             const descSub2 = {};
             const descSub3 = {};
 
@@ -352,16 +381,15 @@
                 const atc = f.atc || "";
                 if (atc.length >= 4) {
                     const k2 = atc.substring(0, 4);
-                    // Se o subgrupo2 contém o código ou tem tamanho adequado para nível 2
-                    if (f.subgrupo2 && (f.subgrupo2.toUpperCase().includes(k2) || f.subgrupo2.length < 40)) {
+                    if (f.subgrupo2 && correspondeCodigoATC(f.subgrupo2, k2)) {
                         descSub2[k2] = f.subgrupo2;
                     }
                 }
                 if (atc.length >= 5) {
                     const k3 = atc.substring(0, 5);
-                    if (f.subgrupo3 && f.subgrupo3.toUpperCase().includes(k3)) {
+                    if (f.subgrupo3 && correspondeCodigoATC(f.subgrupo3, k3)) {
                         descSub3[k3] = f.subgrupo3;
-                    } else if (f.subgrupo2 && f.subgrupo2.toUpperCase().includes(k3)) {
+                    } else if (f.subgrupo2 && correspondeCodigoATC(f.subgrupo2, k3)) {
                         descSub3[k3] = f.subgrupo2;
                     }
                 }
@@ -375,26 +403,20 @@
                 const k2 = atc.length >= 4 ? atc.substring(0, 4) : "Geral";
                 const k3 = atc.length >= 5 ? atc.substring(0, 5) : k2;
                 
-                // Nível 2 rigoroso (4 dígitos, ex: A01A)
-                let g2NomeBruto = descSub2[k2] || `${k2} - Preparações para uso estomatológico`;
-                if (f.subgrupo2 && f.subgrupo2.toUpperCase().startsWith(k2) && f.subgrupo2.length < 45) {
-                    g2NomeBruto = f.subgrupo2;
-                } else if (!descSub2[k2] && f.subgrupo2 && !f.subgrupo2.toUpperCase().startsWith(k3)) {
-                    g2NomeBruto = f.subgrupo2;
-                }
-                // Força o prefixo correto de 4 dígitos para o Nível 2
-                if (!g2NomeBruto.toUpperCase().startsWith(k2)) {
-                    g2NomeBruto = `${k2} - ${g2NomeBruto}`;
+                // Nível 2 rigoroso (4 dígitos)
+                let g2Bruto = descSub2[k2] || descricoesATC4[k2] || `${k2} - Outras Preparações`;
+                if (!g2Bruto.toUpperCase().startsWith(k2)) {
+                    g2Bruto = `${k2} - ${g2Bruto}`;
                 }
 
-                // Nível 3 rigoroso (5 dígitos, ex: A01AB)
-                let g3NomeBruto = descSub3[k3] || f.subgrupo3 || k3;
-                if (!g3NomeBruto.toUpperCase().startsWith(k3)) {
-                    g3NomeBruto = `${k3} - ${g3NomeBruto}`;
+                // Nível 3 rigoroso (5 dígitos)
+                let g3Bruto = descSub3[k3] || (f.subgrupo3 && correspondeCodigoATC(f.subgrupo3, k3) ? f.subgrupo3 : null) || `${k3} - Outros Agentes`;
+                if (!g3Bruto.toUpperCase().startsWith(k3)) {
+                    g3Bruto = `${k3} - ${g3Bruto}`;
                 }
 
-                const g2Nome = formatarTextoCapitalizado(g2NomeBruto);
-                const g3Nome = formatarTextoCapitalizado(g3NomeBruto);
+                const g2Nome = formatarTextoCapitalizado(g2Bruto);
+                const g3Nome = formatarTextoCapitalizado(g3Bruto);
 
                 if (!estrutura[g1]) estrutura[g1] = {};
                 if (!estrutura[g1][g2Nome]) estrutura[g1][g2Nome] = {};
