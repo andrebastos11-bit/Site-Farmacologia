@@ -1,67 +1,53 @@
 {
   "fármacos": [
     {
+      "nome": "Fluoreto de sódio",
+      "atc": "A01AA01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A01A - Preparações para uso estomatológico",
+      "subgrupo3": "A01AA - Agentes profiláticos da cárie",
+      "produtos": [
+        {
+          "nome": "Duraphat 5000®",
+          "forma": "Pasta dentífrica (5 mg/g)"
+        },
+        {
+          "nome": "Duraphat®",
+          "forma": "Suspensão dental (50 mg/ml)"
+        }
+      ],
+      "classe": "Agente profilático da cárie",
+      "mecanismo": "O flúor atua diretamente sobre o esmalte e a placa bacteriana:<br>• Promoção da remineralização (interage com a <strong style='color:#ef4444;'>hidroxiapatite</strong>, formando fluoroapatite)[cite: 5];<br>• Inibição da desmineralização e efeito bactericida ao inibir a enzima <strong style='color:#ef4444;'>enolase</strong> nas bactérias da placa (ex: <i>Streptococcus mutans</i>), reduzindo a produção de ácido[cite: 5].",
+      "indicacoes": ["Prevenção da cárie dentária"],
+      "alvoPrincipal": "Hidroxiapatite e Enolase",
+      "rcm": {
+        "substancia": "Fluoreto de sódio",
+        "descricao": "Prevenção da cárie dentária em pacientes com elevado risco de cáries."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
       "nome": "Omeprazol",
       "atc": "A02BC01",
-      "grupo": "A - Trato alimentar e metabolismo",
-      "subgrupo": "A02 - Fármacos para o tratamento de alterações causadas por ácidos",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B - Fármacos para a úlcera péptica e do refluxo gastroesofágico (DRGE)",
+      "subgrupo3": "A02BC - Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Omeprazol Generis®",
+          "forma": "Cápsula gastrorresistente (20 mg)"
+        }
+      ],
       "classe": "Inibidor da Bomba de Protões (IBP)",
       "mecanismo": "Inibe a enzima H+/K+-ATPase nas células parietais gástricas, bloqueando a secreção de ácido gástrico.",
       "indicacoes": ["Úlcera duodenal e gástrica", "Refluxo gastroesofágico", "Erradicação do Helicobacter pylori"],
+      "alvoPrincipal": "H+/K+-ATPase (Bomba de Protões)",
       "rcm": {
         "substancia": "Omeprazol",
         "descricao": "Tratamento de úlceras duodenais e gástricas, doença do refluxo gastroesofágico sintomática."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Metformina",
-      "atc": "A10BA02",
-      "grupo": "A - Trato alimentar e metabolismo",
-      "subgrupo": "A10 - Fármacos utilizados na diabetes",
-      "classe": "Biguanida",
-      "mecanismo": "Reduz a produção hepática de glicose e aumenta a sensibilidade à insulina.",
-      "indicacoes": ["Diabetes Mellitus Tipo 2"],
-      "rcm": {
-        "substancia": "Cloridrato de Metformina",
-        "descricao": "Diabetes mellitus tipo 2, em particular com excesso de peso."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Empagliflozina",
-      "atc": "A10BK01", 
-      "grupo": "A - Trato alimentar e metabolismo",
-      "subgrupo": "A10 - Fármacos utilizados na diabetes",
-      "classe": "Inibidor do SGLT2",
-      "mecanismo": "Inibe o co-transportador sódio-glicose 2 (SGLT2) no rim, promovendo a excreção urinária de glicose.",
-      "indicacoes": ["Diabetes Mellitus Tipo 2", "Insuficiência Cardíaca"],
-      "rcm": {
-        "substancia": "Empagliflozina",
-        "descricao": "Indicado no tratamento da diabetes mellitus tipo 2."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Duloxetina",
-      "atc": "N06AX21",
-      "grupo": "N - Sistema nervoso",
-      "subgrupo": "N06 - Psicoanalépticos",
-      "classe": "Inibidor da Recaptação de Serotonina e Noradrenalina",
-      "mecanismo": "Aumenta a neurotransmissão monoaminérgica no sistema nervoso central.",
-      "indicacoes": ["Depressão maior", "Ansiedade generalizada"],
-      "rcm": {
-        "substancia": "Cloridrato de Duloxetina",
-        "descricao": "Tratamento da perturbação depressiva maior."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",

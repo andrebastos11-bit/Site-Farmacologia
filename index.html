@@ -83,21 +83,21 @@
             content: '-';
         }
 
-        .subgrupo-container {
+        .sub2-container {
             display: none;
             background-color: #fdfdfd;
             border-top: 1px solid #f1f5f9;
-            padding-left: 15px;
+            padding-left: 10px;
         }
-        .atc-main-group.active .subgrupo-container {
+        .atc-main-group.active .sub2-container {
             display: block;
         }
 
-        /* Nível 2: Subgrupo ATC */
-        .atc-sub-item {
+        /* Nível 2: Subgrupo 2 */
+        .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
-        .atc-sub-header {
+        .atc-sub2-header {
             padding: 12px 15px;
             font-size: 0.95rem;
             font-weight: 600;
@@ -108,32 +108,68 @@
             align-items: center;
             transition: background-color 0.2s;
         }
-        .atc-sub-header:hover {
-            background-color: var(--primary-light);
+        .atc-sub2-header:hover {
+            background-color: #f1f5f9;
             color: var(--primary-color);
         }
-        .atc-sub-header::after {
+        .atc-sub2-header::after {
             content: '+';
             font-size: 0.9rem;
         }
-        .atc-sub-item.active .atc-sub-header::after {
+        .atc-sub2-item.active .atc-sub2-header::after {
             content: '-';
         }
 
-        /* Nível 3: Lista de Medicamentos */
+        .sub3-container {
+            display: none;
+            padding-left: 15px;
+            background-color: #ffffff;
+        }
+        .atc-sub2-item.active .sub3-container {
+            display: block;
+        }
+
+        /* Nível 3: Subgrupo 3 */
+        .atc-sub3-item {
+            border-bottom: 1px solid #f8fafc;
+        }
+        .atc-sub3-header {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #475569;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+        .atc-sub3-header:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+        .atc-sub3-header::after {
+            content: '+';
+            font-size: 0.8rem;
+        }
+        .atc-sub3-item.active .atc-sub3-header::after {
+            content: '-';
+        }
+
+        /* Nível 4: Lista de Medicamentos */
         .drug-list {
             list-style: none;
             padding: 0;
             margin: 0;
             display: none;
-            background-color: #ffffff;
+            background-color: #fafafa;
         }
-        .atc-sub-item.active .drug-list {
+        .atc-sub3-item.active .drug-list {
             display: block;
         }
         .drug-item {
             padding: 12px 20px 12px 35px;
-            border-bottom: 1px solid #f8fafc;
+            border-bottom: 1px solid #f1f5f9;
             cursor: pointer;
             transition: background-color 0.2s;
         }
@@ -171,12 +207,12 @@
         }
         .modal-content {
             background-color: #fff;
-            margin: 4% auto;
+            margin: 3% auto;
             padding: 25px;
             width: 90%;
-            max-width: 650px;
+            max-width: 700px;
             border-radius: 10px;
-            max-height: 85vh;
+            max-height: 90vh;
             overflow-y: auto;
             box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         }
@@ -195,6 +231,13 @@
             padding-bottom: 15px;
             border-bottom: 1px solid #e2e8f0;
         }
+        .produto-box {
+            background: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 8px 12px;
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
         .video-container {
             margin-top: 15px;
         }
@@ -208,10 +251,8 @@
             <p class="subtitle">Base de dados estruturada por Classificação ATC</p>
         </header>
 
-        <!-- Caixa de Pesquisa -->
-        <input type="text" id="searchInput" class="search-box" placeholder="Pesquisar por fármaco, classe ou código ATC (ex: Metformina, C10, SGLT2)..." onkeyup="filtrarFarmacos()">
+        <input type="text" id="searchInput" class="search-box" placeholder="Pesquisar por fármaco, classe, produto ou código ATC..." onkeyup="filtrarFarmacos()">
 
-        <!-- Lista Dinâmica em Árvore -->
         <div id="catalogContainer">
             <p style="text-align: center; color: #64748b;">A carregar base de dados...</p>
         </div>
@@ -224,10 +265,19 @@
             <h2 id="modalTitulo">Detalhes do Fármaco</h2>
             
             <div class="rcm-section">
-                <h3>Resumo das Características do Medicamento (RCM)</h3>
+                <h3>Informação Clínica e Comercial</h3>
                 <p><strong>Substância Ativa:</strong> <span id="modalSubstancia"></span></p>
-                <p><strong>Mecanismo de Ação:</strong> <span id="modalMecanismo"></span></p>
-                <p><strong>Indicações Oficiais:</strong> <span id="modalIndicacoes"></span></p>
+                <p><strong>Alvo Principal:</strong> <span id="modalAlvo" style="color: var(--primary-color); font-weight: bold;"></span></p>
+                
+                <div style="margin: 10px 0;">
+                    <strong>Produtos no Mercado Português:</strong>
+                    <div id="modalProdutos"></div>
+                </div>
+
+                <p><strong>Mecanismo de Ação:</strong></p>
+                <div id="modalMecanismo" style="background: #f1f5f9; padding: 12px; border-radius: 6px; font-size: 0.95rem; line-height: 1.5;"></div>
+                
+                <p style="margin-top: 10px;"><strong>Indicações Terapêuticas:</strong> <span id="modalIndicacoes"></span></p>
             </div>
 
             <div class="video-section">
@@ -251,6 +301,7 @@
             .then(response => response.json())
             .then(data => {
                 farmacosData = data.fármacos;
+                farmacosData.sort((a, b) => a.atc.localeCompare(b.atc));
                 renderizarCatalogo(farmacosData);
             })
             .catch(error => {
@@ -260,7 +311,6 @@
 
         function renderizarCatalogo(lista, expandirTudo = false) {
             const container = document.getElementById('catalogContainer');
-            container.container = '';
             container.innerHTML = '';
 
             if (lista.length === 0) {
@@ -268,70 +318,93 @@
                 return;
             }
 
-            // Hierarquia: Grupo Principal -> Subgrupo -> Fármacos
+            // Hierarquia: Grupo Principal -> Subgrupo2 -> Subgrupo3 -> Fármacos
             const estrutura = {};
             lista.forEach(f => {
-                const grupo = f.grupo || "Outros";
-                const subgrupo = f.subgrupo || "Geral";
-                if (!estrutura[grupo]) estrutura[grupo] = {};
-                if (!estrutura[grupo][subgrupo]) estrutura[grupo][subgrupo] = [];
-                estrutura[grupo][subgrupo].push(f);
+                const g1 = f.grupo || "Outros";
+                const g2 = f.subgrupo2 || "Geral";
+                const g3 = f.subgrupo3 || "Específico";
+                
+                if (!estrutura[g1]) estrutura[g1] = {};
+                if (!estrutura[g1][g2]) estrutura[g1][g2] = {};
+                if (!estrutura[g1][g2][g3]) estrutura[g1][g2][g3] = [];
+                estrutura[g1][g2][g3].push(f);
             });
 
-            // Construir o HTML em árvore
-            for (const [grupoNome, subgrupos] of Object.entries(estrutura)) {
+            for (const [g1Nome, sub2s] of Object.entries(estrutura)) {
                 let mainDiv = document.createElement('div');
                 mainDiv.className = 'atc-main-group';
                 if (expandirTudo) mainDiv.classList.add('active');
 
                 let mainHeader = document.createElement('div');
                 mainHeader.className = 'atc-main-header';
-                mainHeader.textContent = grupoNome;
+                mainHeader.textContent = g1Nome;
                 mainHeader.onclick = () => mainDiv.classList.toggle('active');
                 mainDiv.appendChild(mainHeader);
 
-                let subContainer = document.createElement('div');
-                subContainer.className = 'subgrupo-container';
+                let sub2Container = document.createElement('div');
+                sub2Container.className = 'sub2-container';
 
-                for (const [subNome, farmacos] of Object.entries(subgrupos)) {
-                    let subItem = document.createElement('div');
-                    subItem.className = 'atc-sub-item';
-                    if (expandirTudo) subItem.classList.add('active');
+                for (const [g2Nome, sub3s] of Object.entries(sub2s)) {
+                    let sub2Item = document.createElement('div');
+                    sub2Item.className = 'atc-sub2-item';
+                    if (expandirTudo) sub2Item.classList.add('active');
 
-                    let subHeader = document.createElement('div');
-                    subHeader.className = 'atc-sub-header';
-                    subHeader.textContent = subNome;
-                    subHeader.onclick = (e) => {
-                        e.stopPropagation(); // Evita fechar o grupo principal
-                        subItem.classList.toggle('active');
+                    let sub2Header = document.createElement('div');
+                    sub2Header.className = 'atc-sub2-header';
+                    sub2Header.textContent = g2Nome;
+                    sub2Header.onclick = (e) => {
+                        e.stopPropagation();
+                        sub2Item.classList.toggle('active');
                     };
-                    subItem.appendChild(subHeader);
+                    sub2Item.appendChild(sub2Header);
 
-                    let ul = document.createElement('ul');
-                    ul.className = 'drug-list';
+                    let sub3Container = document.createElement('div');
+                    sub3Container.className = 'sub3-container';
 
-                    farmacos.forEach(f => {
-                        let li = document.createElement('li');
-                        li.className = 'drug-item';
-                        li.onclick = (e) => {
+                    for (const [g3Nome, farmacos] of Object.entries(sub3s)) {
+                        let sub3Item = document.createElement('div');
+                        sub3Item.className = 'atc-sub3-item';
+                        if (expandirTudo) sub3Item.classList.add('active');
+
+                        let sub3Header = document.createElement('div');
+                        sub3Header.className = 'atc-sub3-header';
+                        sub3Header.textContent = g3Nome;
+                        sub3Header.onclick = (e) => {
                             e.stopPropagation();
-                            abrirDetalhes(f.nome);
+                            sub3Item.classList.toggle('active');
                         };
+                        sub3Item.appendChild(sub3Header);
 
-                        li.innerHTML = `
-                            <div class="drug-info">
-                                <h3>${f.nome} <span class="atc-badge">${f.atc}</span></h3>
-                                <div class="drug-meta"><strong>Classe:</strong> ${f.classe} | <strong>Indicações:</strong> ${f.indicacoes.join(', ')}</div>
-                            </div>
-                        `;
-                        ul.appendChild(li);
-                    });
+                        let ul = document.createElement('ul');
+                        ul.className = 'drug-list';
 
-                    subItem.appendChild(ul);
-                    subContainer.appendChild(subItem);
+                        farmacos.forEach(f => {
+                            let li = document.createElement('li');
+                            li.className = 'drug-item';
+                            li.onclick = (e) => {
+                                e.stopPropagation();
+                                abrirDetalhes(f.nome);
+                            };
+
+                            li.innerHTML = `
+                                <div class="drug-info">
+                                    <h3>${f.nome} <span class="atc-badge">${f.atc}</span></h3>
+                                    <div class="drug-meta"><strong>Classe:</strong> ${f.classe} | <strong>Indicações:</strong> ${f.indicacoes.join(', ')}</div>
+                                </div>
+                            `;
+                            ul.appendChild(li);
+                        });
+
+                        sub3Item.appendChild(ul);
+                        sub3Container.appendChild(sub3Item);
+                    }
+
+                    sub2Item.appendChild(sub3Container);
+                    sub2Container.appendChild(sub2Item);
                 }
 
-                mainDiv.appendChild(subContainer);
+                mainDiv.appendChild(sub2Container);
                 container.appendChild(mainDiv);
             }
         }
@@ -342,8 +415,20 @@
 
             document.getElementById('modalTitulo').textContent = `${farmaco.nome} (${farmaco.atc})`;
             document.getElementById('modalSubstancia').textContent = farmaco.rcm ? farmaco.rcm.substancia : farmaco.classe;
-            document.getElementById('modalMecanismo').textContent = farmaco.mecanismo;
+            document.getElementById('modalAlvo').textContent = farmaco.alvoPrincipal || "Não especificado";
+            document.getElementById('modalMecanismo').innerHTML = farmaco.mecanismo;
             document.getElementById('modalIndicacoes').textContent = farmaco.indicacoes.join(', ');
+
+            // Renderizar lista de produtos comerciais
+            let produtosHtml = '';
+            if (farmaco.produtos && farmaco.produtos.length > 0) {
+                farmaco.produtos.forEach(p => {
+                    produtosHtml += `<div class="produto-box"><strong>${p.nome}</strong> — ${p.forma}</div>`;
+                });
+            } else {
+                produtosHtml = '<p style="color: #64748b; font-size: 0.9rem;">Nenhum produto comercial específico registado.</p>';
+            }
+            document.getElementById('modalProdutos').innerHTML = produtosHtml;
 
             if (farmaco.videos) {
                 document.getElementById('videoDinamica').src = farmaco.videos.farmacodinamica || "";
@@ -379,7 +464,10 @@
                 f.atc.toLowerCase().includes(termo) ||
                 f.classe.toLowerCase().includes(termo) ||
                 f.grupo.toLowerCase().includes(termo) ||
-                f.indicacoes.some(ind => ind.toLowerCase().includes(termo))
+                (f.subgrupo2 && f.subgrupo2.toLowerCase().includes(termo)) ||
+                (f.subgrupo3 && f.subgrupo3.toLowerCase().includes(termo)) ||
+                (f.produtos && f.produtos.some(p => p.nome.toLowerCase().includes(termo))) ||
+                f.indicacoes.some(ind => ind.toLowerCase().includes(ind.toLowerCase().includes(termo)))
             );
             
             renderizarCatalogo(filtrados, true);
