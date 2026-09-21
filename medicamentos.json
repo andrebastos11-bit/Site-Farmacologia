@@ -28,6 +28,31 @@
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
         "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
       }
+    },
+    {
+      "nome": "Omeprazol",
+      "atc": "A02BC01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B - Fármacos para a úlcera péptica e do refluxo gastroesofágico (DRGE)",
+      "subgrupo3": "A02BC - Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Omeprazol Generis®",
+          "forma": "Cápsula gastrorresistente (20 mg)"
+        }
+      ],
+      "classe": "Inibidor da Bomba de Protões (IBP)",
+      "mecanismo": "Inibe a enzima H+/K+-ATPase nas células parietais gástricas, bloqueando a secreção de ácido gástrico.",
+      "indicacoes": ["Úlcera duodenal e gástrica", "Refluxo gastroesofágico", "Erradicação do Helicobacter pylori"],
+      "alvoPrincipal": "H+/K+-ATPase (Bomba de Protões)",
+      "rcm": {
+        "substancia": "Omeprazol",
+        "descricao": "Tratamento de úlceras duodenais e gástricas, doença do refluxo gastroesofágico sintomática."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
     }
   ]
 }
