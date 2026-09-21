@@ -3,350 +3,579 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classificação ATC - Fármacos</title>
+    <title>Plataforma de Farmacologia Clínica</title>
     <style>
+        :root {
+            --primary-color: #0f766e;
+            --primary-light: #ccfbf1;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --border-color: #cbd5e1;
+        }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 950px;
-            margin: 20px auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
             padding: 20px;
-            background-color: #f4f6f9;
-            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
         }
         h1 {
-            color: #2c3e50;
-            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 3px;
         }
-        .card {
-            background: #fff;
-            padding: 12px 15px;
+        .subtitle {
+            color: #64748b;
+            font-size: 1rem;
+        }
+        .search-box {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            outline: none;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+        }
+        .search-box:focus {
+            border-color: var(--primary-color);
+        }
+
+        /* Nível 1: Grupo Principal ATC (Raiz) */
+        .atc-main-group {
             margin-bottom: 8px;
+            background: #ffffff;
             border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .atc-main-header {
+            background-color: #ffffff;
+            color: var(--primary-color);
+            padding: 12px 16px;
+            font-weight: bold;
+            font-size: 1.05rem;
+            text-transform: uppercase;
             cursor: pointer;
-            transition: background 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
         }
-        .card:hover {
-            background: #f8fafc;
+        .atc-main-header:hover {
+            background-color: #f8fafc;
         }
-        .nivel-grupo { border-left: 5px solid #3498db; font-weight: bold; }
-        .nivel-sub2 { border-left: 5px solid #2ecc71; margin-left: 15px; }
-        .nivel-sub3 { border-left: 5px solid #e74c3c; margin-left: 30px; }
-        .nivel-farmaco { border-left: 5px solid #9b59b6; margin-left: 45px; cursor: default; background: #faf5fc; }
-        
-        .children {
+        .atc-main-header::after {
+            content: '+';
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .atc-main-group.active .atc-main-header::after {
+            content: '-';
+        }
+
+        .sub2-container {
             display: none;
-            margin-top: 8px;
+            background-color: #fdfdfd;
+            border-top: 1px solid #f1f5f9;
         }
-        .children.show {
+        .atc-main-group.active .sub2-container {
             display: block;
         }
-        h3, h4, h5 {
+
+        /* Nível 2: Subgrupo de 4 Dígitos (ex: A01A) */
+        .atc-sub2-item {
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .atc-sub2-header {
+            padding: 10px 16px 10px 30px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #334155;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fafbfc;
+            transition: background-color 0.2s;
+        }
+        .atc-sub2-header:hover {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+        }
+        .atc-sub2-header::after {
+            content: '+';
+            font-size: 0.9rem;
+        }
+        .atc-sub2-item.active .atc-sub2-header::after {
+            content: '-';
+        }
+
+        .sub3-container {
+            display: none;
+            background-color: #ffffff;
+        }
+        .atc-sub2-item.active .sub3-container {
+            display: block;
+        }
+
+        /* Nível 3: Subgrupo de 5 Dígitos (ex: A01AD) */
+        .atc-sub3-item {
+            border-bottom: 1px solid #f8fafc;
+        }
+        .atc-sub3-header {
+            padding: 8px 16px 8px 45px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #475569;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            transition: background-color 0.2s;
+        }
+        .atc-sub3-header:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+        .atc-sub3-header::after {
+            content: '+';
+            font-size: 0.8rem;
+        }
+        .atc-sub3-item.active .atc-sub3-header::after {
+            content: '-';
+        }
+
+        /* Nível 4: Lista de Medicamentos */
+        .drug-list {
+            list-style: none;
+            padding: 0;
             margin: 0;
-            font-size: 16px;
+            display: none;
+            background-color: #fcfdfd;
         }
-        .detalhes {
-            font-size: 14px;
-            color: #555;
-            margin-top: 6px;
-            border-top: 1px solid #eee;
-            padding-top: 6px;
+        .atc-sub3-item.active .drug-list {
+            display: block;
         }
-        .produtos-list {
-            font-size: 13px;
-            color: #666;
-            margin-top: 4px;
+        .drug-item {
+            padding: 10px 16px 10px 60px;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            border-left: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        .drug-item:hover {
+            background-color: #f0fdf4;
+            border-left-color: var(--primary-color);
+        }
+        .drug-info h3 {
+            margin: 0 0 2px 0;
+            font-size: 0.95rem;
+            color: var(--text-color);
+        }
+        .drug-meta {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+        .atc-badge {
+            background-color: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: #334155;
+        }
+
+        /* Estilos do Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 3% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 700px;
+            border-radius: 10px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: #000;
+        }
+        .rcm-section {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .rcm-section p {
+            margin: 6px 0;
+        }
+        .produto-box {
+            background: #f8fafc;
+            border-left: 4px solid var(--primary-color);
+            padding: 6px 10px;
+            margin: 4px 0;
+            font-size: 0.9rem;
+        }
+        .video-container {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Navegação Hierárquica ATC</h1>
-    <div id="app"></div>
+    <div class="container">
+        <header>
+            <h1>Farmacologia Clínica</h1>
+            <p class="subtitle">Base de dados estruturada por Classificação ATC</p>
+        </header>
+
+        <input type="text" id="searchInput" class="search-box" placeholder="Pesquisar por fármaco, classe, produto ou código ATC..." onkeyup="filtrarFarmacos()">
+
+        <div id="catalogContainer">
+            <p style="text-align: center; color: #64748b;">A carregar base de dados...</p>
+        </div>
+    </div>
+
+    <!-- Modal de Detalhes -->
+    <div id="modalDetalhes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <h2 id="modalTitulo">Detalhes do Fármaco</h2>
+            
+            <div class="rcm-section">
+                <h3>Informação Clínica e Comercial</h3>
+                <p><strong>Substância Ativa:</strong> <span id="modalSubstancia"></span></p>
+                <p><strong>Alvo Principal:</strong> <span id="modalAlvo" style="color: var(--primary-color); font-weight: bold;"></span></p>
+                
+                <div style="margin: 10px 0;">
+                    <strong>Produtos no Mercado Português:</strong>
+                    <div id="modalProdutos"></div>
+                </div>
+
+                <p><strong>Mecanismo de Ação:</strong></p>
+                <div id="modalMecanismo" style="background: #f1f5f9; padding: 10px; border-radius: 6px; font-size: 0.9rem; line-height: 1.4;"></div>
+                
+                <p style="margin-top: 8px;"><strong>Indicações Terapêuticas:</strong> <span id="modalIndicacoes"></span></p>
+            </div>
+
+            <div class="video-section">
+                <h3>Multimédia Educativa</h3>
+                <div class="video-container">
+                    <h4>Farmacodinâmica</h4>
+                    <iframe id="videoDinamica" width="100%" height="200" src="" title="Farmacodinâmica" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <h4>Farmacocinética (ADME)</h4>
+                    <iframe id="videoCinetica" width="100%" height="200" src="" title="Farmacocinética" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
-        // Base de dados completa com todos os fármacos e níveis corretos (3 carateres em subgrupo2)
-        const db = {
-          "fármacos": [
-            {
-              "nome": "Fluoreto de sódio",
-              "atc": "A01AA01",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AA - Agentes profiláticos da cárie",
-              "produtos": [{"nome": "Duraphat 5000®", "forma": "Pasta dentífrica (5 mg/g)"}, {"nome": "Duraphat®", "forma": "Suspensão dental (50 mg/ml)"}],
-              "classe": "Agente profilático da cárie",
-              "mecanismo": "Promoção da remineralização e inibição da desmineralização do esmalte."
-            },
-            {
-              "nome": "Álcool diclorobenzílico + Benzidamina",
-              "atc": "A01AD11",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
-              "produtos": [{"nome": "Mebocaína Anti-Inflam®", "forma": "Comprimido para chupar"}],
-              "classe": "Antisséptico e anti-inflamatório",
-              "mecanismo": "Desnaturação de proteínas microbianas e inibição de citocinas inflamatórias."
-            },
-            {
-              "nome": "Hexetidina",
-              "atc": "A01AB12",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
-              "produtos": [{"nome": "Hextril®", "forma": "Solução bucal (1 mg/ml)"}],
-              "classe": "Antisséptico de ação local",
-              "mecanismo": "Interferência com o metabolismo da tiamina (vitamina B1) dos microrganismos."
-            },
-            {
-              "nome": "Benzidamina",
-              "atc": "A01AD02",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
-              "produtos": [{"nome": "Tantum Verde®", "forma": "Solução oral"}],
-              "classe": "Anti-inflamatório, analgésico e anestésico local",
-              "mecanismo": "Inibição de citocinas (TNF-alfa e IL-1) e bloqueio de canais de sódio."
-            },
-            {
-              "nome": "Diclofenac",
-              "atc": "A01AD11",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
-              "produtos": [{"nome": "Diclodent®", "forma": "Solução bucal"}],
-              "classe": "AINE",
-              "mecanismo": "Inibição das enzimas ciclo-oxigenases (COX-1 e COX-2)."
-            },
-            {
-              "nome": "Cloreto de zinco",
-              "atc": "A01AD11",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
-              "produtos": [{"nome": "Oratol®", "forma": "Solução para gargarejar"}],
-              "classe": "Adstringente e antisséptico",
-              "mecanismo": "Contração de proteínas superficiais e neutralização de compostos de enxofre."
-            },
-            {
-              "nome": "Ácido salicílico + Ruibarbo",
-              "atc": "A01AB11",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A01 - Preparações para uso estomatológico",
-              "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
-              "produtos": [{"nome": "Pyralvex®", "forma": "Solução bucal"}],
-              "classe": "Anti-infecioso e anti-séptico tópico oral",
-              "mecanismo": "Ação adstringente das antraquinonas e efeito queratolítico do ácido salicílico."
-            },
-            {
-              "nome": "Hidróxido de magnésio",
-              "atc": "A02AA04",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AA - Compostos de magnésio",
-              "produtos": [{"nome": "Leite Magnesia Phillips®", "forma": "Suspensão oral"}],
-              "classe": "Antiácido neutralizante e laxante osmótico",
-              "mecanismo": "Reage com o HCl gástrico formando cloreto de magnésio e água."
-            },
-            {
-              "nome": "Hidróxido de alumínio",
-              "atc": "A02AB01",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AB - Compostos de alumínio",
-              "produtos": [{"nome": "Pepsamar®", "forma": "Comprimido para mastigar"}],
-              "classe": "Antiácido neutralizante e protetor da mucosa",
-              "mecanismo": "Neutraliza o ácido clorídrico de forma gradual e inativa a pepsina."
-            },
-            {
-              "nome": "Carbonato de di-hidróxido de alumínio e sódio",
-              "atc": "A02AB04",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AB - Compostos de alumínio",
-              "produtos": [{"nome": "Kompensan®", "forma": "Comprimido para chupar"}],
-              "classe": "Antiácido tampão",
-              "mecanismo": "Eleva o pH gástrico e forma uma camada coloidal protetora."
-            },
-            {
-              "nome": "Magaldrato",
-              "atc": "A02AD02",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
-              "produtos": [{"nome": "Riopan®", "forma": "Comprimido e Gel Oral"}],
-              "classe": "Antiácido complexo",
-              "mecanismo": "Neutralização autorregulada do pH gástrico entre 3 e 5."
-            },
-            {
-              "nome": "Carbonato de Cálcio + Carbonato de Magnésio",
-              "atc": "A02AD01",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
-              "produtos": [{"nome": "Rennie Digestif®", "forma": "Comprimido para mastigar"}],
-              "classe": "Combinação antiácida rápida",
-              "mecanismo": "Neutralização direta e rápida do HCl gástrico."
-            },
-            {
-              "nome": "Carbonato de di-hidróxido de alumínio e sódio + Dimeticone",
-              "atc": "A02AB01",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AB - Compostos de alumínio",
-              "produtos": [{"nome": "Kompensan Trieffect®", "forma": "Comprimido para chupar"}],
-              "classe": "Antiácido tampão e antiflatulento",
-              "mecanismo": "Neutraliza o ácido e reduz a tensão superficial das bolhas de gás."
-            },
-            {
-              "nome": "Hidróxido de Alumínio + Hidróxido de magnésio + Dimeticone",
-              "atc": "A02AF02",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AF - Antiácidos com antiflatulentos",
-              "produtos": [{"nome": "Maalox Plus®", "forma": "Comprimido para mastigar"}],
-              "classe": "Antiácido duplo e antiflatulento",
-              "mecanismo": "Neutralização ácida equilibrada associada à eliminação de gases."
-            },
-            {
-              "nome": "Bicarbonato de sódio",
-              "atc": "A02AH01",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02AH - Antiácidos com sódio",
-              "produtos": [{"nome": "Alka-Seltzer®", "forma": "Comprimido efervescente"}],
-              "classe": "Antiácido sistémico",
-              "mecanismo": "Reação instantânea com o HCl consumindo protões e libertando CO₂."
-            },
-            {
-              "nome": "Famotidina",
-              "atc": "A02BA03",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02BA - Antagonistas dos recetores H2",
-              "produtos": [{"nome": "Lasa®", "forma": "Comprimido"}],
-              "classe": "Antagonista dos recetores H2",
-              "mecanismo": "Bloqueio seletivo dos recetores H₂ reduzindo a secreção ácida."
-            },
-            {
-              "nome": "Misoprostol",
-              "atc": "A02BB01",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02BB - Prostaglandinas",
-              "produtos": [{"nome": "Cytotec®", "forma": "Comprimido"}],
-              "classe": "Análogo da prostaglandina E1",
-              "mecanismo": "Inibição da secreção ácida e aumento da produção de muco protetor."
-            },
-            {
-              "nome": "Subcitrato de bismuto potássico + Metronidazol + Tetraciclina",
-              "atc": "A02BD08",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02BD - Associações para erradicação de Helicobacter pylori",
-              "produtos": [{"nome": "Pylera®", "forma": "Cápsula"}],
-              "classe": "Associação antimicrobiana",
-              "mecanismo": "Inativação da urease pelo bismuto e ação combinada antibacteriana."
-            },
-            {
-              "nome": "Sucralfato",
-              "atc": "A02BX02",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02BX - Outros fármacos para a úlcera péptica e refluxo",
-              "produtos": [{"nome": "Ulermin®", "forma": "Comprimido e Suspensão"}],
-              "classe": "Citoprotetor da mucosa gástrica",
-              "mecanismo": "Polimerização em meio ácido criando uma barreira protetora na lesão."
-            },
-            {
-              "nome": "Alginato de sódio + Bicarbonato de Sódio + Carbonato de Cálcio",
-              "atc": "A02BX13",
-              "grupo": "A - Aparelho digestivo e metabolismo",
-              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
-              "subgrupo3": "A02BX - Outros fármacos para a úlcera péptica e refluxo",
-              "produtos": [{"nome": "Gaviscon®", "forma": "Comprimido e Suspensão"}],
-              "classe": "Barreira mecânica anti-refluxo",
-              "mecanismo": "Formação de uma balsa de gel flutuante que bloqueia o refluxo ácido."
-            }
-          ]
+        let farmacosData = [];
+
+        const descricoesATC4 = {
+            "A01A": "Preparações para Uso Estomatológico",
+            "A02A": "Antiácidos",
+            "A02B": "Agentes para o Tratamento da Úlcera Péptica e do Refluxo Gastroesofágico",
+            "A03A": "Agentes para Distúrbios Funcionais Gastrointestinais",
+            "A04A": "Antieméticos e Antinauseantes",
+            "A05A": "Terapia Biliar",
+            "A06A": "Medicamentos para a Obstipação",
+            "A07A": "Anti-infeciosos Intestinais",
+            "A10A": "Insulinas e Análogos",
+            "A10B": "Medicamentos Usados na Diabetes, Excluindo Insulinas",
+            "A11A": "Multivitaminas, Associações",
+            "A12A": "Cálcio"
         };
 
-        function renderApp() {
-            const app = document.getElementById('app');
-            app.innerHTML = '';
+        function correspondeCodigoATC(texto, codigoExato) {
+            if (!texto || !codigoExato) return false;
+            const limpo = texto.trim();
+            if (!limpo.toUpperCase().startsWith(codigoExato.toUpperCase())) return false;
+            if (limpo.length === codigoExato.length) return true;
+            const charSeguinte = limpo.charAt(codigoExato.length);
+            return !/[a-zA-Z0-9]/.test(charSeguinte);
+        }
 
-            const agrupado = {};
-            db.fármacos.forEach(f => {
-                if (!agrupado[f.grupo]) agrupado[f.grupo] = {};
-                if (!agrupado[f.grupo][f.subgrupo2]) agrupado[f.grupo][f.subgrupo2] = {};
-                if (!agrupado[f.grupo][f.subgrupo2][f.subgrupo3]) agrupado[f.grupo][f.subgrupo2][f.subgrupo3] = [];
-                agrupado[f.grupo][f.subgrupo2][f.subgrupo3].push(f);
+        function formatarTextoCapitalizado(texto) {
+            if (!texto) return "";
+            const partes = texto.split(' - ');
+            const codigo = partes[0].trim();
+            const descricao = partes.slice(1).join(' - ').trim();
+
+            if (!descricao) return codigo;
+
+            const palavrasMinusculas = ["e", "de", "do", "da", "dos", "das", "em", "por", "com", "ao", "aos", "ou", "a", "o", "as", "os", "um", "uma", "uns", "umas", "para"];
+
+            const palavras = descricao.toLowerCase().split(' ');
+            const descFormatada = palavras.map((palavra, index) => {
+                if (!palavra) return "";
+                if (index > 0 && palavrasMinusculas.includes(palavra)) {
+                    return palavra;
+                }
+                return palavra.charAt(0).toUpperCase() + palavra.slice(1);
+            }).join(' ');
+
+            return `${codigo} - ${descFormatada}`;
+        }
+
+        fetch('medicamentos.json')
+            .then(response => response.json())
+            .then(data => {
+                farmacosData = data.fármacos;
+                farmacosData.sort((a, b) => a.atc.localeCompare(b.atc));
+                renderizarCatalogo(farmacosData);
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o JSON:', error);
+                document.getElementById('catalogContainer').innerHTML = '<p style="text-align: center; color: red;">Erro ao carregar a base de dados.</p>';
             });
 
-            for (let grupo in agrupado) {
-                const divGrupo = createCard(grupo, 'nivel-grupo', (e) => {
-                    e.stopPropagation();
-                    toggleAccordion(divGrupo, '.nivel-grupo');
-                });
+        function renderizarCatalogo(lista, expandirTudo = false) {
+            const container = document.getElementById('catalogContainer');
+            container.innerHTML = '';
+
+            if (lista.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #64748b;">Nenhum fármaco encontrado.</p>';
+                return;
+            }
+
+            const descSub2 = {};
+            const descSub3 = {};
+
+            farmacosData.forEach(f => {
+                const atc = f.atc || "";
+                if (atc.length >= 4) {
+                    const k2 = atc.substring(0, 4);
+                    if (f.subgrupo2 && correspondeCodigoATC(f.subgrupo2, k2)) {
+                        descSub2[k2] = f.subgrupo2;
+                    }
+                }
+                if (atc.length >= 5) {
+                    const k3 = atc.substring(0, 5);
+                    if (f.subgrupo3 && correspondeCodigoATC(f.subgrupo3, k3)) {
+                        descSub3[k3] = f.subgrupo3;
+                    } else if (f.subgrupo2 && correspondeCodigoATC(f.subgrupo2, k3)) {
+                        descSub3[k3] = f.subgrupo2;
+                    }
+                }
+            });
+
+            const estrutura = {};
+            lista.forEach(f => {
+                const g1 = f.grupo || "Outros";
+                const atc = f.atc || "";
                 
-                for (let sub2 in agrupado[grupo]) {
-                    const divSub2 = createCard(sub2, 'nivel-sub2', (e) => {
+                const k2 = atc.length >= 4 ? atc.substring(0, 4) : "Geral";
+                const k3 = atc.length >= 5 ? atc.substring(0, 5) : k2;
+                
+                let g2Bruto = descSub2[k2] || descricoesATC4[k2] || `${k2} - Outras Preparações`;
+                if (!g2Bruto.toUpperCase().startsWith(k2)) {
+                    g2Bruto = `${k2} - ${g2Bruto}`;
+                }
+
+                let g3Bruto = descSub3[k3] || (f.subgrupo3 && correspondeCodigoATC(f.subgrupo3, k3) ? f.subgrupo3 : null) || `${k3} - Outros Agentes`;
+                if (!g3Bruto.toUpperCase().startsWith(k3)) {
+                    g3Bruto = `${k3} - ${g3Bruto}`;
+                }
+
+                const g2Nome = formatarTextoCapitalizado(g2Bruto);
+                const g3Nome = formatarTextoCapitalizado(g3Bruto);
+
+                if (!estrutura[g1]) estrutura[g1] = {};
+                if (!estrutura[g1][g2Nome]) estrutura[g1][g2Nome] = {};
+                if (!estrutura[g1][g2Nome][g3Nome]) estrutura[g1][g2Nome][g3Nome] = [];
+                
+                estrutura[g1][g2Nome][g3Nome].push(f);
+            });
+
+            for (const [g1Nome, sub2s] of Object.entries(estrutura)) {
+                let mainDiv = document.createElement('div');
+                mainDiv.className = 'atc-main-group';
+                if (expandirTudo) mainDiv.classList.add('active');
+
+                let mainHeader = document.createElement('div');
+                mainHeader.className = 'atc-main-header';
+                mainHeader.textContent = g1Nome;
+                
+                mainHeader.onclick = () => {
+                    const jaAtivo = mainDiv.classList.contains('active');
+                    document.querySelectorAll('.atc-main-group').forEach(el => el.classList.remove('active'));
+                    if (!jaAtivo) {
+                        mainDiv.classList.add('active');
+                    }
+                };
+                mainDiv.appendChild(mainHeader);
+
+                let sub2Container = document.createElement('div');
+                sub2Container.className = 'sub2-container';
+
+                for (const [g2Nome, sub3s] of Object.entries(sub2s)) {
+                    let sub2Item = document.createElement('div');
+                    sub2Item.className = 'atc-sub2-item';
+                    if (expandirTudo) sub2Item.classList.add('active');
+
+                    let sub2Header = document.createElement('div');
+                    sub2Header.className = 'atc-sub2-header';
+                    sub2Header.textContent = g2Nome;
+                    sub2Header.onclick = (e) => {
                         e.stopPropagation();
-                        toggleAccordion(divSub2, '.nivel-sub2');
-                    });
-                    
-                    for (let sub3 in agrupado[grupo][sub2]) {
-                        const divSub3 = createCard(sub3, 'nivel-sub3', (e) => {
+                        const jaAtivo = sub2Item.classList.contains('active');
+                        // Fecha os restantes sub2 irmãos
+                        sub2Container.querySelectorAll('.atc-sub2-item').forEach(el => el.classList.remove('active'));
+                        if (!jaAtivo) {
+                            sub2Item.classList.add('active');
+                        }
+                    };
+                    sub2Item.appendChild(sub2Header);
+
+                    let sub3Container = document.createElement('div');
+                    sub3Container.className = 'sub3-container';
+
+                    for (const [g3Nome, farmacos] of Object.entries(sub3s)) {
+                        let sub3Item = document.createElement('div');
+                        sub3Item.className = 'atc-sub3-item';
+                        if (expandirTudo) sub3Item.classList.add('active');
+
+                        let sub3Header = document.createElement('div');
+                        sub3Header.className = 'atc-sub3-header';
+                        sub3Header.textContent = g3Nome;
+                        sub3Header.onclick = (e) => {
                             e.stopPropagation();
-                            toggleAccordion(divSub3, '.nivel-sub3');
-                        });
-                        
-                        agrupado[grupo][sub2][sub3].forEach(farmaco => {
-                            const divFarmaco = document.createElement('div');
-                            divFarmaco.className = 'card nivel-farmaco';
-                            divFarmaco.innerHTML = `
-                                <strong>${farmaco.nome}</strong> (${farmaco.atc})
-                                <div class="detalhes">
-                                    <em>Classe:</em> ${farmaco.classe}<br>
-                                    <em>Mecanismo:</em> ${farmaco.mecanismo}
+                            const jaAtivo = sub3Item.classList.contains('active');
+                            // Fecha os restantes sub3 irmãos dentro do mesmo sub2
+                            sub3Container.querySelectorAll('.atc-sub3-item').forEach(el => el.classList.remove('active'));
+                            if (!jaAtivo) {
+                                sub3Item.classList.add('active');
+                            }
+                        };
+                        sub3Item.appendChild(sub3Header);
+
+                        let ul = document.createElement('ul');
+                        ul.className = 'drug-list';
+
+                        farmacos.forEach(f => {
+                            let li = document.createElement('li');
+                            li.className = 'drug-item';
+                            li.onclick = (e) => {
+                                e.stopPropagation();
+                                abrirDetalhes(f.nome);
+                            };
+
+                            li.innerHTML = `
+                                <div class="drug-info">
+                                    <h3>${f.nome} <span class="atc-badge">${f.atc}</span></h3>
+                                    <div class="drug-meta"><strong>Classe:</strong> ${f.classe} | <strong>Indicações:</strong> ${f.indicacoes.join(', ')}</div>
                                 </div>
                             `;
-                            divSub3.querySelector('.children').appendChild(divFarmaco);
+                            ul.appendChild(li);
                         });
-                        divSub2.querySelector('.children').appendChild(divSub3);
+
+                        sub3Item.appendChild(ul);
+                        sub3Container.appendChild(sub3Item);
                     }
-                    divGrupo.querySelector('.children').appendChild(divSub2);
+
+                    sub2Item.appendChild(sub3Container);
+                    sub2Container.appendChild(sub2Item);
                 }
-                app.appendChild(divGrupo);
+
+                mainDiv.appendChild(sub2Container);
+                container.appendChild(mainDiv);
             }
         }
 
-        function createCard(title, className, onClick) {
-            const card = document.createElement('div');
-            card.className = `card ${className}`;
-            card.innerHTML = `<h3>${title}</h3><div class="children"></div>`;
-            card.onclick = onClick;
-            return card;
+        function abrirDetalhes(nomeFarmaco) {
+            const farmaco = farmacosData.find(f => f.nome === nomeFarmaco);
+            if (!farmaco) return;
+
+            document.getElementById('modalTitulo').textContent = `${farmaco.nome} (${farmaco.atc})`;
+            document.getElementById('modalSubstancia').textContent = farmaco.rcm ? farmaco.rcm.substancia : farmaco.classe;
+            document.getElementById('modalAlvo').textContent = farmaco.alvoPrincipal || "Não especificado";
+            document.getElementById('modalMecanismo').innerHTML = farmaco.mecanismo;
+            document.getElementById('modalIndicacoes').textContent = farmaco.indicacoes.join(', ');
+
+            let produtosHtml = '';
+            if (farmaco.produtos && farmaco.produtos.length > 0) {
+                farmaco.produtos.forEach(p => {
+                    produtosHtml += `<div class="produto-box"><strong>${p.nome}</strong> — ${p.forma}</div>`;
+                });
+            } else {
+                produtosHtml = '<p style="color: #64748b; font-size: 0.9rem;">Nenhum produto comercial específico registado.</p>';
+            }
+            document.getElementById('modalProdutos').innerHTML = produtosHtml;
+
+            if (farmaco.videos) {
+                document.getElementById('videoDinamica').src = farmaco.videos.farmacodinamica || "";
+                document.getElementById('videoCinetica').src = farmaco.videos.farmacocinetica || "";
+            }
+
+            document.getElementById('modalDetalhes').style.display = "block";
         }
 
-        // Lógica de Acordeão: fecha os irmãos ao abrir o atual
-        function toggleAccordion(element, selector) {
-            const parent = element.parentElement;
-            const targetChildren = element.querySelector('.children');
-            const isOpen = targetChildren.classList.contains('show');
+        function fecharModal() {
+            document.getElementById('modalDetalhes').style.display = "none";
+            document.getElementById('videoDinamica').src = "";
+            document.getElementById('videoCinetica').src = "";
+        }
 
-            // Fecha todos os elementos do mesmo nível que estão dentro do mesmo pai
-            parent.querySelectorAll(`:scope > ${selector} > .children`).forEach(child => {
-                child.classList.remove('show');
-            });
-
-            // Se não estava aberto, abre o selecionado
-            if (!isOpen) {
-                targetChildren.classList.add('show');
+        window.onclick = function(event) {
+            const modal = document.getElementById('modalDetalhes');
+            if (event.target == modal) {
+                fecharModal();
             }
         }
 
-        window.onload = renderApp;
+        function filtrarFarmacos() {
+            const termo = document.getElementById('searchInput').value.toLowerCase();
+            
+            if (termo.trim() === "") {
+                renderizarCatalogo(farmacosData, false);
+                return;
+            }
+
+            const filtrados = farmacosData.filter(f => 
+                f.nome.toLowerCase().includes(termo) ||
+                f.atc.toLowerCase().includes(termo) ||
+                f.classe.toLowerCase().includes(termo) ||
+                f.grupo.toLowerCase().includes(termo) ||
+                (f.subgrupo2 && f.subgrupo2.toLowerCase().includes(termo)) ||
+                (f.subgrupo3 && f.subgrupo3.toLowerCase().includes(termo)) ||
+                (f.produtos && f.produtos.some(p => p.nome.toLowerCase().includes(termo))) ||
+                f.indicacoes.some(ind => ind.toLowerCase().includes(termo))
+            );
+            
+            renderizarCatalogo(filtrados, true);
+        }
     </script>
 </body>
 </html>
