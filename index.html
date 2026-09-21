@@ -73,16 +73,14 @@
         .drug-item {
             padding: 15px 20px;
             border-bottom: 1px solid #f1f5f9;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            cursor: pointer; /* Transforma o cartão inteiro numa área clicável */
             transition: background-color 0.2s;
         }
         .drug-item:last-child {
             border-bottom: none;
         }
         .drug-item:hover {
-            background-color: #f8fafc;
+            background-color: #f1f5f9;
         }
         .drug-info h3 {
             margin: 0 0 5px 0;
@@ -102,17 +100,46 @@
             font-size: 0.85rem;
             color: #334155;
         }
-        .drug-link {
-            text-decoration: none;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 6px 14px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            font-weight: 500;
+
+        /* Estilos do Modal (Janela de Detalhes) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
         }
-        .drug-link:hover {
-            opacity: 0.9;
+        .modal-content {
+            background-color: #fff;
+            margin: 4% auto;
+            padding: 25px;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 10px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .close-btn {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: #000;
+        }
+        .rcm-section {
+            margin-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .video-container {
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -130,6 +157,37 @@
         <!-- Lista Dinâmica Gerada por JavaScript -->
         <div id="catalogContainer">
             <p style="text-align: center; color: #64748b;">A carregar base de dados...</p>
+        </div>
+    </div>
+
+    <!-- Modal Dinâmico de Detalhes -->
+    <div id="modalDetalhes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="fecharModal()">&times;</span>
+            <h2 id="modalTitulo">Detalhes do Fármaco</h2>
+            
+            <!-- Secção RCM -->
+            <div class="rcm-section">
+                <h3>Resumo das Características do Medicamento (RCM)</h3>
+                <p><strong>Substância Ativa:</strong> <span id="modalSubstancia"></span></p>
+                <p><strong>Mecanismo de Ação:</strong> <span id="modalMecanismo"></span></p>
+                <p><strong>Indicações Oficiais:</strong> <span id="modalIndicacoes"></span></p>
+            </div>
+
+            <!-- Secção de Vídeos (Farmacocinética e Farmacodinâmica) -->
+            <div class="video-section">
+                <h3>Multimédia Educativa</h3>
+                
+                <div class="video-container">
+                    <h4>Farmacodinâmica</h4>
+                    <iframe id="videoDinamica" width="100%" height="220" src="" title="Farmacodinâmica" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="video-container">
+                    <h4>Farmacocinética (ADME)</h4>
+                    <iframe id="videoCinetica" width="100%" height="220" src="" title="Farmacocinética" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -183,13 +241,15 @@
                 farmacos.forEach(f => {
                     let li = document.createElement('li');
                     li.className = 'drug-item';
+                    
+                    // Ao clicar no cartão, abre a função de detalhes passando o nome do fármaco
+                    li.onclick = () => abrirDetalhes(f.nome);
 
                     li.innerHTML = `
                         <div class="drug-info">
                             <h3>${f.nome} <span class="atc-badge">${f.atc}</span></h3>
                             <div class="drug-meta"><strong>Classe:</strong> ${f.classe} | <strong>Indicações:</strong> ${f.indicacoes.join(', ')}</div>
                         </div>
-                        <a href="${f.link}" class="drug-link">Consultar</a>
                     `;
                     ul.appendChild(li);
                 });
@@ -199,10 +259,45 @@
             }
         }
 
+        // Função para abrir o modal e preencher com os dados do JSON
+        function abrirDetalhes(nomeFarmaco) {
+            const farmaco = farmacosData.find(f => f.nome === nomeFarmaco);
+            if (!farmaco) return;
+
+            document.getElementById('modalTitulo').textContent = `${farmaco.nome} (${farmaco.atc})`;
+            document.getElementById('modalSubstancia').textContent = farmaco.rcm ? farmaco.rcm.substancia : farmaco.classe;
+            document.getElementById('modalMecanismo').textContent = farmaco.mecanismo;
+            document.getElementById('modalIndicacoes').textContent = farmaco.indicacoes.join(', ');
+
+            // Atribuir os links dos vídeos
+            if (farmaco.videos) {
+                document.getElementById('videoDinamica').src = farmaco.videos.farmacodinamica || "";
+                document.getElementById('videoCinetica').src = farmaco.videos.farmacocinetica || "";
+            }
+
+            document.getElementById('modalDetalhes').style.display = "block";
+        }
+
+        // Função para fechar o modal
+        function fecharModal() {
+            document.getElementById('modalDetalhes').style.display = "none";
+            // Limpa os vídeos para pararem de reproduzir ao fechar
+            document.getElementById('videoDinamica').src = "";
+            document.getElementById('videoCinetica').src = "";
+        }
+
+        // Fecha o modal se clicar fora dele
+        window.onclick = function(event) {
+            const modal = document.getElementById('modalDetalhes');
+            if (event.target == modal) {
+                fecharModal();
+            }
+        }
+
         // Função de Filtragem em Tempo Real
         function filtrarFarmacos() {
             const termo = document.getElementById('searchInput').value.toLowerCase();
-            const filtrados = farmacosData.test ? [] : farmacosData.filter(f => 
+            const filtrados = farmacosData.filter(f => 
                 f.nome.toLowerCase().includes(termo) ||
                 f.atc.toLowerCase().includes(termo) ||
                 f.classe.toLowerCase().includes(termo) ||
