@@ -65,7 +65,7 @@
             padding: 12px 16px;
             font-weight: bold;
             font-size: 1.05rem;
-            text-transform: uppercase; /* Força letras maiúsculas */
+            text-transform: uppercase;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -93,7 +93,7 @@
             display: block;
         }
 
-        /* Nível 2: Subgrupo 2 (4 dígitos / ex: A01A) */
+        /* Nível 2: Subgrupo 2 (4 dígitos / ex: A01A) - Primeiras letras em maiúscula */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
@@ -107,6 +107,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #fafbfc;
+            text-transform: capitalize;
             transition: background-color 0.2s;
         }
         .atc-sub2-header:hover {
@@ -116,6 +117,7 @@
         .atc-sub2-header::after {
             content: '+';
             font-size: 0.9rem;
+            text-transform: none;
         }
         .atc-sub2-item.active .atc-sub2-header::after {
             content: '-';
@@ -129,7 +131,7 @@
             display: block;
         }
 
-        /* Nível 3: Subgrupo 3 (5 dígitos / ex: A01AB) */
+        /* Nível 3: Subgrupo 3 (5 dígitos / ex: A01AB) - Primeiras letras em maiúscula */
         .atc-sub3-item {
             border-bottom: 1px solid #f8fafc;
         }
@@ -143,6 +145,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #ffffff;
+            text-transform: capitalize;
             transition: background-color 0.2s;
         }
         .atc-sub3-header:hover {
@@ -152,6 +155,7 @@
         .atc-sub3-header::after {
             content: '+';
             font-size: 0.8rem;
+            text-transform: none;
         }
         .atc-sub3-item.active .atc-sub3-header::after {
             content: '-';
@@ -324,21 +328,25 @@
                 return;
             }
 
-            // Mapeamentos automáticos baseados nos prefixos ATC para garantir hierarquia estricta
+            // Descobrir descrições dos níveis de 4 e 5 dígitos com base no código ATC
             const descSub2 = {};
             const descSub3 = {};
 
-            lista.forEach(f => {
+            farmacosData.forEach(f => {
                 const atc = f.atc || "";
                 if (atc.length >= 4) {
                     const k2 = atc.substring(0, 4);
-                    if (f.subgrupo2 && f.subgrupo2.startsWith(k2)) descSub2[k2] = f.subgrupo2;
-                    else if (f.subgrupo3 && f.subgrupo3.startsWith(k2)) descSub2[k2] = f.subgrupo3;
+                    if (f.subgrupo2 && f.subgrupo2.toUpperCase().includes(k2)) {
+                        descSub2[k2] = f.subgrupo2;
+                    }
                 }
                 if (atc.length >= 5) {
                     const k3 = atc.substring(0, 5);
-                    if (f.subgrupo2 && f.subgrupo2.startsWith(k3)) descSub3[k3] = f.subgrupo2;
-                    else if (f.subgrupo3 && f.subgrupo3.startsWith(k3)) descSub3[k3] = f.subgrupo3;
+                    if (f.subgrupo3 && f.subgrupo3.toUpperCase().includes(k3)) {
+                        descSub3[k3] = f.subgrupo3;
+                    } else if (f.subgrupo2 && f.subgrupo2.toUpperCase().includes(k3)) {
+                        descSub3[k3] = f.subgrupo2;
+                    }
                 }
             });
 
@@ -350,9 +358,19 @@
                 const k2 = atc.length >= 4 ? atc.substring(0, 4) : "Geral";
                 const k3 = atc.length >= 5 ? atc.substring(0, 5) : k2;
                 
-                const g2Nome = descSub2[k2] || (f.subgrupo2 && f.subgrupo2.length <= 5 ? f.subgrupo2 : k2);
-                const g3Nome = descSub3[k3] || f.subgrupo3 || k3;
-                
+                // Nível 2 (4 dígitos ex: A01A)
+                let g2Nome = descSub2[k2] || `${k2} - Preparações para uso estomatológico`;
+                // Se o subgrupo2 do item corresponder ao prefixo de 4 caracteres
+                if (f.subgrupo2 && f.subgrupo2.length <= 15 && f.subgrupo2.toUpperCase().startsWith(k2)) {
+                    g2Nome = f.subgrupo2;
+                } else if (f.subgrupo2 && !f.subgrupo2.toUpperCase().startsWith(k3) && f.subgrupo2.length < 35) {
+                    // se parecer um nome de nível 2
+                    g2Nome = f.subgrupo2;
+                }
+
+                // Nível 3 (5 dígitos ex: A01AB)
+                let g3Nome = descSub3[k3] || f.subgrupo3 || k3;
+
                 if (!estrutura[g1]) estrutura[g1] = {};
                 if (!estrutura[g1][g2Nome]) estrutura[g1][g2Nome] = {};
                 if (!estrutura[g1][g2Nome][g3Nome]) estrutura[g1][g2Nome][g3Nome] = [];
