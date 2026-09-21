@@ -4,574 +4,539 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Farmacologia Clínica</title>
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Inter & Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        /* Custom scrollbars for neat presentation */
-        ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
 
+    <!-- HEADER -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-md shadow-emerald-600/20">
-                    <i class="fa-solid fa-capsules text-lg"></i>
+                <div class="bg-emerald-600 text-white p-2.5 rounded-xl shadow-md flex items-center justify-center">
+                    <i class="fa-solid fa-pills text-xl"></i>
                 </div>
                 <div>
-                    <h1 class="text-lg font-bold text-slate-900 leading-tight">Plataforma de Farmacologia Clínica</h1>
+                    <h1 class="text-lg font-bold text-slate-900 tracking-tight">Plataforma de Farmacologia Clínica</h1>
                     <p class="text-xs text-slate-500 font-medium">Classificação Anatómica Terapêutica e Química (ATC)</p>
                 </div>
             </div>
-            
-            <!-- Global Search & Stats -->
-            <div class="flex items-center gap-3 w-full sm:w-auto">
-                <div class="relative flex-1 sm:w-80">
-                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                        <i class="fa-solid fa-search text-xs"></i>
-                    </span>
-                    <input type="text" id="globalSearch" placeholder="Pesquisar fármaco, ATC ou marca..." 
-                           class="w-full pl-9 pr-4 py-2 bg-slate-100 border border-slate-200 rounded-lg text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all">
-                </div>
-                <div id="drugCountBadge" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50 border border-emerald-200 rounded-lg text-emerald-700 text-xs font-semibold whitespace-nowrap">
-                    <i class="fa-solid fa-database text-[10px]"></i>
-                    <span id="totalDrugsCount">0 fármacos</span>
-                </div>
+
+            <!-- Pesquisa Geral -->
+            <div class="w-full sm:w-96 relative">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400">
+                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                </span>
+                <input type="text" id="global-search" placeholder="Pesquisar fármaco, ATC ou marca..." 
+                    class="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 transition-all">
             </div>
         </div>
     </header>
 
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col lg:flex-row gap-6">
+    <!-- CONTEÚDO PRINCIPAL (LAYOUT INTEGRAL SEM ESPAÇOS VAZIOS) -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         
-        <!-- Left Column: ATC Navigation Tree (Compact & Structured with 3-char intermediate level) -->
-        <section class="w-full lg:w-96 flex-shrink-0 flex flex-col gap-4">
-            <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-4 flex flex-col h-[calc(100vh-140px)] sticky top-20">
-                <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
-                    <h2 class="text-xs font-bold uppercase tracking-wider text-slate-600 flex items-center gap-2">
-                        <i class="fa-solid fa-folder-tree text-emerald-600"></i> Árvore ATC
-                    </h2>
-                    <span id="treeCountBadge" class="text-[11px] font-medium bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Carregando...</span>
-                </div>
-                
-                <!-- Tree container -->
-                <div id="atcTreeContainer" class="flex-1 overflow-y-auto pr-1 space-y-2">
-                    <div class="flex items-center justify-center h-48 text-slate-400 text-xs">
-                        <i class="fa-solid fa-spinner fa-spin mr-2"></i> A carregar árvore ATC...
-                    </div>
-                </div>
+        <!-- BARRA DE ESTATÍSTICA SUPERIOR -->
+        <div class="mb-6 flex items-center justify-between bg-white px-5 py-3.5 rounded-2xl border border-slate-200/80 shadow-sm">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-folder-tree text-emerald-600"></i>
+                <span class="text-sm font-semibold text-slate-700">Explorador ATC e Ficha Clínica</span>
             </div>
-        </section>
+            <span id="total-farma-badge" class="bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold px-3 py-1 rounded-full">
+                0 fármacos disponíveis
+            </span>
+        </div>
 
-        <!-- Right / Main Column: Dynamic Content Workspace (Ficha Clínica or Welcome State) -->
-        <section class="flex-1 min-w-0 flex flex-col">
-            <div id="workspaceContainer" class="bg-white rounded-xl border border-slate-200 shadow-sm min-h-[calc(100vh-140px)] flex flex-col overflow-hidden">
-                
-                <!-- Default Initial State -->
-                <div id="initialStateView" class="flex-1 flex flex-col items-center justify-center p-8 text-center my-auto">
-                    <div class="w-16 h-16 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 text-2xl mb-4 shadow-sm">
-                        <i class="fa-solid fa-notes-medical"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-800 mb-2">Explore a Classificação ATC</h3>
-                    <p class="text-xs text-slate-500 max-w-md leading-relaxed">
-                        Navegue pelos grupos terapêuticos à esquerda, expanda os subgrupos em acordeão estrito e clique diretamente no nome de qualquer fármaco para abrir instantaneamente a ficha clínica detalhada com indicações terapêuticas, mecanismo de ação, alvo realçado e multimédia educativa.
-                    </p>
-                </div>
-
-                <!-- Active Drug Dossier View (Hidden by default) -->
-                <div id="drugDossierView" class="hidden flex-1 flex flex-col overflow-y-auto">
-                    <!-- Dossier content populated by JS -->
-                </div>
-
+        <!-- ÁRVORE ATC (OCUPA TODA A LARGURA COM DESIGN DE CARTÕES EXPANSÍVEIS) -->
+        <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-5">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+                <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-sitemap text-emerald-600"></i> Árvore de Classificação ATC
+                </h2>
+                <span class="text-xs text-slate-400">Clique nos níveis para expandir em acordeão estrito</span>
             </div>
-        </section>
+
+            <!-- Contentor da Árvore -->
+            <div id="atc-tree-container" class="space-y-3">
+                <!-- Preenchido dinamicamente por JS -->
+            </div>
+        </div>
 
     </main>
 
-    <script>
-        // Global Data Store
-        let globalAtcData = {};
-        let allDrugsFlat = [];
-
-        // Helper: Capitalization rules
-        // - Level 1 (main) & Level 3 (3-char intermediate codes like A01, A02, A03) -> ALL UPPERCASE
-        // - Level 4+ (subgroups & chemicals) -> Title Case (ignoring short articles/prepositions)
-        function formatTitleCase(text, level = 4) {
-            if (!text) return '';
+    <!-- MODAL DE FICHA CLÍNICA DETALHADA -->
+    <div id="clinical-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white w-full max-w-4xl rounded-2xl shadow-2xl overflow-hidden transform transition-all my-8 max-h-[90vh] flex flex-col">
             
-            // If level 1 or 3-character code category, return ALL CAPS
-            if (level === 1 || level === 3) {
+            <!-- Modal Header -->
+            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between relative">
+                <div>
+                    <span id="modal-atc-code" class="inline-block bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold px-2.5 py-0.5 rounded-md mb-1">--</span>
+                    <h3 id="modal-drug-name" class="text-xl font-bold tracking-tight text-white">Nome do Fármaco</h3>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white transition-colors bg-slate-800/80 hover:bg-slate-800 p-2 rounded-xl">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body (Conteúdo Detalhado) -->
+            <div class="p-6 overflow-y-auto custom-scrollbar space-y-6 flex-1 bg-slate-50/50">
+                
+                <!-- 1. INDICAÇÕES TERAPEUTICAS (PRIMEIRO) -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-stethoscope"></i> Indicações Terapêuticas
+                    </h4>
+                    <p id="modal-indications" class="text-sm text-slate-700 leading-relaxed"></p>
+                </div>
+
+                <!-- 2. MECANISMO DE AÇÃO (COM ALVO REALÇADO) -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-bolt"></i> Mecanismo de Ação & Alvo Terapêutico
+                    </h4>
+                    <p id="modal-mechanism" class="text-sm text-slate-700 leading-relaxed"></p>
+                </div>
+
+                <!-- 3. PRODUTOS COMERCIAIS -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-box-archive"></i> Especialidades Farmacêuticas (Nome Comercial + Forma)
+                    </h4>
+                    <div id="modal-market-products" class="flex flex-wrap gap-2">
+                        <!-- Preenchido por JS -->
+                    </div>
+                </div>
+
+                <!-- 4. MULTIMÉDIA EDUCATIVA (SEPARADORES DE FARMACODINÂMICA E FARMACOCINÉTICA) -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                    <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-video"></i> Multimédia Educativa
+                    </h4>
+                    
+                    <!-- Abas de Multimédia -->
+                    <div class="flex border-b border-slate-200 mb-4 gap-4">
+                        <button onclick="switchMediaTab('pd')" id="tab-pd-btn" class="pb-2 text-sm font-semibold border-b-2 border-emerald-600 text-emerald-700 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-atom"></i> Farmacodinâmica
+                        </button>
+                        <button onclick="switchMediaTab('pk')" id="tab-pk-btn" class="pb-2 text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-700 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-route"></i> Farmacocinética
+                        </button>
+                    </div>
+
+                    <!-- Conteúdo Aba PD -->
+                    <div id="tab-pd-content" class="space-y-3">
+                        <div class="aspect-video w-full bg-slate-900 rounded-xl overflow-hidden relative shadow-inner">
+                            <iframe id="modal-pd-video" class="w-full h-full" src="" title="Vídeo Farmacodinâmica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo Aba PK -->
+                    <div id="tab-pk-content" class="space-y-3 hidden">
+                        <div class="aspect-video w-full bg-slate-900 rounded-xl overflow-hidden relative shadow-inner">
+                            <iframe id="modal-pk-video" class="w-full h-full" src="" title="Vídeo Farmacocinética" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="bg-slate-100 px-6 py-3 border-t border-slate-200 flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2 bg-slate-800 hover:bg-slate-900 text-white text-xs font-semibold rounded-xl transition-all shadow-sm">
+                    Fechar Ficha
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE DADOS E LÓGICA -->
+    <script>
+        // DADOS COMPLETOS DA PLATAFORMA (Incorporados para garantir estabilidade imediata)
+        const database = [
+            {
+                id: "omeprazol",
+                atc: "A02BC01",
+                nome: "Omeprazol",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADOS POR ÁCIDOS",
+                nivel4: "A02BC - Inibidores da bomba de protões",
+                indicacoes: "Tratamento de úlcera duodenal e gástrica, erradicação de Helicobacter pylori em associação com antibióticos, esofagite de refluxo, e tratamento da síndrome de Zollinger-Ellison.",
+                mecanismo: "Inibidor da bomba de protões (<span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>H+/K+-ATPase</span>) localizado na célula parietal gástrica, bloqueando a etapa final da secreção de ácido gástrico.",
+                produtos: [
+                    { nomeComercial: "Losec", forma: "Cápsulas gastro-resistentes 20 mg" },
+                    { nomeComercial: "Omeprazol Generis", forma: "Cápsulas 10 mg, 20 mg e 40 mg" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Exemplo de URL de vídeo formatada para embed
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "pantoprazol",
+                atc: "A02BC02",
+                nome: "Pantoprazol",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADOS POR ÁCIDOS",
+                nivel4: "A02BC - Inibidores da bomba de protões",
+                indicacoes: "Esofagite de refluxo, úlcera gástrica e duodenal, prevenção de úlceras induzidas por AINEs e síndrome de Zollinger-Ellison.",
+                mecanismo: "Liga-se covalentemente à enzima <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>H+/K+-ATPase</span> nas células parietais gástricas, suprimindo tanto a secreção ácida basal quanto a estimulada.",
+                produtos: [
+                    { nomeComercial: "Pantozol", forma: "Comprimidos gastro-resistentes 20 mg e 40 mg" },
+                    { nomeComercial: "Controloc", forma: "Comprimidos 40 mg" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "ranitidina",
+                atc: "A02BA02",
+                nome: "Ranitidina",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADOS POR ÁCIDOS",
+                nivel4: "A02BA - Antagonistas dos receptores H2",
+                indicacoes: "Úlcera duodenal, úlcera gástrica benigna, refluxo gastroesofágico e condições hipersecretoras.",
+                mecanismo: "Antagonista competitivo e reversível dos <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>receptores H2</span> da histamina localizados na membrana basolateral das células parietais gástricas.",
+                produtos: [
+                    { nomeComercial: "Zantic", forma: "Comprimidos revestidos 150 mg e 300 mg" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "hidroxido_alum",
+                atc: "A02AA04",
+                nome: "Hidróxido de Alumínio",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADOS POR ÁCIDOS",
+                nivel4: "A02A - Anti-ácidos",
+                indicacoes: "Alívio sintomático da acidez gástrica, pirose e indigestão ácida associada a gastrite ou refluxo leve.",
+                mecanismo: "Neutraliza o ácido clorídrico presente no lúmen gástrico por meio de reação química direta, elevando o <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>pH gástrico</span>.",
+                produtos: [
+                    { nomeComercial: "Maalox", forma: "Suspensão oral 200 mg/ml" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "domperidona",
+                atc: "A03FA03",
+                nome: "Domperidona",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+                nivel4: "A03F - GASTROCINÉTICOS",
+                indicacoes: "Alívio de sintomas de plenitude gástrica, náuseas, vómitos e enfartamento pós-prandial.",
+                mecanismo: "Antagonista periférico dos <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>receptores D2 da dopamina</span> no trato gastrointestinal, acelerando o esvaziamento gástrico.",
+                produtos: [
+                    { nomeComercial: "Motilium", forma: "Comprimidos 10 mg" },
+                    { nomeComercial: "Domperidona Generis", forma: "Suspensão oral 1 mg/ml" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "bismuto",
+                atc: "A02BD05",
+                nome: "Subsalicilato de Bismuto",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADOS POR ÁCIDOS",
+                nivel4: "A02BD - Associações para erradicação do Helicobacter pylori",
+                indicacoes: "Erradicação sinérgica de Helicobacter pylori e tratamento de diarreia leve e perturbações estomacais.",
+                mecanismo: "Ação antimicrobiana direta e revestimento protetor da mucosa gástrica contra a ação da <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>pepsina e ácido gástrico</span>.",
+                produtos: [
+                    { nomeComercial: "Pylera", forma: "Cápsulas duras associadas" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "butilescopolamina",
+                atc: "A03BB01",
+                nome: "Butilescopolamina",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+                nivel4: "A03B - BELADONA E DERIVADOS, ISOLADOS",
+                indicacoes: "Espasmos agudos do trato gastrointestinal, biliar e geniturinário.",
+                mecanismo: "Bloqueador competitivo dos <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>receptores muscarínicos</span> periféricos nos órgãos viscerais, reduzindo o tônus e a motilidade.",
+                produtos: [
+                    { nomeComercial: "Buscopan", forma: "Drágeas 10 mg e Solução Injectável" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            },
+            {
+                id: "nifuroxazida",
+                atc: "A01AB09",
+                nome: "Nifuroxazida Estomatológica",
+                grupoPrincipal: "A - APARELHO DIGESTIVO E METABOLISMO",
+                nivel3: "A01 - Preparações estomatologicas",
+                nivel4: "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
+                indicacoes: "Antisséptico tópico para infeções superficiais da mucosa oral e gengivas.",
+                mecanismo: "Ação anti-séptica tópica que altera a permeabilidade da <span class='bg-emerald-100 text-emerald-800 font-bold px-1.5 py-0.5 rounded'>membrana celular bacteriana</span> na cavidade oral.",
+                produtos: [
+                    { nomeComercial: "Ercefuryl Tópico", forma: "Gel oral 2%" }
+                ],
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+            }
+        ];
+
+        // Função de Capitalização Inteligente (Regra específica solicitada)
+        // Grupo Principal e Níveis de 3 carateres em MAIÚSCULAS. Restantes com maiúscula apenas no início da palavra (exceto preposições curtas).
+        function smartCapitalize(text, isMainOrLevel3 = false) {
+            if (!text) return "";
+            if (isMainOrLevel3) {
                 return text.toUpperCase();
             }
-            
-            // For level 4+, apply Title Case ignoring short words
-            const smallWords = new Set(['e', 'de', 'do', 'da', 'dos', 'das', 'em', 'um', 'uma', 'por', 'para', 'com', 'ao', 'aos', 'ou', 'se', 'no', 'na', 'nos', 'nas']);
-            const words = text.toLowerCase().split(/\s+/);
-            
-            return words.map((word, index) => {
-                const cleanWord = word.replace(/[^a-záéíóúçãõâêôàèìòù]/gi, '');
-                if (index > 0 && smallWords.has(cleanWord)) {
+            // Title case para os restantes
+            const ignoredWords = new Set(['a', 'o', 'as', 'os', 'de', 'do', 'da', 'dos', 'das', 'e', 'em', 'no', 'na', 'nos', 'nas', 'por', 'para']);
+            return text.toLowerCase().split(' ').map((word, index) => {
+                if (index > 0 && ignoredWords.has(word)) {
                     return word;
                 }
                 return word.charAt(0).toUpperCase() + word.slice(1);
             }).join(' ');
         }
 
-        // Helper: Clean up descriptions
-        function cleanDescription(text) {
-            if (!text) return '';
-            return text.replace(/\s*-\s*A\s*-\s*/g, ' ').replace(/\s+-\s*A\s*$/, '').trim();
+        // Renderizar árvore ATC
+        function renderATCTree(filterText = "") {
+            const container = document.getElementById('atc-tree-container');
+            container.innerHTML = "";
+
+            // Atualizar badge de total
+            document.getElementById('total-farma-badge.textContent').innerText = `${database.length} fármacos disponíveis`;
+
+            // Filtrar base de dados se houver pesquisa
+            const filtered = database.filter(f => {
+                const search = filterText.toLowerCase();
+                return f.nome.toLowerCase().includes(search) || 
+                       f.atc.toLowerCase().includes(search) || 
+                       f.grupoPrincipal.toLowerCase().includes(search) ||
+                       f.nivel3.toLowerCase().includes(search) ||
+                       f.nivel4.toLowerCase().includes(search) ||
+                       f.produtos.some(p => p.nomeComercial.toLowerCase().includes(search));
+            });
+
+            document.getElementById('total-farma-badge').innerText = `${database.length} fármacos (${filtered.length} visíveis)`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="p-8 text-center text-slate-400 text-sm">Nenhum fármaco encontrado para a pesquisa.</div>`;
+                return;
+            }
+
+            // Agrupar por Grupo Principal -> Nível 3 -> Nível 4
+            const tree = {};
+            filtered.forEach(f => {
+                if (!tree[f.grupoPrincipal]) tree[f.grupoPrincipal] = {};
+                if (!tree[f.grupoPrincipal][f.nivel3]) tree[f.grupoPrincipal][f.nivel3] = {};
+                if (!tree[f.grupoPrincipal][f.nivel3][f.nivel4]) tree[f.grupoPrincipal][f.nivel3][f.nivel4] = [];
+                tree[f.grupoPrincipal][f.nivel3][f.nivel4].push(f);
+            });
+
+            // Gerar HTML da Árvore
+            let html = "";
+            let groupIndex = 0;
+
+            for (const [gp, lvl3Obj] of Object.entries(tree)) {
+                const gpId = `gp-${groupIndex}`;
+                html += `
+                <div class="border border-slate-200 rounded-xl overflow-hidden transition-all shadow-xs">
+                    <button onclick="toggleAccordion('${gpId}')" class="w-full bg-slate-50 hover:bg-slate-100/80 px-4 py-3 flex items-center justify-between text-left transition-colors">
+                        <span class="font-bold text-slate-900 text-sm tracking-wide uppercase">${smartCapitalize(gp, true)}</span>
+                        <i id="${gpId}-icon" class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform"></i>
+                    </button>
+                    <div id="${gpId}-content" class="hidden bg-white p-3 space-y-2 border-t border-slate-100">
+                `;
+
+                let lvl3Index = 0;
+                for (const [lvl3, lvl4Obj] of Object.entries(lvl3Obj)) {
+                    const lvl3Id = `${gpId}-lvl3-${lvl3Index}`;
+                    // Extrair código e texto do Nível 3 (Ex: "A02 - TRATAMENTO...")
+                    const partsLvl3 = lvl3.split(' - ');
+                    const codeLvl3 = partsLvl3[0] || "";
+                    const descLvl3 = partsLvl3.slice(1).join(' - ') || lvl3;
+                    const formattedLvl3Text = `${codeLvl3.toUpperCase()} - ${smartCapitalize(descLvl3, true)}`;
+
+                    html += `
+                        <div class="border border-slate-200/60 rounded-lg overflow-hidden ml-2">
+                            <button onclick="toggleAccordion('${lvl3Id}')" class="w-full bg-slate-50/70 hover:bg-slate-100 px-3 py-2.5 flex items-center justify-between text-left transition-colors">
+                                <span class="font-semibold text-slate-800 text-xs">${formattedLvl3Text}</span>
+                                <i id="${lvl3Id}-icon" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                            </button>
+                            <div id="${lvl3Id}-content" class="hidden p-2 space-y-2 bg-white border-t border-slate-100">
+                    `;
+
+                    let lvl4Index = 0;
+                    for (const [lvl4, farmacos] of Object.entries(lvl4Obj)) {
+                        const lvl4Id = `${lvl3Id}-lvl4-${lvl4Index}`;
+                        const partsLvl4 = lvl4.split(' - ');
+                        const codeLvl4 = partsLvl4[0] || "";
+                        const descLvl4 = partsLvl4.slice(1).join(' - ') || lvl4;
+                        // Nível 4 código em maiúscula, descrição com capitalização inteligente
+                        const formattedLvl4Text = `${codeLvl4.toUpperCase()} - ${smartCapitalize(descLvl4, false)}`;
+
+                        html += `
+                            <div class="border border-slate-100 rounded-lg overflow-hidden ml-2">
+                                <button onclick="toggleAccordion('${lvl4Id}')" class="w-full bg-slate-50/40 hover:bg-slate-50 px-3 py-2 flex items-center justify-between text-left transition-colors">
+                                    <span class="font-medium text-slate-700 text-xs">${formattedLvl4Text}</span>
+                                    <i id="${lvl4Id}-icon" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
+                                </button>
+                                <div id="${lvl4Id}-content" class="hidden p-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 bg-white border-t border-slate-100">
+                        `;
+
+                        farmacos.forEach(f => {
+                            const marketPreview = f.produtos.map(p => `${p.nomeComercial} (${p.forma})`).join(', ');
+                            html += `
+                                <div onclick="openModal('${f.id}')" class="group bg-slate-50 hover:bg-emerald-50/40 border border-slate-200/70 hover:border-emerald-300 rounded-xl p-3 cursor-pointer transition-all shadow-2xs hover:shadow-sm flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-center justify-between mb-1">
+                                            <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded">${f.atc.toUpperCase()}</span>
+                                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-emerald-600 transition-colors"></i>
+                                        </div>
+                                        <h4 class="font-bold text-slate-900 text-sm group-hover:text-emerald-700 transition-colors">${f.nome}</h4>
+                                    </div>
+                                    <div class="mt-2 pt-2 border-t border-slate-200/60">
+                                        <p class="text-[11px] text-slate-500 truncate" title="${marketPreview}">
+                                            <span class="font-semibold text-slate-600">Marcas:</span> ${marketPreview}
+                                        </p>
+                                    </div>
+                                </div>
+                            `;
+                        });
+
+                        html += `</div></div>`;
+                        lvl4Index++;
+                    }
+
+                    html += `</div></div>`;
+                    lvl3Index++;
+                }
+
+                html += `</div></div>`;
+                groupIndex++;
+            }
+
+            container.innerHTML = html;
         }
 
-        // Initialize and load JSON data
-        async function initApp() {
-            try {
-                const response = await fetch('medicamentos.json');
-                if (!response.ok) throw new Error('Falha ao carregar medicamentos.json');
-                globalAtcData = await response.json();
-                
-                processAndRenderData();
-            } catch (error) {
-                console.warn('Usando dados estruturados de demonstração embutidos:', error);
-                globalAtcData = getMockAtcData();
-                processAndRenderData();
+        // Acordeão Estrito (Fecha os outros elementos irmãos do mesmo nível)
+        function toggleAccordion(id) {
+            const content = document.getElementById(`${id}-content`);
+            const icon = document.getElementById(`${id}-icon`);
+            const isHidden = content.classList.contains('hidden');
+
+            // Se for fechar
+            if (!isHidden) {
+                content.classList.add('hidden');
+                if (icon) icon.classList.remove('rotate-180');
+                return;
+            }
+
+            // Acordeão estrito: Fechar irmãos no mesmo contentor pai
+            const parent = content.parentElement;
+            const siblings = parent.parentElement.children;
+            for (let sib of siblings) {
+                const innerContent = sib.querySelector('div[id$="-content"]');
+                const innerIcon = sib.querySelector('i[id$="-icon"]');
+                if (innerContent && innerContent !== content) {
+                    innerContent.classList.add('hidden');
+                    if (innerIcon) innerIcon.classList.remove('rotate-180');
+                }
+            }
+
+            // Abrir selecionado
+            content.classList.remove('hidden');
+            if (icon) icon.classList.add('rotate-180');
+        }
+
+        // Abrir Ficha Clínica Detalhada (Modal)
+        function openModal(drugId) {
+            const f = database.find(item => item.id === drugId);
+            if (!f) return;
+
+            document.getElementById('modal-atc-code').innerText = f.atc.toUpperCase();
+            document.getElementById('modal-drug-name').innerText = f.nome;
+            document.getElementById('modal-indications').innerText = f.indicacoes;
+            document.getElementById('modal-mechanism').innerHTML = f.mecanismo;
+
+            // Produtos comerciais combinados (Nome Comercial + Forma)
+            const prodContainer = document.getElementById('modal-market-products');
+            prodContainer.innerHTML = "";
+            f.produtos.forEach(p => {
+                const badge = document.createElement('div');
+                badge.className = "bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-200 text-xs text-slate-800 px-3 py-1.5 rounded-xl transition-all shadow-2xs flex items-center gap-2";
+                badge.innerHTML = `<i class="fa-solid fa-capsules text-emerald-600 text-xs"></i> <strong>${p.nomeComercial}</strong> <span class="text-slate-500">— ${p.forma}</span>`;
+                prodContainer.appendChild(badge);
+            });
+
+            // Vídeos Educativos
+            document.getElementById('modal-pd-video').src = f.videoPD;
+            document.getElementById('modal-pk-video').src = f.videoPK;
+
+            // Resetar separador para PD
+            switchMediaTab('pd');
+
+            // Mostrar modal
+            const modal = document.getElementById('clinical-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('clinical-modal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            // Parar vídeos limpando src
+            document.getElementById('modal-pd-video').src = "";
+            document.getElementById('modal-pk-video').src = "";
+        }
+
+        // Alternar abas de multimédia (Farmacodinâmica vs Farmacocinética)
+        function switchMediaTab(tab) {
+            const pdBtn = document.getElementById('tab-pd-btn');
+            const pkBtn = document.getElementById('tab-pk-btn');
+            const pdContent = document.getElementById('tab-pd-content');
+            const pkContent = document.getElementById('tab-pk-content');
+
+            if (tab === 'pd') {
+                pdBtn.className = "pb-2 text-sm font-semibold border-b-2 border-emerald-600 text-emerald-700 transition-all flex items-center gap-2";
+                pkBtn.className = "pb-2 text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-700 transition-all flex items-center gap-2";
+                pdContent.classList.remove('hidden');
+                pkContent.classList.add('hidden');
+            } else {
+                pkBtn.className = "pb-2 text-sm font-semibold border-b-2 border-emerald-600 text-emerald-700 transition-all flex items-center gap-2";
+                pdBtn.className = "pb-2 text-sm font-semibold border-b-2 border-transparent text-slate-500 hover:text-slate-700 transition-all flex items-center gap-2";
+                pkContent.classList.remove('hidden');
+                pdContent.classList.add('hidden');
             }
         }
 
-        // Process data for tree and flat search
-        function processAndRenderData() {
-            allDrugsFlat = [];
-            let totalCount = 0;
+        // Event listener para barra de pesquisa global
+        document.getElementById('global-search').addEventListener('input', (e) => {
+            renderATCTree(e.target.value);
+        });
 
-            // Traverse ATC Hierarchy supporting 3-character intermediate groups
-            Object.entries(globalAtcData).forEach(([groupKey, groupObj]) => {
-                const groupName = cleanDescription(groupObj.name || groupKey);
-                const intermediateGroups = groupObj.intermediate || groupObj.subgroups || groupObj.children || {};
-
-                Object.entries(intermediateGroups).forEach(([interKey, interObj]) => {
-                    const interName = cleanDescription(interObj.name || interKey);
-                    const subGroups = interObj.subgroups || interObj.children || {};
-
-                    // Handle case where subgroup has direct chemicals or deeper subgroups
-                    if (interObj.chemicals || interObj.drugs || interObj.items) {
-                        const chemicals = interObj.chemicals || interObj.drugs || interObj.items || [];
-                        chemicals.forEach(chem => {
-                            totalCount++;
-                            allDrugsFlat.push(createDrugObject(chem, groupName, interName, interName, interKey, totalCount));
-                        });
-                    }
-
-                    Object.entries(subGroups).forEach(([subKey, subObj]) => {
-                        const subName = cleanDescription(subObj.name || subKey);
-                        const chemicals = subObj.chemicals || subObj.drugs || subObj.items || [];
-
-                        chemicals.forEach(chem => {
-                            totalCount++;
-                            allDrugsFlat.push(createDrugObject(chem, groupName, interName, subName, subKey, totalCount));
-                        });
-                    });
-                });
-            });
-
-            document.getElementById('totalDrugsCount').textContent = `${totalCount} fármacos`;
-            document.getElementById('treeCountBadge').textContent = `${totalCount} fármacos`;
-
-            renderAtcTree(globalAtcData);
-            setupSearch();
-        }
-
-        function createDrugObject(chem, groupName, interName, subName, atcFallback, index) {
-            return {
-                id: chem.id || `drug-${index}`,
-                name: chem.name || chem.nome || 'Fármaco sem nome',
-                atcCode: chem.atc || chem.codigoAtc || atcFallback,
-                groupName: groupName,
-                interGroupName: interName,
-                subGroupName: subName,
-                indications: chem.indications || chem.indicacoes || 'Indicações terapêuticas gerais para este grupo farmacológico.',
-                mechanism: chem.mechanism || chem.mecanismo || 'Mecanismo de ação baseado na interação específica com o <span class="bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold">alvo molecular</span> correspondente.',
-                marketProducts: chem.marketProducts || chem.produtosMercado || [
-                    { name: `${chem.name || 'Fármaco'} 50mg Comprimidos`, holder: "Titular de AIM" },
-                    { name: `${chem.name || 'Fármaco'} 10mg/ml Solução Injectável`, holder: "Titular de AIM" }
-                ],
-                pharmacokinetics: chem.pharmacokinetics || chem.farmacocinetica || {
-                    absorption: "Boa absorção por via oral com biodisponibilidade variável.",
-                    distribution: "Elevada ligação às proteínas plasmáticas e bom volume de distribuição.",
-                    metabolism: "Hepático primário através do sistema enzimático do citocromo P450.",
-                    elimination: "Excreção predominantemente renal sob forma de metabolitos."
-                },
-                pharmacodynamics: chem.pharmacodynamics || chem.farmacodinâmica || "Atua como agonista/antagonista seletivo modulando vias de sinalização celular específicas para restaurar a homeostasia fisiológica."
-            };
-        }
-
-        function renderAtcTree(data) {
-            const container = document.getElementById('atcTreeContainer');
-            container.innerHTML = '';
-
-            Object.entries(data).forEach(([groupKey, groupObj]) => {
-                const groupName = cleanDescription(groupObj.name || groupKey);
-                const formattedGroupName = formatTitleCase(groupName, 1); // Level 1: ALL CAPS
-                const intermediateGroups = groupObj.intermediate || groupObj.subgroups || groupObj.children || {};
-
-                const groupDiv = document.createElement('div');
-                groupDiv.className = 'border border-slate-200 rounded-lg overflow-hidden bg-white mb-2';
-
-                const groupHeader = document.createElement('button');
-                groupHeader.className = 'w-full px-3 py-2.5 text-left text-xs font-bold text-slate-700 bg-slate-50 hover:bg-slate-100 flex items-center justify-between transition-colors';
-                groupHeader.innerHTML = `
-                    <span class="truncate pr-2">${formattedGroupName}</span>
-                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 transition-transform duration-200"></i>
-                `;
-
-                const interContainer = document.createElement('div');
-                interContainer.className = 'hidden flex flex-col divide-y divide-slate-100 bg-white';
-
-                Object.entries(intermediateGroups).forEach(([interKey, interObj]) => {
-                    const interName = cleanDescription(interObj.name || interKey);
-                    const formattedInterName = formatTitleCase(interName, 3); // Level 3 (3-char): ALL CAPS
-                    const subGroups = interObj.subgroups || interObj.children || {};
-                    const directChems = interObj.chemicals || interObj.drugs || interObj.items || [];
-
-                    const interWrapper = document.createElement('div');
-                    interWrapper.className = 'flex flex-col';
-
-                    const interHeader = document.createElement('button');
-                    interHeader.className = 'w-full px-3 py-2 text-left text-[11px] font-bold text-slate-700 bg-slate-50/50 hover:bg-slate-100 flex items-center justify-between transition-colors';
-                    interHeader.innerHTML = `
-                        <span class="truncate pr-2">${formattedInterName}</span>
-                        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 transition-transform duration-200"></i>
-                    `;
-
-                    const subContainer = document.createElement('div');
-                    subContainer.className = 'hidden flex flex-col bg-white px-2 py-1 space-y-1';
-
-                    // If there are direct chemicals at the 3-char level
-                    directChems.forEach(chem => {
-                        const chemBtn = createChemButton(chem, interKey);
-                        subContainer.appendChild(chemBtn);
-                    });
-
-                    // Render 4-char subgroups (Level 4+)
-                    Object.entries(subGroups).forEach(([subKey, subObj]) => {
-                        const subName = cleanDescription(subObj.name || subKey);
-                        const formattedSubName = formatTitleCase(subName, 4); // Level 4+: Title Case
-                        const chemicals = subObj.chemicals || subObj.drugs || subObj.items || [];
-
-                        const subWrapper = document.createElement('div');
-                        subWrapper.className = 'flex flex-col border-l-2 border-emerald-100 pl-2 my-1';
-
-                        const subHeader = document.createElement('button');
-                        subHeader.className = 'w-full px-2 py-1.5 text-left text-[11px] font-semibold text-slate-600 hover:bg-slate-50 rounded flex items-center justify-between transition-colors';
-                        subHeader.innerHTML = `
-                            <span class="truncate pr-2">${formattedSubName}</span>
-                            <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 transition-transform duration-200"></i>
-                        `;
-
-                        const chemContainer = document.createElement('div');
-                        chemContainer.className = 'hidden flex flex-col px-2 py-1 space-y-0.5 bg-slate-50/50 rounded';
-
-                        chemicals.forEach(chem => {
-                            const chemBtn = createChemButton(chem, subKey);
-                            chemContainer.appendChild(chemBtn);
-                        });
-
-                        subHeader.addEventListener('click', (e) => {
-                            e.stopPropagation();
-                            const isHidden = chemContainer.classList.contains('hidden');
-                            chemContainer.classList.toggle('hidden', !isHidden);
-                            subHeader.querySelector('i').style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
-                        });
-
-                        subWrapper.appendChild(subHeader);
-                        subWrapper.appendChild(chemContainer);
-                        subContainer.appendChild(subWrapper);
-                    });
-
-                    interHeader.addEventListener('click', () => {
-                        const isHidden = subContainer.classList.contains('hidden');
-                        subContainer.classList.toggle('hidden', !isHidden);
-                        interHeader.querySelector('i').style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
-                    });
-
-                    interWrapper.appendChild(interHeader);
-                    interWrapper.appendChild(subContainer);
-                    interContainer.appendChild(interWrapper);
-                });
-
-                groupHeader.addEventListener('click', () => {
-                    const isHidden = interContainer.classList.contains('hidden');
-                    interContainer.classList.toggle('hidden', !isHidden);
-                    groupHeader.querySelector('i').style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
-                });
-
-                groupDiv.appendChild(groupHeader);
-                groupDiv.appendChild(interContainer);
-                container.appendChild(groupDiv);
-            });
-        }
-
-        function createChemButton(chem, fallbackCode) {
-            const chemName = chem.name || chem.nome || 'Fármaco';
-            const chemBtn = document.createElement('button');
-            chemBtn.className = 'w-full text-left px-2 py-1.5 text-[11px] font-medium text-slate-700 hover:text-emerald-700 hover:bg-emerald-50 rounded transition-colors flex items-center justify-between';
-            chemBtn.innerHTML = `
-                <span class="truncate"><i class="fa-solid fa-circle text-[4px] mr-1.5 text-emerald-500"></i>${chemName}</span>
-                <span class="text-[9px] text-slate-400 font-mono">${chem.atc || fallbackCode}</span>
-            `;
-            
-            chemBtn.addEventListener('click', () => {
-                const found = allDrugsFlat.find(d => d.name === chemName && (d.atcCode === (chem.atc || fallbackCode) || d.subGroupName.includes(chemName) || d.interGroupName.includes(chemName)));
-                if (found) {
-                    openDrugDossier(found);
-                } else {
-                    // Fallback search by exact name match
-                    const fallbackMatch = allDrugsFlat.find(d => d.name === chemName);
-                    if (fallbackMatch) openDrugDossier(fallbackMatch);
-                }
-            });
-
-            return chemBtn;
-        }
-
-        function openDrugDossier(drug) {
-            document.getElementById('initialStateView').classList.add('hidden');
-            const dossierView = document.getElementById('drugDossierView');
-            dossierView.classList.remove('hidden');
-
-            dossierView.innerHTML = `
-                <!-- Dossier Header -->
-                <div class="bg-slate-900 text-white p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <div>
-                        <div class="flex items-center gap-2 mb-1">
-                            <span class="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">${drug.atcCode}</span>
-                            <span class="text-slate-400 text-xs">${drug.groupName} > ${drug.interGroupName}</span>
-                        </div>
-                        <h2 class="text-xl font-bold text-white">${drug.name}</h2>
-                    </div>
-                    <button onclick="closeDossier()" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5">
-                        <i class="fa-solid fa-arrow-left"></i> Voltar
-                    </button>
-                </div>
-
-                <!-- Dossier Content Body -->
-                <div class="p-6 space-y-6 flex-1 overflow-y-auto text-xs sm:text-sm">
-                    
-                    <!-- 1. Indicações Terapêuticas (First) -->
-                    <div class="bg-emerald-50/60 border border-emerald-100 rounded-xl p-4">
-                        <h3 class="font-bold text-emerald-900 text-xs uppercase tracking-wider mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-stethoscope text-emerald-600"></i> Indicações Terapêuticas
-                        </h3>
-                        <p class="text-slate-700 leading-relaxed text-xs sm:text-sm">${drug.indications}</p>
-                    </div>
-
-                    <!-- 2. Mecanismo de Ação com Alvo Realçado (Second) -->
-                    <div class="bg-amber-50/60 border border-amber-100 rounded-xl p-4">
-                        <h3 class="font-bold text-amber-900 text-xs uppercase tracking-wider mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-bullseye text-amber-600"></i> Mecanismo de Ação e Alvo Molecular
-                        </h3>
-                        <div class="text-slate-700 leading-relaxed text-xs sm:text-sm">${drug.mechanism}</div>
-                    </div>
-
-                    <!-- 3. Produtos no Mercado Português (Substância e forma farmacêutica junta) -->
-                    <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
-                        <h3 class="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-pills text-blue-600"></i> Produtos no Mercado Português (AIM)
-                        </h3>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            ${drug.marketProducts.map(prod => `
-                                <div class="bg-slate-50 border border-slate-100 rounded-lg p-3 flex flex-col justify-between">
-                                    <span class="font-semibold text-slate-900 text-xs">${prod.name}</span>
-                                    <span class="text-[10px] text-slate-500 mt-1"><i class="fa-regular fa-building mr-1"></i>${prod.holder || 'Titular de Autorização de Introdução no Mercado'}</span>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-
-                    <!-- 4. Farmacocinética e Farmacodinâmica -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                            <h4 class="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3 flex items-center gap-2">
-                                <i class="fa-solid fa-chart-line text-indigo-600"></i> Perfil Farmacocinético (ADME)
-                            </h4>
-                            <ul class="space-y-2 text-xs text-slate-600">
-                                <li><strong class="text-slate-700">Absorção:</strong> ${drug.pharmacokinetics.absorption}</li>
-                                <li><strong class="text-slate-700">Distribuição:</strong> ${drug.pharmacokinetics.distribution}</li>
-                                <li><strong class="text-slate-700">Metabolismo:</strong> ${drug.pharmacokinetics.metabolism}</li>
-                                <li><strong class="text-slate-700">Eliminação:</strong> ${drug.pharmacokinetics.elimination}</li>
-                            </ul>
-                        </div>
-                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
-                            <h4 class="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3 flex items-center gap-2">
-                                <i class="fa-solid fa-dna text-purple-600"></i> Farmacodinâmica Avançada
-                            </h4>
-                            <p class="text-xs text-slate-600 leading-relaxed">${drug.pharmacodynamics}</p>
-                        </div>
-                    </div>
-
-                    <!-- 5. Multimédia Educativa (Vídeos separados para Farmacodinâmica e Farmacocinética) -->
-                    <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm">
-                        <h3 class="font-bold text-slate-800 text-xs uppercase tracking-wider mb-3 flex items-center gap-2">
-                            <i class="fa-solid fa-video text-rose-600"></i> Multimédia Educativa & Animações
-                        </h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="space-y-2">
-                                <span class="text-[11px] font-semibold text-slate-700 block"><i class="fa-solid fa-play-circle text-rose-600 mr-1"></i> Vídeo: Mecanismo Farmacocinético</span>
-                                <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden relative flex items-center justify-center">
-                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A" title="Farmacocinética" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="space-y-2">
-                                <span class="text-[11px] font-semibold text-slate-700 block"><i class="fa-solid fa-play-circle text-purple-600 mr-1"></i> Vídeo: Interação Farmacodinâmica e Alvo</span>
-                                <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden relative flex items-center justify-center">
-                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A" title="Farmacodinâmica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            `;
-        }
-
-        function closeDossier() {
-            document.getElementById('drugDossierView').classList.add('hidden');
-            document.getElementById('initialStateView').classList.remove('hidden');
-        }
-
-        // Global Search Functionality
-        function setupSearch() {
-            const searchInput = document.getElementById('globalSearch');
-            searchInput.addEventListener('input', (e) => {
-                const term = e.target.value.toLowerCase().trim();
-                if (!term) return;
-                
-                const found = allDrugsFlat.find(d => 
-                    d.name.toLowerCase().includes(term) || 
-                    d.atcCode.toLowerCase().includes(term) ||
-                    d.groupName.toLowerCase().includes(term) ||
-                    d.interGroupName.toLowerCase().includes(term)
-                );
-                
-                if (found && term.length > 2) {
-                    openDrugDossier(found);
-                }
-            });
-        }
-
-        // Complete Mock Data with 3-character intermediate level (A01, A02, A03)
-        function getMockAtcData() {
-            return {
-                "A - Aparelho digestivo e metabolismo": {
-                    name: "A - Aparelho digestivo e metabolismo",
-                    intermediate: {
-                        "A01 - Preparações estomatológicas": {
-                            name: "A01 - Preparações estomatológicas",
-                            subgroups: {
-                                "A01A - Preparações para uso estomatológico": {
-                                    name: "A01A - Preparações para uso estomatológico",
-                                    chemicals: [
-                                        { name: "Clorexidina (bucal)", atc: "A01AB03", indications: "Desinfeção da cavidade oral, gengivite e prevenção da placa bacteriana.", mechanism: "Antissético de largo espetro que se liga às paredes celulares microbianas provocando lise e precipitação de componentes citoplasmáticos no <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>biofilme dentário</span>." }
-                                    ]
-                                },
-                                "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral": {
-                                    name: "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
-                                    chemicals: [
-                                        { name: "Hexetidina", atc: "A01AB12", indications: "Infeções orofaríngeas ligeiras e estomatites.", mechanism: "Ação antimicrobiana e antifúngica de contacto por inibição de sistemas enzimáticos oxidativos no <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>metabolismo microbiano</span>." }
-                                    ]
-                                },
-                                "A01AD - Outros agentes de uso tópico oral": {
-                                    name: "A01AD - Outros agentes de uso tópico oral",
-                                    chemicals: [
-                                        { name: "Bidmutilato de bismuto", atc: "A01AD02", indications: "Proteção de mucosas e úlceras orais.", mechanism: "Proteção mecânica da mucosa oral por ligação a proteínas precipitadas na <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>lesão ulcerosa</span>." }
-                                    ]
-                                }
-                            }
-                        },
-                        "A02 – Tratamento de alterações causados por ácidos": {
-                            name: "A02 – Tratamento de alterações causados por ácidos",
-                            subgroups: {
-                                "A02A – Anti-ácidos": {
-                                    name: "A02A – Anti-ácidos",
-                                    chemicals: [
-                                        { name: "Hidróxido de alumínio + Magnésio", atc: "A02AD01", indications: "Alívio sintomático da pirose, indigestão ácida e gastrite.", mechanism: "Neutralização direta do ácido clorídrico no lúmen gástrico por reação química com iões <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>hidróxido (OH-)</span>." }
-                                    ]
-                                },
-                                "A02BA - Antagonistas dos receptores H2": {
-                                    name: "A02BA - Antagonistas dos receptores H2",
-                                    chemicals: [
-                                        { name: "Famotidina", atc: "A02BA03", indications: "Úlcera péptica ativa, DRGE e condições hipersecretoras.", mechanism: "Bloqueio competitivo reversível dos <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>receptores H2</span> na membrana basolateral da célula parietal gástrica." }
-                                    ]
-                                },
-                                "A02BB - Prostaglandinas": {
-                                    name: "A02BB - Prostaglandinas",
-                                    chemicals: [
-                                        { name: "Misoprostol", atc: "A02BB01", indications: "Prevenção de úlceras gástricas induzidas por AINEs.", mechanism: "Análogo sintético da prostaglandina E1 que aumenta a secreção de muco e bicarbonato através do <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>receptor EP3</span>." }
-                                    ]
-                                },
-                                "A02BC - Inibidores da bomba de protões": {
-                                    name: "A02BC - Inibidores da bomba de protões",
-                                    chemicals: [
-                                        { name: "Omeprazol", atc: "A02BC01", indications: "Úlcera duodenal e gástrica, DRGE e erradicação de H. pylori.", mechanism: "Inibição covalente da enzima <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>H+/K+-ATPase</span> na célula parietal." },
-                                        { name: "Pantoprazol", atc: "A02BC02", indications: "Esofagite de refluxo e úlceras pépticas.", mechanism: "Inibição enzimática específica e duradoura da <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>H+/K+-ATPase</span> gástrica." }
-                                    ]
-                                },
-                                "A02BD - Associações para erradicação do Helicobacter pylori": {
-                                    name: "A02BD - Associações para erradicação do Helicobacter pylori",
-                                    chemicals: [
-                                        { name: "Omeprazol + Amoxicilina + Claritromicina", atc: "A02BD05", indications: "Erradicação de Helicobacter pylori em úlcera péptica.", mechanism: "Associação sinérgica de inibidor da <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>H+/K+-ATPase</span> e antibacterianos de largo espetro." }
-                                    ]
-                                },
-                                "A02BX - Outros fármacos para o tratamento da úlcera péptica e do refluxo gastro-esofágico": {
-                                    name: "A02BX - Outros fármacos para o tratamento da úlcera péptica e do refluxo gastro-esofágico",
-                                    chemicals: [
-                                        { name: "Sucralfato", atc: "A02BX02", indications: "Tratamento e prevenção de úlcera duodenal.", mechanism: "Formação de uma barreira protetora viscosa por polimerização ácida sobre a <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>base da úlcera</span>." }
-                                    ]
-                                }
-                            }
-                        },
-                        "A03 - Fármacos para o tratamento de alterações funcionais do estômago e intestinos": {
-                            name: "A03 - Fármacos para o tratamento de alterações funcionais do estômago e intestinos",
-                            subgroups: {
-                                "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais": {
-                                    name: "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-                                    chemicals: [
-                                        { name: "Trimebutina", atc: "A03AA05", indications: "Síndrome do intestino irritável e discinésias digestivas.", mechanism: "Modulação dos receptores <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>enketalinérgicos</span> no plexo mioentérico intestinal." }
-                                    ]
-                                },
-                                "A03B - Beladona e derivados, isolados": {
-                                    name: "A03B - Beladona e derivados, isolados",
-                                    chemicals: [
-                                        { name: "Butilescopolamina", atc: "A03BB01", indications: "Espasmos do trato gastrointestinal, biliar e urinário.", mechanism: "Antagonista competitivo dos <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>receptores muscarínicos</span> do músculo liso visceral." }
-                                    ]
-                                },
-                                "A03D - Anti-espasmódicos associados a analgésicos": {
-                                    name: "A03D - Anti-espasmódicos associados a analgésicos",
-                                    chemicals: [
-                                        { name: "Metamizol + Butilescopolamina", atc: "A03DA01", indications: "Cólicas abdominais agudas e espasmos viscerais dolorosos.", mechanism: "Ação conjunta antiespasmódica neurotrópica e analgésica central nos <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>vias nociceptivas</span>." }
-                                    ]
-                                },
-                                "A03F - Gastrocinéticos": {
-                                    name: "A03F - Gastrocinéticos",
-                                    chemicals: [
-                                        { name: "Metoclopramida", atc: "A03FA01", indications: "Náuseas, vómitos, gastroparesia e DRGE.", mechanism: "Antagonista dos <span class='bg-amber-100 text-amber-900 px-1.5 py-0.5 rounded font-semibold'>receptores D2</span> dopaminérgicos e agonista 5-HT4 no trato gastrointestinal superior." }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            };
-        }
-
-        window.onload = initApp;
+        // Inicializar aplicação ao carregar
+        window.addEventListener('DOMContentLoaded', () => {
+            renderATCTree();
+        });
     </script>
-
 </body>
 </html>
