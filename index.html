@@ -93,7 +93,7 @@
             display: block;
         }
 
-        /* Nível 2: Subgrupo 2 (4 dígitos / ex: A01A) - Primeiras letras em maiúscula */
+        /* Nível 2: Subgrupo 2 (4 dígitos / ex: A01A) */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
@@ -107,7 +107,6 @@
             justify-content: space-between;
             align-items: center;
             background-color: #fafbfc;
-            text-transform: capitalize;
             transition: background-color 0.2s;
         }
         .atc-sub2-header:hover {
@@ -117,7 +116,6 @@
         .atc-sub2-header::after {
             content: '+';
             font-size: 0.9rem;
-            text-transform: none;
         }
         .atc-sub2-item.active .atc-sub2-header::after {
             content: '-';
@@ -131,7 +129,7 @@
             display: block;
         }
 
-        /* Nível 3: Subgrupo 3 (5 dígitos / ex: A01AB) - Primeiras letras em maiúscula */
+        /* Nível 3: Subgrupo 3 (5 dígitos / ex: A01AB) */
         .atc-sub3-item {
             border-bottom: 1px solid #f8fafc;
         }
@@ -145,7 +143,6 @@
             justify-content: space-between;
             align-items: center;
             background-color: #ffffff;
-            text-transform: capitalize;
             transition: background-color 0.2s;
         }
         .atc-sub3-header:hover {
@@ -155,7 +152,6 @@
         .atc-sub3-header::after {
             content: '+';
             font-size: 0.8rem;
-            text-transform: none;
         }
         .atc-sub3-item.active .atc-sub3-header::after {
             content: '-';
@@ -307,6 +303,26 @@
     <script>
         let farmacosData = [];
 
+        // Função para formatar texto: 1ª letra de cada palavra em maiúscula, exceto palavras com 1 ou 2 letras
+        function formatarTextoCapitalizado(texto) {
+            if (!texto) return "";
+            // Se o texto já vier no formato "A01A - Preparações...", separa o código do texto descritivo
+            const partes = texto.split(' - ');
+            const codigo = partes[0];
+            const descricao = partes.slice(1).join(' - ') || codigo;
+
+            const palavrasIgnoradas = ["e", "de", "do", "da", "dos", "das", "em", "por", "com", "ao", "aos", "ou", "a", "o", "as", "os", "um", "uma", "uns", "umas"];
+
+            const descFormatada = descricao.toLowerCase().split(' ').map((palavra, index) => {
+                if (palavrasIgnoradas.includes(palavra) && index > 0) {
+                    return palavra;
+                }
+                return palavra.charAt(0).toUpperCase() + palavra.slice(1);
+            }).join(' ');
+
+            return partes.length > 1 ? `${codigo} - ${descFormatada}` : descFormatada;
+        }
+
         fetch('medicamentos.json')
             .then(response => response.json())
             .then(data => {
@@ -328,7 +344,7 @@
                 return;
             }
 
-            // Descobrir descrições dos níveis de 4 e 5 dígitos com base no código ATC
+            // Dicionários para mapear descrições oficiais de 4 e 5 dígitos
             const descSub2 = {};
             const descSub3 = {};
 
@@ -336,7 +352,8 @@
                 const atc = f.atc || "";
                 if (atc.length >= 4) {
                     const k2 = atc.substring(0, 4);
-                    if (f.subgrupo2 && f.subgrupo2.toUpperCase().includes(k2)) {
+                    // Se o subgrupo2 contém o código ou tem tamanho adequado para nível 2
+                    if (f.subgrupo2 && (f.subgrupo2.toUpperCase().includes(k2) || f.subgrupo2.length < 40)) {
                         descSub2[k2] = f.subgrupo2;
                     }
                 }
@@ -358,18 +375,26 @@
                 const k2 = atc.length >= 4 ? atc.substring(0, 4) : "Geral";
                 const k3 = atc.length >= 5 ? atc.substring(0, 5) : k2;
                 
-                // Nível 2 (4 dígitos ex: A01A)
-                let g2Nome = descSub2[k2] || `${k2} - Preparações para uso estomatológico`;
-                // Se o subgrupo2 do item corresponder ao prefixo de 4 caracteres
-                if (f.subgrupo2 && f.subgrupo2.length <= 15 && f.subgrupo2.toUpperCase().startsWith(k2)) {
-                    g2Nome = f.subgrupo2;
-                } else if (f.subgrupo2 && !f.subgrupo2.toUpperCase().startsWith(k3) && f.subgrupo2.length < 35) {
-                    // se parecer um nome de nível 2
-                    g2Nome = f.subgrupo2;
+                // Nível 2 rigoroso (4 dígitos, ex: A01A)
+                let g2NomeBruto = descSub2[k2] || `${k2} - Preparações para uso estomatológico`;
+                if (f.subgrupo2 && f.subgrupo2.toUpperCase().startsWith(k2) && f.subgrupo2.length < 45) {
+                    g2NomeBruto = f.subgrupo2;
+                } else if (!descSub2[k2] && f.subgrupo2 && !f.subgrupo2.toUpperCase().startsWith(k3)) {
+                    g2NomeBruto = f.subgrupo2;
+                }
+                // Força o prefixo correto de 4 dígitos para o Nível 2
+                if (!g2NomeBruto.toUpperCase().startsWith(k2)) {
+                    g2NomeBruto = `${k2} - ${g2NomeBruto}`;
                 }
 
-                // Nível 3 (5 dígitos ex: A01AB)
-                let g3Nome = descSub3[k3] || f.subgrupo3 || k3;
+                // Nível 3 rigoroso (5 dígitos, ex: A01AB)
+                let g3NomeBruto = descSub3[k3] || f.subgrupo3 || k3;
+                if (!g3NomeBruto.toUpperCase().startsWith(k3)) {
+                    g3NomeBruto = `${k3} - ${g3NomeBruto}`;
+                }
+
+                const g2Nome = formatarTextoCapitalizado(g2NomeBruto);
+                const g3Nome = formatarTextoCapitalizado(g3NomeBruto);
 
                 if (!estrutura[g1]) estrutura[g1] = {};
                 if (!estrutura[g1][g2Nome]) estrutura[g1][g2Nome] = {};
