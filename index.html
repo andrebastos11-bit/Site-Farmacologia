@@ -52,7 +52,7 @@
         </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL (LAYOUT INTEGRAL SEM ESPAÇOS VAZIOS) -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         
         <!-- BARRA DE ESTATÍSTICA SUPERIOR -->
@@ -66,7 +66,7 @@
             </span>
         </div>
 
-        <!-- ÁRVORE ATC (OCUPA TODA A LARGURA COM DESIGN DE CARTÕES EXPANSÍVEIS) -->
+        <!-- ÁRVORE ATC -->
         <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-5">
             <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
                 <h2 class="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
@@ -98,10 +98,10 @@
                 </button>
             </div>
 
-            <!-- Modal Body (Conteúdo Detalhado) -->
+            <!-- Modal Body -->
             <div class="p-6 overflow-y-auto custom-scrollbar space-y-6 flex-1 bg-slate-50/50">
                 
-                <!-- 1. INDICAÇÕES TERAPEUTICAS (PRIMEIRO) -->
+                <!-- 1. INDICAÇÕES TERAPEUTICAS -->
                 <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
                     <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-2">
                         <i class="fa-solid fa-stethoscope"></i> Indicações Terapêuticas
@@ -109,7 +109,7 @@
                     <p id="modal-indications" class="text-sm text-slate-700 leading-relaxed"></p>
                 </div>
 
-                <!-- 2. MECANISMO DE AÇÃO (COM ALVO REALÇADO) -->
+                <!-- 2. MECANISMO DE AÇÃO -->
                 <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
                     <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-2 flex items-center gap-2">
                         <i class="fa-solid fa-bolt"></i> Mecanismo de Ação & Alvo Terapêutico
@@ -122,18 +122,15 @@
                     <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-3 flex items-center gap-2">
                         <i class="fa-solid fa-box-archive"></i> Especialidades Farmacêuticas (Nome Comercial + Forma)
                     </h4>
-                    <div id="modal-market-products" class="flex flex-wrap gap-2">
-                        <!-- Preenchido por JS -->
-                    </div>
+                    <div id="modal-market-products" class="flex flex-wrap gap-2"></div>
                 </div>
 
-                <!-- 4. MULTIMÉDIA EDUCATIVA (SEPARADORES DE FARMACODINÂMICA E FARMACOCINÉTICA) -->
+                <!-- 4. MULTIMÉDIA EDUCATIVA -->
                 <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
                     <h4 class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-3 flex items-center gap-2">
                         <i class="fa-solid fa-video"></i> Multimédia Educativa
                     </h4>
                     
-                    <!-- Abas de Multimédia -->
                     <div class="flex border-b border-slate-200 mb-4 gap-4">
                         <button onclick="switchMediaTab('pd')" id="tab-pd-btn" class="pb-2 text-sm font-semibold border-b-2 border-emerald-600 text-emerald-700 transition-all flex items-center gap-2">
                             <i class="fa-solid fa-atom"></i> Farmacodinâmica
@@ -143,14 +140,12 @@
                         </button>
                     </div>
 
-                    <!-- Conteúdo Aba PD -->
                     <div id="tab-pd-content" class="space-y-3">
                         <div class="aspect-video w-full bg-slate-900 rounded-xl overflow-hidden relative shadow-inner">
                             <iframe id="modal-pd-video" class="w-full h-full" src="" title="Vídeo Farmacodinâmica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
 
-                    <!-- Conteúdo Aba PK -->
                     <div id="tab-pk-content" class="space-y-3 hidden">
                         <div class="aspect-video w-full bg-slate-900 rounded-xl overflow-hidden relative shadow-inner">
                             <iframe id="modal-pk-video" class="w-full h-full" src="" title="Vídeo Farmacocinética" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -171,7 +166,6 @@
 
     <!-- SCRIPT DE DADOS E LÓGICA -->
     <script>
-        // DADOS COMPLETOS DA PLATAFORMA (Incorporados para garantir estabilidade imediata)
         const database = [
             {
                 id: "omeprazol",
@@ -186,7 +180,7 @@
                     { nomeComercial: "Losec", forma: "Cápsulas gastro-resistentes 20 mg" },
                     { nomeComercial: "Omeprazol Generis", forma: "Cápsulas 10 mg, 20 mg e 40 mg" }
                 ],
-                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Exemplo de URL de vídeo formatada para embed
+                videoPD: "https://www.youtube.com/embed/dQw4w9WgXcQ",
                 videoPK: "https://www.youtube.com/embed/dQw4w9WgXcQ"
             },
             {
@@ -298,14 +292,14 @@
             }
         ];
 
-        // Função de Capitalização Inteligente (Regra específica solicitada)
-        // Grupo Principal e Níveis de 3 carateres em MAIÚSCULAS. Restantes com maiúscula apenas no início da palavra (exceto preposições curtas).
+        // Capitalização inteligente requerida:
+        // Apenas o grupo principal e o nível de 3 caracteres ficam inteiramente em maiúsculas.
+        // Os restantes usam maiúscula apenas no início da palavra (Title Case).
         function smartCapitalize(text, isMainOrLevel3 = false) {
             if (!text) return "";
             if (isMainOrLevel3) {
                 return text.toUpperCase();
             }
-            // Title case para os restantes
             const ignoredWords = new Set(['a', 'o', 'as', 'os', 'de', 'do', 'da', 'dos', 'das', 'e', 'em', 'no', 'na', 'nos', 'nas', 'por', 'para']);
             return text.toLowerCase().split(' ').map((word, index) => {
                 if (index > 0 && ignoredWords.has(word)) {
@@ -315,15 +309,10 @@
             }).join(' ');
         }
 
-        // Renderizar árvore ATC
         function renderATCTree(filterText = "") {
             const container = document.getElementById('atc-tree-container');
             container.innerHTML = "";
 
-            // Atualizar badge de total
-            document.getElementById('total-farma-badge.textContent').innerText = `${database.length} fármacos disponíveis`;
-
-            // Filtrar base de dados se houver pesquisa
             const filtered = database.filter(f => {
                 const search = filterText.toLowerCase();
                 return f.nome.toLowerCase().includes(search) || 
@@ -341,7 +330,6 @@
                 return;
             }
 
-            // Agrupar por Grupo Principal -> Nível 3 -> Nível 4
             const tree = {};
             filtered.forEach(f => {
                 if (!tree[f.grupoPrincipal]) tree[f.grupoPrincipal] = {};
@@ -350,7 +338,6 @@
                 tree[f.grupoPrincipal][f.nivel3][f.nivel4].push(f);
             });
 
-            // Gerar HTML da Árvore
             let html = "";
             let groupIndex = 0;
 
@@ -368,10 +355,10 @@
                 let lvl3Index = 0;
                 for (const [lvl3, lvl4Obj] of Object.entries(lvl3Obj)) {
                     const lvl3Id = `${gpId}-lvl3-${lvl3Index}`;
-                    // Extrair código e texto do Nível 3 (Ex: "A02 - TRATAMENTO...")
                     const partsLvl3 = lvl3.split(' - ');
                     const codeLvl3 = partsLvl3[0] || "";
                     const descLvl3 = partsLvl3.slice(1).join(' - ') || lvl3;
+                    // Nível de 3 caracteres fica inteiramente em maiúsculas conforme pedido
                     const formattedLvl3Text = `${codeLvl3.toUpperCase()} - ${smartCapitalize(descLvl3, true)}`;
 
                     html += `
@@ -389,7 +376,7 @@
                         const partsLvl4 = lvl4.split(' - ');
                         const codeLvl4 = partsLvl4[0] || "";
                         const descLvl4 = partsLvl4.slice(1).join(' - ') || lvl4;
-                        // Nível 4 código em maiúscula, descrição com capitalização inteligente
+                        // Código ATC e restante nível 4 mantêm a regra personalizada
                         const formattedLvl4Text = `${codeLvl4.toUpperCase()} - ${smartCapitalize(descLvl4, false)}`;
 
                         html += `
@@ -436,20 +423,18 @@
             container.innerHTML = html;
         }
 
-        // Acordeão Estrito (Fecha os outros elementos irmãos do mesmo nível)
+        // Acordeão estrito
         function toggleAccordion(id) {
             const content = document.getElementById(`${id}-content`);
             const icon = document.getElementById(`${id}-icon`);
             const isHidden = content.classList.contains('hidden');
 
-            // Se for fechar
             if (!isHidden) {
                 content.classList.add('hidden');
                 if (icon) icon.classList.remove('rotate-180');
                 return;
             }
 
-            // Acordeão estrito: Fechar irmãos no mesmo contentor pai
             const parent = content.parentElement;
             const siblings = parent.parentElement.children;
             for (let sib of siblings) {
@@ -461,12 +446,10 @@
                 }
             }
 
-            // Abrir selecionado
             content.classList.remove('hidden');
             if (icon) icon.classList.add('rotate-180');
         }
 
-        // Abrir Ficha Clínica Detalhada (Modal)
         function openModal(drugId) {
             const f = database.find(item => item.id === drugId);
             if (!f) return;
@@ -476,7 +459,6 @@
             document.getElementById('modal-indications').innerText = f.indicacoes;
             document.getElementById('modal-mechanism').innerHTML = f.mecanismo;
 
-            // Produtos comerciais combinados (Nome Comercial + Forma)
             const prodContainer = document.getElementById('modal-market-products');
             prodContainer.innerHTML = "";
             f.produtos.forEach(p => {
@@ -486,14 +468,11 @@
                 prodContainer.appendChild(badge);
             });
 
-            // Vídeos Educativos
             document.getElementById('modal-pd-video').src = f.videoPD;
             document.getElementById('modal-pk-video').src = f.videoPK;
 
-            // Resetar separador para PD
             switchMediaTab('pd');
 
-            // Mostrar modal
             const modal = document.getElementById('clinical-modal');
             modal.classList.remove('hidden');
             modal.classList.add('flex');
@@ -503,12 +482,10 @@
             const modal = document.getElementById('clinical-modal');
             modal.classList.remove('flex');
             modal.classList.add('hidden');
-            // Parar vídeos limpando src
             document.getElementById('modal-pd-video').src = "";
             document.getElementById('modal-pk-video').src = "";
         }
 
-        // Alternar abas de multimédia (Farmacodinâmica vs Farmacocinética)
         function switchMediaTab(tab) {
             const pdBtn = document.getElementById('tab-pd-btn');
             const pkBtn = document.getElementById('tab-pk-btn');
@@ -528,12 +505,10 @@
             }
         }
 
-        // Event listener para barra de pesquisa global
         document.getElementById('global-search').addEventListener('input', (e) => {
             renderATCTree(e.target.value);
         });
 
-        // Inicializar aplicação ao carregar
         window.addEventListener('DOMContentLoaded', () => {
             renderATCTree();
         });
