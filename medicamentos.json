@@ -1,16 +1,33 @@
 {
   "fármacos": [
     {
+      "nome": "Omeprazol",
+      "atc": "A02BC01",
+      "grupo": "A - Trato alimentar e metabolismo",
+      "subgrupo": "A02 - Fármacos para o tratamento de alterações causadas por ácidos",
+      "classe": "Inibidor da Bomba de Protões (IBP)",
+      "mecanismo": "Inibe a enzima H+/K+-ATPase nas células parietais gástricas, bloqueando a secreção de ácido gástrico.",
+      "indicacoes": ["Úlcera duodenal e gástrica", "Refluxo gastroesofágico", "Erradicação do Helicobacter pylori"],
+      "rcm": {
+        "substancia": "Omeprazol",
+        "descricao": "Tratamento de úlceras duodenais e gástricas, doença do refluxo gastroesofágico sintomática."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
       "nome": "Metformina",
       "atc": "A10BA02",
       "grupo": "A - Trato alimentar e metabolismo",
-      "subgrupo": "A10 - Fármacos usados na diabetes",
+      "subgrupo": "A10 - Fármacos utilizados na diabetes",
       "classe": "Biguanida",
       "mecanismo": "Reduz a produção hepática de glicose e aumenta a sensibilidade à insulina.",
       "indicacoes": ["Diabetes Mellitus Tipo 2"],
       "rcm": {
         "substancia": "Cloridrato de Metformina",
-        "descricao": "Diabetes mellitus tipo 2, em particular com excesso de peso, onde a dieta e o exercício físico por si só não resultam num controlo glicémico adequado."
+        "descricao": "Diabetes mellitus tipo 2, em particular com excesso de peso."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -21,13 +38,13 @@
       "nome": "Empagliflozina",
       "atc": "A10BK01", 
       "grupo": "A - Trato alimentar e metabolismo",
-      "subgrupo": "A10 - Fármacos usados na diabetes (Inibidores do SGLT2)",
+      "subgrupo": "A10 - Fármacos utilizados na diabetes",
       "classe": "Inibidor do SGLT2",
       "mecanismo": "Inibe o co-transportador sódio-glicose 2 (SGLT2) no rim, promovendo a excreção urinária de glicose.",
-      "indicacoes": ["Diabetes Mellitus Tipo 2", "Insuficiência Cardíaca", "Doença Renal Crónica"],
+      "indicacoes": ["Diabetes Mellitus Tipo 2", "Insuficiência Cardíaca"],
       "rcm": {
         "substancia": "Empagliflozina",
-        "descricao": "Indicado no tratamento da diabetes mellitus tipo 2 insuficientemente controlada."
+        "descricao": "Indicado no tratamento da diabetes mellitus tipo 2."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -35,37 +52,20 @@
       }
     },
     {
-      "nome": "Omeprazol",
-      "atc": "A02BC01",
-      "grupo": "A - Trato alimentar e metabolismo",
-      "subgrupo": "A02 - Medicamentos para afecções relacionadas com a acidez",
-      "classe": "Inibidor da Bomba de Protões (IBP)",
-      "mecanismo": "Inibe a enzima H+/K+-ATPase (bomba de protões) nas células parietais gástricas, bloqueando a secreção de ácido gástrico.",
-      "indicacoes": ["Úlcera duodenal e gástrica", "Refluxo gastroesofágico", "Erradicação do Helicobacter pylori"],
-      "rcm": {
-        "substancia": "Omeprazol",
-        "descricao": "Tratamento de úlceras duodenais e gástricas, doença do refluxo gastroesofágico sintomática e prevenção de lesões gástricas induzidas por AINEs."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/EXEMPLO_ID_1",
-        "farmacocinetica": "https://www.youtube.com/embed/EXEMPLO_ID_2"
-      }
-    },
-    {
       "nome": "Duloxetina",
       "atc": "N06AX21",
       "grupo": "N - Sistema nervoso",
-      "subgrupo": "N06 - Psicoanalépticos (Antidepressivos)",
-      "classe": "Inibidor da Recaptação de Serotonina e Noradrenalina (IRSN)",
-      "mecanismo": "Inibe a recaptação neuronal de serotonina e noradrenalina no sistema nervoso central, aumentando a neurotransmissão monoaminérgica.",
-      "indicacoes": ["Depressão maior", "Transtorno de ansiedade generalizada", "Dor neuropática diabética periférica"],
+      "subgrupo": "N06 - Psicoanalépticos",
+      "classe": "Inibidor da Recaptação de Serotonina e Noradrenalina",
+      "mecanismo": "Aumenta a neurotransmissão monoaminérgica no sistema nervoso central.",
+      "indicacoes": ["Depressão maior", "Ansiedade generalizada"],
       "rcm": {
         "substancia": "Cloridrato de Duloxetina",
-        "descricao": "Tratamento da perturbação depressiva maior, perturbação de ansiedade generalizada e dor neuropática associada a neuropatia diabética periférica."
+        "descricao": "Tratamento da perturbação depressiva maior."
       },
       "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/EXEMPLO_ID_3",
-        "farmacocinetica": "https://www.youtube.com/embed/EXEMPLO_ID_4"
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
       }
     }
   ]
