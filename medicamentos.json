@@ -396,7 +396,7 @@
         }
       ],
       "classe": "Antagonista dos recetores H2 da histamina",
-      "mecanismo": "Antagonista competitivo dos recetores H₂ da histamina[cite: 21]. Atua ao bloquear seletivamente os recetores H₂ da histamina localizados na membrana basolateral das células parietais gástricas[cite: 21]. A inibição do recetor impede a ativação da adenilato ciclase e a consequente redução dos níveis de AMPc (adenosina monofosfato cíclico), diminuindo drasticamente a secreção basal e noturna de ácido clorídrico e de pepsina[cite: 21].",
+      "mecanismo": "Antagonista competitivo dos recetores H₂ da histamina. Atua ao bloquear seletivamente os recetores H₂ da histamina localizados na membrana basolateral das células parietais gástricas. A inibição do recetor impede a ativação da adenilato ciclase e a consequente redução dos níveis de AMPc (adenosina monofosfato cíclico), diminuindo drasticamente a secreção basal e noturna de ácido clorídrico e de pepsina.",
       "indicacoes": ["Pirose", "Hiperacidez", "Profilaxia da úlcera péptica"],
       "alvoPrincipal": "Recetores H₂ da Histamina",
       "rcm": {
@@ -421,12 +421,181 @@
         }
       ],
       "classe": "Análogo sintético da prostaglandina E1",
-      "mecanismo": "Análogo sintético da prostaglandina E (PGE₁)[cite: 21]. Liga-se aos recetores EP₃ da prostaglandina nas células parietais, inibindo a via do AMPc para reduzir a secreção de ácido clorídrico[cite: 22]. Em simultâneo, estimula os recetores nas células mucosas gástricas, aumentando a secreção de bicarbonato e de muco protetor, além de promover o fluxo sanguíneo da mucosa, prevenindo a ulceração induzida por AINEs[cite: 22].",
+      "mecanismo": "Análogo sintético da prostaglandina E (PGE₁). Liga-se aos recetores EP₃ da prostaglandina nas células parietais, inibindo a via do AMPc para reduzir a secreção de ácido clorídrico. Em simultâneo, estimula os recetores nas células mucosas gástricas, aumentando a secreção de bicarbonato e de muco protetor, além de promover o fluxo sanguíneo da mucosa, prevenindo a ulceração induzida por AINEs.",
       "indicacoes": ["Prevenção de úlceras por AINEs", "Indução do trabalho de parto"],
       "alvoPrincipal": "Recetores EP₃ da prostaglandina",
       "rcm": {
         "substancia": "Misoprostol",
         "descricao": "Prevenção de úlceras gástricas induzidas por AINEs e usos obstétricos."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Omeprazol",
+      "atc": "A02BC01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BC – Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Albosan®",
+          "forma": "Cápsula gastrorresistente (20 e 40 mg)"
+        },
+        {
+          "nome": "Gasec®",
+          "forma": "Cápsula gastrorresistente (10 mg)"
+        },
+        {
+          "nome": "Proclor®",
+          "forma": "Cápsula gastrorresistente (40 mg)"
+        },
+        {
+          "nome": "Proton®",
+          "forma": "Cápsula gastrorresistente (20 e 40 mg)"
+        },
+        {
+          "nome": "Losec®",
+          "forma": "Cápsula gastrorresistente (20 mg)"
+        }
+      ],
+      "classe": "Inibidor da bomba de protões (IBP) - Mistura racémica",
+      "mecanismo": "Mecanismo geral dos IBPs[cite: 17, 18]:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco lipofílico e fracamente básico que, após absorção sistémica e passagem pelas células parietais, se acumula seletivamente no canalículo secretor (pH < 2). Em meio altamente ácido, sofre protonação e converte-se na sua forma ativa, uma sulfenamida tetracíclica[cite: 17].<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> A sulfenamida ativa reage covalentemente com a subunidade alfa da enzima H⁺/K⁺-ATPase (Bomba de Protões), formando uma ponte dissulfeto covalente e irreversível que inativa permanentemente a enzima[cite: 17]. Como é a etapa final da secreção ácida, bloqueia a secreção de HCl basal e estimulada[cite: 18].<br>• <strong>Duração de Ação:</strong> O efeito antissecretor dura 24 a 48 horas, pois a secreção ácida só é restaurada após a síntese <em>de novo</em> da enzima[cite: 18].<br><br><strong>Especificidades:</strong> Mistura racémica de enantiómeros. É metabolizado maioritariamente no fígado pela isoenzima CYP2C19 e, em menor escala, pela CYP3A4. Interação relevante: inibe moderadamente a CYP2C19, podendo reduzir a bioativação de pró-fármacos como o clopidogrel.",
+      "indicacoes": ["Úlcera gástrica e duodenal", "DRGE", "Profilaxia por AINEs", "Erradicação de H. pylori"],
+      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
+      "rcm": {
+        "substancia": "Omeprazol",
+        "descricao": "Tratamento de úlcera gástrica/duodenal, DRGE, profilaxia por AINEs e erradicação de H. pylori."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Pantoprazol",
+      "atc": "A02BC02",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BC – Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Apton®",
+          "forma": "Comprimido gastrorresistente (20 e 40 mg)"
+        },
+        {
+          "nome": "Pantoc®",
+          "forma": "Comprimido gastrorresistente (20 e 40 mg)"
+        },
+        {
+          "nome": "Pantoc IV®",
+          "forma": "Pó para solução injetável (40 mg)"
+        },
+        {
+          "nome": "Kairol®",
+          "forma": "Comprimido gastrorresistente (20 mg)"
+        }
+      ],
+      "classe": "Inibidor da bomba de protões (IBP)",
+      "mecanismo": "Mecanismo geral dos IBPs[cite: 17, 18]:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco lipofílico e fracamente básico que se acumula no canalículo secretor (pH < 2) e é convertido na sua forma ativa (sulfenamida tetracíclica)[cite: 17].<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> A forma ativa liga-se covalentemente à subunidade alfa da enzima H⁺/K⁺-ATPase por ponte dissulfeto irreversível[cite: 17].<br>• <strong>Duração de Ação:</strong> Efeito antissecretor prolongado (24 a 48h) até nova síntese da enzima[cite: 18].<br><br><strong>Especificidades:</strong> IBP com maior estabilidade química em pH moderadamente ácido. A ligação ao resíduo Cys-822 é quimicamente mais profunda e menos reversível. Apresenta menor afinidade para o CYP2C19 (metabolizado principalmente por sulfotação), possuindo o menor risco de interações medicamentosas da classe, sendo o IBP de escolha em doentes polimedicados ou a tomar clopidogrel.",
+      "indicacoes": ["Úlcera péptica", "Esofagite de refluxo moderada a grave", "Síndrome de Zollinger-Ellison"],
+      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
+      "rcm": {
+        "substancia": "Pantoprazol",
+        "descricao": "Tratamento de úlcera péptica, esofagite de refluxo moderada a grave e Síndrome de Zollinger-Ellison."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Lansoprazol",
+      "atc": "A02BC03",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BC – Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Ogasto®",
+          "forma": "Cápsula gastrorresistente e Comprimido orodispersível (15 e 30 mg)"
+        },
+        {
+          "nome": "Monolitum®",
+          "forma": "Comprimido orodispersível (15 e 30 mg)"
+        },
+        {
+          "nome": "Gastroliber®",
+          "forma": "Cápsula gastrorresistente (60 mg)"
+        }
+      ],
+      "classe": "Inibidor da bomba de protões (IBP) de rápida absorção",
+      "mecanismo": "Mecanismo geral dos IBPs[cite: 17, 18]:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco que se acumula no canalículo secretor gástrico e sofre protonação para a forma ativa de sulfenamida[cite: 17].<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> Inativação covalente e permanente da enzima H⁺/K⁺-ATPase[cite: 17].<br>• <strong>Duração de Ação:</strong> Inibição prolongada da secreção ácida (24-48h)[cite: 18].<br><br><strong>Especificidades:</strong> IBP de rápida absorção oral e elevada biodisponibilidade (~80-85%), com início de ação antissecretor bastante rápido. Disponível também em comprimidos orodispersíveis (microgrânulos gastrorresistentes), ideal para doentes com disfagia ou dificuldades de deglutição.",
+      "indicacoes": ["Tratamento e prevenção de úlceras gástricas/duodenais", "Esofagite de refluxo"],
+      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
+      "rcm": {
+        "substancia": "Lansoprazol",
+        "descricao": "Tratamento e prevenção de úlceras gástricas/duodenais e esofagite de refluxo."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Rabeprazol",
+      "atc": "A02BC04",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BC – Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Pariet®",
+          "forma": "Comprimido gastrorresistente (10 e 20 mg)"
+        }
+      ],
+      "classe": "Inibidor da bomba de protões (IBP) de ativação rápida",
+      "mecanismo": "Mecanismo geral dos IBPs[cite: 17, 18]:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco acumulado nas células parietais que se converte rapidamente na forma ativa de sulfenamida[cite: 17].<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> Ligação covalente irreversível à subunidade alfa da H⁺/K⁺-ATPase[cite: 17].<br>• <strong>Duração de Ação:</strong> Inibição ácida sustentada até regeneração da bomba[cite: 18].<br><br><strong>Especificidades:</strong> IBP de ativação cinética ultra-rápida devido à alta taxa de protonação, proporcionando inibição ácida mais rápida no primeiro dia. O metabolismo é maioritariamente não enzimático (redução a tioéster), dependendo muito pouco do polimorfismo da CYP2C19, garantindo um efeito terapêutico previsível entre doentes.",
+      "indicacoes": ["Úlcera duodenal/gástrica ativa", "DRGE erosiva", "Erradicação de H. pylori"],
+      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
+      "rcm": {
+        "substancia": "Rabeprazol",
+        "descricao": "Úlcera duodenal/gástrica ativa, DRGE erosiva e erradicação de H. pylori."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Esomeprazol",
+      "atc": "A02BC05",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BC – Inibidores da bomba de protões",
+      "produtos": [
+        {
+          "nome": "Nexium Control®",
+          "forma": "Comprimido gastrorresistente (20 mg)"
+        },
+        {
+          "nome": "Nexium®",
+          "forma": "Granulado gastrorresistente para suspensão oral (10 mg) e Comprimido gastrorresistente (20 e 40 mg)"
+        },
+        {
+          "nome": "Nexium I.V.®",
+          "forma": "Pó para solução injetável ou para perfusão (40 mg)"
+        }
+      ],
+      "classe": "Inibidor da bomba de protões (IBP) - Enantiómero S puro",
+      "mecanismo": "Mecanismo geral dos IBPs[cite: 17, 18]:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco acumulado no canalículo secretor gástrico e ativado por protonação em meio ácido[cite: 17].<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> Inibição covalente e permanente da H⁺/K⁺-ATPase[cite: 17].<br>• <strong>Duração de Ação:</strong> Controlo antissecretor prolongado por 24 a 48h[cite: 18].<br><br><strong>Especificidades:</strong> Enantiómero S puro do omeprazol. Sofre menor efeito de primeira passagem hepática e clearance mais lento que o enantiómero R. Gera concentrações plasmáticas mais elevadas e sustentadas, resultando num controlo prolongado do pH gástrico e maior taxa de cicatrização da esofagite grave.",
+      "indicacoes": ["DRGE grave", "Manutenção da cicatrização de esofagite", "Prevenção de úlceras por AINEs"],
+      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
+      "rcm": {
+        "substancia": "Esomeprazol",
+        "descricao": "DRGE grave, manutenção da cicatrização de esofagite e prevenção de úlceras por AINEs."
       },
       "videos": {
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -446,7 +615,7 @@
         }
       ],
       "classe": "Associação antimicrobiana e citoprotetora para erradicação de H. pylori",
-      "mecanismo": "• <strong>Subcitrato de Bismuto Potássico:</strong> Liga-se aos resíduos de cisteína da enzima urease do <em>H. pylori</em>, inativando-a[cite: 22]. Como a bactéria necessita da urease para converter a ureia em amónia (mecanismo que neutraliza o ácido à sua volta para conseguir sobreviver no estômago), a inibição enzimática expõe o microrganismo à acidez gástrica letal[cite: 22].<br>• <strong>Metronidazol:</strong> Pró-fármaco que penetra por difusão passiva na bactéria que é consequentemente reduzido a um radical livre[cite: 22]. Este radical livre reage diretamente com a estrutura do DNA bacteriano, provocando a perda da estrutura em hélice e a morte celular por incapacidade de replicação[cite: 22].<br>• <strong>Cloridrato de Tetraciclina:</strong> Liga-se de forma reversível à subunidade 30S do ribossoma bacteriano, impedindo a adição de novos aminoácidos à cadeia polipeptídica em crescimento, interrompendo a síntese de proteínas essenciais à sobrevivência e replicação bacteriana[cite: 22].",
+      "mecanismo": "• <strong>Subcitrato de Bismuto Potássico:</strong> Liga-se aos resíduos de cisteína da enzima urease do <em>H. pylori</em>, inativando-a. Como a bactéria necessita da urease para converter a ureia em amónia (mecanismo que neutraliza o ácido à sua volta para conseguir sobreviver no estômago), a inibição enzimática expõe o microrganismo à acidez gástrica letal.<br>• <strong>Metronidazol:</strong> Pró-fármaco que penetra por difusão passiva na bactéria que é consequentemente reduzido a um radical livre. Este radical livre reage diretamente com a estrutura do DNA bacteriano, provocando a perda da estrutura em hélice e a morte celular por incapacidade de replicação.<br>• <strong>Cloridrato de Tetraciclina:</strong> Liga-se de forma reversível à subunidade 30S do ribossoma bacteriano, impedindo a adição de novos aminoácidos à cadeia polipeptídica em crescimento, interrompendo a síntese de proteínas essenciais à sobrevivência e replicação bacteriana.",
       "indicacoes": ["Erradicação de Helicobacter pylori em associação com IBP"],
       "alvoPrincipal": "Enzima Urease, DNA bacteriano e Subunidade 30S do Ribossoma",
       "rcm": {
@@ -471,7 +640,7 @@
         }
       ],
       "classe": "Citoprotetor da mucosa gástrica",
-      "mecanismo": "Complexo de sacarose octasulfatada com hidróxido de alumínio (protetor focal de lesões)[cite: 23]. Em meio ácido (pH < 4), polimeriza-se formando uma pasta viscosa e negativamente carregada que se liga seletivamente às proteínas de carga positiva (exsudado proteico) das crateras ulcerosas[cite: 23]. Esta barreira física protege a ferida da digestão pelo HCl, pela pepsina e pelos sais biliares, estimulando localmente a libertação endógena de prostaglandinas e do fator de crescimento epidérmico (EGF)[cite: 23].",
+      "mecanismo": "Complexo de sacarose octasulfatada com hidróxido de alumínio (protetor focal de lesões). Em meio ácido (pH < 4), polimeriza-se formando uma pasta viscosa e negativamente carregada que se liga seletivamente às proteínas de carga positiva (exsudado proteico) das crateras ulcerosas. Esta barreira física protege a ferida da digestão pelo HCl, pela pepsina e pelos sais biliares, estimulando localmente a libertação endógena de prostaglandinas e do fator de crescimento epidérmico (EGF).",
       "indicacoes": ["Úlcera gástrica e duodenal", "Esofagite de refluxo", "Profilaxia de úlcera de stress"],
       "alvoPrincipal": "Proteínas exsudadas da mucosa lesionada",
       "rcm": {
@@ -504,7 +673,7 @@
         }
       ],
       "classe": "Dispositivo de barreira mecânica anti-refluxo com suporte antiácido",
-      "mecanismo": "• <strong>Alginato de sódio:</strong> Em contacto com o ácido clorídrico, precipita formando um gel espesso de ácido algínico, fortalecido pelo entrecruzamento com iões cálcio (Ca²⁺)[cite: 24].<br>• <strong>Bicarbonato de sódio e Carbonato de cálcio:</strong> Libertam bolhas de dióxido de carbono (CO₂) que flutuam o gel como uma balsa sobre a bolsa ácida (<em>acid pocket</em>), bloqueando fisicamente o refluxo de ácido, pepsina e bilis para o esófago[cite: 24]. Os iões de cálcio (Ca²⁺) libertados pela dissociação do carbonato de cálcio desempenham um papel crucial: ligam-se quimicamente às cadeias do ácido algínico, criando pontes de cruzamento (<em>cross-linking</em>), transformando o gel simples numa espuma/balsa estruturada, resistente e coesa, capaz de resistir às contrações do estômago e permanecer no topo do suco gástrico por até 4 horas[cite: 24].",
+      "mecanismo": "• <strong>Alginato de sódio:</strong> Em contacto com o ácido clorídrico, precipita formando um gel espesso de ácido algínico, fortalecido pelo entrecruzamento com iões cálcio (Ca²⁺).<br>• <strong>Bicarbonato de sódio e Carbonato de cálcio:</strong> Libertam bolhas de dióxido de carbono (CO₂) que flutuam o gel como uma balsa sobre a bolsa ácida (<em>acid pocket</em>), bloqueando fisicamente o refluxo de ácido, pepsina e bilis para o esófago. Os iões de cálcio (Ca²⁺) libertados pela dissociação do carbonato de cálcio desempenham um papel crucial: ligam-se quimicamente às cadeias do ácido algínico, criando pontes de cruzamento (<em>cross-linking</em>), transformando o gel simples numa espuma/balsa estruturada, resistente e coesa, capaz de resistir às contrações do estômago e permanecer no topo do suco gástrico por até 4 horas.",
       "indicacoes": ["Refluxo gastroesofágico", "Azia", "Regurgitação"],
       "alvoPrincipal": "Ácido clorídrico",
       "rcm": {
