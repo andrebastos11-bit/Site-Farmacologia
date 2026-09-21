@@ -93,7 +93,7 @@
             display: block;
         }
 
-        /* Nível 2: Subgrupo de 3 Dígitos (ex: A01) */
+        /* Nível 2: Subgrupo de 3 Dígitos (ex: A01) - Em Maiúsculas */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
@@ -102,6 +102,7 @@
             font-size: 0.95rem;
             font-weight: 600;
             color: #334155;
+            text-transform: uppercase;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -303,10 +304,10 @@
     <script>
         let farmacosData = [];
 
-        // Mapeamento oficial dos códigos ATC de 3 dígitos (Nível 2)
+        // Dicionário oficial rigoroso para o Nível 2 (3 caracteres) em maiúsculas
         const descricoesATC3 = {
-            "A01": "Preparações para Uso Estomatológico",
-            "A02": "Tratamento de Alterações Causadas por Ácidos"
+            "A01": "A01 - PREPARAÇÕES PARA USO ESTOMATOLÓGICO",
+            "A02": "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
         };
 
         function formatarTextoCapitalizado(texto) {
@@ -352,49 +353,28 @@
                 return;
             }
 
-            const descSub3 = {};
-            const descSub4 = {};
-
-            farmacosData.forEach(f => {
-                const atc = f.atc || "";
-                // Nível de 3 caracteres (ex: A01)
-                if (atc.length >= 3) {
-                    const k3 = atc.substring(0, 3);
-                    if (f.subgrupo2) {
-                        // Se o subgrupo2 do JSON tiver o formato A01 - Nome
-                        descSub3[k3] = f.subgrupo2;
-                    }
-                }
-                // Nível de 4/5 caracteres (ex: A01AA)
-                if (atc.length >= 4) {
-                    const k4 = atc.substring(0, 5).length >= 5 ? atc.substring(0, 5) : atc.substring(0, 4);
-                    if (f.subgrupo3) {
-                        descSub4[k4] = f.subgrupo3;
-                    }
-                }
-            });
-
             const estrutura = {};
             lista.forEach(f => {
                 const g1 = f.grupo || "Outros";
                 const atc = f.atc || "";
                 
+                // Nível 2 exato: Primeiros 3 caracteres (ex: A01, A02)
                 const k3 = atc.length >= 3 ? atc.substring(0, 3) : "A00";
-                const k4 = atc.length >= 5 ? atc.substring(0, 5) : (atc.length >= 4 ? atc.substring(0, 4) : k3);
                 
-                // Nível 2 rigoroso (3 dígitos ex: A01)
-                let g2Bruto = descSub3[k3] || descricoesATC3[k3] || `${k3} - Outras Preparações`;
-                if (!g2Bruto.toUpperCase().startsWith(k3)) {
-                    g2Bruto = `${k3} - ${g2Bruto}`;
+                // Nível 3 exato: Subgrupo de 4 ou 5 caracteres (ex: A01AA, A02B)
+                const k4 = atc.length >= 5 ? atc.substring(0, 5) : (atc.length >= 4 ? atc.substring(0, 4) : k3);
+
+                // Obter nome formatado do Nível 2 (forçado a maiúsculas conforme pedido)
+                let g2Nome = descricoesATC3[k3];
+                if (!g2Nome) {
+                    g2Nome = `${k3} - OUTRAS PREPARAÇÕES`;
                 }
 
-                // Nível 3 rigoroso (4/5 dígitos ex: A01AA)
-                let g3Bruto = descSub4[k4] || (f.subgrupo3 ? f.subgrupo3 : null) || `${k4} - Outros Agentes`;
+                // Obter nome formatado do Nível 3
+                let g3Bruto = f.subgrupo3 || `${k4} - Outros Agentes`;
                 if (!g3Bruto.toUpperCase().startsWith(k4)) {
                     g3Bruto = `${k4} - ${g3Bruto}`;
                 }
-
-                const g2Nome = formatarTextoCapitalizado(g2Bruto);
                 const g3Nome = formatarTextoCapitalizado(g3Bruto);
 
                 if (!estrutura[g1]) estrutura[g1] = {};
