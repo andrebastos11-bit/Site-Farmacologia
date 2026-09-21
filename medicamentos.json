@@ -685,12 +685,14 @@
         "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     }
     },
-{
+    {
+  "fármacos": [
+    {
       "nome": "Mebeverina",
       "atc": "A03AA04",
-      "grupo": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
-      "subgrupo2": "A03A - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS GASTROINTESTINAIS",
-      "subgrupo3": "A03AA - Agentes sintéticos anticolinérgicos, ésteres com grupo amónio terciário",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+      "subgrupo3": "A03A - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS GASTROINTESTINAIS",
       "produtos": [
         {
           "nome": "Duspatal Retard®",
@@ -713,9 +715,9 @@
     {
       "nome": "Trimebutina",
       "atc": "A03AA05",
-      "grupo": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
-      "subgrupo2": "A03A - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS GASTROINTESTINAIS",
-      "subgrupo3": "A03AA - Agentes sintéticos anticolinérgicos, ésteres com grupo amónio terciário",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+      "subgrupo3": "A03A - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS GASTROINTESTINAIS",
       "produtos": [
         {
           "nome": "Debridat 200®",
@@ -738,9 +740,9 @@
     {
       "nome": "Atropina",
       "atc": "A03BA01",
-      "grupo": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
-      "subgrupo2": "A03B - BELADONA E DERIVADOS, ISOLADOS",
-      "subgrupo3": "A03BA - Alcalóides da beladona, aminas terciárias",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+      "subgrupo3": "A03B - BELADONA E DERIVADOS, ISOLADOS",
       "produtos": [
         {
           "nome": "Atropina Braun®",
@@ -763,9 +765,9 @@
     {
       "nome": "Butilescopolamina + Paracetamol",
       "atc": "A03DB04",
-      "grupo": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
-      "subgrupo2": "A03D - ANTI-ESPASMÓDICOS ASSOCIADOS A ANALGÉSICOS",
-      "subgrupo3": "A03DB - Beladona e derivados associados a analgésicos",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+      "subgrupo3": "A03D - ANTI-ESPASMÓDICOS ASSOCIADOS A ANALGÉSICOS",
       "produtos": [
         {
           "nome": "Buscopan Compositum N®",
@@ -788,9 +790,9 @@
     {
       "nome": "Metoclopramida",
       "atc": "A03FA01",
-      "grupo": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
-      "subgrupo2": "A03F - GASTROCINÉTICOS",
-      "subgrupo3": "A03FA - Gastrocinéticos",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
+      "subgrupo3": "A03F - GASTROCINÉTICOS",
       "produtos": [
         {
           "nome": "Primperan®",
