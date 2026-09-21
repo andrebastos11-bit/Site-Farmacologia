@@ -3,235 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Farmacologia Clínica</title>
+    <title>Plataforma de Farmacologia Clínica</title>
 
     <style>
-
-        * {
-            box-sizing: border-box;
+        :root {
+            --primary-color: #0f766e;
+            --primary-light: #ccfbf1;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --border-color: #cbd5e1;
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
-            background: #f5f7fa;
-            color: #222;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         header {
-            background: #ffffff;
-            padding: 25px 20px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: auto;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         h1 {
-            margin: 0;
-            color: #1e40af;
+            color: var(--primary-color);
+            margin-bottom: 5px;
         }
 
         .subtitle {
-            margin-top: 8px;
-            color: #666;
+            color: #64748b;
+            font-size: 1.1rem;
         }
 
-        .search-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        #searchInput {
+        .search-box {
             width: 100%;
-            padding: 13px 15px;
-            border: 1px solid #ccc;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: 2px solid var(--border-color);
             border-radius: 8px;
-            font-size: 15px;
+            margin-bottom: 30px;
             outline: none;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
         }
 
-        #searchInput:focus {
-            border-color: #2563eb;
+        .search-box:focus {
+            border-color: var(--primary-color);
         }
-
-        #resultadoPesquisa {
-            margin-top: 8px;
-            font-size: 13px;
-            color: #666;
-        }
-
-        #catalogContainer {
-            max-width: 1200px;
-            margin: 0 auto 40px;
-            padding: 0 20px;
-        }
-
 
         /* =====================================================
-           NÍVEL 1
-           A - APARELHO DIGESTIVO E METABOLISMO
+           GRUPO ATC PRINCIPAL
         ===================================================== */
 
-        .atc-main-group {
-            margin-bottom: 10px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .atc-main-header {
-            padding: 16px 18px;
-            background: #eaf1ff;
-            color: #1e40af;
-            font-size: 17px;
-            font-weight: bold;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .atc-main-header:hover {
-            background: #dfeaff;
-        }
-
-        .atc-main-list {
-            display: none;
-        }
-
-        .atc-main-group.active > .atc-main-list {
-            display: block;
-        }
-
-
-        /* =====================================================
-           NÍVEL 2
-           A01 / A02 / A03
-        ===================================================== */
-
-        .atc-sub2-item {
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .atc-sub2-header {
-            padding: 14px 20px;
-            background: #f8fafc;
-            font-size: 15px;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-        }
-
-        .atc-sub2-header:hover {
-            background: #f1f5f9;
-        }
-
-        .atc-sub2-list {
-            display: none;
-        }
-
-        .atc-sub2-item.active > .atc-sub2-list {
-            display: block;
-        }
-
-
-        /* =====================================================
-           NÍVEL 3
-           A02A / A02B
-        ===================================================== */
-
-        .atc-sub3-item {
-            border-top: 1px solid #e5e7eb;
-        }
-
-        .atc-sub3-header {
-            padding: 12px 28px;
+        .atc-group {
+            margin-bottom: 30px;
             background: #ffffff;
-            font-size: 14px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .atc-header {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            padding: 12px 20px;
             font-weight: bold;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #cbd5e1;
             cursor: pointer;
-            text-transform: uppercase;
         }
 
-        .atc-sub3-header:hover {
-            background: #f8fafc;
+        .atc-header:hover {
+            opacity: 0.9;
         }
-
-        .atc-sub3-list {
-            display: none;
-        }
-
-        .atc-sub3-item.active > .atc-sub3-list {
-            display: block;
-        }
-
 
         /* =====================================================
-           NÍVEL 4
-           A01AA / A02AA...
+           NÍVEIS ATC
         ===================================================== */
 
-        .atc-sub4-item {
-            border-top: 1px solid #eeeeee;
-        }
-
-        .atc-sub4-header {
-            padding: 11px 36px;
-            background: #fafafa;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        .atc-sub4-header:hover {
-            background: #f3f4f6;
-        }
-
-        .atc-sub4-list {
+        .atc-content {
             display: none;
         }
 
-        .atc-sub4-item.active > .atc-sub4-list {
+        .atc-content.active {
             display: block;
         }
 
+        .atc-subgroup {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .atc-subgroup:last-child {
+            border-bottom: none;
+        }
+
+        .atc-subheader {
+            padding: 12px 20px;
+            font-weight: 600;
+            color: var(--text-color);
+            background: #ffffff;
+            cursor: pointer;
+        }
+
+        .atc-subheader:hover {
+            background-color: #f8fafc;
+        }
+
+        .atc-subcontent {
+            display: none;
+            background-color: #ffffff;
+        }
+
+        .atc-subcontent.active {
+            display: block;
+        }
+
+        /* Nível 3 */
+
+        .atc-level3 {
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .atc-level3-header {
+            padding: 11px 20px 11px 35px;
+            font-weight: 500;
+            color: #334155;
+            cursor: pointer;
+        }
+
+        .atc-level3-header:hover {
+            background-color: #f8fafc;
+        }
+
+        .atc-level3-content {
+            display: none;
+        }
+
+        .atc-level3-content.active {
+            display: block;
+        }
+
+        /* Nível 4 */
+
+        .atc-level4 {
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .atc-level4-header {
+            padding: 10px 20px 10px 50px;
+            color: #475569;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .atc-level4-header:hover {
+            background-color: #f8fafc;
+        }
+
+        .atc-level4-content {
+            display: none;
+        }
+
+        .atc-level4-content.active {
+            display: block;
+        }
 
         /* =====================================================
-           MEDICAMENTOS
+           LISTA DE MEDICAMENTOS
         ===================================================== */
 
         .drug-list {
             list-style: none;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
 
         .drug-item {
-            padding: 12px 45px;
-            border-top: 1px solid #eeeeee;
-            background: white;
-            cursor: pointer;
+            padding: 15px 20px 15px 65px;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .drug-item:last-child {
+            border-bottom: none;
         }
 
         .drug-item:hover {
-            background: #f5f9ff;
+            background-color: #f8fafc;
         }
 
-        .drug-name {
-            font-weight: 600;
-            color: #2563eb;
+        .drug-info {
+            flex: 1;
         }
 
-        .drug-indication {
-            margin-top: 4px;
-            font-size: 13px;
-            color: #666;
+        .drug-info h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+            color: var(--text-color);
         }
 
+        .drug-meta {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .atc-badge {
+            background-color: #e2e8f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: #334155;
+        }
+
+        .drug-link {
+            text-decoration: none;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            white-space: nowrap;
+        }
+
+        .drug-link:hover {
+            opacity: 0.9;
+        }
 
         /* =====================================================
            MODAL
@@ -241,10 +254,12 @@
             display: none;
             position: fixed;
             z-index: 1000;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 23, 42, 0.55);
             overflow-y: auto;
-            padding: 30px 15px;
         }
 
         .modal.active {
@@ -252,392 +267,236 @@
         }
 
         .modal-content {
-            position: relative;
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 30px;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 40px auto;
             border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            padding: 30px;
+            position: relative;
         }
 
         .close-modal {
             position: absolute;
-            top: 12px;
-            right: 15px;
-            border: none;
-            background: none;
+            right: 20px;
+            top: 15px;
             font-size: 28px;
+            color: #64748b;
             cursor: pointer;
-            color: #555;
         }
 
         .close-modal:hover {
-            color: #000;
+            color: var(--text-color);
         }
 
-        #modalTitulo {
-            margin: 0 40px 5px 0;
-            color: #1e40af;
-        }
-
-        .modal-atc {
-            color: #777;
-            font-size: 13px;
-            margin-bottom: 25px;
-        }
-
-
-        /* =====================================================
-           SECÇÕES DA FICHA
-        ===================================================== */
-
-        .rcm-section {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-
-        .rcm-section h3 {
+        .modal-content h2 {
+            color: var(--primary-color);
             margin-top: 0;
-            color: #333;
+            padding-right: 30px;
         }
 
-        .info-block {
-            margin-bottom: 16px;
+        .modal-section {
+            margin-top: 25px;
         }
 
-        .info-label {
+        .modal-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+
+        .identificacao-item {
+            margin-bottom: 12px;
+        }
+
+        .identificacao-item strong {
             display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
+            color: #475569;
+            margin-bottom: 3px;
         }
 
-        .info-value {
-            line-height: 1.6;
-            color: #444;
+        .identificacao-item span {
+            color: var(--text-color);
         }
-
-
-        /* =====================================================
-           MECANISMO
-        ===================================================== */
-
-        .mechanism {
-            line-height: 1.7;
-            color: #444;
-        }
-
-        .mechanism p {
-            margin: 8px 0;
-        }
-
-        .mechanism ul {
-            margin-top: 8px;
-        }
-
-
-        /* =====================================================
-           PRODUTOS
-        ===================================================== */
 
         .produto-box {
-            border: 1px solid #ddd;
-            border-radius: 7px;
-            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px 15px;
             margin-bottom: 10px;
-            background: #fafafa;
+            background: #f8fafc;
         }
 
-        .produto-nome {
-            font-weight: bold;
-            color: #1e40af;
+        .produto-box strong {
+            color: var(--primary-color);
         }
 
-        .produto-info {
-            margin-top: 4px;
-            font-size: 13px;
-            color: #666;
+        .rcm-section {
+            line-height: 1.6;
         }
 
+        .video-container {
+            margin-top: 15px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            min-height: 350px;
+            border: none;
+            border-radius: 8px;
+        }
 
         /* =====================================================
-           VÍDEOS
+           MOBILE
         ===================================================== */
 
-        .video-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+        @media (max-width: 650px) {
+            body {
+                padding: 10px;
+            }
 
-        .video-box h4 {
-            margin-bottom: 8px;
-        }
+            .drug-item {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 20px;
+            }
 
-        .video-box iframe {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            border: 0;
-            border-radius: 7px;
-            background: #000;
-        }
-
-        .message {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            color: #666;
-        }
-
-        .error {
-            color: #991b1b;
-            background: #fff5f5;
-            border-color: #fecaca;
-        }
-
-        @media (max-width: 700px) {
-
-            .video-grid {
-                grid-template-columns: 1fr;
+            .drug-link {
+                align-self: flex-end;
             }
 
             .modal-content {
+                margin: 15px;
                 padding: 20px;
             }
 
+            .video-container iframe {
+                min-height: 220px;
+            }
         }
-
     </style>
 </head>
 
-
 <body>
 
-<header>
+<div class="container">
 
-    <div class="header-content">
-
+    <header>
         <h1>Farmacologia Clínica</h1>
-
         <p class="subtitle">
             Base de dados estruturada por Classificação ATC
         </p>
-
-    </div>
-
-</header>
-
-
-<div class="search-container">
+    </header>
 
     <input
         type="text"
         id="searchInput"
-        placeholder="Pesquisar medicamento, substância, indicação ou código ATC..."
-        autocomplete="off"
+        class="search-box"
+        placeholder="Pesquisar por fármaco, classe ou código ATC (ex: Metformina, C10, SGLT2)..."
+        onkeyup="filtrarFarmacos()"
     >
 
-    <div id="resultadoPesquisa"></div>
+    <div id="catalogContainer">
+        <p style="text-align: center; color: #64748b;">
+            A carregar base de dados...
+        </p>
+    </div>
 
 </div>
 
 
-<main id="catalogContainer">
-
-    <div class="message">
-        A carregar medicamentos...
-    </div>
-
-</main>
-
-
 <!-- =========================================================
-     MODAL
+     MODAL DO MEDICAMENTO
 ========================================================= -->
 
-<div
-    id="modal"
-    class="modal"
-    role="dialog"
-    aria-modal="true"
->
+<div id="modalMedicamento" class="modal">
 
     <div class="modal-content">
 
-        <button
-            class="close-modal"
-            id="closeModal"
-            aria-label="Fechar"
-        >
-            ×
-        </button>
-
+        <span class="close-modal" onclick="fecharModal()">&times;</span>
 
         <h2 id="modalTitulo"></h2>
 
-        <div
-            id="modalAtc"
-            class="modal-atc"
-        ></div>
-
-
         <!-- IDENTIFICAÇÃO -->
 
-        <section class="rcm-section">
+        <div class="modal-section">
 
             <h3>Identificação</h3>
 
-
-            <div class="info-block">
-
-                <span class="info-label">
-                    Substância ativa
-                </span>
-
-                <div
-                    id="modalSubstancia"
-                    class="info-value"
-                ></div>
-
+            <div class="identificacao-item">
+                <strong>Substância ativa</strong>
+                <span id="modalSubstancia"></span>
             </div>
 
-
-            <div class="info-block">
-
-                <span class="info-label">
-                    Classe farmacológica
-                </span>
-
-                <div
-                    id="modalClasse"
-                    class="info-value"
-                ></div>
-
+            <div class="identificacao-item">
+                <strong>Classe farmacológica</strong>
+                <span id="modalClasse"></span>
             </div>
 
-
-            <div class="info-block">
-
-                <span class="info-label">
-                    Alvo terapêutico principal
-                </span>
-
-                <div
-                    id="modalAlvo"
-                    class="info-value"
-                ></div>
-
+            <div class="identificacao-item">
+                <strong>Alvo terapêutico principal</strong>
+                <span id="modalAlvo"></span>
             </div>
 
-        </section>
+        </div>
 
 
         <!-- MECANISMO -->
 
-        <section
-            id="secaoMecanismo"
-            class="rcm-section"
-        >
+        <div class="modal-section">
 
             <h3>Mecanismo de ação</h3>
 
-            <div
-                id="modalMecanismo"
-                class="mechanism"
-            ></div>
+            <div id="modalMecanismo" class="rcm-section"></div>
 
-        </section>
+        </div>
 
 
         <!-- INDICAÇÕES -->
 
-        <section
-            id="secaoIndicacoes"
-            class="rcm-section"
-        >
+        <div class="modal-section">
 
             <h3>Indicações terapêuticas</h3>
 
-            <div
-                id="modalIndicacoes"
-                class="info-value"
-            ></div>
+            <div id="modalIndicacoes" class="rcm-section"></div>
 
-        </section>
+        </div>
 
 
         <!-- PRODUTOS -->
 
-        <section
-            id="secaoProdutos"
-            class="rcm-section"
-        >
+        <div class="modal-section">
 
-            <h3>Medicamentos / Produtos</h3>
+            <h3>Produtos</h3>
 
             <div id="modalProdutos"></div>
 
-        </section>
+        </div>
 
 
-        <!-- OUTROS DADOS RCM -->
+        <!-- RCM -->
 
-        <section
-            id="secaoRcm"
-            class="rcm-section"
-        >
+        <div class="modal-section" id="secaoRCM">
 
-            <h3>Informação clínica</h3>
+            <h3>Resumo das Características do Medicamento</h3>
 
-            <div id="modalRcm"></div>
+            <div id="modalRCM" class="rcm-section"></div>
 
-        </section>
+        </div>
 
 
         <!-- VÍDEOS -->
 
-        <section
-            id="secaoVideos"
-            class="rcm-section"
-        >
+        <div class="modal-section" id="secaoVideos">
 
             <h3>Vídeos</h3>
 
-            <div class="video-grid">
+            <div id="videoDinamica" class="video-container"></div>
 
-                <div
-                    id="videoDinamicaBox"
-                    class="video-box"
-                >
+            <div id="videoCinetica" class="video-container"></div>
 
-                    <h4>Farmacodinâmica</h4>
-
-                    <iframe
-                        id="videoDinamica"
-                        allowfullscreen
-                    ></iframe>
-
-                </div>
-
-
-                <div
-                    id="videoCineticaBox"
-                    class="video-box"
-                >
-
-                    <h4>Farmacocinética</h4>
-
-                    <iframe
-                        id="videoCinetica"
-                        allowfullscreen
-                    ></iframe>
-
-                </div>
-
-            </div>
-
-        </section>
+        </div>
 
     </div>
 
@@ -655,44 +514,33 @@
 
     /* =========================================================
        DESCRIÇÕES ATC
-       
-       Os níveis 2 e 3 ficam aqui.
-       No futuro basta acrescentar A04, A05, etc.
     ========================================================= */
 
     const descricoesATC2 = {
 
-        "A01":
-            "A01 - PREPARAÇÕES ESTOMATOLÓGICAS",
+        A01: "A01 - PREPARAÇÕES ESTOMATOLÓGICAS",
 
-        "A02":
-            "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS",
+        A02: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS",
 
-        "A03":
-            "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS",
-
-        "A04":
-            "A04 - ANTIEMÉTICOS E ANTINAUSEANTES"
+        A03: "A03 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
 
     };
 
 
     const descricoesATC3 = {
 
-        "A02A":
-            "A02A - ANTIÁCIDOS",
+        A02A: "A02A - ANTIÁCIDOS",
 
-        "A02B":
-            "A02B - FÁRMACOS PARA O TRATAMENTO DA ÚLCERA PÉPTICA E DO REFLUXO GASTROESOFÁGICO"
+        A02B: "A02B - FÁRMACOS PARA O TRATAMENTO DA ÚLCERA PÉPTICA E DO REFLUXO GASTROESOFÁGICO"
 
     };
 
 
     /* =========================================================
-       PALAVRAS QUE FICAM EM MINÚSCULAS
+       PALAVRAS QUE PERMANECEM EM MINÚSCULAS
     ========================================================= */
 
-    const palavrasPequenas = new Set([
+    const palavrasMinusculas = new Set([
 
         "a",
         "à",
@@ -700,32 +548,24 @@
         "aos",
         "as",
         "às",
-
         "e",
-
         "da",
         "das",
         "de",
         "do",
         "dos",
-
         "em",
         "na",
         "nas",
         "no",
         "nos",
-
         "por",
         "para",
-
         "com",
         "sem",
-
         "sob",
         "entre",
-
         "ou",
-
         "um",
         "uma",
         "uns",
@@ -735,342 +575,96 @@
 
 
     /* =========================================================
-       FORMATAÇÃO DE TEXTO
+       CAPITALIZAÇÃO
     ========================================================= */
 
-    function formatarTextoCapitalizado(texto) {
+    function capitalizarTexto(texto) {
 
-        if (!texto) {
-            return "";
-        }
+        if (!texto) return "";
 
-        texto = String(texto)
-            .trim()
-            .replace(/\s+/g, " ");
-
-
-        const palavras =
-            texto
-                .toLocaleLowerCase("pt-PT")
-                .split(" ");
-
-
-        return palavras.map(
-            (palavra, indice) => {
-
-                if (!palavra) {
-                    return "";
-                }
-
-
-                /*
-                 Pequenas palavras ficam minúsculas,
-                 exceto se forem a primeira palavra.
-                */
+        return String(texto)
+            .toLowerCase()
+            .split(/\s+/)
+            .map((palavra, indice) => {
 
                 if (
                     indice > 0 &&
-                    palavrasPequenas.has(palavra)
+                    palavrasMinusculas.has(palavra)
                 ) {
-
                     return palavra;
-
                 }
 
+                return palavra.charAt(0).toUpperCase() + palavra.slice(1);
 
-                return palavra.charAt(0)
-                    .toLocaleUpperCase("pt-PT")
-                    + palavra.slice(1);
-
-            }
-        ).join(" ");
+            })
+            .join(" ");
 
     }
 
 
     /* =========================================================
-       TEXTO SEGURO
+       LIMPAR CÓDIGO ATC
     ========================================================= */
 
-    function textoSeguro(valor) {
+    function extrairCodigoATC(valor) {
 
-        if (
-            valor === null ||
-            valor === undefined
-        ) {
+        if (!valor) return "";
 
-            return "";
+        const correspondencia = String(valor)
+            .toUpperCase()
+            .match(/[A-Z]\d{2}[A-Z0-9]{0,2}/);
 
-        }
-
-
-        if (Array.isArray(valor)) {
-
-            return valor.join(", ");
-
-        }
-
-
-        if (typeof valor === "object") {
-
-            return Object.values(valor).join(" ");
-
-        }
-
-
-        return String(valor);
+        return correspondencia
+            ? correspondencia[0]
+            : "";
 
     }
 
 
     /* =========================================================
-       ARRAY
+       OBTER DESCRIÇÃO DE UM GRUPO ATC
     ========================================================= */
 
-    function paraArray(valor) {
-
-        if (!valor) {
-            return [];
-        }
-
-        if (Array.isArray(valor)) {
-            return valor;
-        }
-
-        return [valor];
-
-    }
-
-
-    /* =========================================================
-       GRUPO PRINCIPAL
-    ========================================================= */
-
-    const gruposATC = {
-
-        "A":
-            "A - APARELHO DIGESTIVO E METABOLISMO"
-
-    };
-
-
-    function obterGrupoPrincipal(farmaco) {
-
-        const atc =
-            textoSeguro(farmaco.atc)
-                .trim()
-                .toUpperCase();
-
-
-        const letra =
-            atc.charAt(0);
-
-
-        return gruposATC[letra]
-            || textoSeguro(farmaco.grupo)
-            || "OUTROS";
-
-    }
-
-
-    /* =========================================================
-       ATC NÍVEL 2
-    ========================================================= */
-
-    function obterNomeATC2(farmaco) {
-
-        const atc =
-            textoSeguro(farmaco.atc)
-                .trim()
-                .toUpperCase();
-
-
-        const codigo =
-            atc.substring(0, 3);
-
+    function obterDescricaoATC2(codigo, farmacos) {
 
         if (descricoesATC2[codigo]) {
-
             return descricoesATC2[codigo];
-
         }
 
+        const medicamento = farmacos.find(f => {
 
-        const possiveis = [
+            const valor = String(f.subgrupo2 || "");
 
-            farmaco.subgrupo2,
-            farmaco.grupoATC2,
-            farmaco.atc2Nome,
-            farmaco.nomeATC2
+            return valor.toUpperCase().startsWith(codigo);
 
-        ];
+        });
 
-
-        for (const valor of possiveis) {
-
-            if (!valor) {
-                continue;
-            }
-
-
-            const texto =
-                textoSeguro(valor).trim();
-
-
-            if (
-                texto
-                    .toUpperCase()
-                    .startsWith(codigo)
-            ) {
-
-                return texto.toUpperCase();
-
-            }
-
-
-            return `${codigo} - ${texto}`
-                .toUpperCase();
-
+        if (medicamento && medicamento.subgrupo2) {
+            return formatarNomeATC(medicamento.subgrupo2, codigo);
         }
 
-
-        return `${codigo} - GRUPO ATC`;
+        return codigo;
 
     }
 
 
-    /* =========================================================
-       ATC NÍVEL 3
-    ========================================================= */
-
-    function obterNomeATC3(farmaco) {
-
-        const atc =
-            textoSeguro(farmaco.atc)
-                .trim()
-                .toUpperCase();
-
-
-        const codigo =
-            atc.substring(0, 4);
-
+    function obterDescricaoATC3(codigo, farmacos) {
 
         if (descricoesATC3[codigo]) {
-
             return descricoesATC3[codigo];
-
         }
 
+        const medicamento = farmacos.find(f => {
 
-        const possiveis = [
+            const valor = String(f.subgrupo3 || "");
 
-            farmaco.grupoATC3,
-            farmaco.atc3Nome,
-            farmaco.nomeATC3
+            return valor.toUpperCase().startsWith(codigo);
 
-        ];
+        });
 
-
-        for (const valor of possiveis) {
-
-            if (!valor) {
-                continue;
-            }
-
-
-            const texto =
-                textoSeguro(valor).trim();
-
-
-            if (
-                texto
-                    .toUpperCase()
-                    .startsWith(codigo)
-            ) {
-
-                return texto.toUpperCase();
-
-            }
-
-
-            return `${codigo} - ${texto}`
-                .toUpperCase();
-
+        if (medicamento && medicamento.subgrupo3) {
+            return formatarNomeATC(medicamento.subgrupo3, codigo);
         }
-
-
-        return `${codigo} - GRUPO ATC`;
-
-    }
-
-
-    /* =========================================================
-       ATC NÍVEL 4
-       
-       Exemplo:
-       A01AA - Agentes Profiláticos da Cárie
-    ========================================================= */
-
-    function obterNomeATC4(farmaco) {
-
-        const atc =
-            textoSeguro(farmaco.atc)
-                .trim()
-                .toUpperCase();
-
-
-        const codigo =
-            atc.substring(0, 5);
-
-
-        const possiveis = [
-
-            farmaco.subgrupo3,
-            farmaco.subgrupo4,
-            farmaco.grupoATC4,
-            farmaco.atc4Nome,
-            farmaco.nomeATC4
-
-        ];
-
-
-        for (const valor of possiveis) {
-
-            if (!valor) {
-                continue;
-            }
-
-
-            let texto =
-                textoSeguro(valor).trim();
-
-
-            /*
-             Caso já venha:
-             A01AA - Agentes profiláticos da cárie
-            */
-
-            if (
-                texto
-                    .toUpperCase()
-                    .startsWith(codigo)
-            ) {
-
-                texto =
-                    texto
-                        .substring(codigo.length)
-                        .replace(/^[-–—:\s]+/, "")
-                        .trim();
-
-            }
-
-
-            return `${codigo} - ${
-                formatarTextoCapitalizado(texto)
-            }`;
-
-        }
-
 
         return codigo;
 
@@ -1078,83 +672,626 @@
 
 
     /* =========================================================
-       ORDENAR
+       FORMATAR NOME ATC
     ========================================================= */
 
-    function ordenarFarmacos(lista) {
+    function formatarNomeATC(texto, codigo) {
 
-        return [...lista].sort(
-            (a, b) => {
+        if (!texto) return codigo;
 
-                const atcA =
-                    textoSeguro(a.atc)
-                        .toUpperCase();
+        let descricao = String(texto).trim();
 
-                const atcB =
-                    textoSeguro(b.atc)
-                        .toUpperCase();
+        descricao = descricao.replace(
+            new RegExp("^" + codigo + "\\s*-?\\s*", "i"),
+            ""
+        );
+
+        descricao = capitalizarTexto(descricao);
+
+        return codigo + " - " + descricao.toUpperCase();
+
+    }
 
 
-                if (atcA !== atcB) {
+    /* =========================================================
+       CARREGAR JSON
+    ========================================================= */
 
-                    return atcA.localeCompare(
-                        atcB,
-                        "pt"
+    fetch("medicamentos.json")
+
+        .then(response => {
+
+            if (!response.ok) {
+                throw new Error(
+                    "Não foi possível carregar medicamentos.json"
+                );
+            }
+
+            return response.json();
+
+        })
+
+        .then(data => {
+
+            /*
+             * Aceita:
+             * { "fármacos": [...] }
+             * { "farmacos": [...] }
+             * { "medicamentos": [...] }
+             * ou diretamente [...]
+             */
+
+            if (Array.isArray(data)) {
+
+                farmacosData = data;
+
+            } else if (Array.isArray(data.fármacos)) {
+
+                farmacosData = data.fármacos;
+
+            } else if (Array.isArray(data.farmacos)) {
+
+                farmacosData = data.farmacos;
+
+            } else if (Array.isArray(data.medicamentos)) {
+
+                farmacosData = data.medicamentos;
+
+            } else {
+
+                throw new Error(
+                    "Estrutura do ficheiro JSON não reconhecida."
+                );
+
+            }
+
+            renderizarCatalogo(farmacosData);
+
+        })
+
+        .catch(error => {
+
+            console.error("Erro ao carregar o JSON:", error);
+
+            document.getElementById("catalogContainer").innerHTML = `
+
+                <p style="
+                    text-align: center;
+                    color: red;
+                ">
+                    Erro ao carregar a base de dados de medicamentos.
+                </p>
+
+            `;
+
+        });
+
+
+    /* =========================================================
+       RENDERIZAR CATÁLOGO
+    ========================================================= */
+
+    function renderizarCatalogo(lista) {
+
+        const container =
+            document.getElementById("catalogContainer");
+
+        container.innerHTML = "";
+
+        if (!lista || lista.length === 0) {
+
+            container.innerHTML = `
+
+                <p style="
+                    text-align: center;
+                    color: #64748b;
+                ">
+                    Nenhum fármaco encontrado.
+                </p>
+
+            `;
+
+            return;
+        }
+
+
+        /* =====================================================
+           AGRUPAMENTO PRINCIPAL
+        ===================================================== */
+
+        const grupos = {};
+
+
+        lista.forEach(farmaco => {
+
+            const atc = extrairCodigoATC(farmaco.atc);
+
+            if (!atc) return;
+
+            const codigoPrincipal =
+                atc.substring(0, 1);
+
+            const nomeGrupo =
+                farmaco.grupo ||
+                codigoPrincipal;
+
+            const chave =
+                codigoPrincipal + "|" + nomeGrupo;
+
+            if (!grupos[chave]) {
+
+                grupos[chave] = {
+                    codigo: codigoPrincipal,
+                    nome: nomeGrupo,
+                    farmacos: []
+                };
+
+            }
+
+            grupos[chave].farmacos.push(farmaco);
+
+        });
+
+
+        /* =====================================================
+           CRIAR CADA GRUPO PRINCIPAL
+        ===================================================== */
+
+        Object.values(grupos).forEach(grupo => {
+
+            const grupoDiv =
+                document.createElement("div");
+
+            grupoDiv.className = "atc-group";
+
+
+            /* HEADER PRINCIPAL */
+
+            const header =
+                document.createElement("div");
+
+            header.className = "atc-header";
+
+            header.textContent =
+                obterNomeGrupoPrincipal(
+                    grupo.codigo,
+                    grupo.nome
+                );
+
+            grupoDiv.appendChild(header);
+
+
+            /* CONTEÚDO */
+
+            const conteudo =
+                document.createElement("div");
+
+            conteudo.className = "atc-content";
+
+
+            header.addEventListener("click", function () {
+
+                const estavaAberto =
+                    conteudo.classList.contains("active");
+
+                fecharIrmaos(conteudo);
+
+                if (!estavaAberto) {
+                    conteudo.classList.add("active");
+                }
+
+            });
+
+
+            /* AGRUPAR POR A02, A03, ETC. */
+
+            const subgrupos2 = {};
+
+
+            grupo.farmacos.forEach(farmaco => {
+
+                const atc =
+                    extrairCodigoATC(farmaco.atc);
+
+                const codigo2 =
+                    atc.substring(0, 3);
+
+                if (!subgrupos2[codigo2]) {
+                    subgrupos2[codigo2] = [];
+                }
+
+                subgrupos2[codigo2].push(farmaco);
+
+            });
+
+
+            Object.entries(subgrupos2).forEach(
+                ([codigo2, farmacos2]) => {
+
+                    criarNivel2(
+                        conteudo,
+                        codigo2,
+                        farmacos2
                     );
 
                 }
+            );
 
 
-                return textoSeguro(a.nome)
-                    .localeCompare(
-                        textoSeguro(b.nome),
-                        "pt"
-                    );
+            grupoDiv.appendChild(conteudo);
 
-            }
+            container.appendChild(grupoDiv);
+
+        });
+
+    }
+
+
+    /* =========================================================
+       NÍVEL 1
+    ========================================================= */
+
+    function obterNomeGrupoPrincipal(codigo, nome) {
+
+        let descricao = String(nome || "")
+            .replace(
+                new RegExp("^" + codigo + "\\s*-?\\s*", "i"),
+                ""
+            )
+            .trim();
+
+        if (!descricao) {
+            return codigo;
+        }
+
+        return (
+            codigo +
+            " - " +
+            capitalizarTexto(descricao).toUpperCase()
         );
 
     }
 
 
     /* =========================================================
-       FECHAR IRMÃOS
-       
-       Apenas um aberto de cada vez no mesmo nível.
+       NÍVEL 2
+       Ex: A02
     ========================================================= */
 
-    function fecharIrmaos(elemento) {
+    function criarNivel2(
+        container,
+        codigo2,
+        farmacos
+    ) {
 
-        const pai =
-            elemento.parentElement;
+        const item =
+            document.createElement("div");
+
+        item.className = "atc-subgroup";
 
 
-        if (!pai) {
-            return;
-        }
+        const header =
+            document.createElement("div");
+
+        header.className = "atc-subheader";
+
+        header.textContent =
+            obterDescricaoATC2(
+                codigo2,
+                farmacos
+            );
 
 
-        Array.from(pai.children)
-            .forEach(irmao => {
+        const conteudo =
+            document.createElement("div");
 
-                if (
-                    irmao !== elemento &&
-                    irmao.classList.contains("active")
-                ) {
+        conteudo.className = "atc-subcontent";
 
-                    irmao.classList.remove(
-                        "active"
-                    );
 
-                }
+        header.addEventListener("click", function () {
 
-            });
+            const estavaAberto =
+                conteudo.classList.contains("active");
+
+            fecharIrmaos(conteudo);
+
+            if (!estavaAberto) {
+                conteudo.classList.add("active");
+            }
+
+        });
+
+
+        /* =====================================================
+           AGRUPAR POR A02A / A02B
+        ===================================================== */
+
+        const subgrupos3 = {};
+
+
+        farmacos.forEach(farmaco => {
+
+            const atc =
+                extrairCodigoATC(farmaco.atc);
+
+            const codigo3 =
+                atc.substring(0, 4);
+
+            if (!subgrupos3[codigo3]) {
+                subgrupos3[codigo3] = [];
+            }
+
+            subgrupos3[codigo3].push(farmaco);
+
+        });
+
+
+        Object.entries(subgrupos3).forEach(
+            ([codigo3, farmacos3]) => {
+
+                criarNivel3(
+                    conteudo,
+                    codigo3,
+                    farmacos3
+                );
+
+            }
+        );
+
+
+        item.appendChild(header);
+        item.appendChild(conteudo);
+
+        container.appendChild(item);
 
     }
 
 
     /* =========================================================
-       CRIAR MEDICAMENTO
+       NÍVEL 3
+       Ex: A02A
+    ========================================================= */
+
+    function criarNivel3(
+        container,
+        codigo3,
+        farmacos
+    ) {
+
+        const item =
+            document.createElement("div");
+
+        item.className = "atc-level3";
+
+
+        const header =
+            document.createElement("div");
+
+        header.className =
+            "atc-level3-header";
+
+        header.textContent =
+            obterDescricaoATC3(
+                codigo3,
+                farmacos
+            );
+
+
+        const conteudo =
+            document.createElement("div");
+
+        conteudo.className =
+            "atc-level3-content";
+
+
+        header.addEventListener("click", function () {
+
+            const estavaAberto =
+                conteudo.classList.contains("active");
+
+            fecharIrmaos(conteudo);
+
+            if (!estavaAberto) {
+                conteudo.classList.add("active");
+            }
+
+        });
+
+
+        /* =====================================================
+           AGRUPAR POR A02AA / A02BA / ETC.
+        ===================================================== */
+
+        const subgrupos4 = {};
+
+
+        farmacos.forEach(farmaco => {
+
+            const atc =
+                extrairCodigoATC(farmaco.atc);
+
+            const codigo4 =
+                atc.substring(0, 5);
+
+            if (!subgrupos4[codigo4]) {
+                subgrupos4[codigo4] = [];
+            }
+
+            subgrupos4[codigo4].push(farmaco);
+
+        });
+
+
+        Object.entries(subgrupos4).forEach(
+            ([codigo4, farmacos4]) => {
+
+                criarNivel4(
+                    conteudo,
+                    codigo4,
+                    farmacos4
+                );
+
+            }
+        );
+
+
+        item.appendChild(header);
+        item.appendChild(conteudo);
+
+        container.appendChild(item);
+
+    }
+
+
+    /* =========================================================
+       NÍVEL 4
+       Ex: A01AA
+    ========================================================= */
+
+    function criarNivel4(
+        container,
+        codigo4,
+        farmacos
+    ) {
+
+        const item =
+            document.createElement("div");
+
+        item.className = "atc-level4";
+
+
+        const header =
+            document.createElement("div");
+
+        header.className =
+            "atc-level4-header";
+
+
+        /*
+         * Procurar descrição no JSON.
+         */
+
+        let descricao = "";
+
+
+        const primeiro =
+            farmacos[0];
+
+
+        if (primeiro) {
+
+            const possiveis = [
+                primeiro.subgrupo4,
+                primeiro.subgrupo3,
+                primeiro.classe
+            ];
+
+
+            for (const valor of possiveis) {
+
+                if (!valor) continue;
+
+                const texto =
+                    String(valor);
+
+                if (
+                    texto
+                        .toUpperCase()
+                        .startsWith(codigo4)
+                ) {
+
+                    descricao =
+                        texto.replace(
+                            new RegExp(
+                                "^" +
+                                codigo4 +
+                                "\\s*-?\\s*",
+                                "i"
+                            ),
+                            ""
+                        )
+                        .trim();
+
+                    break;
+
+                }
+
+            }
+
+        }
+
+
+        if (descricao) {
+
+            header.textContent =
+                codigo4 +
+                " - " +
+                capitalizarTexto(
+                    descricao
+                ).toUpperCase();
+
+        } else {
+
+            header.textContent =
+                codigo4;
+
+        }
+
+
+        /* =====================================================
+           CONTEÚDO
+           Aqui entram DIRETAMENTE os medicamentos.
+        ===================================================== */
+
+        const conteudo =
+            document.createElement("div");
+
+        conteudo.className =
+            "atc-level4-content";
+
+
+        header.addEventListener("click", function () {
+
+            const estavaAberto =
+                conteudo.classList.contains("active");
+
+            fecharIrmaos(conteudo);
+
+            if (!estavaAberto) {
+                conteudo.classList.add("active");
+            }
+
+        });
+
+
+        const lista =
+            document.createElement("ul");
+
+        lista.className =
+            "drug-list";
+
+
+        farmacos.forEach(farmaco => {
+
+            lista.appendChild(
+                criarMedicamento(farmaco)
+            );
+
+        });
+
+
+        conteudo.appendChild(lista);
+
+        item.appendChild(header);
+        item.appendChild(conteudo);
+
+        container.appendChild(item);
+
+    }
+
+
+    /* =========================================================
+       MEDICAMENTO
     ========================================================= */
 
     function criarMedicamento(farmaco) {
@@ -1162,69 +1299,100 @@
         const li =
             document.createElement("li");
 
-
         li.className =
             "drug-item";
 
 
-        const nome =
+        const info =
             document.createElement("div");
 
+        info.className =
+            "drug-info";
 
-        nome.className =
-            "drug-name";
+
+        const titulo =
+            document.createElement("h3");
 
 
-        nome.textContent =
-            formatarTextoCapitalizado(
-                textoSeguro(farmaco.nome)
+        titulo.textContent =
+            capitalizarTexto(
+                farmaco.nome || ""
             );
 
 
-        li.appendChild(nome);
+        const badge =
+            document.createElement("span");
+
+        badge.className =
+            "atc-badge";
+
+        badge.textContent =
+            farmaco.atc || "";
+
+
+        titulo.appendChild(
+            document.createTextNode(" ")
+        );
+
+        titulo.appendChild(badge);
+
+
+        const meta =
+            document.createElement("div");
+
+        meta.className =
+            "drug-meta";
+
+
+        const classe =
+            farmaco.classe || "—";
 
 
         const indicacoes =
-            paraArray(
-                farmaco.indicacoes
-            );
+            Array.isArray(farmaco.indicacoes)
+                ? farmaco.indicacoes.join(", ")
+                : (farmaco.indicacoes || "—");
 
 
-        if (indicacoes.length > 0) {
-
-            const indicacao =
-                document.createElement("div");
-
-
-            indicacao.className =
-                "drug-indication";
+        meta.innerHTML =
+            "<strong>Classe:</strong> " +
+            escapeHTML(classe) +
+            " | " +
+            "<strong>Indicações:</strong> " +
+            escapeHTML(indicacoes);
 
 
-            indicacao.textContent =
-                indicacoes
-                    .map(item =>
-                        formatarTextoCapitalizado(
-                            textoSeguro(item)
-                        )
-                    )
-                    .join(" • ");
+        info.appendChild(titulo);
+        info.appendChild(meta);
 
 
-            li.appendChild(indicacao);
+        /* BOTÃO CONSULTAR */
 
-        }
+        const botao =
+            document.createElement("button");
+
+        botao.className =
+            "drug-link";
+
+        botao.type =
+            "button";
+
+        botao.textContent =
+            "Consultar";
 
 
-        li.addEventListener(
+        botao.addEventListener(
             "click",
-            function(event) {
-
-                event.stopPropagation();
+            function () {
 
                 abrirDetalhes(farmaco);
 
             }
         );
+
+
+        li.appendChild(info);
+        li.appendChild(botao);
 
 
         return li;
@@ -1233,775 +1401,474 @@
 
 
     /* =========================================================
-       RENDERIZAR CATÁLOGO
+       FECHAR IRMÃOS
+       Apenas os elementos do MESMO nível.
     ========================================================= */
 
-    function renderizarCatalogo(
-        lista,
-        expandirTudo = false
-    ) {
+    function fecharIrmaos(elemento) {
 
-        const container =
-            document.getElementById(
-                "catalogContainer"
+        if (!elemento.parentElement) {
+            return;
+        }
+
+
+        Array.from(
+            elemento.parentElement.children
+        ).forEach(irmao => {
+
+            if (irmao === elemento) {
+                return;
+            }
+
+
+            const conteudos =
+                irmao.querySelectorAll(
+                    ":scope > .atc-content, " +
+                    ":scope > .atc-subcontent, " +
+                    ":scope > .atc-level3-content, " +
+                    ":scope > .atc-level4-content"
+                );
+
+
+            conteudos.forEach(
+                conteudo => {
+                    conteudo.classList.remove("active");
+                }
             );
 
+        });
 
-        container.innerHTML = "";
-
-
-        if (
-            !lista ||
-            lista.length === 0
-        ) {
-
-            const mensagem =
-                document.createElement("div");
+    }
 
 
-            mensagem.className =
-                "message";
+    /* =========================================================
+       PESQUISA
+    ========================================================= */
+
+    function filtrarFarmacos() {
+
+        const termo =
+            document
+                .getElementById("searchInput")
+                .value
+                .trim()
+                .toLowerCase();
 
 
-            mensagem.textContent =
-                "Não foram encontrados medicamentos.";
+        if (!termo) {
 
-
-            container.appendChild(
-                mensagem
+            renderizarCatalogo(
+                farmacosData
             );
-
 
             return;
 
         }
 
 
-        const estrutura = {};
+        const filtrados =
+            farmacosData.filter(farmaco => {
+
+                const indicacoes =
+                    Array.isArray(
+                        farmaco.indicacoes
+                    )
+                        ? farmaco.indicacoes.join(" ")
+                        : (
+                            farmaco.indicacoes ||
+                            ""
+                        );
 
 
-        /* -----------------------------------------------------
-           ORGANIZAR DADOS
-        ----------------------------------------------------- */
+                const texto =
+                    [
 
-        lista.forEach(
-            farmaco => {
+                        farmaco.nome,
 
-                const atc =
-                    textoSeguro(farmaco.atc)
-                        .trim()
-                        .toUpperCase();
+                        farmaco.atc,
 
+                        farmaco.grupo,
 
-                if (!atc) {
-                    return;
-                }
+                        farmaco.subgrupo2,
 
+                        farmaco.subgrupo3,
 
-                const grupo =
-                    obterGrupoPrincipal(
-                        farmaco
-                    );
+                        farmaco.subgrupo4,
 
+                        farmaco.classe,
 
-                const codigo2 =
-                    atc.substring(0, 3);
+                        farmaco.alvoPrincipal,
 
+                        farmaco.mecanismo,
 
-                const codigo3 =
-                    atc.substring(0, 4);
+                        indicacoes
+
+                    ]
+                        .filter(Boolean)
+                        .join(" ")
+                        .toLowerCase();
 
 
-                const codigo4 =
-                    atc.substring(0, 5);
+                return texto.includes(termo);
+
+            });
 
 
-                if (!estrutura[grupo]) {
-
-                    estrutura[grupo] = {};
-
-                }
-
-
-                if (
-                    !estrutura[grupo][codigo2]
-                ) {
-
-                    estrutura[grupo][codigo2] = {
-
-                        nome:
-                            obterNomeATC2(
-                                farmaco
-                            ),
-
-                        grupos: {}
-
-                    };
-
-                }
-
-
-                if (
-                    !estrutura[grupo]
-                        [codigo2]
-                        .grupos
-                        [codigo3]
-                ) {
-
-                    estrutura[grupo]
-                        [codigo2]
-                        .grupos
-                        [codigo3] = {
-
-                            nome:
-                                obterNomeATC3(
-                                    farmaco
-                                ),
-
-                            subgrupos: {}
-
-                        };
-
-                }
-
-
-                if (
-                    !estrutura[grupo]
-                        [codigo2]
-                        .grupos
-                        [codigo3]
-                        .subgrupos
-                        [codigo4]
-                ) {
-
-                    estrutura[grupo]
-                        [codigo2]
-                        .grupos
-                        [codigo3]
-                        .subgrupos
-                        [codigo4] = {
-
-                            nome:
-                                obterNomeATC4(
-                                    farmaco
-                                ),
-
-                            medicamentos: []
-
-                        };
-
-                }
-
-
-                estrutura[grupo]
-                    [codigo2]
-                    .grupos
-                    [codigo3]
-                    .subgrupos
-                    [codigo4]
-                    .medicamentos
-                    .push(farmaco);
-
-            }
+        renderizarCatalogo(
+            filtrados
         );
-
-
-        /* -----------------------------------------------------
-           CONSTRUIR HIERARQUIA
-        ----------------------------------------------------- */
-
-        Object.entries(estrutura)
-            .forEach(
-                ([grupoNome, grupos2]) => {
-
-                    /*
-                     NÍVEL 1
-                    */
-
-                    const grupoPrincipal =
-                        document.createElement(
-                            "div"
-                        );
-
-
-                    grupoPrincipal.className =
-                        "atc-main-group";
-
-
-                    const headerPrincipal =
-                        document.createElement(
-                            "div"
-                        );
-
-
-                    headerPrincipal.className =
-                        "atc-main-header";
-
-
-                    headerPrincipal.textContent =
-                        grupoNome.toUpperCase();
-
-
-                    grupoPrincipal.appendChild(
-                        headerPrincipal
-                    );
-
-
-                    /*
-                     MUITO IMPORTANTE:
-                     Esta lista começa escondida.
-                     Ao clicar em A, passa a display:block.
-                    */
-
-                    const listaPrincipal =
-                        document.createElement(
-                            "div"
-                        );
-
-
-                    listaPrincipal.className =
-                        "atc-main-list";
-
-
-                    grupoPrincipal.appendChild(
-                        listaPrincipal
-                    );
-
-
-                    /*
-                     ABRIR / FECHAR NÍVEL 1
-                    */
-
-                    headerPrincipal.addEventListener(
-                        "click",
-                        function(event) {
-
-                            event.stopPropagation();
-
-
-                            const aberto =
-                                grupoPrincipal
-                                    .classList
-                                    .contains(
-                                        "active"
-                                    );
-
-
-                            /*
-                             Fecha outros grupos principais.
-                            */
-
-                            Array.from(
-                                container.children
-                            ).forEach(
-                                outro => {
-
-                                    if (
-                                        outro !==
-                                        grupoPrincipal
-                                    ) {
-
-                                        outro.classList
-                                            .remove(
-                                                "active"
-                                            );
-
-                                    }
-
-                                }
-                            );
-
-
-                            /*
-                             Alterna o atual.
-                            */
-
-                            if (aberto) {
-
-                                grupoPrincipal
-                                    .classList
-                                    .remove(
-                                        "active"
-                                    );
-
-                            }
-
-                            else {
-
-                                grupoPrincipal
-                                    .classList
-                                    .add(
-                                        "active"
-                                    );
-
-                            }
-
-                        }
-                    );
-
-
-                    /* =================================================
-                       NÍVEL 2 — A01 / A02 / A03
-                    ================================================= */
-
-                    Object.entries(grupos2)
-                        .forEach(
-                            ([codigo2, dados2]) => {
-
-                                const item2 =
-                                    document.createElement(
-                                        "div"
-                                    );
-
-
-                                item2.className =
-                                    "atc-sub2-item";
-
-
-                                const header2 =
-                                    document.createElement(
-                                        "div"
-                                    );
-
-
-                                header2.className =
-                                    "atc-sub2-header";
-
-
-                                header2.textContent =
-                                    dados2.nome
-                                        .toUpperCase();
-
-
-                                item2.appendChild(
-                                    header2
-                                );
-
-
-                                const lista3 =
-                                    document.createElement(
-                                        "div"
-                                    );
-
-
-                                lista3.className =
-                                    "atc-sub2-list";
-
-
-                                item2.appendChild(
-                                    lista3
-                                );
-
-
-                                /*
-                                 CLIQUE EM A02
-                                 */
-
-                                header2.addEventListener(
-                                    "click",
-                                    function(event) {
-
-                                        event.stopPropagation();
-
-
-                                        const aberto =
-                                            item2
-                                                .classList
-                                                .contains(
-                                                    "active"
-                                                );
-
-
-                                        /*
-                                         Fecha A01/A03/etc.
-                                         */
-
-                                        fecharIrmaos(
-                                            item2
-                                        );
-
-
-                                        if (aberto) {
-
-                                            item2
-                                                .classList
-                                                .remove(
-                                                    "active"
-                                                );
-
-                                        }
-
-                                        else {
-
-                                            item2
-                                                .classList
-                                                .add(
-                                                    "active"
-                                                );
-
-                                        }
-
-                                    }
-                                );
-
-
-                                /* =================================================
-                                   NÍVEL 3 — A02A / A02B
-                                ================================================= */
-
-                                Object.entries(
-                                    dados2.grupos
-                                ).forEach(
-                                    ([codigo3, dados3]) => {
-
-                                        const item3 =
-                                            document.createElement(
-                                                "div"
-                                            );
-
-
-                                        item3.className =
-                                            "atc-sub3-item";
-
-
-                                        const header3 =
-                                            document.createElement(
-                                                "div"
-                                            );
-
-
-                                        header3.className =
-                                            "atc-sub3-header";
-
-
-                                        header3.textContent =
-                                            dados3.nome
-                                                .toUpperCase();
-
-
-                                        item3.appendChild(
-                                            header3
-                                        );
-
-
-                                        const lista4 =
-                                            document.createElement(
-                                                "div"
-                                            );
-
-
-                                        lista4.className =
-                                            "atc-sub3-list";
-
-
-                                        item3.appendChild(
-                                            lista4
-                                        );
-
-
-                                        header3.addEventListener(
-                                            "click",
-                                            function(event) {
-
-                                                event.stopPropagation();
-
-
-                                                const aberto =
-                                                    item3
-                                                        .classList
-                                                        .contains(
-                                                            "active"
-                                                        );
-
-
-                                                fecharIrmaos(
-                                                    item3
-                                                );
-
-
-                                                if (aberto) {
-
-                                                    item3
-                                                        .classList
-                                                        .remove(
-                                                            "active"
-                                                        );
-
-                                                }
-
-                                                else {
-
-                                                    item3
-                                                        .classList
-                                                        .add(
-                                                            "active"
-                                                        );
-
-                                                }
-
-                                            }
-                                        );
-
-
-                                        /* =================================================
-                                           NÍVEL 4 — A01AA / A02AA
-                                        ================================================= */
-
-                                        Object.entries(
-                                            dados3.subgrupos
-                                        ).forEach(
-                                            ([codigo4, dados4]) => {
-
-                                                const item4 =
-                                                    document.createElement(
-                                                        "div"
-                                                    );
-
-
-                                                item4.className =
-                                                    "atc-sub4-item";
-
-
-                                                const header4 =
-                                                    document.createElement(
-                                                        "div"
-                                                    );
-
-
-                                                header4.className =
-                                                    "atc-sub4-header";
-
-
-                                                header4.textContent =
-                                                    dados4.nome;
-
-
-                                                item4.appendChild(
-                                                    header4
-                                                );
-
-
-                                                /*
-                                                 AQUI FICAM DIRETAMENTE
-                                                 OS MEDICAMENTOS.
-
-                                                 NÃO criamos outro nível
-                                                 para A01AA.
-                                                */
-
-                                                const listaMedicamentos =
-                                                    document.createElement(
-                                                        "ul"
-                                                    );
-
-
-                                                listaMedicamentos.className =
-                                                    "drug-list";
-
-
-                                                ordenarFarmacos(
-                                                    dados4.medicamentos
-                                                ).forEach(
-                                                    farmaco => {
-
-                                                        listaMedicamentos
-                                                            .appendChild(
-                                                                criarMedicamento(
-                                                                    farmaco
-                                                                )
-                                                            );
-
-                                                    }
-                                                );
-
-
-                                                /*
-                                                 Lista dos medicamentos
-                                                 dentro de A01AA.
-                                                */
-
-                                                const content4 =
-                                                    document.createElement(
-                                                        "div"
-                                                    );
-
-
-                                                content4.className =
-                                                    "atc-sub4-list";
-
-
-                                                content4.appendChild(
-                                                    listaMedicamentos
-                                                );
-
-
-                                                item4.appendChild(
-                                                    content4
-                                                );
-
-
-                                                /*
-                                                 CLIQUE NO A01AA
-                                                */
-
-                                                header4.addEventListener(
-                                                    "click",
-                                                    function(event) {
-
-                                                        event.stopPropagation();
-
-
-                                                        const aberto =
-                                                            item4
-                                                                .classList
-                                                                .contains(
-                                                                    "active"
-                                                                );
-
-
-                                                        fecharIrmaos(
-                                                            item4
-                                                        );
-
-
-                                                        if (aberto) {
-
-                                                            item4
-                                                                .classList
-                                                                .remove(
-                                                                    "active"
-                                                                );
-
-                                                        }
-
-                                                        else {
-
-                                                            item4
-                                                                .classList
-                                                                .add(
-                                                                    "active"
-                                                                );
-
-                                                        }
-
-                                                    }
-                                                );
-
-
-                                                lista4.appendChild(
-                                                    item4
-                                                );
-
-                                            }
-                                        );
-
-
-                                        lista3.appendChild(
-                                            item3
-                                        );
-
-                                    }
-                                );
-
-
-                                listaPrincipal.appendChild(
-                                    item2
-                                );
-
-                            }
-                        );
-
-
-                    container.appendChild(
-                        grupoPrincipal
-                    );
-
-                }
-            );
-
-
-        /*
-         Pesquisa:
-         abre os níveis para mostrar os resultados.
-        */
-
-        if (expandirTudo) {
-
-            document
-                .querySelectorAll(
-                    ".atc-main-group"
-                )
-                .forEach(
-                    elemento =>
-                        elemento.classList.add(
-                            "active"
-                        )
-                );
-
-
-            document
-                .querySelectorAll(
-                    ".atc-sub2-item, .atc-sub3-item, .atc-sub4-item"
-                )
-                .forEach(
-                    elemento =>
-                        elemento.classList.add(
-                            "active"
-                        )
-                );
-
-        }
 
     }
 
 
     /* =========================================================
-       FORMATAR MECANISMO DE AÇÃO
+       ABRIR DETALHES
+    ========================================================= */
+
+    function abrirDetalhes(farmaco) {
+
+        document.getElementById(
+            "modalTitulo"
+        ).textContent =
+            capitalizarTexto(
+                farmaco.nome || ""
+            );
+
+
+        /* IDENTIFICAÇÃO */
+
+        document.getElementById(
+            "modalSubstancia"
+        ).textContent =
+            capitalizarTexto(
+                farmaco.nome || "—"
+            );
+
+
+        document.getElementById(
+            "modalClasse"
+        ).textContent =
+            farmaco.classe || "—";
+
+
+        document.getElementById(
+            "modalAlvo"
+        ).textContent =
+            farmaco.alvoPrincipal || "—";
+
+
+        /* MECANISMO */
+
+        document.getElementById(
+            "modalMecanismo"
+        ).innerHTML =
+            formatarMecanismo(
+                farmaco.mecanismo
+            );
+
+
+        /* INDICAÇÕES */
+
+        const indicacoes =
+            Array.isArray(
+                farmaco.indicacoes
+            )
+                ? farmaco.indicacoes
+                : (
+                    farmaco.indicacoes
+                        ? [farmaco.indicacoes]
+                        : []
+                );
+
+
+        document.getElementById(
+            "modalIndicacoes"
+        ).innerHTML =
+            indicacoes.length
+                ? "<ul>" +
+                  indicacoes
+                    .map(
+                        indicacao =>
+                            "<li>" +
+                            escapeHTML(indicacao) +
+                            "</li>"
+                    )
+                    .join("") +
+                  "</ul>"
+                : "—";
+
+
+        /* PRODUTOS */
+
+        const produtos =
+            document.getElementById(
+                "modalProdutos"
+            );
+
+        produtos.innerHTML = "";
+
+
+        if (
+            Array.isArray(
+                farmaco.produtos
+            ) &&
+            farmaco.produtos.length
+        ) {
+
+            farmaco.produtos.forEach(
+                produto => {
+
+                    const box =
+                        document.createElement(
+                            "div"
+                        );
+
+                    box.className =
+                        "produto-box";
+
+
+                    if (
+                        typeof produto ===
+                        "string"
+                    ) {
+
+                        box.textContent =
+                            produto;
+
+                    } else {
+
+                        const nome =
+                            produto.nome ||
+                            produto.marca ||
+                            "";
+
+
+                        const apresentacao =
+                            produto.apresentacao ||
+                            produto.dosagem ||
+                            "";
+
+
+                        box.innerHTML =
+                            "<strong>" +
+                            escapeHTML(nome) +
+                            "</strong>" +
+                            (
+                                apresentacao
+                                    ? "<br>" +
+                                      escapeHTML(
+                                          apresentacao
+                                      )
+                                    : ""
+                            );
+
+                    }
+
+
+                    produtos.appendChild(
+                        box
+                    );
+
+                }
+            );
+
+        } else {
+
+            produtos.textContent =
+                "—";
+
+        }
+
+
+        /* RCM */
+
+        const secaoRCM =
+            document.getElementById(
+                "secaoRCM"
+            );
+
+        const modalRCM =
+            document.getElementById(
+                "modalRCM"
+            );
+
+
+        if (farmaco.rcm) {
+
+            secaoRCM.style.display =
+                "block";
+
+            modalRCM.innerHTML =
+                formatarMecanismo(
+                    farmaco.rcm
+                );
+
+        } else {
+
+            secaoRCM.style.display =
+                "none";
+
+            modalRCM.innerHTML =
+                "";
+
+        }
+
+
+        /* VÍDEOS */
+
+        prepararVideos(
+            farmaco.videos
+        );
+
+
+        /* ABRIR MODAL */
+
+        document
+            .getElementById(
+                "modalMedicamento"
+            )
+            .classList.add("active");
+
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+    /* =========================================================
+       FORMATAR MECANISMO / RCM
     ========================================================= */
 
     function formatarMecanismo(texto) {
 
         if (!texto) {
-            return "";
+            return "—";
         }
 
 
-        let html =
+        let resultado =
             String(texto);
 
 
         /*
-         Caso o JSON contenha caracteres HTML
-         escritos como texto.
-        */
+         * Caso o JSON contenha HTML escapado:
+         *
+         * &lt;br&gt;
+         * &lt;i&gt;
+         *
+         * converte novamente.
+         */
 
-        html = html
-            .replace(/&lt;/gi, "<")
-            .replace(/&gt;/gi, ">")
-            .replace(/&amp;/gi, "&");
-
-
-        /*
-         <br> fica como quebra de linha HTML.
-        */
-
-        html = html.replace(
-            /<br\s*\/?>/gi,
-            "<br>"
-        );
+        resultado =
+            resultado
+                .replace(/&lt;/gi, "<")
+                .replace(/&gt;/gi, ">")
+                .replace(/&amp;/gi, "&");
 
 
         /*
-         Se houver quebras de linha normais.
-        */
+         * Converter quebras de linha normais.
+         */
 
-        html = html.replace(
-            /\r?\n/g,
-            "<br>"
-        );
+        resultado =
+            resultado.replace(
+                /\r?\n/g,
+                "<br>"
+            );
 
 
-        return html;
+        return resultado;
+
+    }
+
+
+    /* =========================================================
+       VÍDEOS
+    ========================================================= */
+
+    function prepararVideos(videos) {
+
+        const dinamica =
+            document.getElementById(
+                "videoDinamica"
+            );
+
+        const cinetica =
+            document.getElementById(
+                "videoCinetica"
+            );
+
+        const secao =
+            document.getElementById(
+                "secaoVideos"
+            );
+
+
+        dinamica.innerHTML = "";
+        cinetica.innerHTML = "";
+
+
+        if (!videos) {
+
+            secao.style.display =
+                "none";
+
+            return;
+
+        }
+
+
+        let encontrouVideo =
+            false;
+
+
+        if (videos.dinamica) {
+
+            const iframe =
+                criarIframeYoutube(
+                    videos.dinamica
+                );
+
+            if (iframe) {
+
+                dinamica.appendChild(
+                    iframe
+                );
+
+                encontrouVideo =
+                    true;
+
+            }
+
+        }
+
+
+        if (videos.cinetica) {
+
+            const iframe =
+                criarIframeYoutube(
+                    videos.cinetica
+                );
+
+            if (iframe) {
+
+                cinetica.appendChild(
+                    iframe
+                );
+
+                encontrouVideo =
+                    true;
+
+            }
+
+        }
+
+
+        secao.style.display =
+            encontrouVideo
+                ? "block"
+                : "none";
 
     }
 
@@ -2010,630 +1877,72 @@
        YOUTUBE
     ========================================================= */
 
-    function converterParaEmbed(url) {
+    function criarIframeYoutube(url) {
 
         if (!url) {
-            return "";
+            return null;
         }
 
 
-        url =
-            String(url).trim();
+        let videoId = "";
 
 
-        if (
-            url.includes(
-                "youtube.com/embed/"
+        const texto =
+            String(url);
+
+
+        const matchYoutube =
+            texto.match(
+                /(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/
+            );
+
+
+        if (matchYoutube) {
+
+            videoId =
+                matchYoutube[1];
+
+        } else if (
+            /^[A-Za-z0-9_-]{11}$/.test(
+                texto
             )
         ) {
 
-            return url;
+            videoId =
+                texto;
 
         }
 
 
-        const watch =
-            url.match(
-                /youtube\.com\/watch\?v=([^&]+)/i
-            );
-
-
-        if (watch) {
-
-            return `https://www.youtube.com/embed/${watch[1]}`;
-
+        if (!videoId) {
+            return null;
         }
 
 
-        const short =
-            url.match(
-                /youtu\.be\/([^?&/]+)/i
+        const iframe =
+            document.createElement(
+                "iframe"
             );
 
 
-        if (short) {
+        iframe.src =
+            "https://www.youtube.com/embed/" +
+            videoId;
 
-            return `https://www.youtube.com/embed/${short[1]}`;
 
-        }
+        iframe.title =
+            "Vídeo educativo";
 
 
-        return url;
+        iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
 
-    }
 
+        iframe.allowFullscreen =
+            true;
 
-    /* =========================================================
-       ABRIR MEDICAMENTO
-    ========================================================= */
 
-    function abrirDetalhes(farmaco) {
-
-        document.getElementById(
-            "modalTitulo"
-        ).textContent =
-            formatarTextoCapitalizado(
-                textoSeguro(farmaco.nome)
-            );
-
-
-        document.getElementById(
-            "modalAtc"
-        ).textContent =
-            farmaco.atc
-                ? `Código ATC: ${textoSeguro(farmaco.atc).toUpperCase()}`
-                : "";
-
-
-        /* -----------------------------------------------------
-           SUBSTÂNCIA ATIVA
-        ----------------------------------------------------- */
-
-        const substancia =
-            farmaco.rcm?.substancia
-            || farmaco.substancia
-            || farmaco.substanciaAtiva
-            || "Não especificada";
-
-
-        document.getElementById(
-            "modalSubstancia"
-        ).textContent =
-            formatarTextoCapitalizado(
-                textoSeguro(substancia)
-            );
-
-
-        /* -----------------------------------------------------
-           CLASSE
-        ----------------------------------------------------- */
-
-        const classe =
-            farmaco.classe
-            || farmaco.classeFarmacologica
-            || "Não especificada";
-
-
-        document.getElementById(
-            "modalClasse"
-        ).textContent =
-            formatarTextoCapitalizado(
-                textoSeguro(classe)
-            );
-
-
-        /* -----------------------------------------------------
-           ALVO
-        ----------------------------------------------------- */
-
-        const alvo =
-            farmaco.alvoPrincipal
-            || farmaco.alvoTerapeutico
-            || farmaco.alvo
-            || "Não especificado";
-
-
-        document.getElementById(
-            "modalAlvo"
-        ).textContent =
-            formatarTextoCapitalizado(
-                textoSeguro(alvo)
-            );
-
-
-        /* -----------------------------------------------------
-           MECANISMO
-        ----------------------------------------------------- */
-
-        const mecanismo =
-            farmaco.mecanismo
-            || farmaco.mecanismoAcao
-            || farmaco.mecanismoDeAcao
-            || "";
-
-
-        const secaoMecanismo =
-            document.getElementById(
-                "secaoMecanismo"
-            );
-
-
-        const campoMecanismo =
-            document.getElementById(
-                "modalMecanismo"
-            );
-
-
-        if (mecanismo) {
-
-            secaoMecanismo.style.display =
-                "block";
-
-
-            campoMecanismo.innerHTML =
-                formatarMecanismo(
-                    mecanismo
-                );
-
-        }
-
-        else {
-
-            secaoMecanismo.style.display =
-                "none";
-
-
-            campoMecanismo.innerHTML =
-                "";
-
-        }
-
-
-        /* -----------------------------------------------------
-           INDICAÇÕES
-        ----------------------------------------------------- */
-
-        const indicacoes =
-            paraArray(
-                farmaco.indicacoes
-            );
-
-
-        const secaoIndicacoes =
-            document.getElementById(
-                "secaoIndicacoes"
-            );
-
-
-        const campoIndicacoes =
-            document.getElementById(
-                "modalIndicacoes"
-            );
-
-
-        if (indicacoes.length > 0) {
-
-            secaoIndicacoes.style.display =
-                "block";
-
-
-            campoIndicacoes.textContent =
-                indicacoes
-                    .map(
-                        item =>
-                            formatarTextoCapitalizado(
-                                textoSeguro(item)
-                            )
-                    )
-                    .join(" • ");
-
-        }
-
-        else {
-
-            secaoIndicacoes.style.display =
-                "none";
-
-
-            campoIndicacoes.textContent =
-                "";
-
-        }
-
-
-        /* -----------------------------------------------------
-           PRODUTOS
-        ----------------------------------------------------- */
-
-        const produtos =
-            paraArray(
-                farmaco.produtos
-                || farmaco.marcas
-            );
-
-
-        const secaoProdutos =
-            document.getElementById(
-                "secaoProdutos"
-            );
-
-
-        const campoProdutos =
-            document.getElementById(
-                "modalProdutos"
-            );
-
-
-        campoProdutos.innerHTML =
-            "";
-
-
-        if (produtos.length > 0) {
-
-            secaoProdutos.style.display =
-                "block";
-
-
-            produtos.forEach(
-                produto => {
-
-                    const box =
-                        document.createElement(
-                            "div"
-                        );
-
-
-                    box.className =
-                        "produto-box";
-
-
-                    if (
-                        typeof produto === "string"
-                    ) {
-
-                        box.textContent =
-                            formatarTextoCapitalizado(
-                                produto
-                            );
-
-                    }
-
-                    else {
-
-                        const nomeProduto =
-                            produto.nome
-                            || produto.produto
-                            || produto.designacao
-                            || "";
-
-
-                        const nome =
-                            document.createElement(
-                                "div"
-                            );
-
-
-                        nome.className =
-                            "produto-nome";
-
-
-                        nome.textContent =
-                            formatarTextoCapitalizado(
-                                nomeProduto
-                            );
-
-
-                        box.appendChild(
-                            nome
-                        );
-
-
-                        const informacoes = [];
-
-
-                        if (produto.dosagem) {
-
-                            informacoes.push(
-                                produto.dosagem
-                            );
-
-                        }
-
-
-                        if (produto.titular) {
-
-                            informacoes.push(
-                                produto.titular
-                            );
-
-                        }
-
-
-                        if (produto.apresentacao) {
-
-                            informacoes.push(
-                                produto.apresentacao
-                            );
-
-                        }
-
-
-                        if (
-                            informacoes.length > 0
-                        ) {
-
-                            const info =
-                                document.createElement(
-                                    "div"
-                                );
-
-
-                            info.className =
-                                "produto-info";
-
-
-                            info.textContent =
-                                informacoes.join(
-                                    " • "
-                                );
-
-
-                            box.appendChild(
-                                info
-                            );
-
-                        }
-
-                    }
-
-
-                    campoProdutos.appendChild(
-                        box
-                    );
-
-                }
-            );
-
-        }
-
-        else {
-
-            secaoProdutos.style.display =
-                "none";
-
-        }
-
-
-        /* -----------------------------------------------------
-           INFORMAÇÃO RCM
-           
-           IMPORTANTE:
-           NÃO existe Forma Farmacêutica.
-        ----------------------------------------------------- */
-
-        const rcm =
-            farmaco.rcm || {};
-
-
-        const campoRcm =
-            document.getElementById(
-                "modalRcm"
-            );
-
-
-        const secaoRcm =
-            document.getElementById(
-                "secaoRcm"
-            );
-
-
-        campoRcm.innerHTML =
-            "";
-
-
-        const camposRcm = [
-
-            [
-                "Composição qualitativa e quantitativa",
-                rcm.composicaoQualitativaQuantitativa
-            ],
-
-            [
-                "Posologia e modo de administração",
-                rcm.posologia
-                || rcm.posologiaModoAdministracao
-            ],
-
-            [
-                "Contraindicações",
-                rcm.contraindicacoes
-            ],
-
-            [
-                "Advertências e precauções especiais de utilização",
-                rcm.advertencias
-                || rcm.precaucoes
-            ],
-
-            [
-                "Interações medicamentosas",
-                rcm.interacoes
-                || rcm.interacoesMedicamentosas
-            ],
-
-            [
-                "Fertilidade, gravidez e aleitamento",
-                rcm.gravidez
-                || rcm.fertilidadeGravidezAleitamento
-            ],
-
-            [
-                "Efeitos indesejáveis",
-                rcm.efeitosAdversos
-                || rcm.efeitosIndesejaveis
-            ]
-
-        ];
-
-
-        let encontrou =
-            false;
-
-
-        camposRcm.forEach(
-            ([titulo, valor]) => {
-
-                if (!valor) {
-                    return;
-                }
-
-
-                encontrou = true;
-
-
-                const bloco =
-                    document.createElement(
-                        "div"
-                    );
-
-
-                bloco.className =
-                    "info-block";
-
-
-                const label =
-                    document.createElement(
-                        "span"
-                    );
-
-
-                label.className =
-                    "info-label";
-
-
-                label.textContent =
-                    titulo;
-
-
-                const valorElemento =
-                    document.createElement(
-                        "div"
-                    );
-
-
-                valorElemento.className =
-                    "info-value";
-
-
-                valorElemento.textContent =
-                    textoSeguro(valor);
-
-
-                bloco.appendChild(
-                    label
-                );
-
-
-                bloco.appendChild(
-                    valorElemento
-                );
-
-
-                campoRcm.appendChild(
-                    bloco
-                );
-
-            }
-        );
-
-
-        secaoRcm.style.display =
-            encontrou
-                ? "block"
-                : "none";
-
-
-        /* -----------------------------------------------------
-           VÍDEOS
-        ----------------------------------------------------- */
-
-        const videos =
-            farmaco.videos || {};
-
-
-        const dinamica =
-            videos.farmacodinamica
-            || videos.dinamica
-            || "";
-
-
-        const cinetica =
-            videos.farmacocinetica
-            || videos.cinetica
-            || "";
-
-
-        const iframeDinamica =
-            document.getElementById(
-                "videoDinamica"
-            );
-
-
-        const iframeCinetica =
-            document.getElementById(
-                "videoCinetica"
-            );
-
-
-        iframeDinamica.src =
-            converterParaEmbed(
-                dinamica
-            );
-
-
-        iframeCinetica.src =
-            converterParaEmbed(
-                cinetica
-            );
-
-
-        document.getElementById(
-            "videoDinamicaBox"
-        ).style.display =
-            dinamica
-                ? "block"
-                : "none";
-
-
-        document.getElementById(
-            "videoCineticaBox"
-        ).style.display =
-            cinetica
-                ? "block"
-                : "none";
-
-
-        document.getElementById(
-            "secaoVideos"
-        ).style.display =
-            (dinamica || cinetica)
-                ? "block"
-                : "none";
-
-
-        /* -----------------------------------------------------
-           ABRIR MODAL
-        ----------------------------------------------------- */
-
-        document.getElementById(
-            "modal"
-        ).classList.add(
-            "active"
-        );
-
-
-        document.body.style.overflow =
-            "hidden";
+        return iframe;
 
     }
 
@@ -2644,55 +1953,22 @@
 
     function fecharModal() {
 
-        document.getElementById(
-            "modal"
-        ).classList.remove(
-            "active"
-        );
+        document
+            .getElementById(
+                "modalMedicamento"
+            )
+            .classList.remove("active");
 
 
         document.body.style.overflow =
             "";
 
-
-        document.getElementById(
-            "videoDinamica"
-        ).src = "";
-
-
-        document.getElementById(
-            "videoCinetica"
-        ).src = "";
-
     }
 
 
-    document.getElementById(
-        "closeModal"
-    ).addEventListener(
-        "click",
-        fecharModal
-    );
-
-
-    document.getElementById(
-        "modal"
-    ).addEventListener(
-        "click",
-        function(event) {
-
-            if (
-                event.target ===
-                document.getElementById("modal")
-            ) {
-
-                fecharModal();
-
-            }
-
-        }
-    );
-
+    /* =========================================================
+       FECHAR COM ESC
+    ========================================================= */
 
     document.addEventListener(
         "keydown",
@@ -2711,234 +1987,58 @@
 
 
     /* =========================================================
-       PESQUISA
+       FECHAR AO CLICAR FORA
     ========================================================= */
 
-    function filtrarFarmacos() {
+    document
+        .getElementById(
+            "modalMedicamento"
+        )
+        .addEventListener(
+            "click",
+            function(event) {
 
-        const termo =
-            document.getElementById(
-                "searchInput"
-            ).value
-                .trim()
-                .toLocaleLowerCase(
-                    "pt-PT"
-                );
+                if (
+                    event.target === this
+                ) {
 
-
-        if (!termo) {
-
-            document.getElementById(
-                "resultadoPesquisa"
-            ).textContent =
-                "";
-
-
-            renderizarCatalogo(
-                farmacosData,
-                false
-            );
-
-
-            return;
-
-        }
-
-
-        const filtrados =
-            farmacosData.filter(
-                farmaco => {
-
-                    let texto = "";
-
-                    try {
-
-                        texto =
-                            JSON.stringify(
-                                farmaco
-                            ).toLocaleLowerCase(
-                                "pt-PT"
-                            );
-
-                    }
-
-                    catch (erro) {
-
-                        texto = "";
-
-                    }
-
-
-                    return texto.includes(
-                        termo
-                    );
+                    fecharModal();
 
                 }
-            );
 
-
-        document.getElementById(
-            "resultadoPesquisa"
-        ).textContent =
-            `${filtrados.length} medicamento(s) encontrado(s)`;
-
-
-        renderizarCatalogo(
-            filtrados,
-            true
+            }
         );
 
-    }
-
-
-    document.getElementById(
-        "searchInput"
-    ).addEventListener(
-        "input",
-        filtrarFarmacos
-    );
-
 
     /* =========================================================
-       CARREGAR MEDICAMENTOS.JSON
+       ESCAPE HTML
     ========================================================= */
 
-    async function carregarMedicamentos() {
+    function escapeHTML(valor) {
 
-        try {
-
-            const resposta =
-                await fetch(
-                    "./medicamentos.json"
-                );
-
-
-            if (!resposta.ok) {
-
-                throw new Error(
-                    `Erro HTTP ${resposta.status}`
-                );
-
-            }
-
-
-            const data =
-                await resposta.json();
-
-
-            /*
-             Aceita:
-
-             {
-                 "fármacos": [...]
-             }
-
-             ou
-
-             {
-                 "farmacos": [...]
-             }
-
-             ou
-
-             {
-                 "medicamentos": [...]
-             }
-
-             ou diretamente [...]
-            */
-
-            if (Array.isArray(data)) {
-
-                farmacosData =
-                    data;
-
-            }
-
-            else if (
-                Array.isArray(
-                    data.fármacos
-                )
-            ) {
-
-                farmacosData =
-                    data.fármacos;
-
-            }
-
-            else if (
-                Array.isArray(
-                    data.farmacos
-                )
-            ) {
-
-                farmacosData =
-                    data.farmacos;
-
-            }
-
-            else if (
-                Array.isArray(
-                    data.medicamentos
-                )
-            ) {
-
-                farmacosData =
-                    data.medicamentos;
-
-            }
-
-            else {
-
-                throw new Error(
-                    "Formato inválido do medicamentos.json"
-                );
-
-            }
-
-
-            farmacosData =
-                ordenarFarmacos(
-                    farmacosData
-                );
-
-
-            renderizarCatalogo(
-                farmacosData
+        return String(valor ?? "")
+            .replace(
+                /&/g,
+                "&amp;"
+            )
+            .replace(
+                /</g,
+                "&lt;"
+            )
+            .replace(
+                />/g,
+                "&gt;"
+            )
+            .replace(
+                /"/g,
+                "&quot;"
+            )
+            .replace(
+                /'/g,
+                "&#039;"
             );
-
-        }
-
-        catch (erro) {
-
-            console.error(
-                erro
-            );
-
-
-            document.getElementById(
-                "catalogContainer"
-            ).innerHTML = `
-                <div class="message error">
-                    <strong>Não foi possível carregar os medicamentos.</strong>
-                    <br><br>
-                    Verifica se o ficheiro
-                    <strong>medicamentos.json</strong>
-                    está na mesma pasta que o
-                    <strong>index.html</strong>.
-                </div>
-            `;
-
-        }
 
     }
-
-
-    /* =========================================================
-       INICIAR
-    ========================================================= */
-
-    carregarMedicamentos();
 
 </script>
 
