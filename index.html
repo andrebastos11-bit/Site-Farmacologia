@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 900px;
+            max-width: 950px;
             margin: 20px auto;
             padding: 20px;
             background-color: #f4f6f9;
@@ -19,37 +19,43 @@
         }
         .card {
             background: #fff;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             cursor: pointer;
             transition: background 0.2s;
         }
         .card:hover {
-            background: #f1f4f8;
+            background: #f8fafc;
         }
-        .nivel-grupo { border-left: 5px solid #3498db; }
+        .nivel-grupo { border-left: 5px solid #3498db; font-weight: bold; }
         .nivel-sub2 { border-left: 5px solid #2ecc71; margin-left: 15px; }
         .nivel-sub3 { border-left: 5px solid #e74c3c; margin-left: 30px; }
         .nivel-farmaco { border-left: 5px solid #9b59b6; margin-left: 45px; cursor: default; background: #faf5fc; }
         
         .children {
             display: none;
-            margin-top: 10px;
+            margin-top: 8px;
         }
-        .show {
+        .children.show {
             display: block;
         }
         h3, h4, h5 {
-            margin: 0 0 5px 0;
+            margin: 0;
+            font-size: 16px;
         }
         .detalhes {
             font-size: 14px;
             color: #555;
-            margin-top: 8px;
+            margin-top: 6px;
             border-top: 1px solid #eee;
-            padding-top: 8px;
+            padding-top: 6px;
+        }
+        .produtos-list {
+            font-size: 13px;
+            color: #666;
+            margin-top: 4px;
         }
     </style>
 </head>
@@ -59,7 +65,7 @@
     <div id="app"></div>
 
     <script>
-        // Dados estruturados corrigidos
+        // Base de dados completa com todos os fármacos e níveis corretos (3 carateres em subgrupo2)
         const db = {
           "fármacos": [
             {
@@ -68,9 +74,9 @@
               "grupo": "A - Aparelho digestivo e metabolismo",
               "subgrupo2": "A01 - Preparações para uso estomatológico",
               "subgrupo3": "A01AA - Agentes profiláticos da cárie",
-              "produtos": [{"nome": "Duraphat 5000®", "forma": "Pasta dentífrica (5 mg/g)"}],
+              "produtos": [{"nome": "Duraphat 5000®", "forma": "Pasta dentífrica (5 mg/g)"}, {"nome": "Duraphat®", "forma": "Suspensão dental (50 mg/ml)"}],
               "classe": "Agente profilático da cárie",
-              "mecanismo": "O flúor atua diretamente sobre o esmalte e a placa bacteriana."
+              "mecanismo": "Promoção da remineralização e inibição da desmineralização do esmalte."
             },
             {
               "nome": "Álcool diclorobenzílico + Benzidamina",
@@ -80,7 +86,57 @@
               "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
               "produtos": [{"nome": "Mebocaína Anti-Inflam®", "forma": "Comprimido para chupar"}],
               "classe": "Antisséptico e anti-inflamatório",
-              "mecanismo": "Associação de antisséptico com anti-inflamatório tópico."
+              "mecanismo": "Desnaturação de proteínas microbianas e inibição de citocinas inflamatórias."
+            },
+            {
+              "nome": "Hexetidina",
+              "atc": "A01AB12",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A01 - Preparações para uso estomatológico",
+              "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
+              "produtos": [{"nome": "Hextril®", "forma": "Solução bucal (1 mg/ml)"}],
+              "classe": "Antisséptico de ação local",
+              "mecanismo": "Interferência com o metabolismo da tiamina (vitamina B1) dos microrganismos."
+            },
+            {
+              "nome": "Benzidamina",
+              "atc": "A01AD02",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A01 - Preparações para uso estomatológico",
+              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
+              "produtos": [{"nome": "Tantum Verde®", "forma": "Solução oral"}],
+              "classe": "Anti-inflamatório, analgésico e anestésico local",
+              "mecanismo": "Inibição de citocinas (TNF-alfa e IL-1) e bloqueio de canais de sódio."
+            },
+            {
+              "nome": "Diclofenac",
+              "atc": "A01AD11",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A01 - Preparações para uso estomatológico",
+              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
+              "produtos": [{"nome": "Diclodent®", "forma": "Solução bucal"}],
+              "classe": "AINE",
+              "mecanismo": "Inibição das enzimas ciclo-oxigenases (COX-1 e COX-2)."
+            },
+            {
+              "nome": "Cloreto de zinco",
+              "atc": "A01AD11",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A01 - Preparações para uso estomatológico",
+              "subgrupo3": "A01AD - Outros agentes de uso tópico oral",
+              "produtos": [{"nome": "Oratol®", "forma": "Solução para gargarejar"}],
+              "classe": "Adstringente e antisséptico",
+              "mecanismo": "Contração de proteínas superficiais e neutralização de compostos de enxofre."
+            },
+            {
+              "nome": "Ácido salicílico + Ruibarbo",
+              "atc": "A01AB11",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A01 - Preparações para uso estomatológico",
+              "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
+              "produtos": [{"nome": "Pyralvex®", "forma": "Solução bucal"}],
+              "classe": "Anti-infecioso e anti-séptico tópico oral",
+              "mecanismo": "Ação adstringente das antraquinonas e efeito queratolítico do ácido salicílico."
             },
             {
               "nome": "Hidróxido de magnésio",
@@ -90,7 +146,127 @@
               "subgrupo3": "A02AA - Compostos de magnésio",
               "produtos": [{"nome": "Leite Magnesia Phillips®", "forma": "Suspensão oral"}],
               "classe": "Antiácido neutralizante e laxante osmótico",
-              "mecanismo": "Reage com o ácido clorídrico gástrico elevando o pH."
+              "mecanismo": "Reage com o HCl gástrico formando cloreto de magnésio e água."
+            },
+            {
+              "nome": "Hidróxido de alumínio",
+              "atc": "A02AB01",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AB - Compostos de alumínio",
+              "produtos": [{"nome": "Pepsamar®", "forma": "Comprimido para mastigar"}],
+              "classe": "Antiácido neutralizante e protetor da mucosa",
+              "mecanismo": "Neutraliza o ácido clorídrico de forma gradual e inativa a pepsina."
+            },
+            {
+              "nome": "Carbonato de di-hidróxido de alumínio e sódio",
+              "atc": "A02AB04",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AB - Compostos de alumínio",
+              "produtos": [{"nome": "Kompensan®", "forma": "Comprimido para chupar"}],
+              "classe": "Antiácido tampão",
+              "mecanismo": "Eleva o pH gástrico e forma uma camada coloidal protetora."
+            },
+            {
+              "nome": "Magaldrato",
+              "atc": "A02AD02",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
+              "produtos": [{"nome": "Riopan®", "forma": "Comprimido e Gel Oral"}],
+              "classe": "Antiácido complexo",
+              "mecanismo": "Neutralização autorregulada do pH gástrico entre 3 e 5."
+            },
+            {
+              "nome": "Carbonato de Cálcio + Carbonato de Magnésio",
+              "atc": "A02AD01",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
+              "produtos": [{"nome": "Rennie Digestif®", "forma": "Comprimido para mastigar"}],
+              "classe": "Combinação antiácida rápida",
+              "mecanismo": "Neutralização direta e rápida do HCl gástrico."
+            },
+            {
+              "nome": "Carbonato de di-hidróxido de alumínio e sódio + Dimeticone",
+              "atc": "A02AB01",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AB - Compostos de alumínio",
+              "produtos": [{"nome": "Kompensan Trieffect®", "forma": "Comprimido para chupar"}],
+              "classe": "Antiácido tampão e antiflatulento",
+              "mecanismo": "Neutraliza o ácido e reduz a tensão superficial das bolhas de gás."
+            },
+            {
+              "nome": "Hidróxido de Alumínio + Hidróxido de magnésio + Dimeticone",
+              "atc": "A02AF02",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AF - Antiácidos com antiflatulentos",
+              "produtos": [{"nome": "Maalox Plus®", "forma": "Comprimido para mastigar"}],
+              "classe": "Antiácido duplo e antiflatulento",
+              "mecanismo": "Neutralização ácida equilibrada associada à eliminação de gases."
+            },
+            {
+              "nome": "Bicarbonato de sódio",
+              "atc": "A02AH01",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02AH - Antiácidos com sódio",
+              "produtos": [{"nome": "Alka-Seltzer®", "forma": "Comprimido efervescente"}],
+              "classe": "Antiácido sistémico",
+              "mecanismo": "Reação instantânea com o HCl consumindo protões e libertando CO₂."
+            },
+            {
+              "nome": "Famotidina",
+              "atc": "A02BA03",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02BA - Antagonistas dos recetores H2",
+              "produtos": [{"nome": "Lasa®", "forma": "Comprimido"}],
+              "classe": "Antagonista dos recetores H2",
+              "mecanismo": "Bloqueio seletivo dos recetores H₂ reduzindo a secreção ácida."
+            },
+            {
+              "nome": "Misoprostol",
+              "atc": "A02BB01",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02BB - Prostaglandinas",
+              "produtos": [{"nome": "Cytotec®", "forma": "Comprimido"}],
+              "classe": "Análogo da prostaglandina E1",
+              "mecanismo": "Inibição da secreção ácida e aumento da produção de muco protetor."
+            },
+            {
+              "nome": "Subcitrato de bismuto potássico + Metronidazol + Tetraciclina",
+              "atc": "A02BD08",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02BD - Associações para erradicação de Helicobacter pylori",
+              "produtos": [{"nome": "Pylera®", "forma": "Cápsula"}],
+              "classe": "Associação antimicrobiana",
+              "mecanismo": "Inativação da urease pelo bismuto e ação combinada antibacteriana."
+            },
+            {
+              "nome": "Sucralfato",
+              "atc": "A02BX02",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02BX - Outros fármacos para a úlcera péptica e refluxo",
+              "produtos": [{"nome": "Ulermin®", "forma": "Comprimido e Suspensão"}],
+              "classe": "Citoprotetor da mucosa gástrica",
+              "mecanismo": "Polimerização em meio ácido criando uma barreira protetora na lesão."
+            },
+            {
+              "nome": "Alginato de sódio + Bicarbonato de Sódio + Carbonato de Cálcio",
+              "atc": "A02BX13",
+              "grupo": "A - Aparelho digestivo e metabolismo",
+              "subgrupo2": "A02 - Tratamento de Alterações Causadas por Ácidos",
+              "subgrupo3": "A02BX - Outros fármacos para a úlcera péptica e refluxo",
+              "produtos": [{"nome": "Gaviscon®", "forma": "Comprimido e Suspensão"}],
+              "classe": "Barreira mecânica anti-refluxo",
+              "mecanismo": "Formação de uma balsa de gel flutuante que bloqueia o refluxo ácido."
             }
           ]
         };
@@ -99,7 +275,6 @@
             const app = document.getElementById('app');
             app.innerHTML = '';
 
-            // Agrupar por Grupo -> Subgrupo2 (3 carateres) -> Subgrupo3 (4 carateres)
             const agrupado = {};
             db.fármacos.forEach(f => {
                 if (!agrupado[f.grupo]) agrupado[f.grupo] = {};
@@ -108,15 +283,23 @@
                 agrupado[f.grupo][f.subgrupo2][f.subgrupo3].push(f);
             });
 
-            // Construção da árvore no HTML
             for (let grupo in agrupado) {
-                const divGrupo = createCard(grupo, 'nivel-grupo', () => toggleChildren(divGrupo));
+                const divGrupo = createCard(grupo, 'nivel-grupo', (e) => {
+                    e.stopPropagation();
+                    toggleAccordion(divGrupo, '.nivel-grupo');
+                });
                 
                 for (let sub2 in agrupado[grupo]) {
-                    const divSub2 = createCard(sub2, 'nivel-sub2', (e) => { e.stopPropagation(); toggleChildren(divSub2); });
+                    const divSub2 = createCard(sub2, 'nivel-sub2', (e) => {
+                        e.stopPropagation();
+                        toggleAccordion(divSub2, '.nivel-sub2');
+                    });
                     
                     for (let sub3 in agrupado[grupo][sub2]) {
-                        const divSub3 = createCard(sub3, 'nivel-sub3', (e) => { e.stopPropagation(); toggleChildren(divSub3); });
+                        const divSub3 = createCard(sub3, 'nivel-sub3', (e) => {
+                            e.stopPropagation();
+                            toggleAccordion(divSub3, '.nivel-sub3');
+                        });
                         
                         agrupado[grupo][sub2][sub3].forEach(farmaco => {
                             const divFarmaco = document.createElement('div');
@@ -146,10 +329,20 @@
             return card;
         }
 
-        function toggleChildren(element) {
-            const children = element.querySelector('.children');
-            if (children) {
-                children.classList.toggle('show');
+        // Lógica de Acordeão: fecha os irmãos ao abrir o atual
+        function toggleAccordion(element, selector) {
+            const parent = element.parentElement;
+            const targetChildren = element.querySelector('.children');
+            const isOpen = targetChildren.classList.contains('show');
+
+            // Fecha todos os elementos do mesmo nível que estão dentro do mesmo pai
+            parent.querySelectorAll(`:scope > ${selector} > .children`).forEach(child => {
+                child.classList.remove('show');
+            });
+
+            // Se não estava aberto, abre o selecionado
+            if (!isOpen) {
+                targetChildren.classList.add('show');
             }
         }
 
