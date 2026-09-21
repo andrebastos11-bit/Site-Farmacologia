@@ -684,6 +684,380 @@
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
         "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
       }
+    },
+    {
+      "nome": "Mebeverina",
+      "atc": "A03AA04",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AA - Agentes sintéticos anticolinérgicos, ésteres com grupo amónio terciário",
+      "produtos": [
+        {
+          "nome": "Duspatal Retard®",
+          "forma": "Cápsula de libertação prolongada (200 mg)"
+        }
+      ],
+      "classe": "Espasmolítico musculotrópico direto",
+      "mecanismo": "Bloqueio dos Canais de Sódio (Na+) e Cálcio (Ca2+): Inibe a entrada de iões Na+ através dos canais voltagem-dependentes bloqueando a despolarização inicial da célula muscular lisa, e impede a entrada secundária de iões Ca2+ juntamente com a inibição do efluxo de K+, evitando espasmos hipermotéis[cite: 19].",
+      "indicacoes": ["Síndrome do Intestino Irritável (SII)", "Espasmos cólónicos e dor abdominal[cite: 19]"],
+      "alvoPrincipal": "Canais de Na+ e Ca2+ no músculo liso[cite: 19]",
+      "rcm": {
+        "substancia": "Mebeverina",
+        "descricao": "Tratamento sintomático da síndrome do intestino irritável e espasmos gastrointestinais."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Trimebutina",
+      "atc": "A03AA05",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AA - Agentes sintéticos anticolinérgicos, ésteres com grupo amónio terciário",
+      "produtos": [
+        {
+          "nome": "Debridat 200®",
+          "forma": "Comprimido (200 mg)[cite: 19]"
+        }
+      ],
+      "classe": "Regulador e modulador de motilidade por ação nos recetores opióides",
+      "mecanismo": "Agonismo nos Recetores Enkefalinérgicos (mu, delta e kappa): Duplo efeito regulador (modulador) — estimula a motilidade em estados de hipomotilidade e inibe a hipercontractilidade em estados de hipermotilidade/espasmo[cite: 19].",
+      "indicacoes": ["Perturbações da motilidade gastrointestinal", "Síndrome do Intestino Irritável (SII)", "Espasmos digestivos[cite: 19]"],
+      "alvoPrincipal": "Recetores Enkefalinérgicos (mu, delta e kappa)[cite: 19]",
+      "rcm": {
+        "substancia": "Trimebutina",
+        "descricao": "Regulação da motilidade do trato gastrointestinal."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Brometo de otilónio",
+      "atc": "A03AB06",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AB - Anticolinérgicos sintéticos, ésteres com grupo amónio quaternário",
+      "produtos": [
+        {
+          "nome": "Spasmomen®",
+          "forma": "Comprimido (40 mg)[cite: 19]"
+        }
+      ],
+      "classe": "Espasmolítico musculotrópico de tripla ação local",
+      "mecanismo": "Inibição dos Canais de Cálcio do Tipo L, antagonismo dos recetores muscarínicos M3 e antagonismo dos recetores da taquicinina (NK2), reduzindo a hiperalgesia visceral[cite: 19].",
+      "indicacoes": ["Síndrome do Intestino Irritável (SII)", "Espasticidade", "Dor cólica intestinal[cite: 19]"],
+      "alvoPrincipal": "Canais de Ca2+ do tipo L, Recetores Muscarínicos M3 e Recetores da Taquicinina (NK2)[cite: 19]",
+      "rcm": {
+        "substancia": "Brometo de otilónio",
+        "descricao": "Tratamento espasmolítico em afeções intestinais dolorosas."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Cloreto de tróspio",
+      "atc": "A03AB20",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AB - Anticolinérgicos sintéticos, ésteres com grupo amónio quaternário",
+      "produtos": [
+        {
+          "nome": "Spasmoplex®",
+          "forma": "Comprimido (20 mg)[cite: 19]"
+        }
+      ],
+      "classe": "Anticolinérgico/Antimuscarínico periférico de estrutura quaternária",
+      "mecanismo": "Antagonismo Competitivo dos Recetores Muscarínicos (M1, M2, M3) e inibição da contração parassimpática, promovendo o relaxamento do músculo liso digestivo e vesical[cite: 19].",
+      "indicacoes": ["Hiperatividade da bexiga", "Espasmos do trato urinário e digestivo[cite: 19]"],
+      "alvoPrincipal": "Recetores Muscarínicos M1, M2 e M3[cite: 19]",
+      "rcm": {
+        "substancia": "Cloreto de tróspio",
+        "descricao": "Tratamento de espasmos e hiperatividade visceral."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Papaverina",
+      "atc": "A03AD01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AD - Papaverina e derivados",
+      "produtos": [
+        {
+          "nome": "Papaverina Labesfal®",
+          "forma": "Solução injetável (150 mg/5 ml)[cite: 19]"
+        }
+      ],
+      "classe": "Alcalóide espasmolítico musculotrópico não-seletivo",
+      "mecanismo": "Inibição não-seletiva da enzima fosfodiesterase (PDE-3 e PDE-4), provocando acumulação de cAMP/cGMP e bloqueio de cálcio na célula muscular lisa[cite: 19].",
+      "indicacoes": ["Cólicas agudas (biliar, renal, intestinal)", "Espasmos musculares lisos[cite: 19]"],
+      "alvoPrincipal": "Enzima Fosfodiesterase (PDE) e Canais de Ca2+[cite: 19]",
+      "rcm": {
+        "substancia": "Papaverina",
+        "descricao": "Alívio de espasmos vasculares e viscerais agudos."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Floroglucinol + Simeticone",
+      "atc": "A03AX",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AX - Outros fármacos para perturbações funcionais gastrointestinais",
+      "produtos": [
+        {
+          "nome": "Normatal®",
+          "forma": "Cápsula (62.23 mg + 133 mg)[cite: 19]"
+        }
+      ],
+      "classe": "Associação de espasmolítico musculotrópico e antiflatulento",
+      "mecanismo": "Floroglucinol inibe a entrada de iões Ca2+ nas células musculares lisas sem interferir no sistema autónomo; Simeticone reduz a tensão superficial das bolhas de gás na luz intestinal[cite: 19].",
+      "indicacoes": ["Espasmos gastrointestinais dolorosos associados a meteorismo e distensão abdominal[cite: 19]"],
+      "alvoPrincipal": "Canais de Ca2+ (Floroglucinol) + Tensão Superficial de Bolhas de Gás (Simeticone)[cite: 19]",
+      "rcm": {
+        "substancia": "Floroglucinol + Simeticone",
+        "descricao": "Tratamento de espasmos e meteorismo abdominal."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Brometo de pinavério",
+      "atc": "A03AX04",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AX - Outros fármacos para perturbações funcionais gastrointestinais",
+      "produtos": [
+        {
+          "nome": "Dicetel®",
+          "forma": "Comprimido (50 mg)[cite: 20]"
+        }
+      ],
+      "classe": "Bloqueador seletivo dos canais de cálcio gastrointestinal",
+      "mecanismo": "Inibição altamente seletiva dos canais de cálcio do tipo L voltagem-dependentes situados na membrana dos miócitos do cólon e vias biliares[cite: 20].",
+      "indicacoes": ["Síndrome do Intestino Irritável (SII)", "Dores e perturbações funcionais das vias biliares[cite: 20]"],
+      "alvoPrincipal": "Canais de Ca2+ do tipo L voltagem-dependentes[cite: 20]",
+      "rcm": {
+        "substancia": "Brometo de pinavério",
+        "descricao": "Regulação da motilidade e alívio da dor na SII e vias biliares."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Simeticone",
+      "atc": "A03AX13",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
+      "subgrupo3": "A03AX - Outros fármacos para perturbações funcionais gastrointestinais",
+      "produtos": [
+        {
+          "nome": "Aero-Om®",
+          "forma": "Comprimido para mastigar (42 mg), Gotas orais (105 mg/ml) e Cápsula mole (125 mg)[cite: 20]"
+        },
+        {
+          "nome": "Flatub®",
+          "forma": "Cápsula mole (120 mg)[cite: 20]"
+        },
+        {
+          "nome": "Mymus® e Nanog®",
+          "forma": "Gotas orais (66.6 mg/ml)[cite: 20]"
+        }
+      ],
+      "classe": "Polímero inerte de silicone com ação física desespumante",
+      "mecanismo": "Ação física de redução da tensão superficial na interface gás-líquido do muco gastrointestinal[cite: 20].",
+      "indicacoes": ["Acumulação de gases (flatulência, meteorismo, aerofagia)[cite: 20]"],
+      "alvoPrincipal": "Tensão Superficial de Bolhas de Gás[cite: 20]",
+      "rcm": {
+        "substancia": "Simeticone",
+        "descricao": "Alívio sintomático do meteorismo e acumulação de gases."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Atropina",
+      "atc": "A03BA01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03B - Beladona e derivados, isolados",
+      "subgrupo3": "A03BA - Alcalóides da beladona, aminas terciárias",
+      "produtos": [
+        {
+          "nome": "Atropina Braun®",
+          "forma": "Solução injetável (0.5 e 1 mg/1 ml)[cite: 20]"
+        },
+        {
+          "nome": "Atropina Aguettant®",
+          "forma": "Solução injetável em seringa pré-cheia (0.1 e 0.2 mg/ml)[cite: 20]"
+        }
+      ],
+      "classe": "Antagonista competitivo clássico não-seletivo dos recetores muscarínicos",
+      "mecanismo": "Bloqueio global dos recetores muscarínicos (M1 a M5), reduzindo o peristaltismo, as secreções e induzindo taquicardia por efeito vagolítico[cite: 20].",
+      "indicacoes": ["Antídoto para intoxicações (organofosforados)", "Pré-anestesia (sialorreia/bradicardias)", "Espasmos viscerais agudos[cite: 20]"],
+      "alvoPrincipal": "Recetores Muscarínicos (M1, M2, M3, M4, M5)[cite: 20]",
+      "rcm": {
+        "substancia": "Atropina",
+        "descricao": "Uso de emergência em bradicardias, antídoto e espasmos severos."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Butilescopolamina",
+      "atc": "A03BB01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03B - Beladona e derivados, isolados",
+      "subgrupo3": "A03BB - Alcalóides semissintéticos da beladona, compostos de amónio quaternário",
+      "produtos": [
+        {
+          "nome": "Buscopan®",
+          "forma": "Comprimido (10 mg) e Solução injetável (20 mg/1 ml)[cite: 20]"
+        },
+        {
+          "nome": "Bysimin®",
+          "forma": "Solução injetável (20 mg/1 ml)[cite: 20]"
+        }
+      ],
+      "classe": "Anticolinérgico/Espasmolítico periférico de amónio quaternário",
+      "mecanismo": "Antagonismo competitivo dos recetores muscarínicos M3 localizados nos plexos parassimpáticos da musculatura lisa abdominal e vias biliares/urinárias[cite: 20].",
+      "indicacoes": ["Cólica aguda (intestinal, biliar, renal)", "Espasmos do trato geniturinário e digestivo[cite: 20]"],
+      "alvoPrincipal": "Recetores Muscarínicos (M3) viscerais[cite: 20]",
+      "rcm": {
+        "substancia": "Butilescopolamina",
+        "descricao": "Alívio de dores espasmódicas viscerais sem cruzar a barreira hematoencefálica."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Butilescopolamina + Paracetamol",
+      "atc": "A03DB04",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03D - Anti-espasmódicos associados a analgésicos",
+      "subgrupo3": "A03DB - Beladona e derivados associados a analgésicos",
+      "produtos": [
+        {
+          "nome": "Buscopan Compositum N®",
+          "forma": "Comprimido (10 mg + 500 mg) e Supositório (10 mg + 800 mg)[cite: 20]"
+        }
+      ],
+      "classe": "Associação de antiespasmódico periférico e analgésico central",
+      "mecanismo": "Butilescopolamina bloqueia os recetores M3 viscerais combatendo o espasmo, enquanto o paracetamol eleva o limiar da dor no SNC por inibição das ciclooxigenases COX-1 e COX-2 cerebrais[cite: 20].",
+      "indicacoes": ["Dor espasmódica moderada a grave", "Cólicas com componente inflamatório/doloroso pronunciado[cite: 20]"],
+      "alvoPrincipal": "Recetores Muscarínicos (M3) + Enzimas Cicloxigenases COX-1 e COX-2 no SNC[cite: 20]",
+      "rcm": {
+        "substancia": "Butilescopolamina + Paracetamol",
+        "descricao": "Tratamento de dor cólica intensa com necessidade de analgesia central."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Metoclopramida",
+      "atc": "A03FA01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03F - Gastrocinéticos",
+      "subgrupo3": "A03FA - Gastrocinéticos",
+      "produtos": [
+        {
+          "nome": "Primperan®",
+          "forma": "Comprimido (10 mg), Solução injetável (10 mg/2 ml) e Solução oral (1 mg/ml)[cite: 21]"
+        },
+        {
+          "nome": "Metgen®",
+          "forma": "Solução oral (1 mg/ml)[cite: 21]"
+        }
+      ],
+      "classe": "Procinético e antiemético central e periférico",
+      "mecanismo": "Antagonismo dos recetores dopaminérgicos D2 (na CTZ e periféricos aumentando a libertação de acetilcolina) e modulação serotoninérgica (agonismo 5-HT4 e antagonismo 5-HT3)[cite: 21].",
+      "indicacoes": ["Náuseas/vómitos (incluindo pós-operatório e induzidos por quimioterapia)", "Gastroparesia[cite: 21]"],
+      "alvoPrincipal": "Recetores Dopaminérgicos D2 + Recetores Serotoninérgicos 5-HT4 / 5-HT3[cite: 21]",
+      "rcm": {
+        "substancia": "Metoclopramida",
+        "descricao": "Prevenção e tratamento de náuseas, vómitos e distúrbios da motilidade gástrica."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Domperidona",
+      "atc": "A03FA03",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03F - Gastrocinéticos",
+      "subgrupo3": "A03FA - Gastrocinéticos",
+      "produtos": [
+        {
+          "nome": "Cinet®",
+          "forma": "Comprimido (10 mg), Comprimido dispersível (10 mg) e Suspensão oral (1 mg/ml)[cite: 21]"
+        },
+        {
+          "nome": "Vomigastro® e Motilium®",
+          "forma": "Comprimido (10 mg)[cite: 21]"
+        }
+      ],
+      "classe": "Antagonista dopaminérgico D2 predominantemente periférico",
+      "mecanismo": "Antagonismo seletivo dos recetores D2 periféricos e na zona CTZ (localizada fora da barreira hematoencefálica), facilitando a motilidade gástrica sem forte penetração cerebral[cite: 21].",
+      "indicacoes": ["Alívio dos sintomas de náuseas e vómitos (duração máxima recomendada: 7 dias)[cite: 21]"],
+      "alvoPrincipal": "Recetores Dopaminérgicos D2 periféricos[cite: 21]",
+      "rcm": {
+        "substancia": "Domperidona",
+        "descricao": "Tratamento de náuseas e vómitos com menor risco extrapiramidal central."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Cleboprida",
+      "atc": "A03FA",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A03F - Gastrocinéticos",
+      "subgrupo3": "A03FA - Gastrocinéticos",
+      "produtos": [
+        {
+          "nome": "Clebutec®",
+          "forma": "Comprimido (0,5 mg)[cite: 22]"
+        }
+      ],
+      "classe": "Benzamida substituída procinética de segunda geração",
+      "mecanismo": "Antagonismo dos recetores dopaminérgicos D2 e agonismo dos recetores 5-HT4, facilitando a neurotransmissão colinérgica e promovendo uma motilidade antropilórica vigorosa.",
+      "indicacoes": ["Transtornos funcionais da motilidade digestiva", "Gastroparesia", "Profilaxia do refluxo[cite: 22]"],
+      "alvoPrincipal": "Recetores Dopaminérgicos D2 + Recetores Serotoninérgicos 5-HT4[cite: 22]",
+      "rcm": {
+        "substancia": "Cleboprida",
+        "descricao": "Tratamento de distúrbios da motilidade gastrointestinal e refluxo."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
     }
   ]
 }
