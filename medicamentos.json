@@ -382,6 +382,139 @@
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
         "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
       }
+    },
+    {
+      "nome": "Famotidina",
+      "atc": "A02BA03",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BA – Antagonistas dos recetores H2",
+      "produtos": [
+        {
+          "nome": "Lasa®",
+          "forma": "Comprimido (10 mg)"
+        }
+      ],
+      "classe": "Antagonista dos recetores H2 da histamina",
+      "mecanismo": "Antagonista competitivo dos recetores H₂ da histamina[cite: 21]. Atua ao bloquear seletivamente os recetores H₂ da histamina localizados na membrana basolateral das células parietais gástricas[cite: 21]. A inibição do recetor impede a ativação da adenilato ciclase e a consequente redução dos níveis de AMPc (adenosina monofosfato cíclico), diminuindo drasticamente a secreção basal e noturna de ácido clorídrico e de pepsina[cite: 21].",
+      "indicacoes": ["Pirose", "Hiperacidez", "Profilaxia da úlcera péptica"],
+      "alvoPrincipal": "Recetores H₂ da Histamina",
+      "rcm": {
+        "substancia": "Famotidina",
+        "descricao": "Tratamento e profilaxia da úlcera péptica e condições associadas à hiperacidez."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Misoprostol",
+      "atc": "A02BB01",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BB – Prostaglandinas",
+      "produtos": [
+        {
+          "nome": "Cytotec®",
+          "forma": "Comprimido (0.2 mg)"
+        }
+      ],
+      "classe": "Análogo sintético da prostaglandina E1",
+      "mecanismo": "Análogo sintético da prostaglandina E (PGE₁)[cite: 21]. Liga-se aos recetores EP₃ da prostaglandina nas células parietais, inibindo a via do AMPc para reduzir a secreção de ácido clorídrico[cite: 22]. Em simultâneo, estimula os recetores nas células mucosas gástricas, aumentando a secreção de bicarbonato e de muco protetor, além de promover o fluxo sanguíneo da mucosa, prevenindo a ulceração induzida por AINEs[cite: 22].",
+      "indicacoes": ["Prevenção de úlceras por AINEs", "Indução do trabalho de parto"],
+      "alvoPrincipal": "Recetores EP₃ da prostaglandina",
+      "rcm": {
+        "substancia": "Misoprostol",
+        "descricao": "Prevenção de úlceras gástricas induzidas por AINEs e usos obstétricos."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Subcitrato de bismuto potássico + Metronidazol + Tetraciclina",
+      "atc": "A02BD08",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BD – Associações para erradicação de Helicobacter pylori",
+      "produtos": [
+        {
+          "nome": "Pylera®",
+          "forma": "Cápsula (140 mg + 125 mg + 125 mg)"
+        }
+      ],
+      "classe": "Associação antimicrobiana e citoprotetora para erradicação de H. pylori",
+      "mecanismo": "• <strong>Subcitrato de Bismuto Potássico:</strong> Liga-se aos resíduos de cisteína da enzima urease do <em>H. pylori</em>, inativando-a[cite: 22]. Como a bactéria necessita da urease para converter a ureia em amónia (mecanismo que neutraliza o ácido à sua volta para conseguir sobreviver no estômago), a inibição enzimática expõe o microrganismo à acidez gástrica letal[cite: 22].<br>• <strong>Metronidazol:</strong> Pró-fármaco que penetra por difusão passiva na bactéria que é consequentemente reduzido a um radical livre[cite: 22]. Este radical livre reage diretamente com a estrutura do DNA bacteriano, provocando a perda da estrutura em hélice e a morte celular por incapacidade de replicação[cite: 22].<br>• <strong>Cloridrato de Tetraciclina:</strong> Liga-se de forma reversível à subunidade 30S do ribossoma bacteriano, impedindo a adição de novos aminoácidos à cadeia polipeptídica em crescimento, interrompendo a síntese de proteínas essenciais à sobrevivência e replicação bacteriana[cite: 22].",
+      "indicacoes": ["Erradicação de Helicobacter pylori em associação com IBP"],
+      "alvoPrincipal": "Enzima Urease, DNA bacteriano e Subunidade 30S do Ribossoma",
+      "rcm": {
+        "substancia": "Subcitrato de bismuto potássico + Metronidazol + Tetraciclina",
+        "descricao": "Erradicação da infeção por Helicobacter pylori e redução da recorrência de úlcera péptica."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Sucralfato",
+      "atc": "A02BX02",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BX – Outros fármacos para a úlcera péptica e refluxo gastroesofágico",
+      "produtos": [
+        {
+          "nome": "Ulermin®",
+          "forma": "Comprimido (1000 mg) e Suspensão oral (1000 mg/5 ml)"
+        }
+      ],
+      "classe": "Citoprotetor da mucosa gástrica",
+      "mecanismo": "Complexo de sacarose octasulfatada com hidróxido de alumínio (protetor focal de lesões)[cite: 23]. Em meio ácido (pH < 4), polimeriza-se formando uma pasta viscosa e negativamente carregada que se liga seletivamente às proteínas de carga positiva (exsudado proteico) das crateras ulcerosas[cite: 23]. Esta barreira física protege a ferida da digestão pelo HCl, pela pepsina e pelos sais biliares, estimulando localmente a libertação endógena de prostaglandinas e do fator de crescimento epidérmico (EGF)[cite: 23].",
+      "indicacoes": ["Úlcera gástrica e duodenal", "Esofagite de refluxo", "Profilaxia de úlcera de stress"],
+      "alvoPrincipal": "Proteínas exsudadas da mucosa lesionada",
+      "rcm": {
+        "substancia": "Sucralfato",
+        "descricao": "Tratamento de úlceras gástricas e duodenais e prevenção de lesões na mucosa."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Alginato de sódio + Bicarbonato de Sódio + Carbonato de Cálcio",
+      "atc": "A02BX13",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
+      "subgrupo3": "A02BX – Outros fármacos para a úlcera péptica e refluxo gastroesofágico",
+      "produtos": [
+        {
+          "nome": "Gaviscon® e Gaviscon Morango®",
+          "forma": "Comprimido para mastigar (250 mg + 133.5 mg + 80 mg)"
+        },
+        {
+          "nome": "Gaviscon Duefet® e Gaviscon Duefet Frutos Vermelhos®",
+          "forma": "Comprimido para mastigar (250 mg + 106.5 mg + 187.5 mg)"
+        },
+        {
+          "nome": "Gaviscon Duefet® e Gaviscon Duefet Frutos Vermelhos®",
+          "forma": "Suspensão oral (500 mg + 213 mg + 325 mg)"
+        }
+      ],
+      "classe": "Dispositivo de barreira mecânica anti-refluxo com suporte antiácido",
+      "mecanismo": "• <strong>Alginato de sódio:</strong> Em contacto com o ácido clorídrico, precipita formando um gel espesso de ácido algínico, fortalecido pelo entrecruzamento com iões cálcio (Ca²⁺)[cite: 24].<br>• <strong>Bicarbonato de sódio e Carbonato de cálcio:</strong> Libertam bolhas de dióxido de carbono (CO₂) que flutuam o gel como uma balsa sobre a bolsa ácida (<em>acid pocket</em>), bloqueando fisicamente o refluxo de ácido, pepsina e bilis para o esófago[cite: 24]. Os iões de cálcio (Ca²⁺) libertados pela dissociação do carbonato de cálcio desempenham um papel crucial: ligam-se quimicamente às cadeias do ácido algínico, criando pontes de cruzamento (<em>cross-linking</em>), transformando o gel simples numa espuma/balsa estruturada, resistente e coesa, capaz de resistir às contrações do estômago e permanecer no topo do suco gástrico por até 4 horas[cite: 24].",
+      "indicacoes": ["Refluxo gastroesofágico", "Azia", "Regurgitação"],
+      "alvoPrincipal": "Ácido clorídrico",
+      "rcm": {
+        "substancia": "Alginato de sódio + Bicarbonato de Sódio + Carbonato de Cálcio",
+        "descricao": "Alívio dos sintomas do refluxo gastroesofágico, tais como azia, regurgitação e indigestão."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
     }
   ]
 }
