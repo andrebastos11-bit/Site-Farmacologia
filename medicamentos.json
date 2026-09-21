@@ -78,6 +78,106 @@
         "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
         "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
       }
+    },
+    {
+      "nome": "Benzidamina",
+      "atc": "A01AD02",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
+      "subgrupo3": "A01AD - Agentes de uso tópico oral",
+      "produtos": [
+        {
+          "nome": "Tantum Verde®",
+          "forma": "Solução para lavagem da boca (1.5 mg/ml) / Solução para pulverização bucal (1.5 mg/ml e 3 mg/ml)"
+        }
+      ],
+      "classe": "Anti-inflamatório, analgésico e anestésico local",
+      "mecanismo": "Inibição da libertação de mediadores inflamatórios (como as citocinas TNF-alfa e IL-1), sem atuar de forma clássica sobre a ciclo-oxigenase como outros AINEs[cite: 10, 11]. Possui também um efeito anestésico local por bloquear canais de sódio e reduzir a permeabilidade capilar[cite: 10, 11].",
+      "indicacoes": ["Inflamação oral e da orofaringe", "Higiene oral"],
+      "alvoPrincipal": "Citocinas pró-inflamatórias (TNF-alfa e IL-1) e canais de Na+",
+      "rcm": {
+        "substancia": "Benzidamina",
+        "descricao": "Alívio sintomático da dor e inflamação na boca e garganta."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Álcool diclorobenzílico + Benzidamina",
+      "atc": "A01AD11",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
+      "subgrupo3": "A01AD - Agentes de uso tópico oral",
+      "produtos": [
+        {
+          "nome": "Mebocaína Anti-Inflam®",
+          "forma": "Comprimido para chupar (1.2 mg + 3 mg)"
+        }
+      ],
+      "classe": "Antisséptico e anti-inflamatório tópico oral",
+      "mecanismo": "Associação de álcool 2,4-diclorobenzil (antisséptico de largo espetro que atua por desnaturação de proteínas da parede celular microbiana, reduzindo carga viral e bacteriana) com benzidamina (ação anti-inflamatória por inibição de citocinas TNF-alfa/IL-1 e efeito anestésico local por bloqueio de canais de sódio)[cite: 10, 11].",
+      "indicacoes": ["Inflamação oral e da orofaringe"],
+      "alvoPrincipal": "Proteínas e lípidos da parede celular microbiana, citocinas e canais de Na+",
+      "rcm": {
+        "substancia": "Álcool diclorobenzílico + Benzidamina",
+        "descricao": "Alívio local da dor de garganta e inflamações da cavidade oral."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Diclofenac",
+      "atc": "A01AD11",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
+      "subgrupo3": "A01AD - Agentes de uso tópico oral",
+      "produtos": [
+        {
+          "nome": "Diclodent®",
+          "forma": "Solução bucal (0.74 mg/ml)"
+        }
+      ],
+      "classe": "Anti-inflamatório não esteroide (AINE)",
+      "mecanismo": "AINE que atua ao inibir a enzima ciclo-oxigenase (COX-1 e COX-2), responsável pela produção de prostaglandinas, que são mediadores da inflamação, dor e edema[cite: 10, 12]. Ao bloquear a via da cascata do ácido araquidónico, reduz a sensibilidade dos nociceptores (receptores de dor)[cite: 12].",
+      "indicacoes": ["Inflamação oral e da orofaringe"],
+      "alvoPrincipal": "COX-1 e COX-2",
+      "rcm": {
+        "substancia": "Diclofenac",
+        "descricao": "Tratamento sintomático de estados irritativos e inflamatórios da cavidade oral."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
+    },
+    {
+      "nome": "Cloreto de zinco",
+      "atc": "A01AD11",
+      "grupo": "A - Aparelho digestivo e metabolismo",
+      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
+      "subgrupo3": "A01AD - Agentes de uso tópico oral",
+      "produtos": [
+        {
+          "nome": "Oratol®",
+          "forma": "Solução para gargarejar (25 mg/ml)"
+        }
+      ],
+      "classe": "Adstringente e antisséptico",
+      "mecanismo": "Atua como adstringente, promovendo a contração das proteínas superficiais dos tecidos (o que ajuda a reduzir a inflamação e o edema) e como antisséptico ao inibir enzimas bacterianas que degradam proteínas, ajudando no controle da placa[cite: 10, 12]. O zinco liga-se também aos precursores do mau hálito (gases de enxofre), neutralizando-os[cite: 10, 12].",
+      "indicacoes": ["Inflamação oral e da orofaringe", "Higiene oral"],
+      "alvoPrincipal": "Compostos Voláteis de Enxofre, enzimas proteolíticas microbianas e proteínas das membranas inflamadas",
+      "rcm": {
+        "substancia": "Cloreto de zinco",
+        "descricao": "Higiene oral e prevenção de processos inflamatórios e halitose."
+      },
+      "videos": {
+        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      }
     }
   ]
 }
