@@ -93,7 +93,7 @@
             display: block;
         }
 
-        /* Nível 2: Subgrupo de 4 Dígitos (ex: A01A) */
+        /* Nível 2: Subgrupo de 3 Dígitos (ex: A01) */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
@@ -129,7 +129,7 @@
             display: block;
         }
 
-        /* Nível 3: Subgrupo de 5 Dígitos (ex: A01AD) */
+        /* Nível 3: Subgrupo de 4/5 Dígitos (ex: A01AA, A01AD) */
         .atc-sub3-item {
             border-bottom: 1px solid #f8fafc;
         }
@@ -303,29 +303,11 @@
     <script>
         let farmacosData = [];
 
-        const descricoesATC4 = {
-            "A01A": "Preparações para Uso Estomatológico",
-            "A02A": "Antiácidos",
-            "A02B": "Agentes para o Tratamento da Úlcera Péptica e do Refluxo Gastroesofágico",
-            "A03A": "Agentes para Distúrbios Funcionais Gastrointestinais",
-            "A04A": "Antieméticos e Antinauseantes",
-            "A05A": "Terapia Biliar",
-            "A06A": "Medicamentos para a Obstipação",
-            "A07A": "Anti-infeciosos Intestinais",
-            "A10A": "Insulinas e Análogos",
-            "A10B": "Medicamentos Usados na Diabetes, Excluindo Insulinas",
-            "A11A": "Multivitaminas, Associações",
-            "A12A": "Cálcio"
+        // Mapeamento oficial dos códigos ATC de 3 dígitos (Nível 2)
+        const descricoesATC3 = {
+            "A01": "Preparações para Uso Estomatológico",
+            "A02": "Tratamento de Alterações Causadas por Ácidos"
         };
-
-        function correspondeCodigoATC(texto, codigoExato) {
-            if (!texto || !codigoExato) return false;
-            const limpo = texto.trim();
-            if (!limpo.toUpperCase().startsWith(codigoExato.toUpperCase())) return false;
-            if (limpo.length === codigoExato.length) return true;
-            const charSeguinte = limpo.charAt(codigoExato.length);
-            return !/[a-zA-Z0-9]/.test(charSeguinte);
-        }
 
         function formatarTextoCapitalizado(texto) {
             if (!texto) return "";
@@ -370,23 +352,24 @@
                 return;
             }
 
-            const descSub2 = {};
             const descSub3 = {};
+            const descSub4 = {};
 
             farmacosData.forEach(f => {
                 const atc = f.atc || "";
-                if (atc.length >= 4) {
-                    const k2 = atc.substring(0, 4);
-                    if (f.subgrupo2 && correspondeCodigoATC(f.subgrupo2, k2)) {
-                        descSub2[k2] = f.subgrupo2;
+                // Nível de 3 caracteres (ex: A01)
+                if (atc.length >= 3) {
+                    const k3 = atc.substring(0, 3);
+                    if (f.subgrupo2) {
+                        // Se o subgrupo2 do JSON tiver o formato A01 - Nome
+                        descSub3[k3] = f.subgrupo2;
                     }
                 }
-                if (atc.length >= 5) {
-                    const k3 = atc.substring(0, 5);
-                    if (f.subgrupo3 && correspondeCodigoATC(f.subgrupo3, k3)) {
-                        descSub3[k3] = f.subgrupo3;
-                    } else if (f.subgrupo2 && correspondeCodigoATC(f.subgrupo2, k3)) {
-                        descSub3[k3] = f.subgrupo2;
+                // Nível de 4/5 caracteres (ex: A01AA)
+                if (atc.length >= 4) {
+                    const k4 = atc.substring(0, 5).length >= 5 ? atc.substring(0, 5) : atc.substring(0, 4);
+                    if (f.subgrupo3) {
+                        descSub4[k4] = f.subgrupo3;
                     }
                 }
             });
@@ -396,17 +379,19 @@
                 const g1 = f.grupo || "Outros";
                 const atc = f.atc || "";
                 
-                const k2 = atc.length >= 4 ? atc.substring(0, 4) : "Geral";
-                const k3 = atc.length >= 5 ? atc.substring(0, 5) : k2;
+                const k3 = atc.length >= 3 ? atc.substring(0, 3) : "A00";
+                const k4 = atc.length >= 5 ? atc.substring(0, 5) : (atc.length >= 4 ? atc.substring(0, 4) : k3);
                 
-                let g2Bruto = descSub2[k2] || descricoesATC4[k2] || `${k2} - Outras Preparações`;
-                if (!g2Bruto.toUpperCase().startsWith(k2)) {
-                    g2Bruto = `${k2} - ${g2Bruto}`;
+                // Nível 2 rigoroso (3 dígitos ex: A01)
+                let g2Bruto = descSub3[k3] || descricoesATC3[k3] || `${k3} - Outras Preparações`;
+                if (!g2Bruto.toUpperCase().startsWith(k3)) {
+                    g2Bruto = `${k3} - ${g2Bruto}`;
                 }
 
-                let g3Bruto = descSub3[k3] || (f.subgrupo3 && correspondeCodigoATC(f.subgrupo3, k3) ? f.subgrupo3 : null) || `${k3} - Outros Agentes`;
-                if (!g3Bruto.toUpperCase().startsWith(k3)) {
-                    g3Bruto = `${k3} - ${g3Bruto}`;
+                // Nível 3 rigoroso (4/5 dígitos ex: A01AA)
+                let g3Bruto = descSub4[k4] || (f.subgrupo3 ? f.subgrupo3 : null) || `${k4} - Outros Agentes`;
+                if (!g3Bruto.toUpperCase().startsWith(k4)) {
+                    g3Bruto = `${k4} - ${g3Bruto}`;
                 }
 
                 const g2Nome = formatarTextoCapitalizado(g2Bruto);
@@ -451,7 +436,7 @@
                     sub2Header.onclick = (e) => {
                         e.stopPropagation();
                         const jaAtivo = sub2Item.classList.contains('active');
-                        // Fecha os restantes sub2 irmãos
+                        // Acordeão: fecha os restantes sub2 irmãos
                         sub2Container.querySelectorAll('.atc-sub2-item').forEach(el => el.classList.remove('active'));
                         if (!jaAtivo) {
                             sub2Item.classList.add('active');
@@ -473,7 +458,7 @@
                         sub3Header.onclick = (e) => {
                             e.stopPropagation();
                             const jaAtivo = sub3Item.classList.contains('active');
-                            // Fecha os restantes sub3 irmãos dentro do mesmo sub2
+                            // Acordeão: fecha os restantes sub3 irmãos dentro do mesmo sub2
                             sub3Container.querySelectorAll('.atc-sub3-item').forEach(el => el.classList.remove('active'));
                             if (!jaAtivo) {
                                 sub3Item.classList.add('active');
