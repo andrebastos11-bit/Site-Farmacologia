@@ -50,7 +50,7 @@
             border-color: var(--primary-color);
         }
 
-        /* Nível 1: Grupo Principal ATC */
+        /* Nível 1: Grupo Principal ATC (Raiz) */
         .atc-main-group {
             margin-bottom: 15px;
             background: #ffffff;
@@ -87,18 +87,17 @@
             display: none;
             background-color: #fdfdfd;
             border-top: 1px solid #f1f5f9;
-            padding-left: 10px;
         }
         .atc-main-group.active .sub2-container {
             display: block;
         }
 
-        /* Nível 2: Subgrupo 2 */
+        /* Nível 2: Subgrupo 2 (Recuado e com linha indicativa à esquerda) */
         .atc-sub2-item {
             border-bottom: 1px solid #f1f5f9;
         }
         .atc-sub2-header {
-            padding: 12px 15px;
+            padding: 12px 20px 12px 35px; /* Recuo à esquerda */
             font-size: 0.95rem;
             font-weight: 600;
             color: #334155;
@@ -106,6 +105,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #fafbfc;
             transition: background-color 0.2s;
         }
         .atc-sub2-header:hover {
@@ -122,19 +122,18 @@
 
         .sub3-container {
             display: none;
-            padding-left: 15px;
             background-color: #ffffff;
         }
         .atc-sub2-item.active .sub3-container {
             display: block;
         }
 
-        /* Nível 3: Subgrupo 3 */
+        /* Nível 3: Subgrupo 3 (Mais recuado ainda para formar a árvore) */
         .atc-sub3-item {
             border-bottom: 1px solid #f8fafc;
         }
         .atc-sub3-header {
-            padding: 10px 15px;
+            padding: 10px 20px 10px 55px; /* Mais recuado à esquerda */
             font-size: 0.9rem;
             font-weight: 500;
             color: #475569;
@@ -142,6 +141,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #ffffff;
             transition: background-color 0.2s;
         }
         .atc-sub3-header:hover {
@@ -156,25 +156,27 @@
             content: '-';
         }
 
-        /* Nível 4: Lista de Medicamentos */
+        /* Nível 4: Lista de Medicamentos (Folhas da árvore, ainda mais à direita) */
         .drug-list {
             list-style: none;
             padding: 0;
             margin: 0;
             display: none;
-            background-color: #fafafa;
+            background-color: #fcfdfd;
         }
         .atc-sub3-item.active .drug-list {
             display: block;
         }
         .drug-item {
-            padding: 12px 20px 12px 35px;
+            padding: 12px 20px 12px 75px; /* Alinhamento final em árvore para o fármaco */
             border-bottom: 1px solid #f1f5f9;
             cursor: pointer;
-            transition: background-color 0.2s;
+            border-left: 3px solid transparent;
+            transition: all 0.2s;
         }
         .drug-item:hover {
-            background-color: #f1f5f9;
+            background-color: #f0fdf4;
+            border-left-color: var(--primary-color);
         }
         .drug-info h3 {
             margin: 0 0 3px 0;
@@ -318,7 +320,6 @@
                 return;
             }
 
-            // Hierarquia: Grupo Principal -> Subgrupo2 -> Subgrupo3 -> Fármacos
             const estrutura = {};
             lista.forEach(f => {
                 const g1 = f.grupo || "Outros";
@@ -419,7 +420,6 @@
             document.getElementById('modalMecanismo').innerHTML = farmaco.mecanismo;
             document.getElementById('modalIndicacoes').textContent = farmaco.indicacoes.join(', ');
 
-            // Renderizar lista de produtos comerciais
             let produtosHtml = '';
             if (farmaco.produtos && farmaco.produtos.length > 0) {
                 farmaco.produtos.forEach(p => {
@@ -467,7 +467,7 @@
                 (f.subgrupo2 && f.subgrupo2.toLowerCase().includes(termo)) ||
                 (f.subgrupo3 && f.subgrupo3.toLowerCase().includes(termo)) ||
                 (f.produtos && f.produtos.some(p => p.nome.toLowerCase().includes(termo))) ||
-                f.indicacoes.some(ind => ind.toLowerCase().includes(ind.toLowerCase().includes(termo)))
+                f.indicacoes.some(ind => ind.toLowerCase().includes(termo))
             );
             
             renderizarCatalogo(filtrados, true);
