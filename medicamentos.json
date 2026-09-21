@@ -8,17 +8,17 @@
       "classe": "Biguanida",
       "mecanismo": "Reduz a produção hepática de glicose e aumenta a sensibilidade à insulina.",
       "indicacoes": ["Diabetes Mellitus Tipo 2"],
-      "link": "metformina.html"
+      "link": "#"
     },
     {
       "nome": "Empagliflozina",
-      "atc": "C10BA05", 
-      "grupo": "C - Sistema cardiovascular",
-      "subsubgrupo": "C10 - Agentes modificadores dos lípidos / Inibidores SGLT2",
+      "atc": "A10BK01", 
+      "grupo": "A - Trato alimentar e metabolismo",
+      "subgrupo": "A10 - Fármacos usados na diabetes (Inibidores do SGLT2)",
       "classe": "Inibidor do SGLT2",
       "mecanismo": "Inibe o co-transportador sódio-glicose 2 (SGLT2) no rim, promovendo a excreção urinária de glicose.",
       "indicacoes": ["Diabetes Mellitus Tipo 2", "Insuficiência Cardíaca", "Doença Renal Crónica"],
-      "link": "empagliflozina.html"
+      "link": "#"
     }
   ]
 }
