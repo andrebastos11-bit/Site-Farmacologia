@@ -69,10 +69,10 @@
             border-color: var(--primary-color);
         }
 
-        /* Layout Principal tipo DrugBank (Esquerda: Conteúdo/Destaque | Direita: Árvore ATC) */
+        /* Layout Principal: Esquerda (Árvore ATC) | Direita (Conteúdo) */
         .main-layout {
             display: grid;
-            grid-template-columns: 1fr 420px;
+            grid-template-columns: 420px 1fr;
             gap: 25px;
             align-items: start;
         }
@@ -83,29 +83,7 @@
             }
         }
 
-        /* Painel Central */
-        .content-panel {
-            background: #ffffff;
-            border-radius: 10px;
-            border: 1px solid #e2e8f0;
-            padding: 25px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
-        }
-
-        .destaque-banner {
-            background: linear-gradient(135sdeg, var(--primary-light), #f0fdfa);
-            border: 1px solid #99f6e4;
-            padding: 15px 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            color: #134e4a;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        /* Painel Direito (Árvore ATC) */
+        /* Painel Esquerdo (Árvore ATC) */
         .tree-panel {
             background: #ffffff;
             border-radius: 10px;
@@ -125,6 +103,28 @@
             border-bottom: 2px solid var(--primary-light);
             padding-bottom: 8px;
             margin-bottom: 15px;
+        }
+
+        /* Painel Central / Direito */
+        .content-panel {
+            background: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+        }
+
+        .destaque-banner {
+            background: linear-gradient(135deg, var(--primary-light), #f0fdfa);
+            border: 1px solid #99f6e4;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: #134e4a;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         /* Árvore ATC Componentes */
@@ -157,7 +157,7 @@
 
         .atc-subheader {
             padding: 7px 12px 7px 18px;
-            font-weight: bold;
+            font-weight: normal; /* Sem negrito nas categorias */
             color: var(--text-color);
             cursor: pointer;
             user-select: none;
@@ -180,7 +180,7 @@
 
         .atc-level3-header {
             padding: 6px 12px 6px 24px;
-            font-weight: 600;
+            font-weight: normal; /* Sem negrito nas categorias */
             color: #334155;
             cursor: pointer;
             user-select: none;
@@ -204,7 +204,7 @@
             padding: 5px 12px 5px 30px;
             color: #475569;
             font-size: 0.78rem;
-            font-weight: 500;
+            font-weight: normal; /* Sem negrito nas categorias */
             cursor: pointer;
             user-select: none;
             border-top: 1px solid #f1f5f9;
@@ -237,6 +237,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-weight: bold; /* Apenas as substâncias ativas ficam a negrito */
         }
 
         .drug-tree-item:hover {
@@ -244,9 +245,7 @@
             color: var(--primary-color);
         }
 
-        /* Fármaco Ativo Selecionado na Árvore */
         .drug-tree-item.ativo {
-            font-weight: bold;
             color: var(--primary-color);
             background-color: var(--primary-light);
         }
@@ -427,7 +426,15 @@
     </div>
 
     <div class="main-layout">
-        <!-- PAINEL CENTRAL (Ficha do Medicamento / Destaque) -->
+        <!-- PAINEL ESQUERDO (Árvore ATC Estilo DrugBank) -->
+        <div class="tree-panel">
+            <h3>Árvore de Classificação ATC</h3>
+            <div id="atcTreeContainer">
+                <p style="text-align: center; color: #64748b; font-size: 0.85rem;">A carregar árvore ATC...</p>
+            </div>
+        </div>
+
+        <!-- PAINEL CENTRAL / DIREITO (Ficha do Medicamento / Destaque) -->
         <div class="content-panel" id="conteudoCentral">
             <div class="destaque-banner">
                 <span>💊 Medicamento em Destaque do Dia</span>
@@ -435,14 +442,6 @@
             </div>
             <div id="fichaMedicamentoContainer">
                 <p style="text-align: center; color: #64748b;">A carregar base de dados...</p>
-            </div>
-        </div>
-
-        <!-- PAINEL DIREITO (Árvore ATC Estilo DrugBank) -->
-        <div class="tree-panel">
-            <h3>Árvore de Classificação ATC</h3>
-            <div id="atcTreeContainer">
-                <p style="text-align: center; color: #64748b; font-size: 0.85rem;">A carregar árvore ATC...</p>
             </div>
         </div>
     </div>
@@ -464,12 +463,14 @@
     }
 
     function limparTextoATC(texto, codigo) {
-        if (!texto) return codigo;
+        if (!texto) return codigo.toUpperCase();
         let limpo = String(texto).trim();
-        const regexPadrao = new RegExp("^" + codigo + "\\s*-\\s*[A-Z]\\s*-\\s*", "i");
-        limpo = limpo.replace(regexPadrao, "");
-        limpo = limpo.replace(new RegExp("^" + codigo + "\\s*-?\\s*", "i"), "").trim();
-        return codigo + " - " + limpo;
+        // Remove letras isoladas entre hifens como " - A - ", " - a - ", " - B - ", " - b - "
+        limpo = limpo.replace(/\s*-\s*[a-zA-Z]\s*-\s*/g, " ");
+        // Remove o código ATC do início se presente
+        const regexCodigo = new RegExp("^" + codigo + "\\s*-?\\s*", "i");
+        limpo = limpo.replace(regexCodigo, "").trim();
+        return codigo.toUpperCase() + " - " + limpo;
     }
 
     function extrairCodigoATC(valor) {
@@ -493,7 +494,6 @@
 
             renderizarArvoreATC(farmacosData);
             
-            // Definir o primeiro fármaco como Destaque do Dia inicial
             if (farmacosData.length > 0) {
                 mostrarFicha(farmacosData[0]);
             }
@@ -555,9 +555,10 @@
     }
 
     function obterNomeGrupoPrincipal(codigo, nome) {
-        let descricao = String(nome || "").replace(new RegExp("^" + codigo + "\\s*-?\\s*", "i"), "").trim();
-        let textoLimpo = descricao.replace(new RegExp("^" + codigo + "\\s*-\\s*[A-Z]\\s*-\\s*", "i"), "");
-        return textoLimpo ? (codigo + " - " + textoLimpo).toUpperCase() : codigo;
+        let descricao = String(nome || "").trim();
+        descricao = descricao.replace(/\s*-\s*[a-zA-Z]\s*-\s*/g, " ");
+        descricao = descricao.replace(new RegExp("^" + codigo + "\\s*-?\\s*", "i"), "").trim();
+        return (codigo.toUpperCase() + " - " + descricao).toUpperCase();
     }
 
     function criarNivel2Arvore(container, codigo2, farmacos) {
@@ -568,9 +569,11 @@
         let desc2 = descricoesATC2[codigo2];
         if (!desc2) {
             const med = farmacos.find(f => String(f.subgrupo2 || "").toUpperCase().startsWith(codigo2));
-            desc2 = (med && med.subgrupo2) ? limparTextoATC(med.subgrupo2, codigo2).toUpperCase() : codigo2;
+            desc2 = (med && med.subgrupo2) ? limparTextoATC(med.subgrupo2, codigo2) : codigo2.toUpperCase();
+        } else {
+            desc2 = limparTextoATC(desc2, codigo2);
         }
-        header.textContent = desc2;
+        header.textContent = desc2.toUpperCase();
 
         const conteudo = document.createElement("div");
         conteudo.className = "atc-subcontent";
@@ -601,9 +604,11 @@
         let desc3 = descricoesATC3[codigo3];
         if (!desc3) {
             const med = farmacos.find(f => String(f.subgrupo3 || "").toUpperCase().startsWith(codigo3));
-            desc3 = (med && med.subgrupo3) ? capitalizarTexto(limparTextoATC(med.subgrupo3, codigo3)) : codigo3;
+            desc3 = (med && med.subgrupo3) ? capitalizarTexto(limparTextoATC(med.subgrupo3, codigo3).replace(new RegExp("^[A-Z0-9]+\\s*-\\s*", "i"), "")) : "";
+        } else {
+            desc3 = capitalizarTexto(limparTextoATC(desc3, codigo3).replace(new RegExp("^[A-Z0-9]+\\s*-\\s*", "i"), ""));
         }
-        header.textContent = desc3;
+        header.textContent = codigo3.toUpperCase() + (desc3 ? " - " + desc3 : "");
 
         const conteudo = document.createElement("div");
         conteudo.className = "atc-level3-content";
@@ -639,12 +644,12 @@
                 if (!valor) continue;
                 const texto = String(valor);
                 if (texto.toUpperCase().startsWith(codigo4)) {
-                    descricao = capitalizarTexto(limparTextoATC(texto, codigo4).replace(new RegExp("^" + codigo4 + "\\s*-?\\s*", "i"), "").trim());
+                    descricao = capitalizarTexto(limparTextoATC(texto, codigo4).replace(new RegExp("^[A-Z0-9]+\\s*-\\s*", "i"), "").trim());
                     break;
                 }
             }
         }
-        header.textContent = descricao ? codigo4 + " - " + descricao : codigo4;
+        header.textContent = codigo4.toUpperCase() + (descricao ? " - " + descricao : "");
 
         const conteudo = document.createElement("div");
         conteudo.className = "atc-level4-content";
@@ -663,7 +668,7 @@
             
             const badge = document.createElement("span");
             badge.className = "tree-badge";
-            badge.textContent = farmaco.atc || "";
+            badge.textContent = (farmaco.atc || "").toUpperCase();
 
             li.appendChild(nomeSpan);
             li.appendChild(badge);
@@ -685,12 +690,10 @@
     function mostrarFicha(farmaco) {
         farmacoAtivoId = farmaco.id || farmaco.atc;
 
-        // Atualizar destaque na árvore
         document.querySelectorAll(".drug-tree-item").forEach(el => el.classList.remove("ativo"));
         const elementoAtivo = document.getElementById("tree-item-" + farmacoAtivoId);
         if (elementoAtivo) {
             elementoAtivo.classList.add("ativo");
-            // Expandir pais automaticamente
             let pai = elementoAtivo.parentElement;
             while(pai) {
                 if(pai.classList && (pai.classList.contains("atc-content") || pai.classList.contains("atc-subcontent") || pai.classList.contains("atc-level3-content") || pai.classList.contains("atc-level4-content"))) {
@@ -703,7 +706,7 @@
 
         let html = `
             <h2 style="color: var(--primary-color); margin-top:0; font-size: 1.4rem; border-bottom: 2px solid var(--primary-light); padding-bottom: 10px;">
-                ${escapeHTML(capitalizarTexto(farmaco.nome))} <span style="font-size:0.85rem; font-family:monospace; background:#f1f5f9; padding:2px 6px; border-radius:4px; color:#64748b; vertical-align:middle;">${escapeHTML(farmaco.atc || "")}</span>
+                ${escapeHTML(capitalizarTexto(farmaco.nome))} <span style="font-size:0.85rem; font-family:monospace; background:#f1f5f9; padding:2px 6px; border-radius:4px; color:#64748b; vertical-align:middle;">${escapeHTML((farmaco.atc || "").toUpperCase())}</span>
             </h2>
 
             <div class="ficha-section">
@@ -798,7 +801,6 @@
         const termo = document.getElementById("searchInput").value.trim().toLowerCase();
         if (!termo) return;
 
-        // Verificar correspondência exata ou parcial por CNP
         const porCNP = farmacosData.find(f => {
             if (!Array.isArray(f.produtos)) return false;
             return f.produtos.some(p => {
@@ -814,7 +816,6 @@
             return;
         }
 
-        // Caso contrário, verificar se corresponde a um fármaco por texto geral
         const filtrado = farmacosData.find(f => {
             const indicacoes = Array.isArray(f.indicacoes) ? f.indicacoes.join(" ") : (f.indicacoes || "");
             const texto = [f.nome, f.atc, f.classe, f.alvoPrincipal, indicacoes].filter(Boolean).join(" ").toLowerCase();
