@@ -1,1063 +1,138 @@
-{
-  "fármacos": [
+[
     {
-      "nome": "Fluoreto de sódio",
-      "atc": "A01AA01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01A - Preparações para uso estomatológico",
-      "subgrupo3": "A01AA - Agentes profiláticos da cárie",
-      "produtos": [
-        {
-          "nome": "Duraphat 5000®",
-          "forma": "Pasta dentífrica (5 mg/g)"
+        "id": "duraphat_5000_pasta_dentífrica",
+        "nome": "Duraphat 5000, 500 mg/100 g Pasta dentífrica",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Duraphat 5000, 500 mg/100 g Pasta dentífrica",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [
+                "Prevenção da cárie dentária em adolescentes e adultos, especialmente nos doentes em risco \nde cáries múltiplas (cáries coronárias e/ou radiculares). \n \nApenas para utilização em indivíduos de idade igual ou superior a 16 anos."
+            ],
+            "posologia": "Não engolir. \n \nEscovar diariamente de uma forma cuidada: \naplique 2 cm de pasta na escova de dentes em cada escovagem. \n2 cm fornecem entre 3 e 5 mg de fluoreto. \n3 vezes por dia, após cada refeição, \nverticalmente, desde a gengiva até à ponta do dente.  \n \nUma escovagem cuidadosa demora aproximadamente 3 minutos. \nCuspa o excesso de espuma. \n \nModo de administração: Uso dental.",
+            "contra_indicacoes": "Este medicamento não deve ser utilizado em caso de hipersensibilidade à substância activa \nou a qualquer dos excipientes.",
+            "advertencias": "especiais de utilização \n \nDuraphat 5000 500 mg/100 g Pasta dentífrica não se destina a ser utilizada por crianças e \nadolescentes com menos de 16 anos de idade, ver secção 4.2. \n  \nEsta pasta dentífrica apresenta um elevado teor em flúor.  \nPortanto, a opinião de um profissional qualific ado profissional de saúde, como dentista, \nfarmacêutico, higienista oral, deve especialista deve ser procurado antes do uso do produto. \n \nO aumento de pot enciais fontes de flúor pode originar fluorose. Antes de utilizar \nmedicamentos fluoretados como o Duraphat,  deverá ser feita uma avaliação do aporte \nglobal de flúor (ex.: água potável, sais fluoretados, outros medicamentos com flúor - \ncomprimidos, gotas, pastilhas ou pasta dentífrica). Comprimidos de flúor, gotas, pastilhas \nelásticas, geles ou vernizes e água o u sais fluoretados deverão se ev itados durante a \nutilização de Duraphat Pasta dentífrica.  \n \nNos cálculos globais da quantidade recomendada de ião flúor, que é de 0,05 mg/Kg/dia, de \nqualquer origem, não excedendo 1 mg por dia, deve ser tida em conta a possí vel ingestão \nda pasta dentífrica (cada bisnaga de Duraphat 5000 500 mg/100 g Pasta dentífrica contém \n255 mg de iões flúor).     \n \nEste medicamento con tém benzoato de sódio  (E211). O benzoato de sódio  (E211) pode \ncausar irritação local. \n \nEste medicamento também contém um aroma de menta com alérgenos (limoneno, linalol, \ncitral, geraniol e citronelol). Esses alérgenos podem causar reações alérgicas.",
+            "interaccoes": "e outras formas de interacção  \n \nNenhuma conhecida.",
+            "gravidez": "Não existem dados adequados sobre o uso de Duraphat 5000 500 mg/100 g Pasta dentífrica \nem mulheres grávidas. Estudos em animais revelaram t oxicidade reprodutiva do fluoret o \nde sódio apenas quando administrado em níveis muito elevados. Em consequência, esta \npasta dentífrica não deverá ser utilizada durante a gravidez e aleitamento a não  ser que \ntenha sido efectuada uma cuidadosa avaliação benefício-risco.",
+            "efeitos_indesejaveis": "Doenças gastrointestinais: \nFrequência desconhecida (não pode ser calculada a partir dos dados disponíveis): sensação \nde queimadura oral \n \nDoenças do sistema imunitário \nRaros (≥1/10.000 a <1/1.000): Reacções de Hipersensibilidade \n \nNotificação de suspeitas de reações adversas \nA notificação de suspeitas de reações ad versas após a autorização do medicamento é \nimportante, uma vez que permite uma monitorização contínua da relação ben efício-risco \ndo medicamento. Pede -se aos profissionais de saúde que notifiquem quaisquer suspeitas \nde reações adversas diretamente ao INFARMED, I.P.: \n \nINFARMED, I.P. \nDireção de Gestão do Risco de Medicamentos \nParque da Saúde de Lisboa, Av. Brasil 53 \n1749-004 Lisboa \nTel: +351 21 798 71 40 \nFax: + 351 21 798 73 97 \nSítio da internet: http://extranet.infarmed.pt/page.seram.frontoffice.seramhomepage \nE-mail: farmacovigilancia@infarmed.pt"
         },
-        {
-          "nome": "Duraphat®",
-          "forma": "Suspensão dental (50 mg/ml)"
-        }
-      ],
-      "classe": "Agente profilático da cárie",
-      "mecanismo": "O flúor atua diretamente sobre o esmalte e a placa bacteriana:<br>• Promoção da remineralização (interage com a hidroxiapatite, formando fluoroapatite);<br>• Inibição da desmineralização e efeito bactericida ao inibir a enzima enolase nas bactérias da placa (ex: <i>Streptococcus mutans</i>), reduzindo a produção de ácido.",
-      "indicacoes": ["Prevenção da cárie dentária"],
-      "alvoPrincipal": "Hidroxiapatite e Enolase",
-      "rcm": {
-        "substancia": "Fluoreto de sódio",
-        "descricao": "Prevenção da cárie dentária em pacientes com elevado risco de cáries."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Ácido salicílico + Ruibarbo",
-      "atc": "A01AB11",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
-      "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos",
-      "produtos": [
-        {
-          "nome": "Pyralvex®",
-          "forma": "Solução bucal (10 mg/ml + 50 mg/ml)"
-        }
-      ],
-      "classe": "Anti-infecioso e anti-séptico tópico oral",
-      "mecanismo": "Associação de glicosídeos antraquinónicos (ruibarbo) e ácido salicílico:<br>• <strong>Ruibarbo:</strong> Ação anti-inflamatória, antibacteriana e vasoconstritora. As antraquinonas ligam-se às proteínas das membranas inflamadas, promovendo precipitação proteica (efeito adstringente) que cria uma capa protetora isolando as terminações nervosas expostas.<br>• <strong>Ácido salicílico:</strong> Ação anti-inflamatória (inibição de COX-1 e COX-2) e efeito queratolítico que facilita a penetração das antraquinonas nas mucosas.",
-      "indicacoes": ["Inflamações agudas e crónicas da mucosa oral", "Aftas"],
-      "alvoPrincipal": "COX-1, COX-2 e proteínas das membranas inflamadas",
-      "rcm": {
-        "substancia": "Ácido salicílico + Ruibarbo",
-        "descricao": "Tratamento de afeções inflamatórias e dolorosas da mucosa oral."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Hexetidina",
-      "atc": "A01AB12",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01AB - Anti-infeciosos e anti-sépticos de uso tópico oral",
-      "subgrupo3": "A01AB - Anti-infeciosos e anti-sépticos",
-      "produtos": [
-        {
-          "nome": "Hextril®",
-          "forma": "Solução bucal (1 mg/ml)"
-        }
-      ],
-      "classe": "Antisséptico de ação local",
-      "mecanismo": "Antisséptico de ação local com efeito rápido e prolongado, antimicrobiano e antifúngico de largo espetro. O seu mecanismo baseia-se na interferência com os processos metabólicos essenciais dos microrganismos, atuando por competição com a tiamina (vitamina B1), nutriente indispensável ao crescimento microbiano.",
-      "indicacoes": ["Infeções e inflamações orais", "Halitose", "Higiene oral"],
-      "alvoPrincipal": "Metabolismo da Tiamina (vitamina B1) dos microrganismos",
-      "rcm": {
-        "substancia": "Hexetidina",
-        "descricao": "Desinfeção e alívio de inflamações na cavidade oral e faringe."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Benzidamina",
-      "atc": "A01AD02",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
-      "subgrupo3": "A01AD - Agentes de uso tópico oral",
-      "produtos": [
-        {
-          "nome": "Tantum Verde®",
-          "forma": "Solução para lavagem da boca (1.5 mg/ml) e Solução para pulverização bucal (1.5 mg/ml e 3 mg/ml)"
-        }
-      ],
-      "classe": "Anti-inflamatório, analgésico e anestésico local",
-      "mecanismo": "Inibição da libertação de mediadores inflamatórios (como as citocinas TNF-alfa e IL-1), sem atuar de forma clássica sobre a ciclo-oxigenase como outros AINEs. Possui também um efeito anestésico local por bloquear canais de sódio e reduzir a permeabilidade capilar.",
-      "indicacoes": ["Inflamação oral e da orofaringe", "Higiene oral"],
-      "alvoPrincipal": "Citocinas pró-inflamatórias (TNF-alfa e IL-1) e canais de Na+",
-      "rcm": {
-        "substancia": "Benzidamina",
-        "descricao": "Alívio sintomático da dor e inflamação na boca e garganta."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Álcool diclorobenzílico + Benzidamina",
-      "atc": "A01AD11",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
-      "subgrupo3": "A01AD - Agentes de uso tópico oral",
-      "produtos": [
-        {
-          "nome": "Mebocaína Anti-Inflam®",
-          "forma": "Comprimido para chupar (1.2 mg + 3 mg)"
-        }
-      ],
-      "classe": "Antisséptico e anti-inflamatório tópico oral",
-      "mecanismo": "Associação de álcool 2,4-diclorobenzil (antisséptico de largo espetro que atua por desnaturação de proteínas da parede celular microbiana, reduzindo carga viral e bacteriana) com benzidamina (ação anti-inflamatória por inibição de citocinas TNF-alfa/IL-1 e efeito anestésico local por bloqueio de canais de sódio).",
-      "indicacoes": ["Inflamação oral e da orofaringe"],
-      "alvoPrincipal": "Proteínas e lípidos da parede celular microbiana, citocinas e canais de Na+",
-      "rcm": {
-        "substancia": "Álcool diclorobenzílico + Benzidamina",
-        "descricao": "Alívio local da dor de garganta e inflamações da cavidade oral."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Diclofenac",
-      "atc": "A01AD11",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
-      "subgrupo3": "A01AD - Agentes de uso tópico oral",
-      "produtos": [
-        {
-          "nome": "Diclodent®",
-          "forma": "Solução bucal (0.74 mg/ml)"
-        }
-      ],
-      "classe": "Anti-inflamatório não esteroide (AINE)",
-      "mecanismo": "AINE que atua ao inibir a enzima ciclo-oxigenase (COX-1 e COX-2), responsável pela produção de prostaglandinas, que são mediadores da inflamação, dor e edema. Ao bloquear a via da cascata do ácido araquidónico, reduz a sensibilidade dos nociceptores (receptores de dor).",
-      "indicacoes": ["Inflamação oral e da orofaringe"],
-      "alvoPrincipal": "COX-1 e COX-2",
-      "rcm": {
-        "substancia": "Diclofenac",
-        "descricao": "Tratamento sintomático de estados irritativos e inflamatórios da cavidade oral."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Cloreto de zinco",
-      "atc": "A01AD11",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A01AD - Outros agentes de uso tópico oral",
-      "subgrupo3": "A01AD - Agentes de uso tópico oral",
-      "produtos": [
-        {
-          "nome": "Oratol®",
-          "forma": "Solução para gargarejar (25 mg/ml)"
-        }
-      ],
-      "classe": "Adstringente e antisséptico",
-      "mecanismo": "Atua como adstringente, promovendo a contração das proteínas superficiais dos tecidos (o que ajuda a reduzir a inflamação e o edema) e como antisséptico ao inibir enzimas bacterianas que degradam proteínas, ajudando no controle da placa. O zinco liga-se também aos precursores do mau hálito (gases de enxofre), neutralizando-os.",
-      "indicacoes": ["Inflamação oral e da orofaringe", "Higiene oral"],
-      "alvoPrincipal": "Compostos Voláteis de Enxofre, enzimas proteolíticas microbianas e proteínas das membranas inflamadas",
-      "rcm": {
-        "substancia": "Cloreto de zinco",
-        "descricao": "Higiene oral e prevenção de processos inflamatórios e halitose."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Hidróxido de magnésio",
-      "atc": "A02AA04",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AA - Compostos de magnésio",
-      "produtos": [
-        {
-          "nome": "Leite Magnesia Phillips®",
-          "forma": "Suspensão oral (83 mg/ml)"
-        }
-      ],
-      "classe": "Antiácido neutralizante e laxante osmótico",
-      "mecanismo": "Atua reagindo diretamente com o ácido clorídrico gástrico para formar cloreto de magnésio e água, elevando o pH do estômago e aliviando rapidamente a azia. No intestino delgado, os iões magnésio não absorvidos exercem uma pressão osmótica, atraindo e retendo água no lúmen intestinal, o que estimula o peristaltismo e facilita a evacuação.<br><em>Mg(OH)₂ + 2 HCl → MgCl₂ + 2 H₂O</em>",
-      "indicacoes": ["Pirose", "Hiperacidez gástrica", "Obstipação"],
-      "alvoPrincipal": "Ácido clorídrico e água intestinal",
-      "rcm": {
-        "substancia": "Hidróxido de magnésio",
-        "descricao": "Antiácido neutralizante e laxante osmótico."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Hidróxido de alumínio",
-      "atc": "A02AB01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AB - Compostos de alumínio",
-      "produtos": [
-        {
-          "nome": "Pepsamar®",
-          "forma": "Comprimido para mastigar (240 mg)"
-        }
-      ],
-      "classe": "Antiácido neutralizante e protetor da mucosa",
-      "mecanismo": "Reage de forma gradual com o ácido clorídrico gástrico, formando cloreto de alumínio e reduzindo a acidez estomacal sem provocar pico alcalino. Os iões alumínio libertados reduzem a motilidade gástrica e inativam a pepsina ao elevar o pH acima de 3,5. Apresenta também capacidade de ligação aos sais biliares, protegendo a mucosa de agressões alcalinas refluídas.<br><em>Al(OH)₃ + 3 HCl → AlCl₃ + 3 H₂O</em>",
-      "indicacoes": ["Pirose", "Hiperacidez gástrica", "Gastrite"],
-      "alvoPrincipal": "Ácido clorídrico",
-      "rcm": {
-        "substancia": "Hidróxido de alumínio",
-        "descricao": "Antiácido neutralizante e protetor da mucosa."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Carbonato de di-hidróxido de alumínio e sódio",
-      "atc": "A02AB04",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AB - Compostos de alumínio",
-      "produtos": [
-        {
-          "nome": "Kompensan®",
-          "forma": "Comprimido para chupar (340 mg)"
-        }
-      ],
-      "classe": "Antiácido tampão de ação rápida e efeito protetor prolongado",
-      "mecanismo": "Neutraliza o ácido clorídrico através da libertação de iões alumínio e sódio e consumo de protões H+, promovendo uma subida imediata do pH gástrico para a faixa ideal de 3-5. Forma uma camada coloidal protetora sobre a mucosa gástrica e duodenal, isolando as lesões do contacto direto com o suco gástrico e prevenindo o \"efeito rebound\" ácido.<br><em>NaAl(OH)₂CO₃ + 4 HCl → NaCl + AlCl₃ + CO₂ + 3 H₂O</em>",
-      "indicacoes": ["Pirose", "Pirose na gravidez"],
-      "alvoPrincipal": "Ácido clorídrico",
-      "rcm": {
-        "substancia": "Carbonato de di-hidróxido de alumínio e sódio",
-        "descricao": "Antiácido tampão de ação rápida e efeito protetor prolongado."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Magaldrato",
-      "atc": "A02AD02",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
-      "produtos": [
-        {
-          "nome": "Riopan®",
-          "forma": "Comprimido (800 mg) e Gel Oral (800 mg/10 ml)"
-        }
-      ],
-      "classe": "Antiácido complexo aluminomagnesiano de rede em grelha e protetor da mucosa",
-      "mecanismo": "Atua neutralizando diretamente o ácido clorídrico de forma autorregulada, mantendo o pH gástrico ideal entre 3 e 5. Adsorve e inativa diretamente a pepsina e os ácidos biliares no suco gástrico, além de formar uma película protetora sobre as paredes da mucosa lesionada.<br><em>Al₂Mg₆(OH)₁₆SO₄ + 16 HCl → 2 AlCl₃ + 6 MgCl₂ + MgSO₄ + 16 H₂O</em>",
-      "indicacoes": ["Pirose", "Hiperacidez gástrica", "Gastrite"],
-      "alvoPrincipal": "Ácido clorídrico, pepsina e ácidos biliares",
-      "rcm": {
-        "substancia": "Magaldrato",
-        "descricao": "Antiácido complexo aluminomagnesiano e protetor da mucosa."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Carbonato de Cálcio + Carbonato de Magnésio",
-      "atc": "A02AD01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AD - Associações de compostos de alumínio, cálcio e magnésio",
-      "produtos": [
-        {
-          "nome": "Rennie Digestif®",
-          "forma": "Comprimido para mastigar (680 mg + 80 mg)"
-        }
-      ],
-      "classe": "Combinação antiácida de neutralização direta e rápida",
-      "mecanismo": "Reage quimicamente com o ácido clorídrico no estômago, convertendo-o em água e sais solúveis de cloreto de cálcio e cloreto de magnésio. Promove uma rápida subida do pH gástrico; o componente de magnésio previne a obstipação habitualmente associada aos sais de cálcio.<br><em>CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂</em><br><em>MgCO₃ + 2 HCl → MgCl₂ + H₂O + CO₂</em>",
-      "indicacoes": ["Hiperacidez gástrica", "Refluxo gastroesofágico"],
-      "alvoPrincipal": "Ácido clorídrico",
-      "rcm": {
-        "substancia": "Carbonato de Cálcio + Carbonato de Magnésio",
-        "descricao": "Combinação antiácida de neutralização direta e rápida."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Carbonato de di-hidróxido de alumínio e sódio + Dimeticone",
-      "atc": "A02AB01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AB - Compostos de alumínio",
-      "produtos": [
-        {
-          "nome": "Kompensan Trieffect®",
-          "forma": "Comprimido para chupar (340 mg + 30 mg)"
-        }
-      ],
-      "classe": "Antiácido tampão combinado e antiflatulento",
-      "mecanismo": "Associação de um antiácido e um antiflatulento:<br>• <strong>Carbonato de di-hidróxido de alumínio e sódio:</strong> Antiácido tampão combinado que neutraliza o ácido clorídrico, fixando os protões H+ e promovendo um efeito tampão prolongado (<em>NaAl(OH)₂CO₃ + 4 HCl → NaCl + AlCl₃ + CO₂ + 3 H₂O</em>).<br>• <strong>Dimeticone:</strong> Antiflatulento que reduz a tensão superficial das bolhas de gás gastrointestinais, promovendo a sua rutura e facilitando a eliminação do gás preso.",
-      "indicacoes": ["Pirose", "Flatulência", "Meteorismo"],
-      "alvoPrincipal": "Ácido clorídrico e bolhas de gás",
-      "rcm": {
-        "substancia": "Carbonato de di-hidróxido de alumínio e sódio + Dimeticone",
-        "descricao": "Antiácido tampão combinado com ação antiflatulenta."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Hidróxido de Alumínio + Hidróxido de magnésio + Dimeticone",
-      "atc": "A02AF02",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AF - Antiácidos com antiflatulentos",
-      "produtos": [
-        {
-          "nome": "Maalox Plus®",
-          "forma": "Comprimido para mastigar (200 mg + 200 mg + 26.25 mg)"
-        }
-      ],
-      "classe": "Antiácido duplo e antiflatulento",
-      "mecanismo": "Associação que neutraliza o ácido clorídrico gástrico através do hidróxido de alumínio e do hidróxido de magnésio, equilibrando o trânsito intestinal através do balanço entre o efeito obstipante do alumínio e laxante do magnésio (<em>Al(OH)₃ + 3 HCl → AlCl₃ + 3 H₂O</em> e <em>Mg(OH)₂ + 2 HCl → MgCl₂ + 2 H₂O</em>). O simeticone/dimeticone atua alterando a tensão superficial das bolhas de gás, fazendo com que se aglutinem e sejam expelidas mais facilmente, aliviando o enfartamento.",
-      "indicacoes": ["Hiperacidez gástrica", "Pirose", "Meteorismo"],
-      "alvoPrincipal": "Ácido clorídrico e bolhas de gás",
-      "rcm": {
-        "substancia": "Hidróxido de Alumínio + Hidróxido de magnésio + Dimeticone",
-        "descricao": "Antiácido duplo associado a antiflatulento."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Bicarbonato de sódio",
-      "atc": "A02AH01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02A - Antiácidos",
-      "subgrupo3": "A02AH - Antiácidos com sódio",
-      "produtos": [
-        {
-          "nome": "Bicarbonato de sódio Labesfal®",
-          "forma": "Cápsula (1000 mg)"
+        "aba_farmacologia": {
+            "mecanismo": "Grupo farmacoterapêutico: 6.1.1. Aparelho digestivo. Medicamentos que actuam na boca \ne orofaringe. De aplicação tópica. \nCódigo ATC: A01 AA01 \n \nO principal modo de acção do fluoreto na prevenção de cáries é exercido após erupção dos \ndentes, ou seja, é tópico. Julga-se que os suplementos de flúor sistémicos actuam também \nprincipalmente de forma tópica (por exemplo durante a ingestão, através da saliva).  \n \nExistem três tipos de efeitos associados ao flúor: \n- um efeito inibidor da desmineralização (diminuição da solubilidade  do esmalte em \nambiente ácido); \n- uma promoção da remineralização do esmalte durante o processo cariogénico; \n- um efeito bactericida sobre os organismos da placa bacteriana. Este inibe a proliferação \nda placa bacteriana e previne a formação de ácidos cariogénicos. \n \nO fluoreto por si só não é suficiente para eliminar a placa bacteriana, nem como tratamento \ncompleto da cárie.",
+            "cinetica": "Duraphat 5000 500 mg/100 g Pasta dentífrica exerce uma acção local, tópica nos dentes \npelo que a via seguida no organismo não é aplicável. Contudo, a informação que se segue \nfoi incluída para o caso de ingestão acidental de pasta dentífrica durante o tratamento. \n  \nTodo o flúor ingerido é convertido em ácido fluorídrico. As concentrações máximas são \nobtidas entre 30 a 60 minutos. O volume de distribuição é de 1l/Kg. \nOs iões fluoreto são distribuídos para os dentes e ossos e nã o se ligam às proteínas \nplasmáticas. A semi-vida de eliminação é da ordem das 2 a 9 horas. Os iões fluoreto \nsão excretados sobretu do na urina, mas podem também ser excretadas pequenas \nquantidades nas fezes e no suor. Desconhece-se de que forma."
         },
-        {
-          "nome": "Alka-Seltzer®",
-          "forma": "Comprimido efervescente (2081.8 mg)"
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
         }
-      ],
-      "classe": "Antiácido sistémico de ação imediata (incluindo formulação efervescente com ácido cítrico)",
-      "mecanismo": "Reage de forma quase instantânea com o ácido clorídrico gástrico, consumindo protões para formar cloreto de sódio, água e dióxido de carbono. Neutraliza rapidamente o pH gástrico, mas a libertação de CO₂ pode causar eructação e distensão do estômago (<em>NaHCO₃ + HCl → NaCl + H₂O + CO₂</em>). Na versão efervescente com ácido cítrico, ao dissolver-se em água o bicarbonato reage com o ácido cítrico libertando CO₂ e formando citrato de sódio, que neutraliza o ácido clorídrico e acelera o esvaziamento gástrico.",
-      "indicacoes": ["Hiperacidez gástrica", "Pirose", "Indigestão e desconforto gástrico"],
-      "alvoPrincipal": "Ácido clorídrico",
-      "rcm": {
-        "substancia": "Bicarbonato de sódio",
-        "descricao": "Antiácido sistémico de ação imediata."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
     },
     {
-      "nome": "Famotidina",
-      "atc": "A02BA03",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BA – Antagonistas dos recetores H2",
-      "produtos": [
-        {
-          "nome": "Lasa®",
-          "forma": "Comprimido (10 mg)"
+        "id": "hextril_solução_bucal",
+        "nome": "Não especificado",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Não especificado",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [
+                "Não especificado"
+            ],
+            "posologia": "Não especificado",
+            "contra_indicacoes": "Não especificado",
+            "advertencias": "Não especificado",
+            "interaccoes": "Não especificado",
+            "gravidez": "Não especificado",
+            "efeitos_indesejaveis": "Não especificado"
+        },
+        "aba_farmacologia": {
+            "mecanismo": "Não especificado",
+            "cinetica": "Não especificado"
+        },
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
         }
-      ],
-      "classe": "Antagonista dos recetores H2 da histamina",
-      "mecanismo": "Antagonista competitivo dos recetores H₂ da histamina. Atua ao bloquear seletivamente os recetores H₂ da histamina localizados na membrana basolateral das células parietais gástricas. A inibição do recetor impede a ativação da adenilato ciclase e a consequente redução dos níveis de AMPc (adenosina monofosfato cíclico), diminuindo drasticamente a secreção basal e noturna de ácido clorídrico e de pepsina.",
-      "indicacoes": ["Pirose", "Hiperacidez", "Profilaxia da úlcera péptica"],
-      "alvoPrincipal": "Recetores H₂ da Histamina",
-      "rcm": {
-        "substancia": "Famotidina",
-        "descricao": "Tratamento e profilaxia da úlcera péptica e condições associadas à hiperacidez."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
     },
     {
-      "nome": "Misoprostol",
-      "atc": "A02BB01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BB – Prostaglandinas",
-      "produtos": [
-        {
-          "nome": "Cytotec®",
-          "forma": "Comprimido (0.2 mg)"
+        "id": "maxflúor_solução_bucal",
+        "nome": "Não especificado",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Não especificado",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [
+                "Não especificado"
+            ],
+            "posologia": "Não especificado",
+            "contra_indicacoes": "Não especificado",
+            "advertencias": "Não especificado",
+            "interaccoes": "Não especificado",
+            "gravidez": "Não especificado",
+            "efeitos_indesejaveis": "Não especificado"
+        },
+        "aba_farmacologia": {
+            "mecanismo": "Não especificado",
+            "cinetica": "Não especificado"
+        },
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
         }
-      ],
-      "classe": "Análogo sintético da prostaglandina E1",
-      "mecanismo": "Análogo sintético da prostaglandina E (PGE₁). Liga-se aos recetores EP₃ da prostaglandina nas células parietais, inibindo a via do AMPc para reduzir a secreção de ácido clorídrico. Em simultâneo, estimula os recetores nas células mucosas gástricas, aumentando a secreção de bicarbonato e de muco protetor, além de promover o fluxo sanguíneo da mucosa, prevenindo a ulceração induzida por AINEs.",
-      "indicacoes": ["Prevenção de úlceras por AINEs", "Indução do trabalho de parto"],
-      "alvoPrincipal": "Recetores EP₃ da prostaglandina",
-      "rcm": {
-        "substancia": "Misoprostol",
-        "descricao": "Prevenção de úlceras gástricas induzidas por AINEs e usos obstétricos."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
     },
     {
-      "nome": "Omeprazol",
-      "atc": "A02BC01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BC – Inibidores da bomba de protões",
-      "produtos": [
-        {
-          "nome": "Albosan®",
-          "forma": "Cápsula gastrorresistente (20 e 40 mg)"
+        "id": "pyralvex_solução_bucal",
+        "nome": "Não especificado",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Não especificado",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [
+                "Não especificado"
+            ],
+            "posologia": "Não especificado",
+            "contra_indicacoes": "Não especificado",
+            "advertencias": "Não especificado",
+            "interaccoes": "Não especificado",
+            "gravidez": "Não especificado",
+            "efeitos_indesejaveis": "Não especificado"
         },
-        {
-          "nome": "Gasec®",
-          "forma": "Cápsula gastrorresistente (10 mg)"
+        "aba_farmacologia": {
+            "mecanismo": "Não especificado",
+            "cinetica": "Não especificado"
         },
-        {
-          "nome": "Proclor®",
-          "forma": "Cápsula gastrorresistente (40 mg)"
-        },
-        {
-          "nome": "Proton®",
-          "forma": "Cápsula gastrorresistente (20 e 40 mg)"
-        },
-        {
-          "nome": "Losec®",
-          "forma": "Cápsula gastrorresistente (20 mg)"
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
         }
-      ],
-      "classe": "Inibidor da bomba de protões (IBP) - Mistura racémica",
-      "mecanismo": "Mecanismo geral dos IBPs:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco lipofílico e fracamente básico que, após absorção sistémica e passagem pelas células parietais, se acumula seletivamente no canalículo secretor (pH < 2). Em meio altamente ácido, sofre protonação e converte-se na sua forma ativa, uma sulfenamida tetracíclica.<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> A sulfenamida ativa reage covalentemente com a subunidade alfa da enzima H⁺/K⁺-ATPase (Bomba de Protões), formando uma ponte dissulfeto covalente e irreversível que inativa permanentemente a enzima. Como é a etapa final da secreção ácida, bloqueia a secreção de HCl basal e estimulada.<br>• <strong>Duração de Ação:</strong> O efeito antissecretor dura 24 a 48 horas, pois a secreção ácida só é restaurada após a síntese <em>de novo</em> da enzima.<br><br><strong>Especificidades:</strong> Mistura racémica de enantiómeros. É metabolizado maioritariamente no fígado pela isoenzima CYP2C19 e, em menor escala, pela CYP3A4. Interação relevante: inibe moderadamente a CYP2C19, podendo reduzir a bioativação de pró-fármacos como o clopidogrel.",
-      "indicacoes": ["Úlcera gástrica e duodenal", "DRGE", "Profilaxia por AINEs", "Erradicação de H. pylori"],
-      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
-      "rcm": {
-        "substancia": "Omeprazol",
-        "descricao": "Tratamento de úlcera gástrica/duodenal, DRGE, profilaxia por AINEs e erradicação de H. pylori."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Pantoprazol",
-      "atc": "A02BC02",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BC – Inibidores da bomba de protões",
-      "produtos": [
-        {
-          "nome": "Apton®",
-          "forma": "Comprimido gastrorresistente (20 e 40 mg)"
-        },
-        {
-          "nome": "Pantoc®",
-          "forma": "Comprimido gastrorresistente (20 e 40 mg)"
-        },
-        {
-          "nome": "Pantoc IV®",
-          "forma": "Pó para solução injetável (40 mg)"
-        },
-        {
-          "nome": "Kairol®",
-          "forma": "Comprimido gastrorresistente (20 mg)"
-        }
-      ],
-      "classe": "Inibidor da bomba de protões (IBP)",
-      "mecanismo": "Mecanismo geral dos IBPs:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco lipofílico e fracamente básico que se acumula no canalículo secretor (pH < 2) e é convertido na sua forma ativa (sulfenamida tetracíclica).<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> A forma ativa liga-se covalentemente à subunidade alfa da enzima H⁺/K⁺-ATPase por ponte dissulfeto irreversível.<br>• <strong>Duração de Ação:</strong> Efeito antissecretor prolongado (24 a 48h) até nova síntese da enzima.<br><br><strong>Especificidades:</strong> IBP com maior estabilidade química em pH moderadamente ácido. A ligação ao resíduo Cys-822 é quimicamente mais profunda e menos reversível. Apresenta menor afinidade para o CYP2C19 (metabolizado principalmente por sulfotação), possuindo o menor risco de interações medicamentosas da classe, sendo o IBP de escolha em doentes polimedicados ou a tomar clopidogrel.",
-      "indicacoes": ["Úlcera péptica", "Esofagite de refluxo moderada a grave", "Síndrome de Zollinger-Ellison"],
-      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
-      "rcm": {
-        "substancia": "Pantoprazol",
-        "descricao": "Tratamento de úlcera péptica, esofagite de refluxo moderada a grave e Síndrome de Zollinger-Ellison."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Lansoprazol",
-      "atc": "A02BC03",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BC – Inibidores da bomba de protões",
-      "produtos": [
-        {
-          "nome": "Ogasto®",
-          "forma": "Cápsula gastrorresistente e Comprimido orodispersível (15 e 30 mg)"
-        },
-        {
-          "nome": "Monolitum®",
-          "forma": "Comprimido orodispersível (15 e 30 mg)"
-        },
-        {
-          "nome": "Gastroliber®",
-          "forma": "Cápsula gastrorresistente (60 mg)"
-        }
-      ],
-      "classe": "Inibidor da bomba de protões (IBP) de rápida absorção",
-      "mecanismo": "Mecanismo geral dos IBPs:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco que se acumula no canalículo secretor gástrico e sofre protonação para a forma ativa de sulfenamida.<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> Inativação covalente e permanente da enzima H⁺/K⁺-ATPase.<br>• <strong>Duração de Ação:</strong> Inibição prolongada da secreção ácida (24-48h).<br><br><strong>Especificidades:</strong> IBP de rápida absorção oral e elevada biodisponibilidade (~80-85%), com início de ação antissecretor bastante rápido. Disponível também em comprimidos orodispersíveis (microgrânulos gastrorresistentes), ideal para doentes com disfagia ou dificuldades de deglutição.",
-      "indicacoes": ["Tratamento e prevenção de úlceras gástricas/duodenais", "Esofagite de refluxo"],
-      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
-      "rcm": {
-        "substancia": "Lansoprazol",
-        "descricao": "Tratamento e prevenção de úlceras gástricas/duodenais e esofagite de refluxo."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Rabeprazol",
-      "atc": "A02BC04",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BC – Inibidores da bomba de protões",
-      "produtos": [
-        {
-          "nome": "Pariet®",
-          "forma": "Comprimido gastrorresistente (10 e 20 mg)"
-        }
-      ],
-      "classe": "Inibidor da bomba de protões (IBP) de ativação rápida",
-      "mecanismo": "Mecanismo geral dos IBPs:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco acumulado nas células parietais que se converte rapidamente na forma ativa de sulfenamida.<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> Ligação covalente irreversível à subunidade alfa da H⁺/K⁺-ATPase.<br>• <strong>Duração de Ação:</strong> Inibição ácida sustentada até regeneração da bomba.<br><br><strong>Especificidades:</strong> IBP de ativação cinética ultra-rápida devido à alta taxa de protonação, proporcionando inibição ácida mais rápida no primeiro dia. O metabolismo é maioritariamente não enzimático (redução a tioéster), dependendo muito pouco do polimorfismo da CYP2C19, garantindo um efeito terapêutico previsível entre doentes.",
-      "indicacoes": ["Úlcera duodenal/gástrica ativa", "DRGE erosiva", "Erradicação de H. pylori"],
-      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
-      "rcm": {
-        "substancia": "Rabeprazol",
-        "descricao": "Úlcera duodenal/gástrica ativa, DRGE erosiva e erradicação de H. pylori."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Esomeprazol",
-      "atc": "A02BC05",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BC – Inibidores da bomba de protões",
-      "produtos": [
-        {
-          "nome": "Nexium Control®",
-          "forma": "Comprimido gastrorresistente (20 mg)"
-        },
-        {
-          "nome": "Nexium®",
-          "forma": "Granulado gastrorresistente para suspensão oral (10 mg) e Comprimido gastrorresistente (20 e 40 mg)"
-        },
-        {
-          "nome": "Nexium I.V.®",
-          "forma": "Pó para solução injetável ou para perfusão (40 mg)"
-        }
-      ],
-      "classe": "Inibidor da bomba de protões (IBP) - Enantiómero S puro",
-      "mecanismo": "Mecanismo geral dos IBPs:<br>• <strong>Ativação no Canalículo Secretor:</strong> Pró-fármaco acumulado no canalículo secretor gástrico e ativado por protonação em meio ácido.<br>• <strong>Inibição Irreversível da Bomba de Protões:</strong> Inibição covalente e permanente da H⁺/K⁺-ATPase.<br>• <strong>Duração de Ação:</strong> Controlo antissecretor prolongado por 24 a 48h.<br><br><strong>Especificidades:</strong> Enantiómero S puro do omeprazol. Sofre menor efeito de primeira passagem hepática e clearance mais lento que o enantiómero R. Gera concentrações plasmáticas mais elevadas e sustentadas, resultando num controlo prolongado do pH gástrico e maior taxa de cicatrização da esofagite grave.",
-      "indicacoes": ["DRGE grave", "Manutenção da cicatrização de esofagite", "Prevenção de úlceras por AINEs"],
-      "alvoPrincipal": "Enzima H⁺/K⁺-ATPase (Bomba de Protões)",
-      "rcm": {
-        "substancia": "Esomeprazol",
-        "descricao": "DRGE grave, manutenção da cicatrização de esofagite e prevenção de úlceras por AINEs."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Subcitrato de bismuto potássico + Metronidazol + Tetraciclina",
-      "atc": "A02BD08",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BD – Associações para erradicação de Helicobacter pylori",
-      "produtos": [
-        {
-          "nome": "Pylera®",
-          "forma": "Cápsula (140 mg + 125 mg + 125 mg)"
-        }
-      ],
-      "classe": "Associação antimicrobiana e citoprotetora para erradicação de H. pylori",
-      "mecanismo": "• <strong>Subcitrato de Bismuto Potássico:</strong> Liga-se aos resíduos de cisteína da enzima urease do <em>H. pylori</em>, inativando-a. Como a bactéria necessita da urease para converter a ureia em amónia (mecanismo que neutraliza o ácido à sua volta para conseguir sobreviver no estômago), a inibição enzimática expõe o microrganismo à acidez gástrica letal.<br>• <strong>Metronidazol:</strong> Pró-fármaco que penetra por difusão passiva na bactéria que é consequentemente reduzido a um radical livre. Este radical livre reage diretamente com a estrutura do DNA bacteriano, provocando a perda da estrutura em hélice e a morte celular por incapacidade de replicação.<br>• <strong>Cloridrato de Tetraciclina:</strong> Liga-se de forma reversível à subunidade 30S do ribossoma bacteriano, impedindo a adição de novos aminoácidos à cadeia polipeptídica em crescimento, interrompendo a síntese de proteínas essenciais à sobrevivência e replicação bacteriana.",
-      "indicacoes": ["Erradicação de Helicobacter pylori em associação com IBP"],
-      "alvoPrincipal": "Enzima Urease, DNA bacteriano e Subunidade 30S do Ribossoma",
-      "rcm": {
-        "substancia": "Subcitrato de bismuto potássico + Metronidazol + Tetraciclina",
-        "descricao": "Erradicação da infeção por Helicobacter pylori e redução da recorrência de úlcera péptica."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Sucralfato",
-      "atc": "A02BX02",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BX – Outros fármacos para a úlcera péptica e refluxo gastroesofágico",
-      "produtos": [
-        {
-          "nome": "Ulermin®",
-          "forma": "Comprimido (1000 mg) e Suspensão oral (1000 mg/5 ml)"
-        }
-      ],
-      "classe": "Citoprotetor da mucosa gástrica",
-      "mecanismo": "Complexo de sacarose octasulfatada com hidróxido de alumínio (protetor focal de lesões). Em meio ácido (pH < 4), polimeriza-se formando uma pasta viscosa e negativamente carregada que se liga seletivamente às proteínas de carga positiva (exsudado proteico) das crateras ulcerosas. Esta barreira física protege a ferida da digestão pelo HCl, pela pepsina e pelos sais biliares, estimulando localmente a libertação endógena de prostaglandinas e do fator de crescimento epidérmico (EGF).",
-      "indicacoes": ["Úlcera gástrica e duodenal", "Esofagite de refluxo", "Profilaxia de úlcera de stress"],
-      "alvoPrincipal": "Proteínas exsudadas da mucosa lesionada",
-      "rcm": {
-        "substancia": "Sucralfato",
-        "descricao": "Tratamento de úlceras gástricas e duodenais e prevenção de lesões na mucosa."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Alginato de sódio + Bicarbonato de Sódio + Carbonato de Cálcio",
-      "atc": "A02BX13",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A02B – Fármacos para o tratamento da úlcera péptica e do refluxo gastroesofágico",
-      "subgrupo3": "A02BX – Outros fármacos para a úlcera péptica e refluxo gastroesofágico",
-      "produtos": [
-        {
-          "nome": "Gaviscon® e Gaviscon Morango®",
-          "forma": "Comprimido para mastigar (250 mg + 133.5 mg + 80 mg)"
-        },
-        {
-          "nome": "Gaviscon Duefet® e Gaviscon Duefet Frutos Vermelhos®",
-          "forma": "Comprimido para mastigar (250 mg + 106.5 mg + 187.5 mg)"
-        },
-        {
-          "nome": "Gaviscon Duefet® e Gaviscon Duefet Frutos Vermelhos®",
-          "forma": "Suspensão oral (500 mg + 213 mg + 325 mg)"
-        }
-      ],
-      "classe": "Dispositivo de barreira mecânica anti-refluxo com suporte antiácido",
-      "mecanismo": "• <strong>Alginato de sódio:</strong> Em contacto com o ácido clorídrico, precipita formando um gel espesso de ácido algínico, fortalecido pelo entrecruzamento com iões cálcio (Ca²⁺).<br>• <strong>Bicarbonato de sódio e Carbonato de cálcio:</strong> Libertam bolhas de dióxido de carbono (CO₂) que flutuam o gel como uma balsa sobre a bolsa ácida (<em>acid pocket</em>), bloqueando fisicamente o refluxo de ácido, pepsina e bilis para o esófago. Os iões de cálcio (Ca²⁺) libertados pela dissociação do carbonato de cálcio desempenham um papel crucial: ligam-se quimicamente às cadeias do ácido algínico, criando pontes de cruzamento (<em>cross-linking</em>), transformando o gel simples numa espuma/balsa estruturada, resistente e coesa, capaz de resistir às contrações do estômago e permanecer no topo do suco gástrico por até 4 horas.",
-      "indicacoes": ["Refluxo gastroesofágico", "Azia", "Regurgitação"],
-      "alvoPrincipal": "Ácido clorídrico",
-      "rcm": {
-        "substancia": "Alginato de sódio + Bicarbonato de Sódio + Carbonato de Cálcio",
-        "descricao": "Alívio dos sintomas do refluxo gastroesofágico, tais como azia, regurgitação e indigestão."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     }
-    },
-{
-      "nome": "Mebeverina",
-      "atc": "A03AA04",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AA - Agentes sintéticos anticolinérgicos, ésteres com grupo amónio terciário",
-      "produtos": [
-        {
-          "nome": "Duspatal Retard®",
-          "forma": "Cápsula de libertação prolongada (200 mg)"
-        }
-      ],
-      "classe": "Espasmolítico musculotrópico direto",
-      "mecanismo": "Bloqueio dos Canais de Sódio (Na+) e Cálcio (Ca2+): Inibe a entrada de iões Na+ através dos canais voltagem-dependentes bloqueando a despolarização inicial da célula muscular lisa, e impede a entrada secundária de iões Ca2+ juntamente com a inibição do efluxo de K+, evitando espasmos hipermotéis[cite: 19].",
-      "indicacoes": ["Síndrome do Intestino Irritável (SII)", "Espasmos cólónicos e dor abdominal[cite: 19]"],
-      "alvoPrincipal": "Canais de Na+ e Ca2+ no músculo liso[cite: 19]",
-      "rcm": {
-        "substancia": "Mebeverina",
-        "descricao": "Tratamento sintomático da síndrome do intestino irritável e espasmos gastrointestinais."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Trimebutina",
-      "atc": "A03AA05",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AA - Agentes sintéticos anticolinérgicos, ésteres com grupo amónio terciário",
-      "produtos": [
-        {
-          "nome": "Debridat 200®",
-          "forma": "Comprimido (200 mg)[cite: 19]"
-        }
-      ],
-      "classe": "Regulador e modulador de motilidade por ação nos recetores opióides",
-      "mecanismo": "Agonismo nos Recetores Enkefalinérgicos (mu, delta e kappa): Duplo efeito regulador (modulador) — estimula a motilidade em estados de hipomotilidade e inibe a hipercontractilidade em estados de hipermotilidade/espasmo[cite: 19].",
-      "indicacoes": ["Perturbações da motilidade gastrointestinal", "Síndrome do Intestino Irritável (SII)", "Espasmos digestivos[cite: 19]"],
-      "alvoPrincipal": "Recetores Enkefalinérgicos (mu, delta e kappa)[cite: 19]",
-      "rcm": {
-        "substancia": "Trimebutina",
-        "descricao": "Regulação da motilidade do trato gastrointestinal."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Brometo de otilónio",
-      "atc": "A03AB06",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AB - Anticolinérgicos sintéticos, ésteres com grupo amónio quaternário",
-      "produtos": [
-        {
-          "nome": "Spasmomen®",
-          "forma": "Comprimido (40 mg)[cite: 19]"
-        }
-      ],
-      "classe": "Espasmolítico musculotrópico de tripla ação local",
-      "mecanismo": "Inibição dos Canais de Cálcio do Tipo L, antagonismo dos recetores muscarínicos M3 e antagonismo dos recetores da taquicinina (NK2), reduzindo a hiperalgesia visceral[cite: 19].",
-      "indicacoes": ["Síndrome do Intestino Irritável (SII)", "Espasticidade", "Dor cólica intestinal[cite: 19]"],
-      "alvoPrincipal": "Canais de Ca2+ do tipo L, Recetores Muscarínicos M3 e Recetores da Taquicinina (NK2)[cite: 19]",
-      "rcm": {
-        "substancia": "Brometo de otilónio",
-        "descricao": "Tratamento espasmolítico em afeções intestinais dolorosas."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Cloreto de tróspio",
-      "atc": "A03AB20",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AB - Anticolinérgicos sintéticos, ésteres com grupo amónio quaternário",
-      "produtos": [
-        {
-          "nome": "Spasmoplex®",
-          "forma": "Comprimido (20 mg)[cite: 19]"
-        }
-      ],
-      "classe": "Anticolinérgico/Antimuscarínico periférico de estrutura quaternária",
-      "mecanismo": "Antagonismo Competitivo dos Recetores Muscarínicos (M1, M2, M3) e inibição da contração parassimpática, promovendo o relaxamento do músculo liso digestivo e vesical[cite: 19].",
-      "indicacoes": ["Hiperatividade da bexiga", "Espasmos do trato urinário e digestivo[cite: 19]"],
-      "alvoPrincipal": "Recetores Muscarínicos M1, M2 e M3[cite: 19]",
-      "rcm": {
-        "substancia": "Cloreto de tróspio",
-        "descricao": "Tratamento de espasmos e hiperatividade visceral."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Papaverina",
-      "atc": "A03AD01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AD - Papaverina e derivados",
-      "produtos": [
-        {
-          "nome": "Papaverina Labesfal®",
-          "forma": "Solução injetável (150 mg/5 ml)[cite: 19]"
-        }
-      ],
-      "classe": "Alcalóide espasmolítico musculotrópico não-seletivo",
-      "mecanismo": "Inibição não-seletiva da enzima fosfodiesterase (PDE-3 e PDE-4), provocando acumulação de cAMP/cGMP e bloqueio de cálcio na célula muscular lisa[cite: 19].",
-      "indicacoes": ["Cólicas agudas (biliar, renal, intestinal)", "Espasmos musculares lisos[cite: 19]"],
-      "alvoPrincipal": "Enzima Fosfodiesterase (PDE) e Canais de Ca2+[cite: 19]",
-      "rcm": {
-        "substancia": "Papaverina",
-        "descricao": "Alívio de espasmos vasculares e viscerais agudos."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Floroglucinol + Simeticone",
-      "atc": "A03AX",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AX - Outros fármacos para perturbações funcionais gastrointestinais",
-      "produtos": [
-        {
-          "nome": "Normatal®",
-          "forma": "Cápsula (62.23 mg + 133 mg)[cite: 19]"
-        }
-      ],
-      "classe": "Associação de espasmolítico musculotrópico e antiflatulento",
-      "mecanismo": "Floroglucinol inibe a entrada de iões Ca2+ nas células musculares lisas sem interferir no sistema autónomo; Simeticone reduz a tensão superficial das bolhas de gás na luz intestinal[cite: 19].",
-      "indicacoes": ["Espasmos gastrointestinais dolorosos associados a meteorismo e distensão abdominal[cite: 19]"],
-      "alvoPrincipal": "Canais de Ca2+ (Floroglucinol) + Tensão Superficial de Bolhas de Gás (Simeticone)[cite: 19]",
-      "rcm": {
-        "substancia": "Floroglucinol + Simeticone",
-        "descricao": "Tratamento de espasmos e meteorismo abdominal."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Brometo de pinavério",
-      "atc": "A03AX04",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AX - Outros fármacos para perturbações funcionais gastrointestinais",
-      "produtos": [
-        {
-          "nome": "Dicetel®",
-          "forma": "Comprimido (50 mg)[cite: 20]"
-        }
-      ],
-      "classe": "Bloqueador seletivo dos canais de cálcio gastrointestinal",
-      "mecanismo": "Inibição altamente seletiva dos canais de cálcio do tipo L voltagem-dependentes situados na membrana dos miócitos do cólon e vias biliares[cite: 20].",
-      "indicacoes": ["Síndrome do Intestino Irritável (SII)", "Dores e perturbações funcionais das vias biliares[cite: 20]"],
-      "alvoPrincipal": "Canais de Ca2+ do tipo L voltagem-dependentes[cite: 20]",
-      "rcm": {
-        "substancia": "Brometo de pinavério",
-        "descricao": "Regulação da motilidade e alívio da dor na SII e vias biliares."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Simeticone",
-      "atc": "A03AX13",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03A - Fármacos para o tratamento de alterações funcionais gastrointestinais",
-      "subgrupo3": "A03AX - Outros fármacos para perturbações funcionais gastrointestinais",
-      "produtos": [
-        {
-          "nome": "Aero-Om®",
-          "forma": "Comprimido para mastigar (42 mg), Gotas orais (105 mg/ml) e Cápsula mole (125 mg)[cite: 20]"
-        },
-        {
-          "nome": "Flatub®",
-          "forma": "Cápsula mole (120 mg)[cite: 20]"
-        },
-        {
-          "nome": "Mymus® e Nanog®",
-          "forma": "Gotas orais (66.6 mg/ml)[cite: 20]"
-        }
-      ],
-      "classe": "Polímero inerte de silicone com ação física desespumante",
-      "mecanismo": "Ação física de redução da tensão superficial na interface gás-líquido do muco gastrointestinal[cite: 20].",
-      "indicacoes": ["Acumulação de gases (flatulência, meteorismo, aerofagia)[cite: 20]"],
-      "alvoPrincipal": "Tensão Superficial de Bolhas de Gás[cite: 20]",
-      "rcm": {
-        "substancia": "Simeticone",
-        "descricao": "Alívio sintomático do meteorismo e acumulação de gases."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Atropina",
-      "atc": "A03BA01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03B - Beladona e derivados, isolados",
-      "subgrupo3": "A03BA - Alcalóides da beladona, aminas terciárias",
-      "produtos": [
-        {
-          "nome": "Atropina Braun®",
-          "forma": "Solução injetável (0.5 e 1 mg/1 ml)[cite: 20]"
-        },
-        {
-          "nome": "Atropina Aguettant®",
-          "forma": "Solução injetável em seringa pré-cheia (0.1 e 0.2 mg/ml)[cite: 20]"
-        }
-      ],
-      "classe": "Antagonista competitivo clássico não-seletivo dos recetores muscarínicos",
-      "mecanismo": "Bloqueio global dos recetores muscarínicos (M1 a M5), reduzindo o peristaltismo, as secreções e induzindo taquicardia por efeito vagolítico[cite: 20].",
-      "indicacoes": ["Antídoto para intoxicações (organofosforados)", "Pré-anestesia (sialorreia/bradicardias)", "Espasmos viscerais agudos[cite: 20]"],
-      "alvoPrincipal": "Recetores Muscarínicos (M1, M2, M3, M4, M5)[cite: 20]",
-      "rcm": {
-        "substancia": "Atropina",
-        "descricao": "Uso de emergência em bradicardias, antídoto e espasmos severos."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Butilescopolamina",
-      "atc": "A03BB01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03B - Beladona e derivados, isolados",
-      "subgrupo3": "A03BB - Alcalóides semissintéticos da beladona, compostos de amónio quaternário",
-      "produtos": [
-        {
-          "nome": "Buscopan®",
-          "forma": "Comprimido (10 mg) e Solução injetável (20 mg/1 ml)[cite: 20]"
-        },
-        {
-          "nome": "Bysimin®",
-          "forma": "Solução injetável (20 mg/1 ml)[cite: 20]"
-        }
-      ],
-      "classe": "Anticolinérgico/Espasmolítico periférico de amónio quaternário",
-      "mecanismo": "Antagonismo competitivo dos recetores muscarínicos M3 localizados nos plexos parassimpáticos da musculatura lisa abdominal e vias biliares/urinárias[cite: 20].",
-      "indicacoes": ["Cólica aguda (intestinal, biliar, renal)", "Espasmos do trato geniturinário e digestivo[cite: 20]"],
-      "alvoPrincipal": "Recetores Muscarínicos (M3) viscerais[cite: 20]",
-      "rcm": {
-        "substancia": "Butilescopolamina",
-        "descricao": "Alívio de dores espasmódicas viscerais sem cruzar a barreira hematoencefálica."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Butilescopolamina + Paracetamol",
-      "atc": "A03DB04",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03D - Anti-espasmódicos associados a analgésicos",
-      "subgrupo3": "A03DB - Beladona e derivados associados a analgésicos",
-      "produtos": [
-        {
-          "nome": "Buscopan Compositum N®",
-          "forma": "Comprimido (10 mg + 500 mg) e Supositório (10 mg + 800 mg)[cite: 20]"
-        }
-      ],
-      "classe": "Associação de antiespasmódico periférico e analgésico central",
-      "mecanismo": "Butilescopolamina bloqueia os recetores M3 viscerais combatendo o espasmo, enquanto o paracetamol eleva o limiar da dor no SNC por inibição das ciclooxigenases COX-1 e COX-2 cerebrais[cite: 20].",
-      "indicacoes": ["Dor espasmódica moderada a grave", "Cólicas com componente inflamatório/doloroso pronunciado[cite: 20]"],
-      "alvoPrincipal": "Recetores Muscarínicos (M3) + Enzimas Cicloxigenases COX-1 e COX-2 no SNC[cite: 20]",
-      "rcm": {
-        "substancia": "Butilescopolamina + Paracetamol",
-        "descricao": "Tratamento de dor cólica intensa com necessidade de analgesia central."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Metoclopramida",
-      "atc": "A03FA01",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03F - Gastrocinéticos",
-      "subgrupo3": "A03FA - Gastrocinéticos",
-      "produtos": [
-        {
-          "nome": "Primperan®",
-          "forma": "Comprimido (10 mg), Solução injetável (10 mg/2 ml) e Solução oral (1 mg/ml)[cite: 21]"
-        },
-        {
-          "nome": "Metgen®",
-          "forma": "Solução oral (1 mg/ml)[cite: 21]"
-        }
-      ],
-      "classe": "Procinético e antiemético central e periférico",
-      "mecanismo": "Antagonismo dos recetores dopaminérgicos D2 (na CTZ e periféricos aumentando a libertação de acetilcolina) e modulação serotoninérgica (agonismo 5-HT4 e antagonismo 5-HT3)[cite: 21].",
-      "indicacoes": ["Náuseas/vómitos (incluindo pós-operatório e induzidos por quimioterapia)", "Gastroparesia[cite: 21]"],
-      "alvoPrincipal": "Recetores Dopaminérgicos D2 + Recetores Serotoninérgicos 5-HT4 / 5-HT3[cite: 21]",
-      "rcm": {
-        "substancia": "Metoclopramida",
-        "descricao": "Prevenção e tratamento de náuseas, vómitos e distúrbios da motilidade gástrica."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Domperidona",
-      "atc": "A03FA03",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03F - Gastrocinéticos",
-      "subgrupo3": "A03FA - Gastrocinéticos",
-      "produtos": [
-        {
-          "nome": "Cinet®",
-          "forma": "Comprimido (10 mg), Comprimido dispersível (10 mg) e Suspensão oral (1 mg/ml)[cite: 21]"
-        },
-        {
-          "nome": "Vomigastro® e Motilium®",
-          "forma": "Comprimido (10 mg)[cite: 21]"
-        }
-      ],
-      "classe": "Antagonista dopaminérgico D2 predominantemente periférico",
-      "mecanismo": "Antagonismo seletivo dos recetores D2 periféricos e na zona CTZ (localizada fora da barreira hematoencefálica), facilitando a motilidade gástrica sem forte penetração cerebral[cite: 21].",
-      "indicacoes": ["Alívio dos sintomas de náuseas e vómitos (duração máxima recomendada: 7 dias)[cite: 21]"],
-      "alvoPrincipal": "Recetores Dopaminérgicos D2 periféricos[cite: 21]",
-      "rcm": {
-        "substancia": "Domperidona",
-        "descricao": "Tratamento de náuseas e vómitos com menor risco extrapiramidal central."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    },
-    {
-      "nome": "Cleboprida",
-      "atc": "A03FA",
-      "grupo": "A - Aparelho digestivo e metabolismo",
-      "subgrupo2": "A03F - Gastrocinéticos",
-      "subgrupo3": "A03FA - Gastrocinéticos",
-      "produtos": [
-        {
-          "nome": "Clebutec®",
-          "forma": "Comprimido (0,5 mg)[cite: 22]"
-        }
-      ],
-      "classe": "Benzamida substituída procinética de segunda geração",
-      "mecanismo": "Antagonismo dos recetores dopaminérgicos D2 e agonismo dos recetores 5-HT4, facilitando a neurotransmissão colinérgica e promovendo uma motilidade antropilórica vigorosa.",
-      "indicacoes": ["Transtornos funcionais da motilidade digestiva", "Gastroparesia", "Profilaxia do refluxo[cite: 22]"],
-      "alvoPrincipal": "Recetores Dopaminérgicos D2 + Recetores Serotoninérgicos 5-HT4[cite: 22]",
-      "rcm": {
-        "substancia": "Cleboprida",
-        "descricao": "Tratamento de distúrbios da motilidade gastrointestinal e refluxo."
-      },
-      "videos": {
-        "farmacodinamica": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        "farmacocinetica": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    }
-  ]
-}
+]
