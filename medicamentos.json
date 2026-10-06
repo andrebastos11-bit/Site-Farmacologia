@@ -1,0 +1,140 @@
+[
+    {
+        "id": "duraphat_5000_pasta_dentífrica",
+        "nome": "Duraphat 5000, 500 mg/100 g Pasta dentífrica",
+        "atc": "A01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Duraphat 5000, 500 mg/100 g Pasta dentífrica",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [
+                "Prevenção da cárie dentária em adolescentes e adultos, especialmente nos doentes em risco \nde cáries múltiplas (cáries coronárias e/ou radiculares). \n \nApenas para utilização em indivíduos de idade igual ou superior a 16 anos."
+            ],
+            "posologia": "Não engolir. \n \nEscovar diariamente de uma forma cuidada: \naplique 2 cm de pasta na escova de dentes em cada escovagem. \n2 cm fornecem entre 3 e 5 mg de fluoreto. \n3 vezes por dia, após cada refeição, \nverticalmente, desde a gengiva até à ponta do dente.  \n \nUma escovagem cuidadosa demora aproximadamente 3 minutos. \nCuspa o excesso de espuma. \n \nModo de administração: Uso dental.",
+            "contra_indicacoes": "Este medicamento não deve ser utilizado em caso de hipersensibilidade à substância activa \nou a qualquer dos excipientes.",
+            "advertencias": "especiais de utilização \n \nDuraphat 5000 500 mg/100 g Pasta dentífrica não se destina a ser utilizada por crianças e \nadolescentes com menos de 16 anos de idade, ver secção 4.2. \n  \nEsta pasta dentífrica apresenta um elevado teor em flúor.  \nPortanto, a opinião de um profissional qualific ado profissional de saúde, como dentista, \nfarmacêutico, higienista oral, deve especialista deve ser procurado antes do uso do produto. \n \nO aumento de pot enciais fontes de flúor pode originar fluorose. Antes de utilizar \nmedicamentos fluoretados como o Duraphat,  deverá ser feita uma avaliação do aporte \nglobal de flúor (ex.: água potável, sais fluoretados, outros medicamentos com flúor - \ncomprimidos, gotas, pastilhas ou pasta dentífrica). Comprimidos de flúor, gotas, pastilhas \nelásticas, geles ou vernizes e água o u sais fluoretados deverão se ev itados durante a \nutilização de Duraphat Pasta dentífrica.  \n \nNos cálculos globais da quantidade recomendada de ião flúor, que é de 0,05 mg/Kg/dia, de \nqualquer origem, não excedendo 1 mg por dia, deve ser tida em conta a possí vel ingestão \nda pasta dentífrica (cada bisnaga de Duraphat 5000 500 mg/100 g Pasta dentífrica contém \n255 mg de iões flúor).     \n \nEste medicamento con tém benzoato de sódio  (E211). O benzoato de sódio  (E211) pode \ncausar irritação local. \n \nEste medicamento também contém um aroma de menta com alérgenos (limoneno, linalol, \ncitral, geraniol e citronelol). Esses alérgenos podem causar reações alérgicas.",
+            "interaccoes": "e outras formas de interacção  \n \nNenhuma conhecida.",
+            "gravidez": "Não existem dados adequados sobre o uso de Duraphat 5000 500 mg/100 g Pasta dentífrica \nem mulheres grávidas. Estudos em animais revelaram t oxicidade reprodutiva do fluoret o \nde sódio apenas quando administrado em níveis muito elevados. Em consequência, esta \npasta dentífrica não deverá ser utilizada durante a gravidez e aleitamento a não  ser que \ntenha sido efectuada uma cuidadosa avaliação benefício-risco.",
+            "efeitos_indesejaveis": "Doenças gastrointestinais: \nFrequência desconhecida (não pode ser calculada a partir dos dados disponíveis): sensação \nde queimadura oral \n \nDoenças do sistema imunitário \nRaros (≥1/10.000 a <1/1.000): Reacções de Hipersensibilidade \n \nNotificação de suspeitas de reações adversas \nA notificação de suspeitas de reações ad versas após a autorização do medicamento é \nimportante, uma vez que permite uma monitorização contínua da relação ben efício-risco \ndo medicamento. Pede -se aos profissionais de saúde que notifiquem quaisquer suspeitas \nde reações adversas diretamente ao INFARMED, I.P.: \n \nINFARMED, I.P. \nDireção de Gestão do Risco de Medicamentos \nParque da Saúde de Lisboa, Av. Brasil 53 \n1749-004 Lisboa \nTel: +351 21 798 71 40 \nFax: + 351 21 798 73 97 \nSítio da internet: http://extranet.infarmed.pt/page.seram.frontoffice.seramhomepage \nE-mail: farmacovigilancia@infarmed.pt",
+            "sobredosagem": {
+                "Intoxicação aguda Flúor": "A dose tóxica, i.e. a dose mai s baixa capaz de induzir sintomas de intoxicação, é de 5 mg \nde fluoreto por Kg de peso corporal. \nEsta intoxicação manifesta-se sob a forma de problemas digestivos: vómitos, diarreia, dor \nabdominal. Em casos extremamente raros, pode ser fatal. Caso se ingir a acidentalmente \numa quantidade substancial do medicamento, o tratamento imediato consiste numa \nlavagem gástrica ou indução do  vómito; deve ser tomado cálcio (grandes quantidades de \nleite) e o doente deve ser sujeito a vigilância médica durante várias horas.",
+                "Intoxicação aguda Mentol": "O Duraphat 5000, 500 mg/100g pasta dentífrica contém mentol que, se ingerido \nacidentalmente em quantidades excessivas, pode causar convulsões, particularmente em \ncrianças.",
+                "Intoxicação crónica fluorose": "O aspecto man chado ou mosqueado do esmalte dentário pode surgir a partir de uma \nabsorção diária de uma dose de fluoreto superior a 1,5 mg/ dia, durante vários meses ou \nanos, dependendo da extensão da sobredosagem. Esta intoxicação, nas formas graves, será  \nacompanhada por um aumento da fragilidade do esmalte. A fluorose óssea (osteosclerose) \nsó será observada quando existir uma absorção cróni ca elevada de fluoreto (superior a 8 \nmg/ dia)."
+            }
+        },
+        "aba_farmacologia": {
+            "mecanismo": "Grupo farmacoterapêutico: 6.1.1. Aparelho digestivo. Medicamentos que actuam na boca \ne orofaringe. De aplicação tópica. \nCódigo ATC: A01 AA01 \n \nO principal modo de acção do fluoreto na prevenção de cáries é exercido após erupção dos \ndentes, ou seja, é tópico. Julga-se que os suplementos de flúor sistémicos actuam também \nprincipalmente de forma tópica (por exemplo durante a ingestão, através da saliva).  \n \nExistem três tipos de efeitos associados ao flúor: \n- um efeito inibidor da desmineralização (diminuição da solubilidade  do esmalte em \nambiente ácido); \n- uma promoção da remineralização do esmalte durante o processo cariogénico; \n- um efeito bactericida sobre os organismos da placa bacteriana. Este inibe a proliferação \nda placa bacteriana e previne a formação de ácidos cariogénicos. \n \nO fluoreto por si só não é suficiente para eliminar a placa bacteriana, nem como tratamento \ncompleto da cárie.",
+            "cinetica": "Duraphat 5000 500 mg/100 g Pasta dentífrica exerce uma acção local, tópica nos dentes \npelo que a via seguida no organismo não é aplicável. Contudo, a informação que se segue \nfoi incluída para o caso de ingestão acidental de pasta dentífrica durante o tratamento. \n  \nTodo o flúor ingerido é convertido em ácido fluorídrico. As concentrações máximas são \nobtidas entre 30 a 60 minutos. O volume de distribuição é de 1l/Kg. \nOs iões fluoreto são distribuídos para os dentes e ossos e nã o se ligam às proteínas \nplasmáticas. A semi-vida de eliminação é da ordem das 2 a 9 horas. Os iões fluoreto \nsão excretados sobretu do na urina, mas podem também ser excretadas pequenas \nquantidades nas fezes e no suor. Desconhece-se de que forma."
+        },
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
+        }
+    },
+    {
+        "id": "hextril_solução_bucal",
+        "nome": "Hextril solução bucal",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Hextril solução bucal",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [],
+            "posologia": "Não especificado",
+            "contra_indicacoes": "Não especificado",
+            "advertencias": "Não especificado",
+            "interaccoes": "Não especificado",
+            "gravidez": "Não especificado",
+            "efeitos_indesejaveis": "Não especificado",
+            "sobredosagem": "Não especificado"
+        },
+        "aba_farmacologia": {
+            "mecanismo": "Não especificado",
+            "cinetica": "Não especificado"
+        },
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
+        }
+    },
+    {
+        "id": "maxflúor_solução_bucal",
+        "nome": "Maxflúor solução bucal",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Maxflúor solução bucal",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [],
+            "posologia": "Não especificado",
+            "contra_indicacoes": "Não especificado",
+            "advertencias": "Não especificado",
+            "interaccoes": "Não especificado",
+            "gravidez": "Não especificado",
+            "efeitos_indesejaveis": "Não especificado",
+            "sobredosagem": "Não especificado"
+        },
+        "aba_farmacologia": {
+            "mecanismo": "Não especificado",
+            "cinetica": "Não especificado"
+        },
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
+        }
+    },
+    {
+        "id": "pyralvex_solução_bucal",
+        "nome": "Pyralvex Solução bucal",
+        "atc": "A01AA01",
+        "grupo": "A",
+        "classe": "Medicamento Humano",
+        "alvoPrincipal": "Consultar RCM",
+        "produtos": [
+            {
+                "nome": "Pyralvex Solução bucal",
+                "apresentacao": "Apresentação padrão",
+                "cnp": ""
+            }
+        ],
+        "aba_clinica": {
+            "indicacoes": [],
+            "posologia": "Não especificado",
+            "contra_indicacoes": "Não especificado",
+            "advertencias": "Não especificado",
+            "interaccoes": "Não especificado",
+            "gravidez": "Não especificado",
+            "efeitos_indesejaveis": "Não especificado",
+            "sobredosagem": "Não se pre vê q ualq uer  sobredosage m e m cond iç ões nor mais  de u ti liza ção. \n \n \n5. PROPRIED ADE S F ARMACOLÓ GIC AS \n \n5.1  Propriedades  far macodi nâm ica s \n \nGr upo far macot erapê ut ico: 6.1. 1 Apare lho d ig est ivo. Med icam en tos q ue  at uam  na  \nboca e orofar ing e. De ap li cação ação tópi ca. \n \nCódigo ATC:  A 01 AB 11 \n \nOs gli cosídeos a ntraq u inó ni cos possue m at ivida de ant i-i nf lama tória, an t ibact eria na e  \nvasocons tr itora. \nO ácido sal ic íl ico, para alé m de possu ir pro priedade s an ti- in fla matór ias, fac il i ta, \ngraças ao seu  efe i to que rato lí ti co, a pe net ração das an traq ui nona s nas mu cosas. \n \n5.2  Propriedades  far macoc iné t icas \n \nPyralv ex a tua  ape nas a  n íve l local,  se ndo desp re zíve is os  se us  n íve is  de absor ção. \n \n5.3  Dados de seg ura nça pré-c lí n ica \n \nNão exis te m es t udos re la tivos  à s egu rança  pré- c lí ni ca des te  med ica men to.  \n \n \nAPROV ADO EM \n 23- 06 -2 02 3 \n INFARM ED \n \n \n6. INFORMAÇÕ ES  FARM ACÊ UT ICA S \n \n6 . 1 L i s t a d o s  ex c i pi en te s  \n \nEta nol a  9 6%, \nÁgua  pur if icada. \n \n6.2  Inco mpat ibi l idades \n \nEmbora não es tejam  desc ri tas i ncompa tib il idad es far macê ut ica s, reco men da-se q ue  \nPyralv ex não seja ap l icado co ncom ita nt eme nt e c om out ros prod utos. \n \n6.3  Prazo de va lidad e \n \n3 anos. \nPrazo de va lidad e após a  pri me ira abe rt ura:  6 m eses. \n \n6.4  Precauçõe s e spec iais  de cons ervação \n \nConserva r a temp erat ura  i nfe rior a  2 5ºC. \nManter  o fra sco be m fec hado e ao ab rigo da  l uz.  \n \n6.5  Nature za e con teú do do rec ip ien te \n \nFrasco de V idro âmba r T ipo I II,  com p i nce l ap li c ador. \nEmba lage ns com um  fras co con te ndo 1 0 o u 30 ml d e so lução  bu cal.  \n \n6.6  Precauçõe s e spec iais  de el im ina ção e man usea men to \n \nFechar  bem  o fra sco após a  u t il ização. \n \n \n7. TIT ULAR D A AUT ORI ZAÇ ÃO D E INTRODUÇ ÃO N O MERC ADO \n \nBGP Prod uc ts, Un ipes soal Lda. \nAv. D. João I I, Edi fí cio At la nt is, nº 44C  –  7.3  e 7 .4 \n19 90- 09 5 Li sboa \nPortuga l \nTel:  2 14 12 7 20 0 \nF a x :  21 4 12 7 21 9  \n \n8. NÚMERO( S) D E AUT ORI ZAÇ ÃO D E INTRODUÇ Ã O NO M ERCADO \n \nR e g i st o  n°  89 93 70 9:  10  ml  d e S o lu ç ã o  bu c al ,  10  m g /m l +  50  m g/ ml ,  F r a s c o  de  Vi d r o \nâmbar T ipo III \nR e g i st o  n°  89 93 71 7:  30  ml  d e S o lu ç ã o  bu c al ,  10  m g /m l +  50  m g/ ml ,  F r a s c o  de  Vi d r o \nâmbar T ipo III \n \n \n9. DATA D A PRIM EIR A AUT ORI ZAÇÃ O/REN OV A ÇÃO DA AU TORI ZAÇ ÃO D E \nINTRODUÇ ÃO NO  MERC ADO \n \nAPROV ADO EM \n 23- 06 -2 02 3 \n INFARM ED \n \n \nData da pr im eira  au tori zação de  i nt rodução no mercado: 29  de Ma io de 19 81 \nData da r evi são da a utor ização d e in trodu ção no  mer cado: 2 8 de  Agos to de 2 00 7 \n \n \n10.  DATA  DE  RE VI SÃO  DO TE XTO"
+        },
+        "aba_farmacologia": {
+            "mecanismo": "Não especificado",
+            "cinetica": "Não especificado"
+        },
+        "videos": {
+            "dinamica": "",
+            "cinetica": ""
+        }
+    }
+]
