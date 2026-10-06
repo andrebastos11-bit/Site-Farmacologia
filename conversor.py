@@ -4,44 +4,56 @@ import os
 
 def converter_excel_para_json(excel_path='medicamentos.xlsx', json_path='medicamentos.json'):
     if not os.path.exists(excel_path):
-        print(f"Erro: O ficheiro '{excel_path}' não foi encontrado.")
+        print(f"Erro: O ficheiro '{excel_path}' não foi encontrado na pasta.")
         return
 
     print("A ler o ficheiro Excel...")
-    # header=0 ignora a primeira linha como cabeçalho
+    # Ler o Excel usando a primeira linha como cabeçalho (header=0)
     df = pd.read_excel(excel_path, header=0)
 
-    # Forçar a leitura apenas das primeiras 22 colunas (A até V) e ignorar o resto
-    df = df.iloc[:, :22]
+    # Remover espaços em branco à volta dos nomes das colunas originais do Excel
+    df.columns = [str(c).strip() for c in df.columns]
 
-    # As 22 chaves exatas correspondentes de A a V
-    chaves_base = [
-        'nome_medicamento', 'substancia_ativa', 'forma_farmaceutica', 'dosagem',
-        'indicacao_terapeutica', 'posologia', 'contra_indicacoes', 'advertencias',
-        'interacoes', 'gravidez_aleitamento', 'conducao_maquinas', 'efeitos_indesejaveis',
-        'sobredosagem', 'grupo_farmacoterapeutico', 'grupo_atc', 'propriedades_farmacodinamicas',
-        'alvo_terapeutico', 'propriedades_farmacocineticas', 'excipientes', 'incompatibilidades',
-        'conservacao', 'instrucoes_utilizacao'
-    ]
+    # Mapeamento estrito das 22 colunas do seu Excel para chaves limpas em minúsculas
+    mapeamento = {
+        'Nome do medicamento': 'nome_medicamento',
+        'Substância ativa': 'substancia_ativa',
+        'Forma Farmacêutica': 'forma_farmaceutica',
+        'Dosagem': 'dosagem',
+        'Indicação terapêutica': 'indicacao_terapeutica',
+        'Posologia e modo de administração': 'posologia',
+        'Contra-indicações': 'contra_indicacoes',
+        'Advertências e precauções especiais de utilização': 'advertencias',
+        'Interacções medicamentosas e outras formas de interacção': 'interacoes',
+        'Gravidez e aleitamento': 'gravidez_aleitamento',
+        'Efeitos sobre a capacidade de conduzir e utilizar máquinas': 'conducao_maquinas',
+        'Efeitos indesejáveis': 'efeitos_indesejaveis',
+        'Sobredosagem': 'sobredosagem',
+        'Grupo Farmacoteraêutico': 'grupo_farmacoterapeutico',
+        'Grupo ATC': 'grupo_atc',
+        'Propriedades farmacodinâmicas': 'propriedades_farmacodinamicas',
+        'Alvo terapêutico': 'alvo_terapeutico',
+        'Propriedades farmacocinéticas': 'propriedades_farmacocineticas',
+        'Lista dos excipientes': 'excipientes',
+        'Incompatibilidades': 'incompatibilidades',
+        'Precauções especiais de conservação': 'conservacao',
+        'Instruções de utilização e manipulação': 'instrucoes_utilizacao'
+    }
 
-    # Atribuir as chaves por ordem estricta às colunas do Excel
-    colunas_mapeadas = {}
-    for i, col_name in enumerate(df.columns):
-        if i < len(chaves_base):
-            colunas_mapeadas[col_name] = chaves_base[i]
-
-    df = df.rename(columns=colunas_mapeadas)
+    # Renomear as colunas
+    df = df.rename(columns=mapeamento)
     
     # Substituir valores nulos/NaN por strings vazias
     df = df.fillna("")
 
-    # Converter para dicionário e guardar em JSON
+    # Converter para dicionário de registos
     dados = df.to_dict(orient='records')
     
+    # Guardar no ficheiro JSON
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(dados, f, ensure_ascii=False, indent=4)
         
-    print(f"Sucesso! {len(dados)} medicamentos exportados para '{json_path}' sem colunas extras.")
+    print(f"Sucesso! {len(dados)} medicamentos convertidos e guardados em '{json_path}'.")
 
 if __name__ == '__main__':
-    converter_excel_parser = converter_excel_para_json()
+    converter_excel_para_json()
