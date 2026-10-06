@@ -174,50 +174,6 @@
             display: block;
         }
 
-        .atc-level3-header {
-            padding: 6px 12px 6px 24px;
-            font-weight: normal;
-            color: #334155;
-            cursor: pointer;
-            user-select: none;
-            font-size: 0.8rem;
-            border-top: 1px solid #f1f5f9;
-        }
-
-        .atc-level3-header:hover {
-            background-color: #f8fafc;
-        }
-
-        .atc-level3-content {
-            display: none;
-        }
-
-        .atc-level3-content.active {
-            display: block;
-        }
-
-        .atc-level4-header {
-            padding: 5px 12px 5px 30px;
-            color: #475569;
-            font-size: 0.78rem;
-            font-weight: normal;
-            cursor: pointer;
-            user-select: none;
-            border-top: 1px solid #f1f5f9;
-        }
-
-        .atc-level4-header:hover {
-            background-color: #f8fafc;
-        }
-
-        .atc-level4-content {
-            display: none;
-        }
-
-        .atc-level4-content.active {
-            display: block;
-        }
-
         .drug-tree-list {
             list-style: none;
             padding: 0;
@@ -225,7 +181,7 @@
         }
 
         .drug-tree-item {
-            padding: 6px 12px 6px 38px;
+            padding: 6px 12px 6px 30px;
             border-top: 1px solid #f1f5f9;
             cursor: pointer;
             font-size: 0.78rem;
@@ -449,8 +405,26 @@
 <script>
     let farmacosData = [];
     let farmacoAtivoId = null;
-    const descricoesATC2 = { A01: "A01 - PREPARAÇÕES ESTOMATOLÓGICAS", A02: "A02 - TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS" };
-    const descricoesATC3 = { A02A: "A02A - ANTIÁCIDOS", A02B: "A02B - FÁRMACOS PARA O TRATAMENTO DA ÚLCERA PÉPTICA" };
+
+    const descricoesATC2 = {
+        "A01": "A01 - PREPARAÇÕES ESTOMATOLÓGICAS",
+        "A02": "A02 - FÁRMACOS PARA DISTÚRBIOS RELACIONADOS COM A ACIDEZ",
+        "A03": "A03 - FÁRMACOS PARA PERTURBAÇÕES GASTROINTESTINAIS FUNCIONAIS",
+        "A04": "A04 - ANTIEMÉTICOS E ANTINUSEOSOS",
+        "A05": "A05 - TERAPÊUTICA BILIAR E HEPÁTICA",
+        "A06": "A06 - LAXANTES",
+        "A07": "A07 - ANTIDIARRÉICOS, ANTI-INFECIOSOS E ANTI-INFLAMATÓRIOS INTESTINAIS",
+        "A08": "A08 - PREPARAÇÕES ANTI-OBISIDADE, EXCLUINDO DIETÉTICOS",
+        "A09": "A09 - DIGESTIVOS, INCLUINDO ENZIMAS",
+        "A10": "A10 - FÁRMACOS UTILIZADOS NA DIABETES",
+        "A11": "A11 - VITAMINAS",
+        "A12": "A12 - SUPLEMENTOS MINERAIS",
+        "A13": "A13 - TÓNICOS",
+        "A14": "A14 - ANABOLISZANTES SISTÉMICOS",
+        "A15": "A15 - ESTIMULANTES DO APETITE",
+        "A16": "A16 - OUTROS PRODUTOS PARA O TATO GASTROINTESTINAL E METABOLISMO"
+    };
+
     const palavrasMinusculas = new Set(["a", "à", "ao", "aos", "as", "às", "e", "da", "das", "de", "do", "dos", "em", "na", "nas", "no", "nos", "por", "para", "com", "sem", "sob", "entre", "ou", "um", "uma"]);
 
     function capitalizarTexto(texto) {
@@ -459,15 +433,6 @@
             if (indice > 0 && (palavrasMinusculas.has(palavra) || palavra.length <= 2)) return palavra;
             return palavra.charAt(0).toUpperCase() + palavra.slice(1);
         }).join(" ");
-    }
-
-    function limparTextoATC(texto, codigo) {
-        if (!texto) return codigo.toUpperCase();
-        let limpo = String(texto).trim();
-        limpo = limpo.replace(/\s*-\s*[a-zA-Z]\s*-\s*/g, " ");
-        const regexCodigo = new RegExp("^" + codigo + "\\s*-?\\s*", "i");
-        limpo = limpo.replace(regexCodigo, "").trim();
-        return codigo.toUpperCase() + " - " + limpo;
     }
 
     function extrairCodigoATC(valor) {
@@ -508,8 +473,8 @@
             const atc = extrairCodigoATC(farmaco.atc);
             if (!atc) return;
             const codigoPrincipal = atc.substring(0, 1);
-            const nomeGrupo = farmaco.grupo || codigoPrincipal;
-            const chave = codigoPrincipal + "|" + nomeGrupo;
+            const nomeGrupo = "A - Aparelho Digestivo e Metabolismo";
+            const chave = codigoPrincipal;
             if (!grupos[chave]) grupos[chave] = { codigo: codigoPrincipal, nome: nomeGrupo, farmacos: [] };
             grupos[chave].farmacos.push(farmaco);
         });
@@ -520,11 +485,10 @@
 
             const header = document.createElement("div");
             header.className = "atc-header";
-            header.textContent = obterNomeGrupoPrincipal(grupo.codigo, grupo.nome);
+            header.textContent = grupo.nome;
 
             const conteudo = document.createElement("div");
-            conteudo.className = "atc-content";
-            header.addEventListener("click", () => conteudo.classList.toggle("active"));
+            conteudo.className = "atc-content active"; // Aberto por defeito para facilitar
 
             const subgrupos2 = {};
             grupo.farmacos.forEach(farmaco => {
@@ -544,20 +508,13 @@
         });
     }
 
-    function obterNomeGrupoPrincipal(codigo, nome) {
-        let descricao = String(nome || "").trim();
-        descricao = descricao.replace(/\s*-\s*[a-zA-Z]\s*-\s*/g, " ");
-        descricao = descricao.replace(new RegExp("^" + codigo + "\\s*-?\\s*", "i"), "").trim();
-        return (codigo.toUpperCase() + " - " + descricao).toUpperCase();
-    }
-
     function criarNivel2Arvore(container, codigo2, farmacos) {
         const item = document.createElement("div");
         const header = document.createElement("div");
         header.className = "atc-subheader";
         
         let desc2 = descricoesATC2[codigo2] || codigo2.toUpperCase();
-        header.textContent = desc2.toUpperCase();
+        header.textContent = desc2;
 
         const conteudo = document.createElement("div");
         conteudo.className = "atc-subcontent";
@@ -616,7 +573,7 @@
             elementoAtivo.classList.add("ativo");
             let pai = elementoAtivo.parentElement;
             while(pai) {
-                if(pai.classList && (pai.classList.contains("atc-content") || pai.classList.contains("atc-subcontent") || pai.classList.contains("atc-level3-content") || pai.classList.contains("atc-level4-content"))) {
+                if(pai.classList && (pai.classList.contains("atc-content") || pai.classList.contains("atc-subcontent"))) {
                     pai.classList.add("active");
                 }
                 pai = pai.parentElement;
@@ -668,7 +625,6 @@
 
         html += `</div></div>`;
 
-        // Secções Clínicas do RCM
         const seccoes = [
             { titulo: "Indicações Terapêuticas", conteudo: Array.isArray(clinica.indicacoes) ? clinica.indicacoes.join("<br>") : clinica.indicacoes },
             { titulo: "Posologia e Modo de Administração", conteudo: clinica.posologia },
@@ -677,7 +633,7 @@
             { titulo: "Interações Medicamentosas", conteudo: clinica.interaccoes },
             { titulo: "Gravidez e Aleitamento", conteudo: clinica.gravidez },
             { titulo: "Efeitos Indesejáveis", conteudo: clinica.efeitos_indesejaveis },
-            { titulo: "Sobredosagem", conteudo: clinica.sobredosagem }, // Aqui aplica-se a renderização por tópicos
+            { titulo: "Sobredosagem", conteudo: clinica.sobredosagem },
             { titulo: "Mecanismo de Ação", conteudo: farmacoObj.mecanismo },
             { titulo: "Propriedades Farmacocinéticas", conteudo: farmacoObj.cinetica }
         ];
