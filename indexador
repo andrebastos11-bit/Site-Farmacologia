@@ -1,0 +1,26 @@
+import json
+from collections import defaultdict
+
+def gerar_arvore_atc(json_path='medicamentos.json', output_path='arvore_atc.json'):
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            medicamentos = json.load(f)
+    except FileNotFoundError:
+        print("Ficheiro JSON não encontrado. Execute o conversor primeiro.")
+        return
+
+    arvore = defaultdict(list)
+
+    for med in medicamentos:
+        atc = med.get('grupo_atc', 'Outros').strip()
+        if not atc:
+            atc = 'Não classificado'
+        arvore[atc].append(med)
+
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(arvore, f, ensure_ascii=False, indent=4)
+
+    print(f"Árvore ATC gerada com sucesso em '{output_path}' com {len(arvore)} grupos principais.")
+
+if __name__ == '__main__':
+    gerar_arvore_atc()
