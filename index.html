@@ -95,6 +95,15 @@
         }
         .med-card h4 { margin: 0 0 8px 0; color: var(--primary-color); }
         .med-card p { margin: 4px 0; font-size: 0.85rem; color: #64748b; }
+        
+        /* Secção/Painel de Detalhes */
+        #detalhe-medicamento {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -120,11 +129,35 @@
             <div id="medicamentosList" class="medicamentos-grid">
                 <!-- Os cards dos medicamentos entram aqui dinamicamente -->
             </div>
+
+            <!-- Área opcional para exibir os detalhes do medicamento selecionado -->
+            <div id="detalhe-medicamento">
+                <p style="color: #888; text-align: center;">Clique num medicamento para ver os detalhes completos.</p>
+            </div>
         </main>
     </div>
 
     <script>
         let medicamentosData = [];
+
+        // Dicionário de Nomes ATC para substituir os códigos na árvore
+        const atcNames = {
+            "A": "A - TRACTO GASTRINTESTINAL E METABOLISMO",
+            "A01": "A01 - PREPARAÇÕES PARA USO ESTOMATOLÓGICO",
+            "A02": "A02 - FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS",
+            // Adicione os restantes códigos e nomes conforme necessário para o seu dataset
+        };
+
+        function getAtcDesc(code) {
+            if (!code) return "Outros";
+            let cleanCode = code.trim().toUpperCase();
+            if (atcNames[cleanCode]) return atcNames[cleanCode];
+            let prefix3 = cleanCode.substring(0, 3);
+            if (atcNames[prefix3]) return atcNames[prefix3];
+            let prefix1 = cleanCode.substring(0, 1);
+            if (atcNames[prefix1]) return atcNames[prefix1];
+            return cleanCode;
+        }
 
         async function carregarDados() {
             try {
@@ -134,7 +167,7 @@
                 construirArvoreATC(medicamentosData);
             } catch (error) {
                 console.error("Erro ao carregar medicamentos.json:", error);
-                document.getElementById('medicamentosList').innerHTML = '<p style="color: red;">Erro ao carregar os dados. Certifique-se de que o conversor foi executado.</p>';
+                document.getElementById('medicamentosList').innerHTML = '<p style="color: red;">Erro ao carregar os dados. Certifique-se de que o servidor local está ativo.</p>';
             }
         }
 
@@ -150,10 +183,11 @@
             dados.forEach(med => {
                 const card = document.createElement('div');
                 card.className = 'med-card';
+                card.onclick = () => mostrarDetalhesMedicamento(med);
                 card.innerHTML = `
                     <h4>${med.nome_medicamento || 'Sem nome'}</h4>
                     <p><b>Substância:</b> ${med.substancia_ativa || 'N/D'}</p>
-                    <p><b>Forma/Dosagem:</b> ${med.forma_farmaceutica} ${med.dosagem}</p>
+                    <p><b>Forma/Dosagem:</b> ${med.forma_farmaceutica \vert{}\vert{} ''}${med.dosagem || ''}</p>
                     <p><b>ATC:</b> ${med.grupo_atc || 'N/D'}</p>
                 `;
                 container.appendChild(card);
@@ -173,7 +207,7 @@
             Object.keys(grupos).sort().forEach(atc => {
                 const li = document.createElement('li');
                 li.className = 'atc-item';
-                li.innerText = `${atc} (${grupos[atc]})`;
+                li.innerText = `${getAtcDesc(atc)} (${grupos[atc]})`;
                 li.onclick = () => filtrarPorATC(atc);
                 atcTreeList.appendChild(li);
             });
@@ -199,8 +233,20 @@
             }
         }
 
-        // Inicializar carregamento ao abrir a página
-        carregarDados();
-    </script>
-</body>
-</html>
+        function mostrarDetalhesMedicamento(med) {
+            const container = document.getElementById('detalhe-medicamento');
+            container.innerHTML = `
+                <h2>${med.nome_medicamento || 'Sem nome'}</h2>
+                <p><strong>Substância Ativa:</strong> ${med.substancia_ativa || 'N/D'}</p>
+                <p><strong>Forma Farmacêutica / Dosagem:</strong> ${med.forma_farmaceutica \vert{}\vert{} 'N/D'} -${med.dosagem || 'N/D'}</p>
+                <hr>
+                <p><strong>Indicação Terapêutica:</strong> ${med.indicacao_terapeutica || 'N/D'}</p>
+                <p><strong>Posologia:</strong> ${med.posologia || 'N/D'}</p>
+                <p><strong>Contra-indicações:</strong> ${med.contra_indicacoes || 'N/D'}</p>
+                <p><strong>Advertências e Precauções:</strong> ${med.advertencias || 'N/D'}</p>
+                <p><strong>Interações Medicamentosas:</strong> ${med.interacoes || 'N/D'}</p>
+                <p><strong>Gravidez e Aleitamento:</strong> ${med.gravidez_aleitamento || 'N/D'}</p>
+                <p><strong>Efeitos na Condução:</strong> ${med.conducao_maquinas || 'N/D'}</p>
+                <p><strong>Efeitos Indesejáveis:</strong> ${med.efeitos_indesejaveis || 'N/D'}</p>
+                <p><strong>Sobredosagem:</strong> ${med.sobredosagem || 'N/D'}</p>
+                <p><strong>Grupo Farmacoterapêutico:</strong> ${med.grupo_farmacoterapeutico || 'N/D'}</p

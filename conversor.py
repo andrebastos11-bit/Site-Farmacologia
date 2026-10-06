@@ -2,19 +2,10 @@ import pandas as pd
 import json
 import os
 
-def converter_excel_para_json(excel_path='medicamentos.xlsx', json_path='medicamentos.json'):
-    if not os.path.exists(excel_path):
-        print(f"Erro: O ficheiro '{excel_path}' não foi encontrado na pasta.")
-        return
-
-    print("A ler o ficheiro Excel...")
-    # Ler o Excel usando a primeira linha como cabeçalho (header=0)
-    df = pd.read_excel(excel_path, header=0)
-
-    # Remover espaços em branco à volta dos nomes das colunas originais do Excel
+def converter():
+    df = pd.read_excel('medicamentos.xlsx', header=0)
     df.columns = [str(c).strip() for c in df.columns]
-
-    # Mapeamento estrito das 22 colunas do seu Excel para chaves limpas em minúsculas
+    
     mapeamento = {
         'Nome do medicamento': 'nome_medicamento',
         'Substância ativa': 'substancia_ativa',
@@ -39,21 +30,14 @@ def converter_excel_para_json(excel_path='medicamentos.xlsx', json_path='medicam
         'Precauções especiais de conservação': 'conservacao',
         'Instruções de utilização e manipulação': 'instrucoes_utilizacao'
     }
-
-    # Renomear as colunas
-    df = df.rename(columns=mapeamento)
     
-    # Substituir valores nulos/NaN por strings vazias
+    df = df.rename(columns=mapeamento)
     df = df.fillna("")
-
-    # Converter para dicionário de registos
     dados = df.to_dict(orient='records')
     
-    # Guardar no ficheiro JSON
-    with open(json_path, 'w', encoding='utf-8') as f:
+    with open('medicamentos.json', 'w', encoding='utf-8') as f:
         json.dump(dados, f, ensure_ascii=False, indent=4)
-        
-    print(f"Sucesso! {len(dados)} medicamentos convertidos e guardados em '{json_path}'.")
+    print(f"Convertidos {len(dados)} medicamentos com sucesso para 'medicamentos.json'!")
 
 if __name__ == '__main__':
-    converter_excel_para_json()
+    converter()
