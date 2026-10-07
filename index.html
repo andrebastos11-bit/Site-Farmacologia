@@ -929,7 +929,7 @@ header p {
 
 .clinical-icon {
 
-    height: 35px;
+    height: 42px;
 
     display: flex;
 
@@ -944,9 +944,9 @@ header p {
 
 .clinical-icon svg {
 
-    width: 31px;
+    width: 38px;
 
-    height: 31px;
+    height: 38px;
 
     fill: none;
 
@@ -1023,15 +1023,6 @@ header p {
 .clinical-info {
 
     color: #5e8ca7;
-
-}
-
-
-/* botão gravidez mais largo */
-
-.clinical-button.wide {
-
-    min-width: 145px;
 
 }
 
@@ -1158,6 +1149,34 @@ header p {
 
     padding-left: 12px;
 
+}
+
+
+/* =========================================================
+   SUBBLOCOS DO RCM
+========================================================= */
+
+.rcm-subbloco {
+    scroll-margin-top: 20px;
+    margin-top: 16px;
+}
+
+.rcm-subbloco:first-child {
+    margin-top: 4px;
+}
+
+.rcm-subtitulo {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--primary);
+    font-size: .88rem;
+}
+
+.rcm-subbloco.highlight {
+    background: #fff9dc;
+    box-shadow: inset 4px 0 0 #e4bd3d;
+    border-radius: 6px;
+    padding: 10px 12px;
 }
 
 
@@ -1429,112 +1448,53 @@ let ultimoCliqueFolha = null;
 
 const ICONES = {
 
-
     posologia: `
-
-        <svg viewBox="0 0 24 24">
-
-            <path
-                d="M8.5 4.5h7a4.5 4.5 0 0 1 0 9h-7a4.5 4.5 0 0 1 0-9Z"
-            />
-
-            <path
-                d="M12 4.5v9"
-            />
-
-            <path
-                d="M8.5 10.5h7"
-            />
-
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="8" y="14" width="20" height="26" rx="4"/>
+            <path d="M13 14V9h10v5"/>
+            <path d="M13 27h10"/>
+            <path d="M18 22v10"/>
+            <circle cx="34" cy="18" r="9"/>
+            <path d="M34 13v5l4 2"/>
         </svg>
-
     `,
-
 
     gravidez: `
-
-        <svg viewBox="0 0 24 24">
-
-            <circle
-                cx="9"
-                cy="5"
-                r="2"
-            />
-
-            <path
-                d="M9 7.5v5.5"
-            />
-
-            <path
-                d="M9 9c4 0 6 2.2 6 5.2"
-            />
-
-            <path
-                d="M9 13h6"
-            />
-
-            <path
-                d="M7.5 21 9 13l2 8"
-            />
-
-            <circle
-                cx="16.5"
-                cy="16.5"
-                r="2.5"
-            />
-
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="19" cy="9" r="4"/>
+            <path d="M18 14c-2 5-3 10-2 15 1 6 5 10 11 10"/>
+            <path d="M19 17c8 0 13 5 13 12 0 6-4 10-10 10"/>
+            <path d="M29 23c2-3 7-1 7 2 0 4-7 8-7 8s-7-4-7-8c0-3 5-5 7-2Z"/>
         </svg>
-
     `,
 
+    aleitamento: `
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="18" cy="10" r="4"/>
+            <circle cx="31" cy="25" r="5"/>
+            <path d="M14 16c-3 5-4 11-2 17 2 5 7 8 13 8"/>
+            <path d="M18 18c2 6 6 10 12 11"/>
+            <path d="M13 31c5 1 9 0 13-3"/>
+            <path d="M25 33c4 0 7-2 9-5"/>
+        </svg>
+    `,
 
     conducao: `
-
-        <svg viewBox="0 0 24 24">
-
-            <circle
-                cx="12"
-                cy="12"
-                r="8"
-            />
-
-            <circle
-                cx="12"
-                cy="12"
-                r="2"
-            />
-
-            <path
-                d="M4.5 10h15"
-            />
-
-            <path
-                d="M12 14v6"
-            />
-
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="18"/>
+            <circle cx="24" cy="24" r="4"/>
+            <path d="M7 21h34"/>
+            <path d="M21 27 14 39"/>
+            <path d="M27 27 34 39"/>
         </svg>
-
     `,
 
-
     precaucoes: `
-
-        <svg viewBox="0 0 24 24">
-
-            <path
-                d="M12 3 22 20H2L12 3Z"
-            />
-
-            <path
-                d="M12 9v5"
-            />
-
-            <path
-                d="M12 17h.01"
-            />
-
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 6 44 41H4L24 6Z"/>
+            <path d="M24 17v12"/>
+            <circle cx="24" cy="35" r="1.5" fill="currentColor" stroke="none"/>
         </svg>
-
     `
 
 };
@@ -2785,10 +2745,10 @@ function criarAtalhosClinicos(
 
 
         <button
-            class="clinical-button wide"
+            class="clinical-button"
             type="button"
-            onclick="irParaSecao('gravidez-aleitamento')"
-            title="Ir para Fertilidade, gravidez e aleitamento"
+            onclick="irParaSecao('gravidez-aleitamento', 'gravidez')"
+            title="Ir para informação sobre gravidez"
         >
 
             <span class="clinical-icon">
@@ -2798,7 +2758,30 @@ function criarAtalhosClinicos(
             </span>
 
             <span class="clinical-label">
-                Gravidez &amp;<br>
+                Gravidez
+            </span>
+
+            <span class="clinical-info">
+                + info
+            </span>
+
+        </button>
+
+
+        <button
+            class="clinical-button"
+            type="button"
+            onclick="irParaSecao('gravidez-aleitamento', 'aleitamento')"
+            title="Ir para informação sobre aleitamento"
+        >
+
+            <span class="clinical-icon">
+
+                ${ICONES.aleitamento}
+
+            </span>
+
+            <span class="clinical-label">
                 Aleitamento
             </span>
 
@@ -2934,6 +2917,94 @@ function criarListaExcipientes(
 
     `;
 
+}
+
+
+/* =========================================================
+   FERTILIDADE, GRAVIDEZ E ALEITAMENTO
+========================================================= */
+
+function formatarGravidezAleitamento(texto) {
+
+    if (!texto) {
+        return `<div class="campo-texto">N/D</div>`;
+    }
+
+    const original = String(texto).trim();
+
+    /*
+       O RCM chega muitas vezes como texto corrido:
+       "Gravidez ... Amamentação ..." ou "Gravidez ... Aleitamento ...".
+       Aqui apenas melhoramos a apresentação visual; o conteúdo permanece igual.
+    */
+    const marcadores = [
+        { regex: /\bFertilidade\b\s*:?\s*/gi, titulo: "Fertilidade", id: "fertilidade" },
+        { regex: /\bGravidez\b\s*:?\s*/gi, titulo: "Gravidez", id: "gravidez" },
+        { regex: /\b(?:Amamentação|Aleitamento)\b\s*:?\s*/gi, titulo: "Aleitamento", id: "aleitamento" }
+    ];
+
+    let ocorrencias = [];
+
+    marcadores.forEach(marcador => {
+        let match;
+        marcador.regex.lastIndex = 0;
+
+        while ((match = marcador.regex.exec(original)) !== null) {
+            ocorrencias.push({
+                index: match.index,
+                fim: match.index + match[0].length,
+                titulo: marcador.titulo,
+                id: marcador.id
+            });
+
+            if (match[0].length === 0) break;
+        }
+    });
+
+    ocorrencias.sort((a, b) => a.index - b.index);
+
+    // Evita falsos positivos repetidos dentro do corpo do texto.
+    const primeiras = [];
+    const idsVistos = new Set();
+
+    ocorrencias.forEach(item => {
+        if (!idsVistos.has(item.id)) {
+            idsVistos.add(item.id);
+            primeiras.push(item);
+        }
+    });
+
+    primeiras.sort((a, b) => a.index - b.index);
+
+    if (!primeiras.length) {
+        return `<div class="campo-texto">${esc(original)}</div>`;
+    }
+
+    let html = "";
+
+    // Preserva eventual texto introdutório antes do primeiro subtítulo.
+    if (primeiras[0].index > 0) {
+        const intro = original.slice(0, primeiras[0].index).trim();
+        if (intro) {
+            html += `<div class="campo-texto">${esc(intro)}</div>`;
+        }
+    }
+
+    primeiras.forEach((item, indice) => {
+        const proximo = primeiras[indice + 1];
+        const conteudo = original
+            .slice(item.fim, proximo ? proximo.index : original.length)
+            .trim();
+
+        html += `
+            <div class="rcm-subbloco" id="${item.id}">
+                <strong class="rcm-subtitulo">${esc(item.titulo)}</strong>
+                <div class="campo-texto">${esc(conteudo || "N/D")}</div>
+            </div>
+        `;
+    });
+
+    return html;
 }
 
 
@@ -3369,14 +3440,9 @@ function mostrarDetalhes(
                             Fertilidade, gravidez e aleitamento
                         </strong>
 
-                        <div class="campo-texto">
-
-                            ${esc(
-                                med.gravidez_aleitamento ||
-                                "N/D"
-                            )}
-
-                        </div>
+                        ${formatarGravidezAleitamento(
+                            med.gravidez_aleitamento
+                        )}
 
                     </section>
 
@@ -3695,7 +3761,8 @@ function mostrarDetalhes(
 ========================================================= */
 
 function irParaSecao(
-    id
+    id,
+    subId = null
 ) {
 
     const elemento =
@@ -3724,7 +3791,16 @@ function irParaSecao(
     setTimeout(
         () => {
 
-            elemento.scrollIntoView({
+            const alvo =
+                subId
+                    ? document.getElementById(subId)
+                    : elemento;
+
+            const destino =
+                alvo || elemento;
+
+
+            destino.scrollIntoView({
 
                 behavior:
                     "smooth",
@@ -3735,7 +3811,7 @@ function irParaSecao(
             });
 
 
-            elemento
+            destino
                 .classList
                 .add(
                     "highlight"
@@ -3745,7 +3821,7 @@ function irParaSecao(
             setTimeout(
                 () => {
 
-                    elemento
+                    destino
                         .classList
                         .remove(
                             "highlight"
