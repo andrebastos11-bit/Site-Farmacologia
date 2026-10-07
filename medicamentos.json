@@ -19517,8 +19517,14 @@
         "codigo": "A15",
         "nome": "ESTIMULANTES DO APETITE"
       },
-      null,
-      null,
+      {
+        "codigo": "A15",
+        "nome": "ESTIMULANTES DO APETITE"
+      },
+      {
+        "codigo": "A15",
+        "nome": "ESTIMULANTES DO APETITE"
+      },
       null
     ]
   },
@@ -19554,8 +19560,14 @@
         "codigo": "A15",
         "nome": "ESTIMULANTES DO APETITE"
       },
-      null,
-      null,
+      {
+        "codigo": "A15",
+        "nome": "ESTIMULANTES DO APETITE"
+      },
+      {
+        "codigo": "A15",
+        "nome": "ESTIMULANTES DO APETITE"
+      },
       null
     ]
   },
@@ -19591,8 +19603,14 @@
         "codigo": "A15",
         "nome": "ESTIMULANTES DO APETITE"
       },
-      null,
-      null,
+      {
+        "codigo": "A15",
+        "nome": "ESTIMULANTES DO APETITE"
+      },
+      {
+        "codigo": "A15",
+        "nome": "ESTIMULANTES DO APETITE"
+      },
       null
     ]
   },
