@@ -30,6 +30,9 @@ MAPEAMENTO = {
     'Incompatibilidades': 'incompatibilidades',
     'Precauções especiais de conservação': 'conservacao',
     'Instruções de utilização e manipulação': 'instrucoes_utilizacao',
+    # --- NOVAS COLUNAS ADICIONADAS ---
+    'Imagens': 'foto',
+    'Nº registo': 'numero_registo',
 }
 
 COLUNAS_NIVEIS = ['1º Nível', '2º Nível', '3º Nível', '4º Nível', '5º Nível']

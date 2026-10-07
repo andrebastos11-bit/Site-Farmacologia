@@ -52,17 +52,25 @@
 
   /* --- Trading Card + Acordeões --- */
   #detalhe-medicamento { background: var(--card-bg); padding: 24px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,.08); }
-  .trading-card-header { display: flex; gap: 20px; align-items: flex-start; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px; flex-wrap: wrap; }
-  .produto-foto { width: 120px; height: 140px; background: #f1f5f9; border: 2px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.75rem; color: #64748b; flex-shrink: 0; overflow: hidden; position: relative; }
+  .trading-card-header { display: flex; gap: 20px; align-items: flex-start; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px; flex-wrap: wrap; position: relative; }
+  
+  .coluna-foto-registo { display: flex; flex-direction: column; align-items: center; gap: 8px; flex-shrink: 0; }
+  .produto-foto { width: 120px; height: 140px; background: #f1f5f9; border: 2px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.75rem; color: #64748b; overflow: hidden; position: relative; }
   .produto-foto img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
-  .produto-info-principal { flex: 1; min-width: 220px; }
+  .registo-abaixo { font-size: 0.75rem; color: #475569; text-align: center; max-width: 130px; word-break: break-word; }
+
+  .produto-info-principal { flex: 1; min-width: 220px; padding-right: 180px; } /* espaço para os badges em absoluto no topo direito */
   .produto-info-principal h2 { margin: 0 0 8px; color: var(--primary-color); font-size: 1.5rem; }
-  .badges-seguranca { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
-  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; background: #e2e8f0; color: #334155; }
+  .produto-info-principal p { margin: 4px 0; font-size: 0.92rem; }
+
+  /* Badges maiores no canto superior direito */
+  .badges-seguranca { position: absolute; top: 0; right: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 20px; font-size: 0.88rem; font-weight: 600; background: #e2e8f0; color: #334155; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
   .badge.seguro { background: #dcfce7; color: #166534; }
   .badge.alerta { background: #fef3c7; color: #92400e; }
   
-  .caminho { font-size: .85rem; color: #475569; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 16px; line-height: 1.7; }
+  /* Caminho ATC mais compacto e discreto */
+  .caminho { font-size: .78rem; color: #64748b; background: #f8fafc; border: 1px solid #e2e8f0; padding: 6px 10px; border-radius: 6px; margin-bottom: 16px; line-height: 1.5; }
   .caminho span + span::before { content: ' › '; color: #94a3b8; }
 
   .nivel-secao { margin-bottom: 12px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; background: #fff; }
@@ -79,6 +87,8 @@
   @media (max-width: 900px) {
     .container { flex-direction: column; }
     aside { position: static; width: 100%; max-height: 40vh; }
+    .badges-seguranca { position: static; flex-direction: row; margin-top: 12px; }
+    .produto-info-principal { padding-right: 0; }
   }
 </style>
 </head>
@@ -240,16 +250,17 @@ function exibirMedicamentos(dados) {
 
 function mostrarDetalhes(med) {
   medSelecionado = med;
+  // Ordem pedida: Forma farmacêutica & Dosagem
   const formaDose = [med.forma_farmaceutica, med.dosagem].filter(Boolean).join(' – ');
   const caminho = (med.atc_niveis || []).filter(Boolean)
     .map(n => `<span><b>${esc(n.codigo)}</b> ${esc(n.nome)}</span>`).join('');
   
-  // Formatar imagem (se existir na propriedade 'foto')
+  // Foto
   const htmlFoto = med.foto 
     ? `<img src="${esc(med.foto)}" alt="${esc(med.nome_medicamento)}">`
     : `<span>Sem imagem<br><small>disponível</small></span>`;
 
-  // Tratar múltiplos números de registo separados por vírgula
+  // Múltiplos números de registo
   const registosFormatados = med.numero_registo 
     ? String(med.numero_registo).split(',').map(r => r.trim()).join(', ') 
     : 'A adicionar';
@@ -260,14 +271,19 @@ function mostrarDetalhes(med) {
   document.getElementById('detalhe-medicamento').innerHTML = `
     <!-- Trading Card -->
     <div class="trading-card-header">
-      <div class="produto-foto">
-        ${htmlFoto}
+      <div class="coluna-foto-registo">
+        <div class="produto-foto">
+          ${htmlFoto}
+        </div>
+        <div class="registo-abaixo">
+          <strong>N.º Registo:</strong><br>${esc(registosFormatados)}
+        </div>
       </div>
+
       <div class="produto-info-principal">
         <h2>${esc(med.nome_medicamento || 'Sem nome')}</h2>
         <p><strong>Substância ativa:</strong> ${esc(med.substancia_ativa || 'N/D')}</p>
-        <p><strong>Dosagem & Forma:</strong> ${esc(formaDose || 'N/D')}</p>
-        <p><strong>N.º(s) de Registo:</strong> <span style="color:#334155; font-weight:600;">${esc(registosFormatados)}</span></p>
+        <p><strong>Forma farmacêutica & Dosagem:</strong> ${esc(formaDose || 'N/D')}</p>
         
         <div class="badges-seguranca">
           <span class="badge ${temGravidezCuidados ? 'alerta' : 'seguro'}">
@@ -280,7 +296,7 @@ function mostrarDetalhes(med) {
       </div>
     </div>
 
-    ${caminho ? `<div class="caminho">${caminho}</div>` : ''}
+    ${caminho ? `<div class="caminho"><b>Classificação ATC:</b> ${caminho}</div>` : ''}
 
     <!-- NÍVEL 1: Informações Clínicas -->
     <details class="nivel-secao">
