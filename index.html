@@ -779,11 +779,25 @@ header p {
 
 .produto-info-principal h1 {
 
-    margin: 3px 0 10px;
+    margin: 3px 0 12px;
 
     color: var(--primary);
 
-    font-size: 1.65rem;
+    font-size: 1.82rem;
+
+    letter-spacing: -.02em;
+
+}
+
+.marca-registada {
+
+    font-size: .52em;
+
+    vertical-align: super;
+
+    margin-left: 2px;
+
+    font-weight: 700;
 
 }
 
@@ -795,6 +809,28 @@ header p {
     font-size: .92rem;
 
     line-height: 1.5;
+
+}
+
+
+.med-substancia {
+
+    color: #3d5c78;
+
+    font-size: 1rem !important;
+
+    margin-bottom: 2px !important;
+
+}
+
+
+.med-forma-dose {
+
+    color: #526d86;
+
+    font-size: .95rem !important;
+
+    margin-top: 2px !important;
 
 }
 
@@ -874,20 +910,19 @@ header p {
 
 .clinical-button {
 
-    min-width: 105px;
+    min-width: 112px;
 
-    min-height: 100px;
+    min-height: 116px;
 
-    border:
-        1px solid #d5e0e8;
+    border: 1px solid #d8e3ec;
 
-    background: #fbfcfd;
+    background: #f8fbfd;
 
-    color: #425b70;
+    color: #294b68;
 
-    border-radius: 14px;
+    border-radius: 16px;
 
-    padding: 11px 12px 9px;
+    padding: 14px 13px 11px;
 
     cursor: pointer;
 
@@ -895,32 +930,97 @@ header p {
 
     text-align: center;
 
+    box-shadow: 0 2px 7px rgba(35, 60, 80, .035);
+
     transition:
         transform .15s,
         box-shadow .15s,
-        background .15s,
         border-color .15s,
-        color .15s;
+        filter .15s;
 
 }
 
 
 .clinical-button:hover {
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 
-    background:
-        var(--accent-soft);
+    border-color: #b7cbdc;
 
-    border-color:
-        #a9d4ea;
+    box-shadow: 0 7px 18px rgba(35, 60, 80, .09);
 
-    color:
-        #1677ac;
+    filter: saturate(1.04);
 
-    box-shadow:
-        0 5px 13px rgba(40, 60, 80, .08);
+}
+
+
+/*
+   As cores abaixo identificam categorias visuais.
+   NÃO representam segurança, risco ou recomendação clínica.
+*/
+
+.shortcut-age {
+
+    background: #eef7fd;
+
+    color: #245a7d;
+
+    border-color: #cfe4f2;
+
+}
+
+
+.shortcut-posologia {
+
+    background: #eef9f5;
+
+    color: #256553;
+
+    border-color: #cee9df;
+
+}
+
+
+.shortcut-gravidez {
+
+    background: #f4f2fb;
+
+    color: #514b79;
+
+    border-color: #ded9ef;
+
+}
+
+
+.shortcut-aleitamento {
+
+    background: #f1f5fb;
+
+    color: #405b7b;
+
+    border-color: #d7e0ed;
+
+}
+
+
+.shortcut-conducao {
+
+    background: #f4f7f9;
+
+    color: #405a6d;
+
+    border-color: #dbe3e8;
+
+}
+
+
+.shortcut-precaucoes {
+
+    background: #f8f5f1;
+
+    color: #665849;
+
+    border-color: #e8ded3;
 
 }
 
@@ -929,7 +1029,7 @@ header p {
 
 .clinical-icon {
 
-    height: 42px;
+    height: 44px;
 
     display: flex;
 
@@ -937,16 +1037,16 @@ header p {
 
     justify-content: center;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 
 }
 
 
 .clinical-icon svg {
 
-    width: 38px;
+    width: 40px;
 
-    height: 38px;
+    height: 40px;
 
     fill: none;
 
@@ -965,14 +1065,13 @@ header p {
 
 .age-icon {
 
-    width: 39px;
+    width: 43px;
 
-    height: 39px;
+    height: 43px;
 
-    margin: -2px auto 5px;
+    margin: 0 auto 9px;
 
-    border:
-        2px solid currentColor;
+    border: 2px solid currentColor;
 
     border-radius: 50%;
 
@@ -982,7 +1081,7 @@ header p {
 
     justify-content: center;
 
-    font-size: .91rem;
+    font-size: .94rem;
 
     font-weight: 800;
 
@@ -995,11 +1094,11 @@ header p {
 
     display: block;
 
-    font-size: .75rem;
+    font-size: .78rem;
 
     line-height: 1.15;
 
-    font-weight: 700;
+    font-weight: 750;
 
 }
 
@@ -1008,21 +1107,24 @@ header p {
 
     display: block;
 
-    margin-top: 5px;
+    margin-top: 7px;
 
-    font-size: .61rem;
+    font-size: .64rem;
 
-    color: #8b99a5;
+    color: currentColor;
+
+    opacity: .66;
 
     letter-spacing: .02em;
 
 }
 
 
-.clinical-button:hover
-.clinical-info {
+.clinical-info::after {
 
-    color: #5e8ca7;
+    content: "  →";
+
+    font-size: .78rem;
 
 }
 
@@ -1056,11 +1158,9 @@ header p {
 
 .nivel-secao > summary {
 
-    padding: 15px 18px;
+    padding: 14px 18px;
 
     cursor: pointer;
-
-    font-weight: 700;
 
     color: var(--primary);
 
@@ -1068,12 +1168,126 @@ header p {
 
     user-select: none;
 
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: 44px minmax(0, 1fr) 32px;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.nivel-secao > summary::-webkit-details-marker {
+
+    display: none;
+
 }
 
 
 .nivel-secao > summary:hover {
 
     background: #f2f7fa;
+
+}
+
+
+.section-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.15rem;
+
+    background: #edf6fc;
+
+}
+
+
+.section-title {
+
+    display: block;
+
+    font-weight: 750;
+
+    font-size: .98rem;
+
+    line-height: 1.25;
+
+}
+
+
+.section-subtitle {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: #718399;
+
+    font-size: .75rem;
+
+    font-weight: 400;
+
+    line-height: 1.35;
+
+}
+
+
+.section-chevron {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #edf3f8;
+
+    color: #35546d;
+
+    font-size: 1rem;
+
+    transition: transform .18s ease;
+
+}
+
+
+.nivel-secao[open] > summary .section-chevron {
+
+    transform: rotate(180deg);
+
+}
+
+
+#grupo-propriedades .section-icon {
+
+    background: #f2effc;
+
+}
+
+
+#grupo-farmaceuticas .section-icon {
+
+    background: #fceff4;
 
 }
 
@@ -2687,7 +2901,7 @@ function criarAtalhosClinicos(
         html += `
 
             <button
-                class="clinical-button"
+                class="clinical-button shortcut-age"
                 type="button"
                 onclick="irParaSecao('posologia')"
                 title="Ir para Posologia e modo de administração"
@@ -2721,7 +2935,7 @@ function criarAtalhosClinicos(
     html += `
 
         <button
-            class="clinical-button"
+            class="clinical-button shortcut-posologia"
             type="button"
             onclick="irParaSecao('posologia')"
             title="Ir para Posologia e modo de administração"
@@ -2745,7 +2959,7 @@ function criarAtalhosClinicos(
 
 
         <button
-            class="clinical-button"
+            class="clinical-button shortcut-gravidez"
             type="button"
             onclick="irParaSecao('gravidez-aleitamento', 'gravidez')"
             title="Ir para informação sobre gravidez"
@@ -2769,7 +2983,7 @@ function criarAtalhosClinicos(
 
 
         <button
-            class="clinical-button"
+            class="clinical-button shortcut-aleitamento"
             type="button"
             onclick="irParaSecao('gravidez-aleitamento', 'aleitamento')"
             title="Ir para informação sobre aleitamento"
@@ -2793,7 +3007,7 @@ function criarAtalhosClinicos(
 
 
         <button
-            class="clinical-button"
+            class="clinical-button shortcut-conducao"
             type="button"
             onclick="irParaSecao('conducao-maquinas')"
             title="Ir para condução e utilização de máquinas"
@@ -2817,7 +3031,7 @@ function criarAtalhosClinicos(
 
 
         <button
-            class="clinical-button"
+            class="clinical-button shortcut-precaucoes"
             type="button"
             onclick="irParaSecao('advertencias')"
             title="Ir para Advertências e precauções"
@@ -3253,16 +3467,12 @@ function mostrarDetalhes(
                     ${esc(
                         med.nome_medicamento ||
                         "Sem nome"
-                    )}
+                    )}<span class="marca-registada">®</span>
 
                 </h1>
 
 
-                <p>
-
-                    <strong>
-                        Substância ativa:
-                    </strong>
+                <p class="med-substancia">
 
                     ${esc(
                         med.substancia_ativa ||
@@ -3272,11 +3482,7 @@ function mostrarDetalhes(
                 </p>
 
 
-                <p>
-
-                    <strong>
-                        Forma farmacêutica & Dosagem:
-                    </strong>
+                <p class="med-forma-dose">
 
                     ${esc(
                         formaDose ||
@@ -3314,7 +3520,12 @@ function mostrarDetalhes(
             >
 
                 <summary>
-                    📋 Informações Clínicas
+                    <span class="section-icon">▣</span>
+                    <span>
+                        <span class="section-title">Informações Clínicas</span>
+                        <span class="section-subtitle">Indicações, posologia, contraindicações, advertências, interações, gravidez, aleitamento, condução, efeitos indesejáveis e sobredosagem</span>
+                    </span>
+                    <span class="section-chevron">⌄</span>
                 </summary>
 
 
@@ -3529,7 +3740,12 @@ function mostrarDetalhes(
             >
 
                 <summary>
-                    🔬 Propriedades Farmacológicas
+                    <span class="section-icon">⌬</span>
+                    <span>
+                        <span class="section-title">Propriedades Farmacológicas</span>
+                        <span class="section-subtitle">Farmacodinâmica, farmacocinética, alvo terapêutico e grupo farmacoterapêutico</span>
+                    </span>
+                    <span class="section-chevron">⌄</span>
                 </summary>
 
 
@@ -3653,7 +3869,12 @@ function mostrarDetalhes(
             >
 
                 <summary>
-                    💊 Informações Farmacêuticas
+                    <span class="section-icon">◇</span>
+                    <span>
+                        <span class="section-title">Informações Farmacêuticas</span>
+                        <span class="section-subtitle">Excipientes, incompatibilidades, conservação, eliminação e manuseamento</span>
+                    </span>
+                    <span class="section-chevron">⌄</span>
                 </summary>
 
 
