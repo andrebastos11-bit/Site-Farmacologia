@@ -43,6 +43,10 @@ MAPEAMENTO = {
     # Vídeos
     "video_farmacodinamica": "video_farmacodinamica",
     "video_farmacocinetica": "video_farmacocinetica",
+
+    # Resumo do Trading Card
+    "indicacao_resumida": "indicacao_resumida",
+    "idade_minima": "idade_minima",
 }
 
 
@@ -59,27 +63,16 @@ COLUNAS_NIVEIS = [
 ]
 
 
-# =========================================================
-# PADRÃO DOS NÍVEIS ATC
-# =========================================================
-
 PADRAO_NIVEL = re.compile(
     r"^([A-Z][0-9A-Z]*)\s*[-–:]\s*(.+)$"
 )
 
 
 # =========================================================
-# LIMPEZA DE VALORES
+# LIMPEZA
 # =========================================================
 
 def limpar(valor):
-    """
-    Limpa valores importados do Excel.
-
-    - Converte células vazias em ""
-    - Remove espaços desnecessários
-    - Impede que números inteiros apareçam como 123456.0
-    """
 
     if valor is None:
         return ""
@@ -103,18 +96,6 @@ def limpar(valor):
 # =========================================================
 
 def analisar_nivel(texto):
-    """
-    Exemplo:
-
-    A01 - PREPARAÇÕES PARA USO ESTOMATOLÓGICO
-
-    passa para:
-
-    {
-        "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
-    }
-    """
 
     texto = limpar(texto)
 
@@ -136,7 +117,7 @@ def analisar_nivel(texto):
 
 
 # =========================================================
-# CONVERSÃO
+# CONVERTER
 # =========================================================
 
 def converter():
@@ -158,10 +139,7 @@ def converter():
         )
 
 
-    # =====================================================
-    # LIMPAR NOMES DAS COLUNAS
-    # =====================================================
-
+    # Limpar nomes das colunas
     df.columns = [
         str(coluna).strip()
         for coluna in df.columns
@@ -199,27 +177,29 @@ def converter():
 
 
     # =====================================================
-    # VERIFICAR COLUNAS DE VÍDEO
+    # COLUNAS OPCIONAIS
     # =====================================================
 
-    colunas_video = [
+    colunas_opcionais = [
         "video_farmacodinamica",
-        "video_farmacocinetica"
+        "video_farmacocinetica",
+        "indicacao_resumida",
+        "idade_minima"
     ]
 
 
-    for coluna in colunas_video:
+    for coluna in colunas_opcionais:
 
         if coluna not in df.columns:
 
             print(
-                f"AVISO: A coluna '{coluna}' "
-                f"não existe no Excel."
+                f"AVISO: A coluna opcional "
+                f"'{coluna}' não existe no Excel."
             )
 
 
     # =====================================================
-    # CRIAR REGISTOS
+    # REGISTOS
     # =====================================================
 
     registos = []
@@ -231,10 +211,7 @@ def converter():
         registo = {}
 
 
-        # =================================================
-        # DADOS PRINCIPAIS
-        # =================================================
-
+        # Dados principais
         for coluna_excel, campo_json in MAPEAMENTO.items():
 
             registo[campo_json] = limpar(
@@ -254,9 +231,6 @@ def converter():
         ]
 
 
-        # Um nível só pode existir
-        # se o nível anterior existir
-
         for k in range(1, 5):
 
             if niveis[k - 1] is None:
@@ -267,13 +241,10 @@ def converter():
 
 
         # =================================================
-        # VERIFICAÇÃO DO ATC
+        # VERIFICAÇÃO ATC
         # =================================================
 
-        atc = registo.get(
-            "atc",
-            ""
-        )
+        atc = registo.get("atc", "")
 
 
         for k, nivel in enumerate(niveis):
@@ -295,60 +266,61 @@ def converter():
 
 
         # =================================================
-        # VERIFICAÇÃO DO NOME
+        # VERIFICAÇÕES
         # =================================================
 
-        if not registo.get(
-            "nome_medicamento"
-        ):
+        if not registo.get("nome_medicamento"):
 
             avisos.append(
                 f"Linha {indice + 2}: "
-                f"sem nome de medicamento"
+                "sem nome de medicamento"
             )
 
 
-        # =================================================
-        # VERIFICAÇÃO DO NÚMERO DE REGISTO
-        # =================================================
-
-        if not registo.get(
-            "numero_registo"
-        ):
+        if not registo.get("numero_registo"):
 
             avisos.append(
                 f"Linha {indice + 2} "
                 f"({registo.get('nome_medicamento', '')}): "
-                f"sem número de registo"
+                "sem número de registo"
             )
 
 
-        # =================================================
-        # VERIFICAÇÃO DA IMAGEM
-        # =================================================
-
-        if not registo.get(
-            "foto"
-        ):
+        if not registo.get("foto"):
 
             avisos.append(
                 f"Linha {indice + 2} "
                 f"({registo.get('nome_medicamento', '')}): "
-                f"sem imagem"
+                "sem imagem"
             )
 
 
         # =================================================
-        # ADICIONAR REGISTO
+        # VALIDAÇÃO DA IDADE MÍNIMA
         # =================================================
 
-        registos.append(
-            registo
+        idade = registo.get(
+            "idade_minima",
+            ""
         )
 
 
+        if idade:
+
+            if not idade.isdigit():
+
+                avisos.append(
+                    f"Linha {indice + 2} "
+                    f"({registo.get('nome_medicamento', '')}): "
+                    f"idade_minima '{idade}' não é um número inteiro."
+                )
+
+
+        registos.append(registo)
+
+
     # =====================================================
-    # CRIAR medicamentos.json
+    # CRIAR JSON
     # =====================================================
 
     with open(
@@ -366,8 +338,36 @@ def converter():
 
 
     # =====================================================
-    # RESULTADO
+    # ESTATÍSTICAS
     # =====================================================
+
+    total_farmacodinamica = sum(
+        1
+        for registo in registos
+        if registo.get("video_farmacodinamica")
+    )
+
+
+    total_farmacocinetica = sum(
+        1
+        for registo in registos
+        if registo.get("video_farmacocinetica")
+    )
+
+
+    total_indicacoes_resumidas = sum(
+        1
+        for registo in registos
+        if registo.get("indicacao_resumida")
+    )
+
+
+    total_idades = sum(
+        1
+        for registo in registos
+        if registo.get("idade_minima")
+    )
+
 
     print()
 
@@ -376,53 +376,33 @@ def converter():
         f"convertidos para '{SAIDA}'."
     )
 
-
-    # =====================================================
-    # ESTATÍSTICAS DOS VÍDEOS
-    # =====================================================
-
-    total_farmacodinamica = sum(
-        1
-        for registo in registos
-        if registo.get(
-            "video_farmacodinamica"
-        )
-    )
-
-
-    total_farmacocinetica = sum(
-        1
-        for registo in registos
-        if registo.get(
-            "video_farmacocinetica"
-        )
-    )
-
-
     print()
 
     print(
-        "Vídeos de farmacodinâmica: "
+        f"Vídeos de farmacodinâmica: "
         f"{total_farmacodinamica}"
     )
 
     print(
-        "Vídeos de farmacocinética: "
+        f"Vídeos de farmacocinética: "
         f"{total_farmacocinetica}"
     )
 
+    print(
+        f"Indicações resumidas: "
+        f"{total_indicacoes_resumidas}"
+    )
 
-    # =====================================================
-    # AVISOS
-    # =====================================================
+    print(
+        f"Medicamentos com idade mínima: "
+        f"{total_idades}"
+    )
+
 
     if avisos:
 
         print()
-
-        print(
-            f"{len(avisos)} aviso(s):"
-        )
+        print(f"{len(avisos)} aviso(s):")
 
         for aviso in avisos:
             print(" -", aviso)
@@ -430,16 +410,10 @@ def converter():
     else:
 
         print()
-
         print(
-            "Todos os medicamentos têm "
-            "número de registo e imagem definidos."
+            "Conversão concluída sem avisos."
         )
 
-
-# =========================================================
-# EXECUTAR
-# =========================================================
 
 if __name__ == "__main__":
     converter()
