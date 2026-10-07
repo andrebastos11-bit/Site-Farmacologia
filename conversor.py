@@ -103,3 +103,11 @@ def converter():
 
 if __name__ == '__main__':
     converter()
+def limpar(valor):
+    if valor is None or (isinstance(valor, float) and pd.isna(valor)):
+        return ''
+    val_str = str(valor).replace('\xa0', ' ').strip()
+    # Remove o .0 se for um número inteiro vindo do Excel
+    if val_str.endswith('.0') and val_str[:-2].isdigit():
+        val_str = val_str[:-2]
+    return val_str

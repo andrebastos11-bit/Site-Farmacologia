@@ -23,7 +23,7 @@
     "conservacao": "Não conservar acima de 25ºC.",
     "instrucoes_utilizacao": "Não existem requisitos especiais.",
     "foto": "",
-    "numero_registo": "4781688.0",
+    "numero_registo": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -71,7 +71,7 @@
     "conservacao": "Conservar a temperatura inferior a 25ºC. Manter o frasco bem fechado e ao abrigo da luz.",
     "instrucoes_utilizacao": "Fechar bem o frasco após a utilização",
     "foto": "",
-    "numero_registo": "8993709.0",
+    "numero_registo": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -119,7 +119,7 @@
     "conservacao": "Conservar a temperatura inferior a 30°C. Proteger da luz.",
     "instrucoes_utilizacao": "Qualquer medicamento não utilizado ou resíduos devem ser eliminados de acordo com as exigências locais.",
     "foto": "",
-    "numero_registo": "9084210.0",
+    "numero_registo": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2561,7 +2561,7 @@
     "conservacao": "O medicamento não necessita de quaisquer precauções especiais de conservação.",
     "instrucoes_utilizacao": "Qualquer medicamento não utilizado ou resíduos devem ser eliminados de acordo com as exigências locais.",
     "foto": "",
-    "numero_registo": "9563254.0",
+    "numero_registo": "",
     "atc_niveis": [
       {
         "codigo": "A",
