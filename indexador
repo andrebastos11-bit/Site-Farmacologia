@@ -1,26 +1,48 @@
 import json
-from collections import defaultdict
+
 
 def gerar_arvore_atc(json_path='medicamentos.json', output_path='arvore_atc.json'):
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
             medicamentos = json.load(f)
     except FileNotFoundError:
-        print("Ficheiro JSON não encontrado. Execute o conversor primeiro.")
+        print('Ficheiro JSON não encontrado. Execute primeiro o conversor.py.')
         return
 
-    arvore = defaultdict(list)
+    raiz = {}  # código -> nó
 
-    for med in medicamentos:
-        atc = med.get('grupo_atc', 'Outros').strip()
-        if not atc:
-            atc = 'Não classificado'
-        arvore[atc].append(med)
+    def novo_no(codigo, nome, nivel):
+        return {'codigo': codigo, 'nome': nome, 'nivel': nivel, 'total': 0, 'medicamentos': [], 'filhos': {}}
 
+    for idx, med in enumerate(medicamentos):
+        nivel_atual = raiz
+        for k, n in enumerate(med.get('atc_niveis') or []):
+            if not n:
+                break
+            no = nivel_atual.setdefault(n['codigo'], novo_no(n['codigo'], n['nome'], k + 1))
+            no['total'] += 1
+            ultimo = no
+            nivel_atual = no['filhos']
+        else:
+            ultimo = no
+        # o medicamento fica registado no nível mais profundo que tem
+        if med.get('atc_niveis') and med['atc_niveis'][0]:
+            ultimo['medicamentos'].append(idx)
+
+    def finalizar(nos):
+        lista = []
+        for codigo in sorted(nos):
+            no = nos[codigo]
+            no['filhos'] = finalizar(no['filhos'])
+            lista.append(no)
+        return lista
+
+    arvore = finalizar(raiz)
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(arvore, f, ensure_ascii=False, indent=4)
+        json.dump(arvore, f, ensure_ascii=False, indent=2)
 
-    print(f"Árvore ATC gerada com sucesso em '{output_path}' com {len(arvore)} grupos principais.")
+    print(f"Árvore ATC gerada em '{output_path}' com {len(arvore)} grupo(s) de 1.º nível.")
+
 
 if __name__ == '__main__':
     gerar_arvore_atc()
