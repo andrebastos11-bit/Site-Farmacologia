@@ -11,6 +11,7 @@
     --bg-color: #f8f9fa;
     --card-bg: #ffffff;
     --text-color: #333;
+    --border-color: #e2e8f0;
   }
   * { box-sizing: border-box; }
   body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg-color); color: var(--text-color); }
@@ -49,14 +50,33 @@
   .med-card h4 { margin: 0 0 6px; color: var(--primary-color); }
   .med-card p { margin: 3px 0; font-size: .85rem; color: #64748b; }
 
-  #detalhe-medicamento { background: var(--card-bg); padding: 20px 24px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,.05); }
-  #detalhe-medicamento h2 { margin-top: 0; color: var(--primary-color); }
-  .caminho { font-size: .85rem; color: #475569; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 12px; line-height: 1.7; }
+  /* --- Novo Design do Detalhe (Trading Card + Acordeões) --- */
+  #detalhe-medicamento { background: var(--card-bg); padding: 24px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,.08); }
+  .trading-card-header { display: flex; gap: 20px; align-items: flex-start; border-bottom: 2px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+  .produto-foto { width: 120px; height: 140px; background: #f1f5f9; border: 2px dashed #cbd5e1; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.75rem; color: #64748b; flex-shrink: 0; overflow: hidden; position: relative; }
+  .produto-foto img { width: 100%; height: 100%; object-fit: cover; }
+  .produto-info-principal { flex: 1; min-width: 220px; }
+  .produto-info-principal h2 { margin: 0 0 8px; color: var(--primary-color); font-size: 1.5rem; }
+  .badges-seguranca { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; background: #e2e8f0; color: #334155; }
+  .badge.seguro { background: #dcfce7; color: #166534; }
+  .badge.alerta { background: #fef3c7; color: #92400e; }
+  
+  .caminho { font-size: .85rem; color: #475569; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; margin-bottom: 16px; line-height: 1.7; }
   .caminho span + span::before { content: ' › '; color: #94a3b8; }
-  .campo { margin: 12px 0; }
-  .campo strong { display: block; color: var(--primary-color); margin-bottom: 2px; }
-  .campo div { white-space: pre-line; line-height: 1.5; }
-  .vazio { color: #888; text-align: center; }
+
+  /* Estilo dos Níveis / Acordeões */
+  .nivel-secao { margin-bottom: 12px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; background: #fff; }
+  .nivel-secao > summary { font-weight: 700; background: #f8fafc; color: var(--primary-color); padding: 14px 18px; cursor: pointer; font-size: 1rem; user-select: none; display: flex; align-items: center; justify-content: space-between; }
+  .nivel-secao > summary:hover { background: #f1f5f9; color: var(--accent-color); }
+  .sub-secoes-container { padding: 10px 18px 18px 18px; display: flex; flex-direction: column; gap: 14px; background: #fff; border-top: 1px solid var(--border-color); }
+  
+  .campo-sub { border-bottom: 1px solid #f1f5f9; padding-bottom: 10px; }
+  .campo-sub:last-child { border-bottom: none; padding-bottom: 0; }
+  .campo-sub strong { display: block; color: var(--primary-color); margin-bottom: 4px; font-size: 0.92rem; }
+  .campo-sub div { white-space: pre-line; line-height: 1.5; font-size: 0.9rem; color: #475569; }
+
+  .vazio { color: #888; text-align: center; padding: 40px; }
   @media (max-width: 900px) {
     .container { flex-direction: column; }
     aside { position: static; width: 100%; max-height: 40vh; }
@@ -91,29 +111,9 @@
 </div>
 
 <script>
-let medicamentos = [];       // dados completos
-let filtroNo = null;         // {nivel, codigo, nome}
+let medicamentos = [];
+let filtroNo = null;
 let medSelecionado = null;
-
-const CAMPOS_DETALHE = [
-  ['indicacao_terapeutica', 'Indicação terapêutica'],
-  ['posologia', 'Posologia e modo de administração'],
-  ['contra_indicacoes', 'Contra-indicações'],
-  ['advertencias', 'Advertências e precauções especiais'],
-  ['interacoes', 'Interações medicamentosas'],
-  ['gravidez_aleitamento', 'Gravidez e aleitamento'],
-  ['conducao_maquinas', 'Efeitos sobre a condução e utilização de máquinas'],
-  ['efeitos_indesejaveis', 'Efeitos indesejáveis'],
-  ['sobredosagem', 'Sobredosagem'],
-  ['grupo_farmacoterapeutico', 'Grupo farmacoterapêutico'],
-  ['propriedades_farmacodinamicas', 'Propriedades farmacodinâmicas'],
-  ['alvo_terapeutico', 'Alvo terapêutico'],
-  ['propriedades_farmacocineticas', 'Propriedades farmacocinéticas'],
-  ['excipientes', 'Lista dos excipientes'],
-  ['incompatibilidades', 'Incompatibilidades'],
-  ['conservacao', 'Precauções especiais de conservação'],
-  ['instrucoes_utilizacao', 'Instruções de utilização e manipulação']
-];
 
 function esc(t) {
   return String(t == null ? '' : t).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -136,7 +136,7 @@ async function carregarDados() {
   } catch (e) {
     console.error(e);
     document.getElementById('medicamentosList').innerHTML =
-      '<p style="color:red">Erro ao carregar medicamentos.json. Verifique se o ficheiro está na mesma pasta e se está a usar um servidor (não abra o ficheiro diretamente).</p>';
+      '<p style="color:red">Erro ao carregar medicamentos.json.</p>';
   }
 }
 
@@ -246,17 +246,84 @@ function mostrarDetalhes(med) {
   const formaDose = [med.forma_farmaceutica, med.dosagem].filter(Boolean).join(' – ');
   const caminho = (med.atc_niveis || []).filter(Boolean)
     .map(n => `<span><b>${esc(n.codigo)}</b> ${esc(n.nome)}</span>`).join('');
-  const campos = CAMPOS_DETALHE.map(([k, titulo]) =>
-    `<div class="campo"><strong>${esc(titulo)}</strong><div>${esc(med[k] || 'N/D')}</div></div>`).join('');
+  
+  // Detetar estado de gravidez/aleitamento para os ícones dinâmicos
+  const textoGravidez = (med.gravidez_aleitamento || '').toLowerCase();
+  const temGravidezCuidados = textoGravidez.includes('não') || textoEvitar(textoGravidez);
+  
   document.getElementById('detalhe-medicamento').innerHTML = `
-    <h2>${esc(med.nome_medicamento || 'Sem nome')}</h2>
+    <!-- FASE INICIAL: Trading Card (Resumo Simples) -->
+    <div class="trading-card-header">
+      <div class="produto-foto">
+        <!-- Espaço para foto do produto de venda livre -->
+        <span>Foto do Produto<br><small>(Venda Livre)</small></span>
+      </div>
+      <div class="produto-info-principal">
+        <h2>${esc(med.nome_medicamento || 'Sem nome')}</h2>
+        <p><strong>Substância ativa:</strong> ${esc(med.substancia_ativa || 'N/D')}</p>
+        <p><strong>Dosagem & Forma:</strong> ${esc(formaDose || 'N/D')}</p>
+        <p><strong>N.º de Registo:</strong> <span style="color:#94a3b8; font-style:italic;">A adicionar no Excel</span></p>
+        
+        <div class="badges-seguranca">
+          <span class="badge ${temGravidezCuidados ? 'alerta' : 'seguro'}">
+            👶 Gravidez: ${temGravidezCuidados ? 'Precaução / Consultar médico' : 'Verificar precaução'}
+          </span>
+          <span class="badge ${temGravidezCuidados ? 'alerta' : 'seguro'}">
+             breastfeeding Aleitamento: ${temGravidezCuidados ? 'Precaução / Consultar médico' : 'Verificar precaução'}
+          </span>
+        </div>
+      </div>
+    </div>
+
     ${caminho ? `<div class="caminho">${caminho}</div>` : ''}
-    <div class="campo"><strong>Substância ativa</strong><div>${esc(med.substancia_ativa || 'N/D')}</div></div>
-    <div class="campo"><strong>Forma farmacêutica / Dosagem</strong><div>${esc(formaDose || 'N/D')}</div></div>
-    <hr>${campos}`;
+
+    <!-- NÍVEL 1: Informações Clínicas -->
+    <details class="nivel-secao">
+      <summary>📋 Informações Clínicas <span>▼</span></summary>
+      <div class="sub-secoes-container">
+        <div class="campo-sub"><strong>Indicações terapêuticas</strong><div>${esc(med.indicacao_terapeutica || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Posologia e modo de administração</strong><div>${esc(med.posologia || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Contraindicações</strong><div>${esc(med.contra_indicacoes || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Advertências e precauções especiais de utilização</strong><div>${esc(med.advertencias || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Interações medicamentosas e outras formas de interação</strong><div>${esc(med.interacoes || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Fertilidade, gravidez e aleitamento</strong><div>${esc(med.gravidez_aleitamento || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Efeitos sobre a capacidade de conduzir e utilizar máquinas</strong><div>${esc(med.conducao_maquinas || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Efeitos indesejáveis</strong><div>${esc(med.efeitos_indesejaveis || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Sobredosagem</strong><div>${esc(med.sobredosagem || 'N/D')}</div></div>
+      </div>
+    </details>
+
+    <!-- NÍVEL 2: Propriedades Farmacológicas -->
+    <details class="nivel-secao">
+      <summary>🔬 Propriedades Farmacológicas <span>▼</span></summary>
+      <div class="sub-secoes-container">
+        <div class="campo-sub"><strong>Propriedades farmacodinâmicas</strong><div>${esc(med.propriedades_farmacodinamicas || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Propriedades farmacocinéticas</strong><div>${esc(med.propriedades_farmacocineticas || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Alvo terapêutico</strong><div>${esc(med.alvo_terapeutico || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Grupo farmacoterapêutico</strong><div>${esc(med.grupo_farmacoterapeutico || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Classificação ATC</strong><div>${esc(med.atc || 'N/D')}</div></div>
+      </div>
+    </details>
+
+    <!-- NÍVEL 3: Informações Farmacêuticas -->
+    <details class="nivel-secao">
+      <summary>💊 Informações Farmacêuticas <span>▼</span></summary>
+      <div class="sub-secoes-container">
+        <div class="campo-sub"><strong>Lista dos excipientes</strong><div>${esc(med.excipientes || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Incompatibilidades</strong><div>${esc(med.incompatibilidades || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Precauções especiais de conservação</strong><div>${esc(med.conservacao || 'N/D')}</div></div>
+        <div class="campo-sub"><strong>Precauções especiais de eliminação e manuseamento</strong><div>${esc(med.instrucoes_utilizacao || 'N/D')}</div></div>
+      </div>
+    </details>
+  `;
+
   document.querySelectorAll('.med-card.sel').forEach(e => e.classList.remove('sel'));
   document.getElementById('detalhe-medicamento').scrollIntoView({ behavior: 'smooth', block: 'start' });
   atualizarLista();
+}
+
+function textoEvitar(txt) {
+  return txt.includes('não') || txt.includes('evitar') || txt.includes('não deverá');
 }
 
 document.getElementById('searchBar').addEventListener('input', atualizarLista);
