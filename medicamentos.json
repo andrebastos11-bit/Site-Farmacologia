@@ -26,6 +26,8 @@
     "foto": "Imagens/4781688.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Prevenção da cárie dentária",
+    "idade_minima": "16",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -76,6 +78,8 @@
     "foto": "Imagens/8993709.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Inflamações e lesões da mucosa oral",
+    "idade_minima": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -119,13 +123,15 @@
     "propriedades_farmacodinamicas": "A hexetidina é uma substância ativa que apresenta um efeito rápido e prolongado e que pertence ao grupo dos antissépticos de ação local para utilização a nível dentário, das gengivas e da orofaringe. A hexetidina é um antimicrobiano e antifúngico de largo espectro apropriado contra os microrganismos patogénicos responsáveis por infeções orofaríngeas. Além disso, a hexetidina apresenta propriedades cicatrizantes, hemostáticas e anestésicas a nível oral e da faringe. Mecanismo de Ação A hexetidina possui ação antibacteriana por interferência nos processos metabólicos vitais que são necessários ao desenvolvimento de microrganismos patogénicos. Com efeito, a hexetidina apresenta analogia com a tiamina (presença de um núcleo pirimídico, mas sem dupla ligação). Demonstrou-se que um dos mecanismos que explicam a ação antibacteriana da hexetidina era essa analogia, ou seja, a hexetidina entra em competição com a tiamina, fator indispensável ao desenvolvimento de microrganismos.",
     "alvo_terapeutico": "Metabolismo da Tiamina (vitamina B1) dos microrganismos",
     "propriedades_farmacocineticas": "Não há dados clínicos disponíveis sobre a farmacocinética da hexetidina em seres humanos. Esta substância atua localmente na mucosa oral, sendo esperado que apenas pequenas quantidades sejam absorvidas. A elevada afinidade da hexetidina para proteínas e polímeros com locais eletronegativos explica a sua ligação às bactérias e contribui especificamente para a sua atividade, saturando determinados locais. Esta afinidade também explica a ligação à placa dentária e, consequentemente, o efeito anti-placa. Isto significa que o efeito antibacteriano pode ser detetado num período de 10 até 14\nhoras após a administração.",
-    "excipientes": "Polissorbato 80 Sacarina sódica (E954) Ácido cítrico mono-hidratado Azorrubina (E122) (contém sódio) Levomentol Óleo essencial de eucalipto Etanol 96% Edetato de cálcio e sódio Hidróxido de sódio (para ajuste do pH) Água purificada",
+    "excipientes": "Polissorbato 80, Sacarina sódica (E954), Ácido cítrico mono-hidratado, Azorrubina (E122) (contém sódio), Levomentol, Óleo essencial de eucalipto, Etanol 96%, Edetato de cálcio e sódio Hidróxido de sódio (para ajuste do pH) Água purificada",
     "incompatibilidades": "Não aplicável",
     "conservacao": "Conservar a temperatura inferior a 30°C. Proteger da luz.",
     "instrucoes_utilizacao": "Qualquer medicamento não utilizado ou resíduos devem ser eliminados de acordo com as exigências locais.",
     "foto": "Imagens/9084210.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Infeções e inflamações orais, halitose e higiene oral",
+    "idade_minima": "12",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -176,6 +182,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -226,6 +234,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -276,6 +286,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -326,6 +338,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -376,6 +390,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -426,6 +442,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -476,6 +494,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -526,6 +546,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -576,6 +598,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -626,6 +650,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -676,6 +702,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -726,6 +754,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -776,6 +806,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -826,6 +858,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -876,6 +910,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -923,6 +959,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -970,6 +1008,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1020,6 +1060,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1070,6 +1112,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1120,6 +1164,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1170,6 +1216,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1220,6 +1268,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1270,6 +1320,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1320,6 +1372,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1370,6 +1424,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1420,6 +1476,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1470,6 +1528,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1520,6 +1580,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1570,6 +1632,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1620,6 +1684,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1670,6 +1736,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1720,6 +1788,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1770,6 +1840,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1820,6 +1892,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1870,6 +1944,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1920,6 +1996,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1970,6 +2048,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2020,6 +2100,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2070,6 +2152,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2120,6 +2204,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2170,6 +2256,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2220,6 +2308,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2270,6 +2360,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2320,6 +2412,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2370,6 +2464,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2420,6 +2516,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2470,6 +2568,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2520,6 +2620,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2570,6 +2672,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2620,6 +2724,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2670,6 +2776,8 @@
     "foto": "Imagens/9563254.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Perturbações da motilidade gastrointestinal, SII e espasmos digestivos",
+    "idade_minima": "18",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2720,6 +2828,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2770,6 +2880,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2820,6 +2932,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2870,6 +2984,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2920,6 +3036,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2970,6 +3088,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3020,6 +3140,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3070,6 +3192,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3120,6 +3244,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3170,6 +3296,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3220,6 +3348,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3270,6 +3400,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3320,6 +3452,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3370,6 +3504,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3420,6 +3556,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3470,6 +3608,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3520,6 +3660,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3570,6 +3712,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3620,6 +3764,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3670,6 +3816,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3720,6 +3868,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3770,6 +3920,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3820,6 +3972,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3870,6 +4024,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3920,6 +4076,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3970,6 +4128,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4020,6 +4180,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4070,6 +4232,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4120,6 +4284,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4170,6 +4336,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4220,6 +4388,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4270,6 +4440,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4320,6 +4492,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4370,6 +4544,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4420,6 +4596,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4470,6 +4648,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4520,6 +4700,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4570,6 +4752,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4620,6 +4804,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4670,6 +4856,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4720,6 +4908,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4770,6 +4960,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4820,6 +5012,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4870,6 +5064,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4920,6 +5116,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4970,6 +5168,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5020,6 +5220,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5070,6 +5272,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5120,6 +5324,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5170,6 +5376,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5220,6 +5428,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5270,6 +5480,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5320,6 +5532,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5370,6 +5584,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5420,6 +5636,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5470,6 +5688,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5520,6 +5740,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5570,6 +5792,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5620,6 +5844,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5670,6 +5896,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5720,6 +5948,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5770,6 +6000,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5820,6 +6052,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5870,6 +6104,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5920,6 +6156,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5970,6 +6208,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6020,6 +6260,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6070,6 +6312,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6120,6 +6364,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6170,6 +6416,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6220,6 +6468,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6270,6 +6520,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6320,6 +6572,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6370,6 +6624,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6420,6 +6676,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6470,6 +6728,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6520,6 +6780,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6570,6 +6832,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6620,6 +6884,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6670,6 +6936,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6720,6 +6988,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6770,6 +7040,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6820,6 +7092,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6870,6 +7144,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6920,6 +7196,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6970,6 +7248,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7020,6 +7300,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7070,6 +7352,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7120,6 +7404,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7170,6 +7456,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7220,6 +7508,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7270,6 +7560,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7320,6 +7612,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7370,6 +7664,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7420,6 +7716,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7470,6 +7768,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7520,6 +7820,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7570,6 +7872,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7620,6 +7924,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7670,6 +7976,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7720,6 +8028,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7770,6 +8080,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7820,6 +8132,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7870,6 +8184,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7920,6 +8236,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7970,6 +8288,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8020,6 +8340,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8070,6 +8392,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8120,6 +8444,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8170,6 +8496,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8220,6 +8548,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8270,6 +8600,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8320,6 +8652,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8370,6 +8704,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8420,6 +8756,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8470,6 +8808,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8520,6 +8860,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8570,6 +8912,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8620,6 +8964,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8670,6 +9016,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8720,6 +9068,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8770,6 +9120,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8820,6 +9172,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8870,6 +9224,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8920,6 +9276,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8970,6 +9328,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9020,6 +9380,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9070,6 +9432,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9120,6 +9484,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9170,6 +9536,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9220,6 +9588,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9270,6 +9640,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9320,6 +9692,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9370,6 +9744,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9420,6 +9796,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9470,6 +9848,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9520,6 +9900,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9570,6 +9952,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9620,6 +10004,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9670,6 +10056,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9720,6 +10108,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9770,6 +10160,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9820,6 +10212,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9870,6 +10264,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9920,6 +10316,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9970,6 +10368,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10020,6 +10420,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10070,6 +10472,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10120,6 +10524,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10170,6 +10576,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10220,6 +10628,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10270,6 +10680,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10320,6 +10732,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10370,6 +10784,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10420,6 +10836,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10470,6 +10888,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10520,6 +10940,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10570,6 +10992,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10620,6 +11044,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10670,6 +11096,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10720,6 +11148,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10770,6 +11200,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10820,6 +11252,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10870,6 +11304,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10920,6 +11356,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10970,6 +11408,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11020,6 +11460,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11070,6 +11512,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11120,6 +11564,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11170,6 +11616,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11220,6 +11668,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11270,6 +11720,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11320,6 +11772,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11370,6 +11824,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11420,6 +11876,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11470,6 +11928,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11520,6 +11980,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11570,6 +12032,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11620,6 +12084,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11670,6 +12136,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11720,6 +12188,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11770,6 +12240,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11820,6 +12292,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11870,6 +12344,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11920,6 +12396,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11970,6 +12448,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12020,6 +12500,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12070,6 +12552,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12120,6 +12604,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12170,6 +12656,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12220,6 +12708,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12270,6 +12760,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12320,6 +12812,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12370,6 +12864,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12420,6 +12916,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12470,6 +12968,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12520,6 +13020,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12570,6 +13072,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12620,6 +13124,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12670,6 +13176,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12720,6 +13228,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12770,6 +13280,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12820,6 +13332,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12870,6 +13384,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12920,6 +13436,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12970,6 +13488,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13020,6 +13540,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13070,6 +13592,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13120,6 +13644,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13170,6 +13696,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13220,6 +13748,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13270,6 +13800,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13320,6 +13852,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13370,6 +13904,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13420,6 +13956,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13470,6 +14008,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13520,6 +14060,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13570,6 +14112,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13620,6 +14164,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13670,6 +14216,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13720,6 +14268,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13770,6 +14320,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13820,6 +14372,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13870,6 +14424,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13920,6 +14476,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13970,6 +14528,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14020,6 +14580,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14070,6 +14632,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14120,6 +14684,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14170,6 +14736,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14220,6 +14788,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14270,6 +14840,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14320,6 +14892,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14370,6 +14944,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14420,6 +14996,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14470,6 +15048,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14520,6 +15100,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14570,6 +15152,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14620,6 +15204,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14670,6 +15256,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14720,6 +15308,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14770,6 +15360,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14820,6 +15412,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14870,6 +15464,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14920,6 +15516,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14970,6 +15568,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15020,6 +15620,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15070,6 +15672,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15120,6 +15724,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15170,6 +15776,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15220,6 +15828,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15270,6 +15880,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15320,6 +15932,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15370,6 +15984,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15420,6 +16036,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15470,6 +16088,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15520,6 +16140,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15570,6 +16192,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15620,6 +16244,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15670,6 +16296,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15720,6 +16348,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15770,6 +16400,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15820,6 +16452,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15870,6 +16504,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15920,6 +16556,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15970,6 +16608,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16020,6 +16660,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16070,6 +16712,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16120,6 +16764,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16170,6 +16816,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16220,6 +16868,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16270,6 +16920,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16320,6 +16972,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16370,6 +17024,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16420,6 +17076,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16470,6 +17128,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16520,6 +17180,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16570,6 +17232,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16620,6 +17284,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16670,6 +17336,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16720,6 +17388,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16770,6 +17440,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16820,6 +17492,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16870,6 +17544,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16920,6 +17596,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16970,6 +17648,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17020,6 +17700,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17070,6 +17752,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17120,6 +17804,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17170,6 +17856,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17220,6 +17908,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17270,6 +17960,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17320,6 +18012,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17370,6 +18064,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17420,6 +18116,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17470,6 +18168,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17520,6 +18220,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17570,6 +18272,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17620,6 +18324,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17670,6 +18376,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17720,6 +18428,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17770,6 +18480,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17820,6 +18532,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17870,6 +18584,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17920,6 +18636,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17970,6 +18688,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18020,6 +18740,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18070,6 +18792,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18120,6 +18844,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18170,6 +18896,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18220,6 +18948,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18270,6 +19000,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18320,6 +19052,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18370,6 +19104,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18420,6 +19156,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18470,6 +19208,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18520,6 +19260,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18570,6 +19312,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18620,6 +19364,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18670,6 +19416,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18720,6 +19468,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18770,6 +19520,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18820,6 +19572,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18870,6 +19624,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18920,6 +19676,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18970,6 +19728,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19020,6 +19780,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19070,6 +19832,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19120,6 +19884,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19170,6 +19936,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19220,6 +19988,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19270,6 +20040,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19320,6 +20092,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19370,6 +20144,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19420,6 +20196,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19470,6 +20248,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19520,6 +20300,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19570,6 +20352,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19620,6 +20404,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19670,6 +20456,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19720,6 +20508,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19770,6 +20560,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19820,6 +20612,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19870,6 +20664,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19920,6 +20716,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19970,6 +20768,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20020,6 +20820,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20070,6 +20872,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20120,6 +20924,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20170,6 +20976,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20220,6 +21028,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20270,6 +21080,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20320,6 +21132,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20370,6 +21184,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20420,6 +21236,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20470,6 +21288,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20520,6 +21340,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20570,6 +21392,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20620,6 +21444,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20670,6 +21496,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20720,6 +21548,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20770,6 +21600,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20820,6 +21652,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20870,6 +21704,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20920,6 +21756,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20970,6 +21808,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21020,6 +21860,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21064,6 +21906,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21108,6 +21952,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21158,6 +22004,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21205,6 +22053,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21252,6 +22102,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21299,6 +22151,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21349,6 +22203,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21399,6 +22255,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21449,6 +22307,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21499,6 +22359,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21549,6 +22411,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21599,6 +22463,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21649,6 +22515,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21699,6 +22567,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21749,6 +22619,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21799,6 +22671,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21849,6 +22723,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21899,6 +22775,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21949,6 +22827,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21999,6 +22879,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22049,6 +22931,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22099,6 +22983,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22149,6 +23035,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22199,6 +23087,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22249,6 +23139,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22299,6 +23191,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22349,6 +23243,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22399,6 +23295,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22449,6 +23347,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22499,6 +23399,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22549,6 +23451,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22599,6 +23503,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22649,6 +23555,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22699,6 +23607,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22749,6 +23659,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22799,6 +23711,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22849,6 +23763,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22899,6 +23815,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22949,6 +23867,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22999,6 +23919,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23049,6 +23971,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23099,6 +24023,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23149,6 +24075,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23199,6 +24127,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23249,6 +24179,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23299,6 +24231,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23349,6 +24283,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23399,6 +24335,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "G",
@@ -23449,6 +24387,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "H",
@@ -23499,6 +24439,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "H",
@@ -23549,6 +24491,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "N",
@@ -23599,6 +24543,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -23649,6 +24595,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -23699,6 +24647,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -23749,6 +24699,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -23799,6 +24751,8 @@
     "foto": "Imagens/Generic.webp",
     "video_farmacodinamica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
+    "indicacao_resumida": "Não Disponível",
+    "idade_minima": "Não Disponível",
     "atc_niveis": [
       {
         "codigo": "R",
