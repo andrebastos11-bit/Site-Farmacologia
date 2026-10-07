@@ -28,8 +28,8 @@
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "indicacao_resumida": "Prevenção da cárie dentária",
     "idade_minima": "16",
-    "composicao": "",
-    "descricao_forma_farmaceutica": "",
+    "composicao": "1 g de pasta dentífrica contém 5 mg de fluoreto (sob a forma de fluoreto de sódio), correspondendo a 5000 ppm de fluoreto.",
+    "descricao_forma_farmaceutica": "Pasta azul",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -82,8 +82,8 @@
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "indicacao_resumida": "Inflamações e lesões da mucosa oral",
     "idade_minima": "",
-    "composicao": "",
-    "descricao_forma_farmaceutica": "",
+    "composicao": "Um mililitro de solução bucal contém:\nÁcido salicílico: 10 mg\nExtrato de ruibarbo (Glicosidos antraquinónicos expressos em Reína) 50 mg",
+    "descricao_forma_farmaceutica": "Castanho escuro, odor aromático e característico.",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -136,8 +136,8 @@
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "indicacao_resumida": "Infeções e inflamações orais, halitose e higiene oral",
     "idade_minima": "12",
-    "composicao": "",
-    "descricao_forma_farmaceutica": "",
+    "composicao": "Um mililitro de solução bucal contém um miligrama de hexetidina.",
+    "descricao_forma_farmaceutica": "Solução clara, de cor vermelha.",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2884,8 +2884,8 @@
     "video_farmacocinetica": "https://www.youtube.com/watch?v=9O4_awEHh1g",
     "indicacao_resumida": "Perturbações da motilidade gastrointestinal, SII e espasmos digestivos",
     "idade_minima": "18",
-    "composicao": "",
-    "descricao_forma_farmaceutica": "",
+    "composicao": "Cada comprimido contém 200 mg de maleato de trimebutina.",
+    "descricao_forma_farmaceutica": "Comprimido esbranquiçado com forma biconvexa e ranhurado numa das faces.",
     "atc_niveis": [
       {
         "codigo": "A",
