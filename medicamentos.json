@@ -46,52 +46,6 @@
     ]
   },
   {
-    "nome_medicamento": "Duraphat",
-    "substancia_ativa": "Fluoreto de sódio",
-    "forma_farmaceutica": "Suspensão dental",
-    "dosagem": "50 mg/ml",
-    "indicacao_terapeutica": "Para a prevenção da cárie em crianças e adultos como parte de um amplo programa de\ncontrolo.\nPara a:\n- prevenção da cárie recorrente (ou marginal)\n- prevenção da progressão da cárie\n- prevenção da descalcificação em volta dos aparelhos ortodônticos\n- prevenção da cárie da depressão e fissura (oclusal)\nPara a dessensibilização de dentes hipersensíveis como parte de um regime de tratamento\nque inclui o uso diário de uma pasta de dentes adequada.",
-    "posologia": "Posologia Dose recomendada para uma aplicação única: Para dentes de leite: até 0.25 ml (=5.65 mg de fluoreto) Para dentição mista: até 0.40 ml (=9.04 mg de fluoreto) Para dentição permanente: até 0.75 ml (=16.95 mg de fluoreto) Para a profilaxia da cárie a aplicação é normalmente repetida de 6 em 6 meses, embora possam fazer-se aplicações mais frequentes (cada 3 meses). Na hipersensibilidade devem fazer-se 2 ou 3 aplicações no intervalo de alguns dias. O doente não deve escovar os dentes ou mastigar alimentos durante 4 horas após o tratamento. Modo de administração Duraphat 50 mg/ ml Suspensão Dental destina-se a ser aplicado pelo dentista. Antes de aplicar o Duraphat, o excesso da placa dentária deve ser removido e os dentes secos. Duraphat é aplicado como uma camada fina nas áreas da dentição mais afetadas usando para o efeito uma escova, um estilete ou uma cotonete. Via de administração: Uso denta",
-    "contra_indicacoes": "Hipersensibilidade à substância ativa, ao colofano ou a qualquer um dos excipientes mencionados na secção 6.1. Gengivite ulcerosa. Estomatite. Asma brônquica",
-    "advertencias": "A aplicação de Duraphat 50 mg/ ml Suspensão Dental a toda a dentição não deve ser efetuada num doente em jejum. No dia da aplicação de Duraphat não devem ser utilizadas quaisquer preparações com uma dose elevada de fluoreto, nomeadamente geles. A administração de suplementos de fluoreto deve ser suspensa durante vários dias depois da aplicação de Duraphat. A ingestão diária prolongada de fluoreto em excesso pode resultar em graus variáveis de fluorose. Bisnagas: A embalagem deste medicamento contém borracha látex. Pode causar reações alérgicas graves. Este medicamento contém um agente aromatizante de essência de framboesa com alergénios (geraniol, citronelol, citral, benzoato de benzilo, linalol e álcool benzílico). Estes alergénios podem causar reacções alérgicas.",
-    "interacoes": "A presença de álcool na fórmula do Duraphat deve ser tida em conta",
-    "gravidez_aleitamento": "Como este medicamento contém 33,8% de etanol (cada dose contém até 0,2 g de álcool), é recomendado evitar o seu uso em mulheres grávidas e durante o período de aleitamento.",
-    "conducao_maquinas": "Os efeitos de Duraphat sobre a capacidade de conduzir e utilizar máquinas são desconhecidos",
-    "efeitos_indesejaveis": "Doenças gastrointestinais: Muito raros (<1/10,000): estomatite, gengivite ulcerosa, esforço para vomitar, edema da boca e náuseas podem ocorrer em indivíduos sensíveis (alérgicos) – se necessário a camada de suspensão dental pode ser facilmente removida da boca por escovagem e lavagem. Afeções dos tecidos cutâneos e subcutâneas: Muito raros (<1/10,000): irritação em indivíduos sensíveis, angioedema Doenças do sistema imunitário Desconhecido (não pode ser calculado a partir dos dados disponíveis: Hipersensibilidade Doenças respiratórias, torácicas e do mediastino: Muito raros/Casos isolados (<1/10,000): Asma",
-    "sobredosagem": "Em doses muito elevadas, o fluoreto tem uma ação tóxica aguda através da inibição de enzimas, originando hipocalcemia. Doses de vários miligramas de fluoreto por kg de peso corporal podem provocar náuseas, vómitos e diarreia. Podem ocorrer tetania e convulsões, bem como doenças cardiovasculares. A camada de suspensão dental pode ser facilmente removida da boca por escovagem e lavagem.",
-    "grupo_farmacoterapeutico": "6.1.1 Aparelho digestivo. Medicamentos que atuam na boca e orofaringe. De aplicação tópica.",
-    "atc": "A01AA01",
-    "propriedades_farmacodinamicas": "Aplicado topicamente após erupção dentária, o fluoreto de sódio reduz a cárie por inibição da desmineralização, promoção da remineralização da superfície do dente, e por inibição do processo microbiano cariogénico. Duraphat 50 mg/ ml Suspensão Dental também reduz a hipersensibilidade da dentina. No tratamento da odontólise associada ao consumo frequente de bebidas ácidas ou ao refluxo gástrico, os agentes fluoretados tópicos em concentrações elevadas são considerados uma mais valia. Duraphat é pelo menos tão eficaz na inibição da odontólise, in vitro, como uma solução de fluoreto de sódio a 2%.",
-    "alvo_terapeutico": "Hidroxiapatite e Enolase",
-    "propriedades_farmacocineticas": "Após a administração oral a absorção do fluoreto é rápida e extensa (90-100%), atingindose o pico da concentração plasmática dentro de 30 a 60 minutos após a ingestão. O fluoreto é amplamente distribuído no organismo e concentra-se nos ossos e nos dentes. Aproximadamente 50% do fluoreto é armazenado. A excreção processa-se essencialmente por via renal, sendo menos de 10% excretado nas fezes e menos de 1% no suor e na saliva Duraphat cobre os dentes com uma película de suspensão que endurece em presença de saliva e que persiste no local, o que durante as horas seguintes origina a acumulação de fluoreto em profundidade considerável no esmalte do dente. Devido à libertação lenta do fluoreto, o nível de exposição seria bem inferior ao nível que poderia causar sinais e sintomas tóxicos em crianças. As doses de flúor associadas à fluorose dentária e ao risco de fratura óssea seriam bem superiores ao nível de exposição esperado a partir de Duraphat suspensão dental.",
-    "excipientes": "Etanol 96% Cera branca (E901) Shellac (E904) Colofónia Mastic Sacarina (E954) Essência de framboesa (contendo Butirato de Etilo, Geraniol, Resinoide de Íris, Acetato de Isoamil, Essência de Jasmim, Baunilha e Propilenoglicol).",
-    "incompatibilidades": "Nenhuma conhecida",
-    "conservacao": "Não conservar acima de 25ºC.",
-    "instrucoes_utilizacao": "Se necessário, os dentes devem ser lavados, especialmente nos locais mais suscetíveis à cárie. Quando se têm de tratar grupos de doentes (por exemplo, crianças), são eles que devem lavar os dentes com uma escova de dentes. Para começar, limpar um ou dois quadrantes do excesso de saliva com uma seringa de ar (ou limpar de leve com celulose). Duraphat 50 mg/ ml Suspensão Dental é aplicado diretamente da bisnaga usando para tal um pequeno cotonete, um estilete ou uma escova, pincelando e batendo de leve repetidamente para formar uma camada fina. Em seguida, tratar os quadrantes seguintes pelo mesmo processo. É aconselhável começar por aplicar a suspensão dental aos dentes do maxilar inferior antes que se acumule demasiada saliva. Pode não ser necessário pincelar as superfícies linguais, uma vez que estas são, em geral, mais resistentes à cárie; Duraphat deve ser aplicado preferencialmente nos pontos mais suscetíveis ao ataque da cárie. A aplicação de Duraphat a partir da ampola é particularmente adequada para a aplicação localizada, de dose baixa. É usada uma cânula romba com a extremidade dobrada em ângulo para facilitar a aplicação a superfícies proximais e distais. Para a aplicação nas superfícies proximais colocar a cânula entre os dentes adjacentes e libertar uma pequena quantidade de Duraphat. A suspensão dental deve ser aplicada de ambos os lados do espaço interproximal e oclusalmente. Para fissuras, deve estender-se uma gota de Duraphat ao longo da fissura com o auxílio da cânula. Bordos de enchimento, coroas e colos de dentes hipersensíveis podem ser tratados de forma semelhante. As superfícies lisas dos dentes devem ser tratadas quando a atividade da cárie é elevada, particularmente se a descalcificação é evidente. Deverá colocar-se a cânula tangencialmente aos dentes e distribuir-se o Duraphat com o lado da extremidade curvada da cânula. As áreas em volta dos aparelhos ortodônticos fixos podem ser tratadas com Duraphat usando para isso a cânula. A cor amarelada do Duraphat facilita a sua aplicação e controlo. Duraphat solidifica em presença de saliva. O efeito do Duraphat depende da atividade prolongada do fluoreto. A película de suspensão dental não deve ser removida prematuramente. Os doentes devem ser avisados para não escovarem os dentes ou mastigarem alimentos durante pelo menos 4 horas após o tratamento; durante este período podem ser consumidos alimentos moles e líquidos. No entanto, caso seja necessário, a camada de suspensão dental pode ser facilmente removida por escovagem ou lavagem. Os instrumentos, roupa, etc., que entram em contacto com o Duraphat podem ser limpos com álcool.",
-    "atc_niveis": [
-      {
-        "codigo": "A",
-        "nome": "TRATO GASTRINTESTINAL E METABOLISMO"
-      },
-      {
-        "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
-      },
-      {
-        "codigo": "A01A",
-        "nome": "Preparações estomatológicas"
-      },
-      {
-        "codigo": "A01AA",
-        "nome": "Agentes profiláticos da cárie"
-      },
-      {
-        "codigo": "A01AA01",
-        "nome": "Fluoreto de sódio"
-      }
-    ]
-  },
-  {
     "nome_medicamento": "Pyralvex",
     "substancia_ativa": "Ácido salicílico + Ruibarbo",
     "forma_farmaceutica": "Solução bucal",
