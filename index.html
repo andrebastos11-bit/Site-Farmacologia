@@ -813,13 +813,65 @@ header p {
 }
 
 
+.med-link {
+
+    width: fit-content;
+
+    max-width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    border: 0;
+
+    background: transparent;
+
+    padding: 2px 0;
+
+    font-family: inherit;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+    transition:
+        color .15s,
+        background .15s,
+        transform .15s;
+
+}
+
+
+.med-link:hover {
+
+    color: var(--accent);
+
+    transform: translateX(2px);
+
+}
+
+
+.med-link:focus-visible {
+
+    outline: 2px solid rgba(37, 143, 201, .28);
+
+    outline-offset: 3px;
+
+}
+
+
 .med-substancia {
 
     color: #3d5c78;
 
-    font-size: 1rem !important;
+    font-size: 1rem;
 
-    margin-bottom: 2px !important;
+    margin: 0 0 2px;
 
 }
 
@@ -828,9 +880,29 @@ header p {
 
     color: #526d86;
 
-    font-size: .95rem !important;
+    font-size: .95rem;
 
-    margin-top: 2px !important;
+    margin: 2px 0 0;
+
+}
+
+
+.med-link-seta {
+
+    font-size: 1.25em;
+
+    line-height: 1;
+
+    color: var(--accent);
+
+    transition: transform .15s;
+
+}
+
+
+.med-link:hover .med-link-seta {
+
+    transform: translateX(2px);
 
 }
 
@@ -1391,6 +1463,44 @@ header p {
     box-shadow: inset 4px 0 0 #e4bd3d;
     border-radius: 6px;
     padding: 10px 12px;
+}
+
+
+.farmaceuticas-grid {
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 0 28px;
+
+}
+
+
+.farmaceuticas-coluna {
+
+    min-width: 0;
+
+}
+
+
+.farmaceuticas-coluna .campo-sub:last-child {
+
+    border-bottom: 0;
+
+}
+
+
+@media (max-width: 850px) {
+
+    .farmaceuticas-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
 }
 
 
@@ -3472,24 +3582,42 @@ function mostrarDetalhes(
                 </h1>
 
 
-                <p class="med-substancia">
+                <button
+                    class="med-link med-substancia"
+                    type="button"
+                    onclick="irParaSecao('composicao')"
+                    title="Ver composição"
+                >
 
-                    ${esc(
-                        med.substancia_ativa ||
-                        "N/D"
-                    )}
+                    <span>
+                        ${esc(
+                            med.substancia_ativa ||
+                            "N/D"
+                        )}
+                    </span>
 
-                </p>
+                    <span class="med-link-seta">›</span>
+
+                </button>
 
 
-                <p class="med-forma-dose">
+                <button
+                    class="med-link med-forma-dose"
+                    type="button"
+                    onclick="irParaSecao('forma-farmaceutica')"
+                    title="Ver forma farmacêutica"
+                >
 
-                    ${esc(
-                        formaDose ||
-                        "N/D"
-                    )}
+                    <span>
+                        ${esc(
+                            formaDose ||
+                            "N/D"
+                        )}
+                    </span>
 
-                </p>
+                    <span class="med-link-seta">›</span>
+
+                </button>
 
 
                 ${indicacaoRapida}
@@ -3872,7 +4000,7 @@ function mostrarDetalhes(
                     <span class="section-icon">◇</span>
                     <span>
                         <span class="section-title">Informações Farmacêuticas</span>
-                        <span class="section-subtitle">Excipientes, incompatibilidades, conservação, eliminação e manuseamento</span>
+                        <span class="section-subtitle">Forma farmacêutica, composição, excipientes, incompatibilidades, conservação, eliminação e manuseamento</span>
                     </span>
                     <span class="section-chevron">⌄</span>
                 </summary>
@@ -3880,24 +4008,88 @@ function mostrarDetalhes(
 
                 <div class="sub-secoes-container">
 
-
-                    <section
-                        class="campo-sub"
-                        id="excipientes"
-                    >
-
-                        <strong>
-                            Lista dos excipientes
-                        </strong>
+                    <div class="farmaceuticas-grid">
 
 
-                        ${criarListaExcipientes(
-                            med.excipientes
-                        )}
+                        <!-- COLUNA ESQUERDA:
+                             forma farmacêutica + composição -->
+
+                        <div class="farmaceuticas-coluna">
 
 
-                    </section>
+                            <section
+                                class="campo-sub"
+                                id="forma-farmaceutica"
+                            >
 
+                                <strong>
+                                    Forma farmacêutica
+                                </strong>
+
+                                <div class="campo-texto">
+
+                                    ${esc(
+                                        med.descricao_forma_farmaceutica ||
+                                        med.forma_farmaceutica ||
+                                        "N/D"
+                                    )}
+
+                                </div>
+
+                            </section>
+
+
+                            <section
+                                class="campo-sub"
+                                id="composicao"
+                            >
+
+                                <strong>
+                                    Composição
+                                </strong>
+
+                                <div class="campo-texto">
+
+                                    ${esc(
+                                        med.composicao ||
+                                        med.substancia_ativa ||
+                                        "N/D"
+                                    )}
+
+                                </div>
+
+                            </section>
+
+
+                        </div>
+
+
+                        <!-- COLUNA DIREITA:
+                             lista completa de excipientes -->
+
+                        <div class="farmaceuticas-coluna">
+
+
+                            <section
+                                class="campo-sub"
+                                id="excipientes"
+                            >
+
+                                <strong>
+                                    Lista dos excipientes
+                                </strong>
+
+                                ${criarListaExcipientes(
+                                    med.excipientes
+                                )}
+
+                            </section>
+
+
+                        </div>
+
+
+                    </div>
 
 
                     <section
@@ -3921,7 +4113,6 @@ function mostrarDetalhes(
                     </section>
 
 
-
                     <section
                         class="campo-sub"
                         id="conservacao"
@@ -3943,14 +4134,13 @@ function mostrarDetalhes(
                     </section>
 
 
-
                     <section
                         class="campo-sub"
-                        id="eliminacao-manuseamento"
+                        id="instrucoes-utilizacao"
                     >
 
                         <strong>
-                            Precauções especiais de eliminação e manuseamento
+                            Instruções de utilização e manipulação
                         </strong>
 
                         <div class="campo-texto">

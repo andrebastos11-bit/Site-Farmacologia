@@ -47,6 +47,10 @@ MAPEAMENTO = {
     # Resumo do Trading Card
     "indicacao_resumida": "indicacao_resumida",
     "idade_minima": "idade_minima",
+
+    # Informação farmacêutica adicional
+    "composicao": "composicao",
+    "descricao_forma_farmaceutica": "descricao_forma_farmaceutica",
 }
 
 
@@ -184,7 +188,9 @@ def converter():
         "video_farmacodinamica",
         "video_farmacocinetica",
         "indicacao_resumida",
-        "idade_minima"
+        "idade_minima",
+        "composicao",
+        "descricao_forma_farmaceutica"
     ]
 
 
@@ -369,6 +375,20 @@ def converter():
     )
 
 
+    total_composicoes = sum(
+        1
+        for registo in registos
+        if registo.get("composicao")
+    )
+
+
+    total_descricoes_forma = sum(
+        1
+        for registo in registos
+        if registo.get("descricao_forma_farmaceutica")
+    )
+
+
     print()
 
     print(
@@ -396,6 +416,16 @@ def converter():
     print(
         f"Medicamentos com idade mínima: "
         f"{total_idades}"
+    )
+
+    print(
+        f"Medicamentos com composição: "
+        f"{total_composicoes}"
+    )
+
+    print(
+        f"Medicamentos com descrição da forma farmacêutica: "
+        f"{total_descricoes_forma}"
     )
 
 
