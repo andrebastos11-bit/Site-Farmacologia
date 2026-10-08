@@ -1072,7 +1072,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
-    "classificacao_dispensa": "MSRM",
+    "classificacao_dispensa": "MNSRM-EF",
     "atc_niveis": [
       {
         "codigo": "A",
