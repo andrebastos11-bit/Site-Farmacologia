@@ -1656,6 +1656,12 @@ header p {
 .dispensa-indicador { display: inline-flex; align-items: center; gap: 8px; max-width: 320px; padding: 8px 11px; border: 1px solid #dce5ed; border-radius: 11px; background: #f8fafc; color: #40566c; font-size: .72rem; font-weight: 650; line-height: 1.35; cursor: default; }
 .dispensa-indicador svg { width: 22px; height: 22px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .dispensa-indicador small { display: block; font-size: .68rem; font-weight: 500; color: #64748b; }
+/* Classificação administrativa, sem associação a segurança clínica. */
+.dispensa-msrm { color: #bb314d; background: #fff7f9; border-color: #f3c9d2; }
+.dispensa-mnsrm-ef { color: #148779; background: #f3fbf9; border-color: #bfe4dc; }
+.dispensa-mnsrm { color: #2368c5; background: #f5f9ff; border-color: #c9dcfa; }
+.dispensa-indicador small { color: #64748b; }
+
 @media (max-width: 650px) { .medicamento-topo { flex-direction: column; align-items: flex-start; } }
 
 </style>
@@ -3462,12 +3468,13 @@ function criarIndicadorDispensa(med) {
     };
     const categoria = categorias[codigo];
     if (!categoria) return '';
+    // Ícones SVG: Rx, cruz de farmácia e carrinho com cápsula.
     const icone = codigo === 'MSRM'
-        ? '<path d="M8 4h11l5 5v23H8z"/><path d="M19 4v6h5"/><path d="M12 19h9M16.5 14v10"/>'
+        ? '<path d="M7 8h9a5 5 0 0 1 0 10H7V8z"/><path d="M7 18V8m7 10 7 8m-8 0 10-10"/>'
         : codigo === 'MNSRM-EF'
-            ? '<path d="M13 4h6v9h9v6h-9v9h-6v-9H4v-6h9z"/>'
-            : '<rect x="5" y="12" width="22" height="10" rx="5" transform="rotate(-40 16 17)"/><path d="M12 13l8 9"/>';
-    return `<div class="dispensa-indicador" aria-label="${esc(categoria.join(' '))}" title="Classificação de dispensa">
+            ? '<path d="M12 3h8v9h9v8h-9v9h-8v-9H3v-8h9z"/>'
+            : '<path d="M3 6h3l3 16h17l3-12H8"/><circle cx="12" cy="27" r="1.5"/><circle cx="24" cy="27" r="1.5"/><rect x="13" y="11" width="13" height="7" rx="3.5" transform="rotate(-35 19.5 14.5)"/><path d="M17 11l5 6"/>';
+    return `<div class="dispensa-indicador dispensa-${codigo.toLowerCase().replace(/[^a-z0-9]+/g, '-')}" aria-label="${esc(categoria.join(' '))}" title="Classificação de dispensa">
         <svg viewBox="0 0 32 32" aria-hidden="true">${icone}</svg>
         <span>${esc(categoria[0])}${categoria[1] ? `<small>${esc(categoria[1])}</small>` : ''}</span>
     </div>`;
