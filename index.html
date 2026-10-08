@@ -1649,20 +1649,37 @@ header p {
 }
 
 
-/* CLASSIFICAÇÃO DE DISPENSA — indicador informativo */
+/* CLASSIFICAÇÃO DE DISPENSA — visual compacto com ícone circular e divisor */
 .produto-info-principal { min-width: 0; }
-.medicamento-topo { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 7px; }
-.medicamento-topo h1 { margin: 3px 0 0; }
-.dispensa-indicador { display: inline-flex; align-items: center; gap: 8px; max-width: 320px; padding: 8px 11px; border: 1px solid #dce5ed; border-radius: 11px; background: #f8fafc; color: #40566c; font-size: .72rem; font-weight: 650; line-height: 1.35; cursor: default; }
-.dispensa-indicador svg { width: 22px; height: 22px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.dispensa-indicador small { display: block; font-size: .68rem; font-weight: 500; color: #64748b; }
-/* Classificação administrativa, sem associação a segurança clínica. */
-.dispensa-msrm { color: #bb314d; background: #fff7f9; border-color: #f3c9d2; }
-.dispensa-mnsrm-ef { color: #148779; background: #f3fbf9; border-color: #bfe4dc; }
-.dispensa-mnsrm { color: #2368c5; background: #f5f9ff; border-color: #c9dcfa; }
-.dispensa-indicador small { color: #64748b; }
-
-@media (max-width: 650px) { .medicamento-topo { flex-direction: column; align-items: flex-start; } }
+.medicamento-topo { display:flex; align-items:flex-start; justify-content:space-between; gap:14px; flex-wrap:wrap; margin-bottom:7px; }
+.medicamento-topo h1 { margin:3px 0 0; }
+.dispensa-indicador {
+  --dispensa-cor:#2368c5; --dispensa-fundo:#f4f8ff; --dispensa-borda:#bcd5ff;
+  display:inline-flex; align-items:center; gap:10px; flex-shrink:0;
+  max-width:min(100%, 350px); min-height:49px; box-sizing:border-box;
+  padding:6px 13px 6px 7px; border:1px solid var(--dispensa-borda);
+  border-radius:18px; background:var(--dispensa-fundo); color:#203a54;
+  font-size:.72rem; font-weight:750; line-height:1.28;
+  box-shadow:0 3px 12px rgba(29,56,85,.045); cursor:default;
+}
+.dispensa-icone {
+  width:38px; height:38px; flex:0 0 38px; display:flex;
+  align-items:center; justify-content:center; border-radius:50%;
+  background:color-mix(in srgb, var(--dispensa-cor) 9%, white);
+  color:var(--dispensa-cor);
+}
+.dispensa-icone svg { width:29px; height:29px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+.dispensa-msrm .dispensa-icone svg { stroke:none; fill:currentColor; }
+.dispensa-separador { width:1px; height:30px; flex:0 0 1px; background:var(--dispensa-borda); }
+.dispensa-texto { display:block; min-width:0; }
+.dispensa-texto small { display:block; margin-top:2px; font-size:.69rem; font-weight:500; color:#708098; }
+.dispensa-msrm { --dispensa-cor:#d72648; --dispensa-fundo:#fff7f9; --dispensa-borda:#ffbdcb; }
+.dispensa-mnsrm { --dispensa-cor:#1768dc; --dispensa-fundo:#f5f9ff; --dispensa-borda:#c1d6ff; }
+.dispensa-mnsrm-ef { --dispensa-cor:#078f7d; --dispensa-fundo:#f2fbf8; --dispensa-borda:#b5e5d9; }
+@media (max-width:650px) {
+  .medicamento-topo { flex-direction:column; align-items:flex-start; }
+  .dispensa-indicador { max-width:100%; }
+}
 
 </style>
 
@@ -3468,15 +3485,16 @@ function criarIndicadorDispensa(med) {
     };
     const categoria = categorias[codigo];
     if (!categoria) return '';
-    // Ícones SVG: Rx, cruz de farmácia e carrinho com cápsula.
+    // Ícones personalizados: Rx, cruz de farmácia e carrinho com cápsula.
     const icone = codigo === 'MSRM'
-        ? '<path d="M7 8h9a5 5 0 0 1 0 10H7V8z"/><path d="M7 18V8m7 10 7 8m-8 0 10-10"/>'
+        ? '<text x="3" y="24" font-size="23" font-weight="800" font-family="Arial, sans-serif">R</text><text x="18" y="30" font-size="18" font-weight="800" font-family="Arial, sans-serif">x</text>'
         : codigo === 'MNSRM-EF'
             ? '<path d="M12 3h8v9h9v8h-9v9h-8v-9H3v-8h9z"/>'
-            : '<path d="M3 6h3l3 16h17l3-12H8"/><circle cx="12" cy="27" r="1.5"/><circle cx="24" cy="27" r="1.5"/><rect x="13" y="11" width="13" height="7" rx="3.5" transform="rotate(-35 19.5 14.5)"/><path d="M17 11l5 6"/>';
+            : '<path d="M2.5 5.5h3.8l3.1 17h17.1l2.7-11.5H9"/><circle cx="12.5" cy="28" r="1.3"/><circle cx="24.2" cy="28" r="1.3"/><rect x="13" y="9.5" width="13" height="8" rx="4" transform="rotate(-40 19.5 13.5)"/><path d="M17 10.5l5 6"/>';
     return `<div class="dispensa-indicador dispensa-${codigo.toLowerCase().replace(/[^a-z0-9]+/g, '-')}" aria-label="${esc(categoria.join(' '))}" title="Classificação de dispensa">
-        <svg viewBox="0 0 32 32" aria-hidden="true">${icone}</svg>
-        <span>${esc(categoria[0])}${categoria[1] ? `<small>${esc(categoria[1])}</small>` : ''}</span>
+        <span class="dispensa-icone" aria-hidden="true"><svg viewBox="0 0 32 32">${icone}</svg></span>
+        <span class="dispensa-separador" aria-hidden="true"></span>
+        <span class="dispensa-texto">${esc(categoria[0])}${categoria[1] ? `<small>${esc(categoria[1])}</small>` : ''}</span>
     </div>`;
 }
 
