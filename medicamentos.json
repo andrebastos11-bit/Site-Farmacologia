@@ -10,7 +10,7 @@
     "contra_indicacoes": "Este medicamento não deve ser utilizado em caso de hipersensibilidade à substância activa ou a qualquer dos excipientes.",
     "advertencias": "Duraphat 5000 500 mg/100 g Pasta dentífrica não se destina a ser utilizada por crianças e adolescentes com menos de 16 anos de idade. Esta pasta dentífrica apresenta um elevado teor em flúor. Portanto, a opinião de um profissional qualificado profissional de saúde, como dentista, farmacêutico, higienista oral, deve especialista deve ser procurado antes do uso do produto. O aumento de potenciais fontes de flúor pode originar fluorose. Antes de utilizar medicamentos fluoretados como o Duraphat, deverá ser feita uma avaliação do aporte global de flúor (ex.: água potável, sais fluoretados, outros medicamentos com flúor - comprimidos, gotas, pastilhas ou pasta dentífrica). Comprimidos de flúor, gotas, pastilhas elásticas, geles ou vernizes e água ou sais fluoretados deverão se evitados durante a utilização de Duraphat Pasta dentífrica. Nos cálculos globais da quantidade recomendada de ião flúor, que é de 0,05 mg/Kg/dia, de qualquer origem, não excedendo 1 mg por dia, deve ser tida em conta a possível ingestão da pasta dentífrica (cada bisnaga de Duraphat 5000 500 mg/100 g Pasta dentífrica contém 255 mg de iões flúor). Este medicamento contém benzoato de sódio (E211). O benzoato de sódio (E211) pode causar irritação local. Este medicamento também contém um aroma de menta com alérgenos (limoneno, linalol, citral, geraniol e citronelol). Esses alérgenos podem causar reações alérgicas.",
     "interacoes": "Nenhuma conhecida.",
-    "gravidez_aleitamento": "Gravidez\nNão existem dados adequados sobre o uso de Duraphat 5000 500 mg/100 g Pasta dentífrica em mulheres grávidas. Estudos em animais revelaram toxicidade reprodutiva do fluoreto de sódio apenas quando administrado em níveis muito elevados. Em consequência, esta pasta dentífrica não deverá ser utilizada durante a gravidez e aleitamento a não ser que tenha sido efectuada uma cuidadosa avaliação benefício-risco. \nAleitamento\nNão existem dados adequados sobre o uso de Duraphat 5000 500 mg/100 g Pasta dentífrica em mulheres grávidas. Estudos em animais revelaram toxicidade reprodutiva do fluoreto de sódio apenas quando administrado em níveis muito elevados. Em consequência, esta pasta dentífrica não deverá ser utilizada durante a gravidez e aleitamento a não ser que tenha sido efectuada uma cuidadosa avaliação benefício-risco.",
+    "gravidez_aleitamento": "Gravidez\nNão existem dados adequados sobre o uso de Duraphat 5000 500 mg/100 g Pasta dentífrica em mulheres grávidas. Estudos em animais revelaram toxicidade reprodutiva do fluoreto de sódio apenas quando administrado em níveis muito elevados. Em consequência, esta pasta dentífrica não deverá ser utilizada durante a gravidez e aleitamento a não ser que tenha sido efectuada uma cuidadosa avaliação benefício-risco. \n\nAleitamento\nNão existem dados adequados sobre o uso de Duraphat 5000 500 mg/100 g Pasta dentífrica em mulheres grávidas. Estudos em animais revelaram toxicidade reprodutiva do fluoreto de sódio apenas quando administrado em níveis muito elevados. Em consequência, esta pasta dentífrica não deverá ser utilizada durante a gravidez e aleitamento a não ser que tenha sido efectuada uma cuidadosa avaliação benefício-risco.",
     "conducao_maquinas": "Não relevante.",
     "efeitos_indesejaveis": "Doenças gastrointestinais: Frequência desconhecida (não pode ser calculada a partir dos dados disponíveis): sensação de queimadura oral Doenças do sistema imunitário Raros (≥1/10.000 a <1/1.000): Reacções de Hipersensibilidade",
     "sobredosagem": "- Intoxicação aguda: Flúor A dose tóxica, i.e. a dose mais baixa capaz de induzir sintomas de intoxicação, é de 5 mg de fluoreto por Kg de peso corporal. Esta intoxicação manifesta-se sob a forma de problemas digestivos: vómitos, diarreia, dor abdominal. Em casos extremamente raros, pode ser fatal. Caso se ingira acidentalmente uma quantidade substancial do medicamento, o tratamento imediato consiste numa lavagem gástrica ou indução do vómito; deve ser tomado cálcio (grandes quantidades de leite) e o doente deve ser sujeito a vigilância médica durante várias horas. - Intoxicação aguda: Mentol O Duraphat 5000, 500 mg/100g pasta dentífrica contém mentol que, se ingerido acidentalmente em quantidades excessivas, pode causar convulsões, particularmente em crianças. - Intoxicação crónica: fluorose O aspecto manchado ou mosqueado do esmalte dentário pode surgir a partir de uma absorção diária de uma dose de fluoreto superior a 1,5 mg/ dia, durante vários meses ou anos, dependendo da extensão da sobredosagem. Esta intoxicação, nas formas graves, será acompanhada por um aumento da fragilidade do esmalte. A fluorose óssea (osteosclerose) só será observada quando existir uma absorção crónica elevada de fluoreto (superior a 8 mg/ dia).",
@@ -30,6 +30,7 @@
     "idade_minima": "16",
     "composicao": "1 g de pasta dentífrica contém 5 mg de fluoreto (sob a forma de fluoreto de sódio), correspondendo a 5000 ppm de fluoreto.",
     "descricao_forma_farmaceutica": "Pasta azul",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -84,6 +85,7 @@
     "idade_minima": "",
     "composicao": "Um mililitro de solução bucal contém:\nÁcido salicílico: 10 mg\nExtrato de ruibarbo (Glicosidos antraquinónicos expressos em Reína) 50 mg",
     "descricao_forma_farmaceutica": "Castanho escuro, odor aromático e característico.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -138,6 +140,7 @@
     "idade_minima": "12",
     "composicao": "Um mililitro de solução bucal contém um miligrama de hexetidina.",
     "descricao_forma_farmaceutica": "Solução clara, de cor vermelha.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -192,6 +195,7 @@
     "idade_minima": "",
     "composicao": "Cada mililitro de Tantum Verde, solução para lavagem da boca contém, 1,5 mg de cloridrato de benzidamina (correspondendo a 1,34 mg de benzidamina base).",
     "descricao_forma_farmaceutica": "Solução para lavagem da boca.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -246,6 +250,7 @@
     "idade_minima": "",
     "composicao": "Cada mililitro de Tantum Verde, solução para pulverização bucal contêm 1,5 mg de Cloridrato de benzidamina.",
     "descricao_forma_farmaceutica": "Solução incolor, clara, com aroma de menta.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -300,6 +305,7 @@
     "idade_minima": "18",
     "composicao": "Cada mililitro de Tantum Verde, solução para pulverização bucal contêm 3 mg de Cloridrato de benzidamina.",
     "descricao_forma_farmaceutica": "Solução incolor, clara, com aroma de menta.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -354,6 +360,7 @@
     "idade_minima": "6",
     "composicao": "Cada comprimido contém 1,2 mg de álcool 2,4-diclorobenzil e 3 mg de cloridrato de benzidamina",
     "descricao_forma_farmaceutica": "Comprimido para chupar branco ovoide biconvexo",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -408,6 +415,7 @@
     "idade_minima": "18",
     "composicao": "Cada ml de solução contém 0,74 mg de diclofenac (sob a forma de ácido livre).",
     "descricao_forma_farmaceutica": "Solução vermelho-alaranjada, límpida ou ligeiramente opalescente, com sabor característico a menta e pêssego.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -462,6 +470,7 @@
     "idade_minima": "18",
     "composicao": "Cada mililitro de solução para gargarejar contém 25 mg de cloreto de zinco como substância activa.",
     "descricao_forma_farmaceutica": "Solução amarela-alaranjada, transparente e aromática.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -516,6 +525,7 @@
     "idade_minima": "18",
     "composicao": "Um mililitro de suspensão oral contém 83 mg de Hidróxido de magnésio.",
     "descricao_forma_farmaceutica": "Suspensão oral branca opaca, ligeiramente viscosa, odor e sabor a hortelã-pimenta.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -570,6 +580,7 @@
     "idade_minima": "",
     "composicao": "Cada comprimido para chupar contém 340 mg de carbonato de di-hidróxido de alumínio e\nsódio (equivalente a 300 mg de carbonato de di-hidróxido de alumínio e sódio anidro) e 30\nmg de dimeticone.",
     "descricao_forma_farmaceutica": "Comprimido para mastigar.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -624,6 +635,7 @@
     "idade_minima": "12",
     "composicao": "Um comprimido para mastigar contém 400 mg de complexo  polimerizado de\nhidróxido de alumínio equivalente a 240 mg de hidróxido de alumínio.",
     "descricao_forma_farmaceutica": "Comprimido para chupar",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -678,6 +690,7 @@
     "idade_minima": "12",
     "composicao": "Cada comprimido para chupar contém 340 mg de carbonato de di-hidróxido de alumínio e\nsódio (equivalente a 300 mg de carbonato de di-hidróxido de alumínio e sódio anidro).",
     "descricao_forma_farmaceutica": "Comprimido para chupar.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -732,6 +745,7 @@
     "idade_minima": "12",
     "composicao": "Rennie® é uma combinação de dois antiácidos, carbonato de cálcio e carbonato de\nmagnésio.\nCada comprimido para mastigar de Rennie Digestif contém 680 mg de carbonato de\ncálcio (equivalente a 272 mg de cálcio elementar por comprimido) e 80 mg de\ncarbonato  de  magnésio  (equivalente  a  20 mg  de  magnésio  elementar  por\ncomprimido).",
     "descricao_forma_farmaceutica": "Comprimido para mastigar branco-creme, de forma quadrada, com faces côncavas e impressão “RENNIE” em ambas as faces. Odor a menta.",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -786,6 +800,7 @@
     "idade_minima": "12",
     "composicao": "Cada comprimido contém 800 mg de magaldrato anidro.",
     "descricao_forma_farmaceutica": "Comprimidos",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -840,6 +855,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -894,6 +910,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -948,6 +965,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -999,6 +1017,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1050,6 +1069,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1104,6 +1124,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1158,6 +1179,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1212,6 +1234,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1266,6 +1289,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1320,6 +1344,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1374,6 +1399,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1428,6 +1454,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1482,6 +1509,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1536,6 +1564,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1590,6 +1619,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1644,6 +1674,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1698,6 +1729,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1752,6 +1784,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1806,6 +1839,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1860,6 +1894,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1914,6 +1949,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -1968,6 +2004,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2022,6 +2059,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2076,6 +2114,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2130,6 +2169,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2184,6 +2224,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2238,6 +2279,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2292,6 +2334,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2346,6 +2389,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2400,6 +2444,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2454,6 +2499,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2508,6 +2554,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2562,6 +2609,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2616,6 +2664,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2670,6 +2719,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2724,6 +2774,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2778,6 +2829,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2832,6 +2884,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2886,6 +2939,7 @@
     "idade_minima": "18",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2940,6 +2994,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -2994,6 +3049,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3048,6 +3104,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3102,6 +3159,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3156,6 +3214,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3210,6 +3269,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3264,6 +3324,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3318,6 +3379,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3372,6 +3434,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3426,6 +3489,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3480,6 +3544,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3534,6 +3599,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3588,6 +3654,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3642,6 +3709,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3696,6 +3764,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3750,6 +3819,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3804,6 +3874,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3858,6 +3929,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3912,6 +3984,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -3966,6 +4039,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4020,6 +4094,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4074,6 +4149,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4128,6 +4204,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4182,6 +4259,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4236,6 +4314,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4290,6 +4369,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4344,6 +4424,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4398,6 +4479,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4452,6 +4534,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4506,6 +4589,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4560,6 +4644,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4614,6 +4699,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4668,6 +4754,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4722,6 +4809,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4776,6 +4864,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4830,6 +4919,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4884,6 +4974,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4938,6 +5029,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -4992,6 +5084,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5046,6 +5139,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5100,6 +5194,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5154,6 +5249,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5208,6 +5304,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5262,6 +5359,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5316,6 +5414,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5370,6 +5469,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5424,6 +5524,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5478,6 +5579,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5532,6 +5634,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5586,6 +5689,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5640,6 +5744,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5694,6 +5799,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5748,6 +5854,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5802,6 +5909,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5856,6 +5964,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5910,6 +6019,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -5964,6 +6074,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6018,6 +6129,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6072,6 +6184,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6126,6 +6239,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6180,6 +6294,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6234,6 +6349,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6288,6 +6404,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6342,6 +6459,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6396,6 +6514,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6450,6 +6569,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6504,6 +6624,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6558,6 +6679,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6612,6 +6734,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6666,6 +6789,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6720,6 +6844,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6774,6 +6899,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6828,6 +6954,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6882,6 +7009,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6936,6 +7064,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -6990,6 +7119,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7044,6 +7174,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7098,6 +7229,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7152,6 +7284,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7206,6 +7339,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7260,6 +7394,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7314,6 +7449,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7368,6 +7504,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7422,6 +7559,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7476,6 +7614,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7530,6 +7669,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7584,6 +7724,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7638,6 +7779,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7692,6 +7834,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7746,6 +7889,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7800,6 +7944,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7854,6 +7999,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7908,6 +8054,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -7962,6 +8109,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8016,6 +8164,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8070,6 +8219,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8124,6 +8274,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8178,6 +8329,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8232,6 +8384,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8286,6 +8439,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8340,6 +8494,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8394,6 +8549,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8448,6 +8604,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8502,6 +8659,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8556,6 +8714,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8610,6 +8769,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8664,6 +8824,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8718,6 +8879,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8772,6 +8934,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8826,6 +8989,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8880,6 +9044,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8934,6 +9099,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -8988,6 +9154,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9042,6 +9209,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9096,6 +9264,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9150,6 +9319,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9204,6 +9374,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9258,6 +9429,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9312,6 +9484,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9366,6 +9539,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9420,6 +9594,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9474,6 +9649,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9528,6 +9704,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9582,6 +9759,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9636,6 +9814,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9690,6 +9869,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9744,6 +9924,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9798,6 +9979,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9852,6 +10034,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9906,6 +10089,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -9960,6 +10144,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10014,6 +10199,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10068,6 +10254,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10122,6 +10309,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10176,6 +10364,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10230,6 +10419,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10284,6 +10474,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10338,6 +10529,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10392,6 +10584,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10446,6 +10639,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10500,6 +10694,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10554,6 +10749,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10608,6 +10804,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10662,6 +10859,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10716,6 +10914,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10770,6 +10969,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10824,6 +11024,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10878,6 +11079,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10932,6 +11134,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -10986,6 +11189,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11040,6 +11244,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11094,6 +11299,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11148,6 +11354,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11202,6 +11409,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11256,6 +11464,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11310,6 +11519,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11364,6 +11574,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11418,6 +11629,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11472,6 +11684,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11526,6 +11739,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11580,6 +11794,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11634,6 +11849,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11688,6 +11904,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11742,6 +11959,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11796,6 +12014,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11850,6 +12069,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11904,6 +12124,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -11958,6 +12179,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12012,6 +12234,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12066,6 +12289,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12120,6 +12344,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12174,6 +12399,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12228,6 +12454,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12282,6 +12509,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12336,6 +12564,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12390,6 +12619,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12444,6 +12674,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12498,6 +12729,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12552,6 +12784,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12606,6 +12839,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12660,6 +12894,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12714,6 +12949,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12768,6 +13004,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12822,6 +13059,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12876,6 +13114,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12930,6 +13169,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -12984,6 +13224,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13038,6 +13279,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13092,6 +13334,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13146,6 +13389,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13200,6 +13444,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13254,6 +13499,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13308,6 +13554,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13362,6 +13609,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13416,6 +13664,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13470,6 +13719,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13524,6 +13774,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13578,6 +13829,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13632,6 +13884,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13686,6 +13939,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13740,6 +13994,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13794,6 +14049,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13848,6 +14104,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13902,6 +14159,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -13956,6 +14214,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14010,6 +14269,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14064,6 +14324,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14118,6 +14379,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14172,6 +14434,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14226,6 +14489,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14280,6 +14544,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14334,6 +14599,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14388,6 +14654,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14442,6 +14709,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14496,6 +14764,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14550,6 +14819,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14604,6 +14874,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14658,6 +14929,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14712,6 +14984,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14766,6 +15039,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14820,6 +15094,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14874,6 +15149,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14928,6 +15204,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -14982,6 +15259,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15036,6 +15314,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15090,6 +15369,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15144,6 +15424,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15198,6 +15479,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15252,6 +15534,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15306,6 +15589,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15360,6 +15644,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15414,6 +15699,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15468,6 +15754,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15522,6 +15809,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15576,6 +15864,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15630,6 +15919,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15684,6 +15974,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15738,6 +16029,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15792,6 +16084,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15846,6 +16139,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15900,6 +16194,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -15954,6 +16249,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16008,6 +16304,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16062,6 +16359,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16116,6 +16414,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16170,6 +16469,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16224,6 +16524,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16278,6 +16579,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16332,6 +16634,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16386,6 +16689,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16440,6 +16744,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16494,6 +16799,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16548,6 +16854,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16602,6 +16909,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16656,6 +16964,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16710,6 +17019,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16764,6 +17074,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16818,6 +17129,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16872,6 +17184,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16926,6 +17239,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -16980,6 +17294,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17034,6 +17349,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17088,6 +17404,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17142,6 +17459,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17196,6 +17514,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17250,6 +17569,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17304,6 +17624,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17358,6 +17679,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17412,6 +17734,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17466,6 +17789,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17520,6 +17844,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17574,6 +17899,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17628,6 +17954,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17682,6 +18009,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17736,6 +18064,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17790,6 +18119,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17844,6 +18174,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17898,6 +18229,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -17952,6 +18284,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18006,6 +18339,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18060,6 +18394,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18114,6 +18449,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18168,6 +18504,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18222,6 +18559,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18276,6 +18614,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18330,6 +18669,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18384,6 +18724,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18438,6 +18779,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18492,6 +18834,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18546,6 +18889,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18600,6 +18944,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18654,6 +18999,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18708,6 +19054,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18762,6 +19109,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18816,6 +19164,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18870,6 +19219,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18924,6 +19274,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -18978,6 +19329,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19032,6 +19384,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19086,6 +19439,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19140,6 +19494,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19194,6 +19549,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19248,6 +19604,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19302,6 +19659,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19356,6 +19714,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19410,6 +19769,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19464,6 +19824,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19518,6 +19879,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19572,6 +19934,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19626,6 +19989,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19680,6 +20044,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19734,6 +20099,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19788,6 +20154,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19842,6 +20209,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19896,6 +20264,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -19950,6 +20319,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20004,6 +20374,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20058,6 +20429,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20112,6 +20484,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20166,6 +20539,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20220,6 +20594,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20274,6 +20649,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20328,6 +20704,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20382,6 +20759,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20436,6 +20814,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20490,6 +20869,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20544,6 +20924,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20598,6 +20979,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20652,6 +21034,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20706,6 +21089,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20760,6 +21144,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20814,6 +21199,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20868,6 +21254,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20922,6 +21309,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -20976,6 +21364,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21030,6 +21419,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21084,6 +21474,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21138,6 +21529,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21192,6 +21584,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21246,6 +21639,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21300,6 +21694,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21354,6 +21749,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21408,6 +21804,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21462,6 +21859,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21516,6 +21914,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21570,6 +21969,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21624,6 +22024,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21678,6 +22079,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21732,6 +22134,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21786,6 +22189,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21840,6 +22244,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21894,6 +22299,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -21948,6 +22354,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22002,6 +22409,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22056,6 +22464,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22110,6 +22519,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22164,6 +22574,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22218,6 +22629,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22272,6 +22684,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22326,6 +22739,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22380,6 +22794,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22434,6 +22849,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22488,6 +22904,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22542,6 +22959,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22596,6 +23014,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22650,6 +23069,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22704,6 +23124,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22752,6 +23173,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22800,6 +23222,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22854,6 +23277,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22905,6 +23329,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -22956,6 +23381,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23007,6 +23433,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23061,6 +23488,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23115,6 +23543,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23169,6 +23598,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23223,6 +23653,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23277,6 +23708,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23331,6 +23763,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23385,6 +23818,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23439,6 +23873,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23493,6 +23928,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23547,6 +23983,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23601,6 +24038,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23655,6 +24093,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23709,6 +24148,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23763,6 +24203,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23817,6 +24258,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23871,6 +24313,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23925,6 +24368,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -23979,6 +24423,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24033,6 +24478,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24087,6 +24533,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24141,6 +24588,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24195,6 +24643,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24249,6 +24698,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24303,6 +24753,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24357,6 +24808,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24411,6 +24863,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24465,6 +24918,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24519,6 +24973,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24573,6 +25028,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24627,6 +25083,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24681,6 +25138,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24735,6 +25193,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24789,6 +25248,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24843,6 +25303,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24897,6 +25358,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -24951,6 +25413,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -25005,6 +25468,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -25059,6 +25523,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -25113,6 +25578,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -25167,6 +25633,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -25221,6 +25688,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "A",
@@ -25275,6 +25743,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "G",
@@ -25329,6 +25798,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "H",
@@ -25383,6 +25853,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "H",
@@ -25437,6 +25908,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "N",
@@ -25491,6 +25963,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -25545,6 +26018,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -25599,6 +26073,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -25653,6 +26128,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "R",
@@ -25707,6 +26183,7 @@
     "idade_minima": "Não Disponível",
     "composicao": "Não Disponível",
     "descricao_forma_farmaceutica": "Não Disponível",
+    "classificacao_dispensa": "",
     "atc_niveis": [
       {
         "codigo": "R",

@@ -51,6 +51,7 @@ MAPEAMENTO = {
     # Informação farmacêutica adicional
     "composicao": "composicao",
     "descricao_forma_farmaceutica": "descricao_forma_farmaceutica",
+    "classificacao_dispensa": "classificacao_dispensa",
 }
 
 
@@ -190,7 +191,8 @@ def converter():
         "indicacao_resumida",
         "idade_minima",
         "composicao",
-        "descricao_forma_farmaceutica"
+        "descricao_forma_farmaceutica",
+        "classificacao_dispensa"
     ]
 
 
@@ -321,6 +323,15 @@ def converter():
                     f"idade_minima '{idade}' não é um número inteiro."
                 )
 
+
+        classificacao = registo.get("classificacao_dispensa", "").upper()
+        if classificacao and classificacao not in {"MSRM", "MNSRM", "MNSRM-EF"}:
+            avisos.append(
+                f"Linha {indice + 2} ({registo.get('nome_medicamento', '')}): "
+                f"classificacao_dispensa '{classificacao}' inválida; "
+                "usar MSRM, MNSRM ou MNSRM-EF."
+            )
+        registo["classificacao_dispensa"] = classificacao
 
         registos.append(registo)
 
