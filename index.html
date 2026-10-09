@@ -1927,10 +1927,24 @@ function gruposDeMedicamentos(lista) {
     });
     return [...mapa.values()].sort((a,b) => a.nome.localeCompare(b.nome,"pt"));
 }
+/* Designação abreviada apenas para navegação; o dado original permanece na ficha. */
+function formaParaNavegacao(valor) {
+    const original = String(valor || "").trim();
+    const chave = norm(original).replace(/\s+/g, " ").trim();
+    // Apenas as três formas convencionais abaixo são agrupadas.
+    // Não agrupar libertação modificada, gastrorresistentes, orodispersíveis, etc.
+    if (/^comprimidos?$/.test(chave) ||
+        /^comprimidos? revestidos?$/.test(chave) ||
+        /^comprimidos? revestidos? por pelicula$/.test(chave)) {
+        return "Comprimidos";
+    }
+    return original || "Forma não indicada";
+}
+
 function formasDoGrupo(grupo) {
     const mapa = new Map();
     grupo.meds.forEach(med => {
-        const forma = (med.forma_farmaceutica || "Forma não indicada").trim();
+        const forma = formaParaNavegacao(med.forma_farmaceutica);
         const chave = norm(forma);
         if (!mapa.has(chave)) mapa.set(chave, {nome: forma, meds: []});
         mapa.get(chave).meds.push(med);
