@@ -1681,6 +1681,27 @@ header p {
   .dispensa-indicador { max-width:100%; }
 }
 
+
+/* Agrupamento de apresentações */
+.tree-brand {width:100%;border:0;background:#f0f7fc;color:#234c6a;border-radius:7px;padding:9px;text-align:left;cursor:pointer;font-weight:700;margin:4px 0;display:flex;justify-content:space-between;gap:8px}
+.tree-brand small,.tree-form small{color:#7b90a4;font-weight:400}
+.tree-brand-children{display:none;padding-left:12px;border-left:2px solid #dceef9}
+.tree-brand-children.open{display:block}
+.tree-form{display:block;width:100%;background:none;border:0;text-align:left;padding:7px 4px;cursor:pointer;color:#365a77;font-weight:600}
+.tree-form-children{display:none;padding-left:10px}
+.tree-form-children.open{display:block}
+.tree-product{font-weight:400}
+.search-group-more{color:#74899c;font-size:.75rem;white-space:nowrap}
+.search-group-choices{border-bottom:1px solid #e6edf3;padding:9px 15px;background:#f8fbfd}
+.search-choice{display:block;width:100%;padding:9px 12px;border:0;border-radius:7px;background:white;text-align:left;cursor:pointer;color:#34546d;margin:4px 0}
+.search-choice:hover{background:#eaf5fc}
+.presentation-picker{margin:16px 0;padding:14px;border:1px solid #dce5ed;border-radius:11px;background:#f8fbfd}
+.presentation-picker-title{font-weight:700;color:#263b50;margin-bottom:10px}
+.presentation-form{margin:10px 0 5px;color:#526d86;font-weight:600;font-size:.85rem}
+.presentation-options{display:flex;flex-wrap:wrap;gap:7px}
+.presentation-option{border:1px solid #cbdde9;border-radius:8px;padding:7px 11px;background:white;color:#31556f;cursor:pointer;font-family:inherit}
+.presentation-option.active{background:#258fc9;color:white;border-color:#258fc9}
+
 </style>
 
 </head>
@@ -1891,6 +1912,70 @@ function norm(valor) {
 
 }
 
+
+
+/* Agrupar sem perder as apresentações individuais do Excel */
+function chaveGrupo(med) {
+    return [norm(med.nome_medicamento).trim(), norm(med.substancia_ativa).trim()].join("||");
+}
+function gruposDeMedicamentos(lista) {
+    const mapa = new Map();
+    lista.forEach(med => {
+        const chave = chaveGrupo(med);
+        if (!mapa.has(chave)) mapa.set(chave, { nome: med.nome_medicamento, substancia: med.substancia_ativa, meds: [] });
+        mapa.get(chave).meds.push(med);
+    });
+    return [...mapa.values()].sort((a,b) => a.nome.localeCompare(b.nome,"pt"));
+}
+function formasDoGrupo(grupo) {
+    const mapa = new Map();
+    grupo.meds.forEach(med => {
+        const forma = (med.forma_farmaceutica || "Forma não indicada").trim();
+        const chave = norm(forma);
+        if (!mapa.has(chave)) mapa.set(chave, {nome: forma, meds: []});
+        mapa.get(chave).meds.push(med);
+    });
+    return [...mapa.values()].sort((a,b) => a.nome.localeCompare(b.nome,"pt"));
+}
+function nomeApresentacao(med) {
+    return med.dosagem || (med.numero_registo ? "N.º " + med.numero_registo : "Ver ficha");
+}
+function escolherApresentacao(med) {
+    selecionarMedicamento(med);
+    searchBar.value = med.nome_medicamento;
+    fecharResultadosPesquisa();
+}
+function adicionarSeletorApresentacoes(med) {
+    const relacionados = medicamentos.filter(m => chaveGrupo(m) === chaveGrupo(med));
+    if (relacionados.length < 2) return;
+    const detalhe = document.getElementById("detalhe-medicamento");
+    const painel = document.createElement("div");
+    painel.className = "presentation-picker";
+    const titulo = document.createElement("div");
+    titulo.className = "presentation-picker-title";
+    titulo.textContent = "Outras apresentações de " + med.nome_medicamento;
+    painel.appendChild(titulo);
+    formasDoGrupo({meds: relacionados}).forEach(forma => {
+        const rotulo = document.createElement("div");
+        rotulo.className = "presentation-form";
+        rotulo.textContent = forma.nome;
+        painel.appendChild(rotulo);
+        const opcoes = document.createElement("div");
+        opcoes.className = "presentation-options";
+        forma.meds.forEach(item => {
+            const botao = document.createElement("button");
+            botao.type = "button";
+            botao.className = "presentation-option" + (item._id === med._id ? " active" : "");
+            botao.textContent = nomeApresentacao(item);
+            botao.addEventListener("click", () => selecionarMedicamento(item));
+            opcoes.appendChild(botao);
+        });
+        painel.appendChild(opcoes);
+    });
+    const header = detalhe.querySelector(".trading-card-header");
+    if (header) header.insertAdjacentElement("afterend", painel);
+    else detalhe.prepend(painel);
+}
 
 /* =========================================================
    CARREGAR DADOS
@@ -2282,61 +2367,46 @@ function criarNoATC(no) {
             "product-children";
 
 
-        no.medicamentos.forEach(
-            med => {
-
-                const botao =
-                    document.createElement(
-                        "button"
-                    );
-
-
-                botao.type =
-                    "button";
-
-
-                botao.className =
-                    "tree-product";
-
-
-                botao.dataset.medId =
-                    med._id;
-
-
-                botao.innerHTML = `
-
-                    <strong>
-
-                        ${esc(
-                            med.nome_medicamento
-                        )}
-
-                    </strong>
-
-                `;
-
-
-                botao.addEventListener(
-                    "click",
-                    evento => {
-
-                        evento.stopPropagation();
-
-                        selecionarMedicamento(
-                            med
-                        );
-
-                    }
-                );
-
-
-                products.appendChild(
-                    botao
-                );
-
+        gruposDeMedicamentos(no.medicamentos).forEach(grupo => {
+            if (grupo.meds.length === 1) {
+                const med = grupo.meds[0];
+                const botao = document.createElement("button");
+                botao.type = "button";
+                botao.className = "tree-product";
+                botao.dataset.medId = med._id;
+                botao.textContent = med.nome_medicamento;
+                botao.addEventListener("click", evento => {evento.stopPropagation(); selecionarMedicamento(med);});
+                products.appendChild(botao);
+                return;
             }
-        );
-
+            const marca = document.createElement("button");
+            marca.type = "button";
+            marca.className = "tree-brand";
+            marca.innerHTML = `<span>${esc(grupo.nome)}</span><small>${grupo.meds.length} apresentações ▸</small>`;
+            const conteudo = document.createElement("div");
+            conteudo.className = "tree-brand-children";
+            marca.addEventListener("click", evento => {evento.stopPropagation();conteudo.classList.toggle("open");});
+            formasDoGrupo(grupo).forEach(forma => {
+                const formaBotao = document.createElement("button");
+                formaBotao.type = "button";
+                formaBotao.className = "tree-form";
+                formaBotao.innerHTML = `${esc(forma.nome)} <small>(${forma.meds.length}) ▸</small>`;
+                const apresentacoes = document.createElement("div");
+                apresentacoes.className = "tree-form-children";
+                formaBotao.addEventListener("click", evento => {evento.stopPropagation();apresentacoes.classList.toggle("open");});
+                forma.meds.forEach(med => {
+                    const botao = document.createElement("button");
+                    botao.type = "button";
+                    botao.className = "tree-product";
+                    botao.dataset.medId = med._id;
+                    botao.textContent = nomeApresentacao(med);
+                    botao.addEventListener("click", evento => {evento.stopPropagation();selecionarMedicamento(med);});
+                    apresentacoes.appendChild(botao);
+                });
+                conteudo.append(formaBotao, apresentacoes);
+            });
+            products.append(marca, conteudo);
+        });
 
         wrapper.appendChild(
             products
@@ -2767,6 +2837,16 @@ function abrirCaminhoMedicamento(
             }
         );
 
+    const selecionado = document.querySelector(`.tree-product[data-med-id="${med._id}"]`);
+    if (selecionado) {
+        const no = selecionado.closest(".atc-node");
+        if (no) no.classList.add("show-products");
+        const marca = selecionado.closest(".tree-brand-children");
+        if (marca) marca.classList.add("open");
+        const forma = selecionado.closest(".tree-form-children");
+        if (forma) forma.classList.add("open");
+    }
+
 }
 
 
@@ -2811,152 +2891,43 @@ function pesquisar() {
     }
 
 
-    const resultados =
-        medicamentos
-        .filter(
-            med =>
-                med
-                    ._busca
-                    .includes(
-                        termo
-                    )
-        )
-        .slice(
-            0,
-            12
-        );
-
-
-    if (
-        !resultados.length
-    ) {
-
-        searchResults.innerHTML = `
-
-            <div class="sem-resultados">
-
-                Nenhum medicamento encontrado.
-
-            </div>
-
-        `;
-
-
-        searchResults
-            .classList
-            .add(
-                "visivel"
-            );
-
-
+    const grupos = gruposDeMedicamentos(medicamentos.filter(med => med._busca.includes(termo))).slice(0,12);
+    if (!grupos.length) {
+        searchResults.innerHTML = '<div class="sem-resultados">Nenhum medicamento encontrado.</div>';
+        searchResults.classList.add("visivel");
         return;
-
     }
-
-
-    searchResults.innerHTML =
-        resultados
-        .map(
-            med => `
-
-                <div
-                    class="search-result"
-                    data-med-id="${med._id}"
-                >
-
-                    <div>
-
-                        <div class="search-result-name">
-
-                            ${esc(
-                                med.nome_medicamento
-                            )}
-
-                        </div>
-
-                        <div class="search-result-sub">
-
-                            ${esc(
-                                med.substancia_ativa ||
-                                ""
-                            )}
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="search-result-reg">
-
-                        ${
-                            med.numero_registo
-
-                            ?
-
-                            "N.º " +
-                            esc(
-                                med.numero_registo
-                            )
-
-                            :
-
-                            ""
-                        }
-
-                    </div>
-
-                </div>
-
-            `
-        )
-        .join("");
-
-
-    searchResults
-        .querySelectorAll(
-            ".search-result"
-        )
-        .forEach(
-            resultado => {
-
-                resultado.addEventListener(
-                    "click",
-                    () => {
-
-                        const med =
-                            medicamentos[
-                                Number(
-                                    resultado
-                                        .dataset
-                                        .medId
-                                )
-                            ];
-
-
-                        selecionarMedicamento(
-                            med
-                        );
-
-
-                        searchBar.value =
-                            med.nome_medicamento;
-
-
-                        fecharResultadosPesquisa();
-
-                    }
-                );
-
-            }
-        );
-
-
-    searchResults
-        .classList
-        .add(
-            "visivel"
-        );
-
+    searchResults.innerHTML = "";
+    grupos.forEach(grupo => {
+        const linha = document.createElement("div");
+        linha.className = "search-result";
+        linha.innerHTML = `<div><div class="search-result-name">${esc(grupo.nome)}</div><div class="search-result-sub">${esc(grupo.substancia || "")}</div></div><div class="search-group-more">${grupo.meds.length === 1 ? "Ver ficha" : grupo.meds.length + " apresentações ▾"}</div>`;
+        searchResults.appendChild(linha);
+        if (grupo.meds.length === 1) {
+            linha.addEventListener("click", () => escolherApresentacao(grupo.meds[0]));
+        } else {
+            const opcoes = document.createElement("div");
+            opcoes.className = "search-group-choices";
+            opcoes.style.display = "none";
+            formasDoGrupo(grupo).forEach(forma => {
+                const subtitulo = document.createElement("div");
+                subtitulo.className = "presentation-form";
+                subtitulo.textContent = forma.nome;
+                opcoes.appendChild(subtitulo);
+                forma.meds.forEach(med => {
+                    const botao = document.createElement("button");
+                    botao.type = "button";
+                    botao.className = "search-choice";
+                    botao.textContent = nomeApresentacao(med) + (med.numero_registo ? " · N.º " + med.numero_registo : "");
+                    botao.addEventListener("click", () => escolherApresentacao(med));
+                    opcoes.appendChild(botao);
+                });
+            });
+            linha.addEventListener("click", () => {opcoes.style.display = opcoes.style.display === "none" ? "block" : "none";});
+            searchResults.appendChild(opcoes);
+        }
+    });
+    searchResults.classList.add("visivel");
 }
 
 
@@ -3011,6 +2982,8 @@ function selecionarMedicamento(
     mostrarDetalhes(
         med
     );
+
+    adicionarSeletorApresentacoes(med);
 
 }
 
