@@ -133,7 +133,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -188,7 +188,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -243,7 +243,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -298,7 +298,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -353,7 +353,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -406,7 +406,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -449,7 +452,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -492,7 +498,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -535,7 +544,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -578,7 +590,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -621,7 +636,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -664,7 +682,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -707,7 +728,10 @@
         "codigo": "A",
         "nome": "Trato gastrintestinal e metabolismo"
       },
-      null,
+      {
+        "codigo": "A01",
+        "nome": "Preparações para uso estomatológico"
+      },
       null,
       null,
       null
@@ -752,7 +776,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -807,7 +831,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -862,7 +886,7 @@
       },
       {
         "codigo": "A01",
-        "nome": "PREPARAÇÕES PARA USO ESTOMATOLÓGICO"
+        "nome": "Preparações para uso estomatológico"
       },
       {
         "codigo": "A01A",
@@ -917,7 +941,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -972,7 +996,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1027,7 +1051,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1082,7 +1106,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1137,7 +1161,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1192,7 +1216,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1247,7 +1271,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1302,7 +1326,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1357,7 +1381,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02A",
@@ -1409,7 +1433,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1464,7 +1488,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1519,7 +1543,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1574,7 +1598,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1629,7 +1653,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1684,7 +1708,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1739,7 +1763,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1794,7 +1818,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1849,7 +1873,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1904,7 +1928,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -1959,7 +1983,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2014,7 +2038,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2069,7 +2093,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2124,7 +2148,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2179,7 +2203,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2234,7 +2258,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2289,7 +2313,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2344,7 +2368,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2399,7 +2423,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2454,7 +2478,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2509,7 +2533,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2564,7 +2588,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2619,7 +2643,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2674,7 +2698,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2729,7 +2753,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2784,7 +2808,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2839,7 +2863,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2894,7 +2918,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -2949,7 +2973,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -3004,7 +3028,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -3059,7 +3083,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -3114,7 +3138,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -3169,7 +3193,7 @@
       },
       {
         "codigo": "A02",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES CAUSADAS POR ÁCIDOS"
+        "nome": "Fármacos para o tratamento de alterações causadas por ácidos"
       },
       {
         "codigo": "A02B",
@@ -3224,7 +3248,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3279,7 +3303,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3334,7 +3358,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3389,7 +3413,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3444,7 +3468,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3499,7 +3523,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3554,7 +3578,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3609,7 +3633,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3664,7 +3688,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3719,7 +3743,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3774,7 +3798,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3829,7 +3853,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3884,7 +3908,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03A",
@@ -3939,7 +3963,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -3994,7 +4018,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -4049,7 +4073,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -4104,7 +4128,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -4159,7 +4183,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -4214,7 +4238,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -4269,7 +4293,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03B",
@@ -4324,7 +4348,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03D",
@@ -4379,7 +4403,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03D",
@@ -4434,7 +4458,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4489,7 +4513,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4544,7 +4568,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4599,7 +4623,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4654,7 +4678,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4709,7 +4733,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4764,7 +4788,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4819,7 +4843,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4874,7 +4898,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4929,7 +4953,7 @@
       },
       {
         "codigo": "A03",
-        "nome": "FÁRMACOS PARA O TRATAMENTO DE ALTERAÇÕES FUNCIONAIS DO ESTÔMAGO E INTESTINOS"
+        "nome": "Fármacos para o tratamento de alterações funcionais do estômago e intestinos"
       },
       {
         "codigo": "A03F",
@@ -4984,7 +5008,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5039,7 +5063,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5094,7 +5118,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5149,7 +5173,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5204,7 +5228,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5259,7 +5283,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5314,7 +5338,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5369,7 +5393,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5424,7 +5448,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5479,7 +5503,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5534,7 +5558,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5589,7 +5613,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5644,7 +5668,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5699,7 +5723,7 @@
       },
       {
         "codigo": "A04",
-        "nome": "ANTIEMÉTICOS E ANTINAUSEANTES"
+        "nome": "Antieméticos e antinauseantes"
       },
       {
         "codigo": "A04A",
@@ -5754,7 +5778,7 @@
       },
       {
         "codigo": "A05",
-        "nome": "TERAPÊUTICA BILIAR E HEPÁTICA"
+        "nome": "Terapêutica biliar e hepática"
       },
       {
         "codigo": "A05A",
@@ -5809,7 +5833,7 @@
       },
       {
         "codigo": "A05",
-        "nome": "TERAPÊUTICA BILIAR E HEPÁTICA"
+        "nome": "Terapêutica biliar e hepática"
       },
       {
         "codigo": "A05A",
@@ -5864,7 +5888,7 @@
       },
       {
         "codigo": "A05",
-        "nome": "TERAPÊUTICA BILIAR E HEPÁTICA"
+        "nome": "Terapêutica biliar e hepática"
       },
       {
         "codigo": "A05A",
@@ -5919,7 +5943,7 @@
       },
       {
         "codigo": "A05",
-        "nome": "TERAPÊUTICA BILIAR E HEPÁTICA"
+        "nome": "Terapêutica biliar e hepática"
       },
       {
         "codigo": "A05A",
@@ -5974,7 +5998,7 @@
       },
       {
         "codigo": "A05",
-        "nome": "TERAPÊUTICA BILIAR E HEPÁTICA"
+        "nome": "Terapêutica biliar e hepática"
       },
       {
         "codigo": "A05B",
@@ -6029,7 +6053,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6084,7 +6108,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6139,7 +6163,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6194,7 +6218,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6249,7 +6273,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6304,7 +6328,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6359,7 +6383,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6414,7 +6438,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6469,7 +6493,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6524,7 +6548,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6579,7 +6603,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6634,7 +6658,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6689,7 +6713,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6744,7 +6768,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6799,7 +6823,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6854,7 +6878,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6909,7 +6933,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -6964,7 +6988,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7019,7 +7043,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7074,7 +7098,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7129,7 +7153,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7184,7 +7208,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7239,7 +7263,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7294,7 +7318,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7349,7 +7373,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7404,7 +7428,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7459,7 +7483,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7514,7 +7538,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7569,7 +7593,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7624,7 +7648,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7679,7 +7703,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7734,7 +7758,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7789,7 +7813,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7844,7 +7868,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7899,7 +7923,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -7954,7 +7978,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8009,7 +8033,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8064,7 +8088,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8119,7 +8143,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8174,7 +8198,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8229,7 +8253,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8284,7 +8308,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8339,7 +8363,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8394,7 +8418,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8449,7 +8473,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8504,7 +8528,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8559,7 +8583,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8614,7 +8638,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8669,7 +8693,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8724,7 +8748,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8779,7 +8803,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8834,7 +8858,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8889,7 +8913,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8944,7 +8968,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -8999,7 +9023,7 @@
       },
       {
         "codigo": "A06",
-        "nome": "FÁRMACOS PARA A OBSTIPAÇÃO"
+        "nome": "Fármacos para a obstipação"
       },
       {
         "codigo": "A06A",
@@ -9054,7 +9078,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07A",
@@ -9109,7 +9133,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07A",
@@ -9164,7 +9188,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07A",
@@ -9219,7 +9243,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07A",
@@ -9274,7 +9298,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07A",
@@ -9329,7 +9353,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07B",
@@ -9384,7 +9408,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07C",
@@ -9439,7 +9463,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07C",
@@ -9494,7 +9518,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9549,7 +9573,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9604,7 +9628,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9659,7 +9683,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9714,7 +9738,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9769,7 +9793,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9824,7 +9848,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9879,7 +9903,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07D",
@@ -9934,7 +9958,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -9989,7 +10013,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10044,7 +10068,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10099,7 +10123,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10154,7 +10178,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10209,7 +10233,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10264,7 +10288,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10319,7 +10343,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10374,7 +10398,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10429,7 +10453,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10484,7 +10508,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10539,7 +10563,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10594,7 +10618,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10649,7 +10673,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10704,7 +10728,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10759,7 +10783,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10814,7 +10838,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10869,7 +10893,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10924,7 +10948,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -10979,7 +11003,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11034,7 +11058,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11089,7 +11113,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11144,7 +11168,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11199,7 +11223,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11254,7 +11278,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11309,7 +11333,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11364,7 +11388,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11419,7 +11443,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11474,7 +11498,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07E",
@@ -11529,7 +11553,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11584,7 +11608,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11639,7 +11663,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11694,7 +11718,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11749,7 +11773,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11804,7 +11828,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11859,7 +11883,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11914,7 +11938,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07F",
@@ -11969,7 +11993,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07X",
@@ -12024,7 +12048,7 @@
       },
       {
         "codigo": "A07",
-        "nome": "ANTIDIARREICOS, ANTI-INFLAMATÓRIOS E ANTI-INFECIOSOS INTESTINAIS"
+        "nome": "Antidiarreicos, anti-inflamatórios e anti-infeciosos intestinais"
       },
       {
         "codigo": "A07X",
@@ -12079,7 +12103,7 @@
       },
       {
         "codigo": "A08",
-        "nome": "FÁRMACOS UTILIZADOS NO TRATAMENTO DA OBESIDADE COM EXCLUSÃO DE PRODUTOS DIETÉTICOS"
+        "nome": "Fármacos utilizados no tratamento da obesidade com exclusão de produtos dietéticos"
       },
       {
         "codigo": "A08A",
@@ -12134,7 +12158,7 @@
       },
       {
         "codigo": "A08",
-        "nome": "FÁRMACOS UTILIZADOS NO TRATAMENTO DA OBESIDADE COM EXCLUSÃO DE PRODUTOS DIETÉTICOS"
+        "nome": "Fármacos utilizados no tratamento da obesidade com exclusão de produtos dietéticos"
       },
       {
         "codigo": "A08A",
@@ -12189,7 +12213,7 @@
       },
       {
         "codigo": "A08",
-        "nome": "FÁRMACOS UTILIZADOS NO TRATAMENTO DA OBESIDADE COM EXCLUSÃO DE PRODUTOS DIETÉTICOS"
+        "nome": "Fármacos utilizados no tratamento da obesidade com exclusão de produtos dietéticos"
       },
       {
         "codigo": "A08A",
@@ -12244,7 +12268,7 @@
       },
       {
         "codigo": "A08",
-        "nome": "FÁRMACOS UTILIZADOS NO TRATAMENTO DA OBESIDADE COM EXCLUSÃO DE PRODUTOS DIETÉTICOS"
+        "nome": "Fármacos utilizados no tratamento da obesidade com exclusão de produtos dietéticos"
       },
       {
         "codigo": "A08A",
@@ -12299,7 +12323,7 @@
       },
       {
         "codigo": "A09",
-        "nome": "DIGESTIVOS, INCLUINDO ENZIMAS"
+        "nome": "Digestivos, incluindo enzimas"
       },
       {
         "codigo": "A09A",
@@ -12354,7 +12378,7 @@
       },
       {
         "codigo": "A09",
-        "nome": "DIGESTIVOS, INCLUINDO ENZIMAS"
+        "nome": "Digestivos, incluindo enzimas"
       },
       {
         "codigo": "A09A",
@@ -12409,7 +12433,7 @@
       },
       {
         "codigo": "A09",
-        "nome": "DIGESTIVOS, INCLUINDO ENZIMAS"
+        "nome": "Digestivos, incluindo enzimas"
       },
       {
         "codigo": "A09A",
@@ -12464,7 +12488,7 @@
       },
       {
         "codigo": "A09",
-        "nome": "DIGESTIVOS, INCLUINDO ENZIMAS"
+        "nome": "Digestivos, incluindo enzimas"
       },
       {
         "codigo": "A09A",
@@ -12519,7 +12543,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12574,7 +12598,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12629,7 +12653,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12684,7 +12708,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12739,7 +12763,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12794,7 +12818,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12849,7 +12873,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12904,7 +12928,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -12959,7 +12983,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13014,7 +13038,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13069,7 +13093,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13124,7 +13148,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13179,7 +13203,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13234,7 +13258,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13289,7 +13313,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13344,7 +13368,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13399,7 +13423,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13454,7 +13478,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13509,7 +13533,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13564,7 +13588,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13619,7 +13643,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13674,7 +13698,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13729,7 +13753,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13784,7 +13808,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13839,7 +13863,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13894,7 +13918,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -13949,7 +13973,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14004,7 +14028,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14059,7 +14083,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14114,7 +14138,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14169,7 +14193,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14224,7 +14248,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14279,7 +14303,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14334,7 +14358,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14389,7 +14413,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14444,7 +14468,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14499,7 +14523,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14554,7 +14578,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10A",
@@ -14609,7 +14633,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14664,7 +14688,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14719,7 +14743,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14774,7 +14798,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14829,7 +14853,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14884,7 +14908,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14939,7 +14963,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -14994,7 +15018,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15049,7 +15073,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15104,7 +15128,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15159,7 +15183,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15214,7 +15238,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15269,7 +15293,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15324,7 +15348,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15379,7 +15403,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15434,7 +15458,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15489,7 +15513,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15544,7 +15568,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15599,7 +15623,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15654,7 +15678,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15709,7 +15733,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15764,7 +15788,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15819,7 +15843,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15874,7 +15898,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15929,7 +15953,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -15984,7 +16008,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16039,7 +16063,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16094,7 +16118,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16149,7 +16173,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16204,7 +16228,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16259,7 +16283,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16314,7 +16338,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16369,7 +16393,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16424,7 +16448,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16479,7 +16503,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16534,7 +16558,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16589,7 +16613,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16644,7 +16668,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16699,7 +16723,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16754,7 +16778,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16809,7 +16833,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16864,7 +16888,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16919,7 +16943,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -16974,7 +16998,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17029,7 +17053,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17084,7 +17108,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17139,7 +17163,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17194,7 +17218,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17249,7 +17273,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17304,7 +17328,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17359,7 +17383,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17414,7 +17438,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17469,7 +17493,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17524,7 +17548,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17579,7 +17603,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17634,7 +17658,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17689,7 +17713,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17744,7 +17768,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17799,7 +17823,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17854,7 +17878,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17909,7 +17933,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -17964,7 +17988,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18019,7 +18043,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18074,7 +18098,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18129,7 +18153,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18184,7 +18208,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18239,7 +18263,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18294,7 +18318,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18349,7 +18373,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18404,7 +18428,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18459,7 +18483,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18514,7 +18538,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18569,7 +18593,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18624,7 +18648,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18679,7 +18703,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18734,7 +18758,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18789,7 +18813,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18844,7 +18868,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18899,7 +18923,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -18954,7 +18978,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19009,7 +19033,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19064,7 +19088,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19119,7 +19143,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19174,7 +19198,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19229,7 +19253,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19284,7 +19308,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19339,7 +19363,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19394,7 +19418,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19449,7 +19473,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19504,7 +19528,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19559,7 +19583,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19614,7 +19638,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19669,7 +19693,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19724,7 +19748,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19779,7 +19803,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19834,7 +19858,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19889,7 +19913,7 @@
       },
       {
         "codigo": "A10",
-        "nome": "FÁRMACOS UTILIZADOS NA DIABETES"
+        "nome": "Fármacos utilizados na diabetes"
       },
       {
         "codigo": "A10B",
@@ -19944,7 +19968,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -19999,7 +20023,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20054,7 +20078,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20109,7 +20133,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20164,7 +20188,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20219,7 +20243,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20274,7 +20298,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20329,7 +20353,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20384,7 +20408,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20439,7 +20463,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20494,7 +20518,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20549,7 +20573,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20604,7 +20628,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20659,7 +20683,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20714,7 +20738,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20769,7 +20793,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20824,7 +20848,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20879,7 +20903,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20934,7 +20958,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -20989,7 +21013,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -21044,7 +21068,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -21099,7 +21123,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -21154,7 +21178,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11C",
@@ -21209,7 +21233,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11D",
@@ -21264,7 +21288,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11D",
@@ -21319,7 +21343,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11D",
@@ -21374,7 +21398,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11D",
@@ -21429,7 +21453,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11D",
@@ -21484,7 +21508,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11E",
@@ -21539,7 +21563,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11E",
@@ -21594,7 +21618,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11E",
@@ -21649,7 +21673,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11G",
@@ -21704,7 +21728,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11G",
@@ -21759,7 +21783,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11G",
@@ -21814,7 +21838,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11G",
@@ -21869,7 +21893,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11G",
@@ -21924,7 +21948,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11H",
@@ -21979,7 +22003,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11H",
@@ -22034,7 +22058,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11H",
@@ -22089,7 +22113,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11H",
@@ -22144,7 +22168,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11H",
@@ -22199,7 +22223,7 @@
       },
       {
         "codigo": "A11",
-        "nome": "VITAMINAS"
+        "nome": "Vitaminas"
       },
       {
         "codigo": "A11J",
@@ -22254,7 +22278,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22309,7 +22333,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22364,7 +22388,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22419,7 +22443,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22474,7 +22498,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22529,7 +22553,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22584,7 +22608,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22639,7 +22663,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22694,7 +22718,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22749,7 +22773,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22804,7 +22828,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22859,7 +22883,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22914,7 +22938,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -22969,7 +22993,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12A",
@@ -23024,7 +23048,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12B",
@@ -23079,7 +23103,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23134,7 +23158,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23189,7 +23213,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23244,7 +23268,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23299,7 +23323,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23354,7 +23378,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23409,7 +23433,7 @@
       },
       {
         "codigo": "A12",
-        "nome": "SUPLEMENTOS MINERAIS"
+        "nome": "Suplementos minerais"
       },
       {
         "codigo": "A12C",
@@ -23464,7 +23488,7 @@
       },
       {
         "codigo": "A13",
-        "nome": "TÓNICOS"
+        "nome": "Tónicos"
       },
       {
         "codigo": "A13A",
@@ -23513,7 +23537,7 @@
       },
       {
         "codigo": "A13",
-        "nome": "TÓNICOS"
+        "nome": "Tónicos"
       },
       {
         "codigo": "A13A",
@@ -23562,7 +23586,7 @@
       },
       {
         "codigo": "A14",
-        "nome": "AGENTES ANABOLIZANTES DE USO SISTÉMICO"
+        "nome": "Agentes anabolizantes de uso sistémico"
       },
       {
         "codigo": "A14A",
@@ -23617,7 +23641,7 @@
       },
       {
         "codigo": "A15",
-        "nome": "ESTIMULANTES DO APETITE"
+        "nome": "Estimulantes do apetite"
       },
       {
         "codigo": "A15",
@@ -23669,7 +23693,7 @@
       },
       {
         "codigo": "A15",
-        "nome": "ESTIMULANTES DO APETITE"
+        "nome": "Estimulantes do apetite"
       },
       {
         "codigo": "A15",
@@ -23721,7 +23745,7 @@
       },
       {
         "codigo": "A15",
-        "nome": "ESTIMULANTES DO APETITE"
+        "nome": "Estimulantes do apetite"
       },
       {
         "codigo": "A15",
@@ -23773,7 +23797,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -23828,7 +23852,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -23883,7 +23907,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -23938,7 +23962,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -23993,7 +24017,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24048,7 +24072,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24103,7 +24127,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24158,7 +24182,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24213,7 +24237,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24268,7 +24292,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24323,7 +24347,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24378,7 +24402,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24433,7 +24457,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24488,7 +24512,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24543,7 +24567,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24598,7 +24622,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24653,7 +24677,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24708,7 +24732,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24763,7 +24787,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24818,7 +24842,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24873,7 +24897,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24928,7 +24952,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -24983,7 +25007,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25038,7 +25062,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25093,7 +25117,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25148,7 +25172,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25203,7 +25227,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25258,7 +25282,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25313,7 +25337,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25368,7 +25392,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25423,7 +25447,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25478,7 +25502,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25533,7 +25557,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25588,7 +25612,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25643,7 +25667,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25698,7 +25722,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25753,7 +25777,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25808,7 +25832,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25863,7 +25887,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25918,7 +25942,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -25973,7 +25997,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
@@ -26028,7 +26052,7 @@
       },
       {
         "codigo": "A16",
-        "nome": "OUTROS FÁRMACOS COM AÇÃO SOBRE O TRATO GASTRINTESTINAL E METABOLISMO"
+        "nome": "Outros fármacos com ação sobre o trato gastrintestinal e metabolismo"
       },
       {
         "codigo": "A16A",
