@@ -69,7 +69,7 @@ COLUNAS_NIVEIS = [
 
 
 PADRAO_NIVEL = re.compile(
-    r"^([A-Z][0-9A-Z]*)\s*[-–:]\s*(.+)$"
+    r"^([A-Z][0-9A-Z]*)\s*[-–—:]\s*(.+)$"
 )
 
 
