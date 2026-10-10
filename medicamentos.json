@@ -9407,7 +9407,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Dioralyte (Sabor Limão)",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Pó para solução oral",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -9462,7 +9462,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Dioralyte (Sabor Groselha)",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Pó para solução oral",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -42178,7 +42178,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Geloplasma",
-    "substancia_ativa": "Electrólitos + Gelatina",
+    "substancia_ativa": "Eletrólitos + Gelatina",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -42226,7 +42226,7 @@
       },
       {
         "codigo": "B05AA06",
-        "nome": "Electrólitos + Gelatina"
+        "nome": "Eletrólitos + Gelatina"
       }
     ]
   },
@@ -43003,7 +43003,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Periolimel N4E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43051,14 +43051,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Olimel N7E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43106,14 +43106,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Olimel N9E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43161,14 +43161,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "SmofKabiven Extra Nitrogen",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43216,14 +43216,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Olimel N12E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43271,14 +43271,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Kabiven",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43326,14 +43326,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Numeta G13%E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43381,14 +43381,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Nutriflex Omega 56/144 S",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43436,14 +43436,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Nutriflex Omega peri",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43491,14 +43491,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "SmofKabiven Low Osmo Peripheral",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43546,14 +43546,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Nutriflex Omega 38/120 P",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43601,14 +43601,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Smofkabiven Central",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43656,14 +43656,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Smofkabiven Peripheral",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43711,14 +43711,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Numeta G16%E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43766,14 +43766,14 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Numeta G19%E",
-    "substancia_ativa": "Aminoácidos + Electrólitos + Glucose + Lípidos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos + Glucose + Lípidos",
     "forma_farmaceutica": "Emulsão para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -43821,7 +43821,7 @@
       },
       {
         "codigo": "B05BA10",
-        "nome": "Aminoácidos + Electrólitos + Glucose + Lípidos"
+        "nome": "Aminoácidos + Eletrólitos + Glucose + Lípidos"
       }
     ]
   },
@@ -44213,7 +44213,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Esterofundina A-G Braun",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -44268,7 +44268,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Plasma-Lyte 148 e Glucose 5% p/v Viaflo",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -44653,7 +44653,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Nutrineal PD4 1,1 % aminoácidos",
-    "substancia_ativa": "Aminoácidos + Electrólitos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -44705,7 +44705,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Aminoplasmal B. Braun 10% E",
-    "substancia_ativa": "Aminoácidos + Electrólitos",
+    "substancia_ativa": "Aminoácidos + Eletrólitos",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "100 mg/ml",
     "indicacao_terapeutica": "Não Disponível",
@@ -44757,7 +44757,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 40 Glucose 1,36% p/v / 13,6 mg/ml",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -44812,7 +44812,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 35 Glucose 1,36% p/v/ 13,6 mg/ml",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -44867,7 +44867,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 40 Glucose 1,36% p/v/ 13,6 mg/ml Clear-Flex",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -44977,7 +44977,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Bicavera 2.3% glucose 1.75 mmol/l Cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45032,7 +45032,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "balance 2.3% glucose 1.75 mmol/l cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45087,7 +45087,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "balance 4.25% glucose 1.75 mmol/l cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45142,7 +45142,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 40 Glucose 3,86% p/v / 38,6 mg/ml",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45197,7 +45197,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Bicavera 1.5% glucose 1.75 mmol/l Cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45252,7 +45252,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 40 Glucose 2,27% p/v/ 22,7 mg/ml Clear-Flex",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45307,7 +45307,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 35 Glucose 2,27% p/v/ 2,27 mg/ml",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45362,7 +45362,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "balance 1.5% glucose 1.25 mmol/l cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45417,7 +45417,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "balance 2.3% glucose 1.25 mmol/l cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45472,7 +45472,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "balance 4.25% glucose 1.25 mmol/l cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45527,7 +45527,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Bicavera 1.5% Glucose 1.25 mmol/l Cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45582,7 +45582,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Bicavera 2.3% Glucose 1.25 mmol/l Cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45637,7 +45637,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Bicavera 4.25% Glucose 1.25 mmol/l Cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45692,7 +45692,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Physioneal 40 Glucose 2,27% p/v / 22,7 mg/ml",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45747,7 +45747,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Bicavera 4.25% glucose 1.75 mmol/l Cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -45802,7 +45802,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "balance 1.5% glucose 1.75 mmol/l cálcio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para diálise peritoneal",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46517,7 +46517,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Tracutil",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Concentrado para solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46572,7 +46572,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Nutryelt",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Concentrado para solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46627,7 +46627,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Junyelt",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Concentrado para solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46682,7 +46682,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Addaven",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Concentrado para solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46737,7 +46737,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Peditrace",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Concentrado para solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46792,7 +46792,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Biphozyl",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para hemodiálise ou hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46847,7 +46847,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Phoxilium",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para hemodiálise ou hemofiltração",
     "dosagem": "1.2 mmol/l",
     "indicacao_terapeutica": "Não Disponível",
@@ -46902,7 +46902,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Hemosol B0",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para hemodiálise ou hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -46957,7 +46957,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Plasma-Lyte (pH 7,4) 148 Viaflo",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47012,7 +47012,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Ionosteril Lact",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47067,7 +47067,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Isofundin",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47122,7 +47122,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Ionolyte",
-    "substancia_ativa": "Electrólitos",
+    "substancia_ativa": "Eletrólitos",
     "forma_farmaceutica": "Solução para perfusão",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47452,7 +47452,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Prismasol 2 mmol/l Potassio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemodiálise ou hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47507,7 +47507,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Prismasol 4 mmol/l Potassio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemodiálise ou hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47617,7 +47617,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Duosol com potássio 2 mmol/l",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47672,7 +47672,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Duosol sem potássio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47727,7 +47727,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Duosol com potássio 4 mmol/l",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47782,7 +47782,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Multibic 4 mmol/l potássio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47837,7 +47837,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Multibic Isenta de Potássio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
@@ -47892,7 +47892,7 @@
   {
     "numero_registo": "9999999",
     "nome_medicamento": "Multibic 2 mmol/l Potássio",
-    "substancia_ativa": "Electrólitos + Glucose",
+    "substancia_ativa": "Eletrólitos + Glucose",
     "forma_farmaceutica": "Solução para hemofiltração",
     "dosagem": "Associação",
     "indicacao_terapeutica": "Não Disponível",
