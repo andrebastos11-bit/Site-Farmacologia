@@ -2892,6 +2892,24 @@ searchBar.addEventListener(
     pesquisar
 );
 
+searchBar.addEventListener("keydown", evento => {
+    if (evento.key !== "Enter" || evento.isComposing || evento.repeat) return;
+
+    const numero = searchBar.value.trim();
+    if (!numero) return;
+
+    const correspondencias = medicamentos.filter(
+        med => String(med.numero_registo ?? "").trim() === numero
+    );
+
+    if (correspondencias.length === 1) {
+        evento.preventDefault();
+        escolherApresentacao(correspondencias[0]);
+    } else {
+        pesquisar();
+    }
+});
+
 
 function pesquisar() {
 
