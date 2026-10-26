@@ -2276,7 +2276,7 @@ function criarNoATC(no) {
 
             ${
                 temFilhos ||
-                eSubstancia
+                no.medicamentos.length > 0
                     ? "▶"
                     : ""
             }
@@ -2369,7 +2369,7 @@ function criarNoATC(no) {
 
     /* MEDICAMENTOS */
 
-    if (eSubstancia) {
+    if (no.medicamentos.length > 0) {
 
         const products =
             document.createElement(
@@ -2455,6 +2455,8 @@ function clicarNoATC(
 
     if (level === 4) {
 
+        fecharIrmaos(wrapper);
+
         const chave =
             no.codigo;
 
@@ -2535,6 +2537,11 @@ function clicarNoATC(
         wrapper.classList.add(
             "open"
         );
+
+        // Os produtos diretos coexistem com os subníveis deste ramo.
+        if (no.medicamentos.length > 0) {
+            wrapper.classList.add("show-products");
+        }
 
         marcarNoAtivo(
             wrapper
@@ -2657,7 +2664,7 @@ function fecharProdutosDoMesmoNivel(
             no => {
 
                 if (
-                    no !== atual
+                    no !== atual && !no.contains(atual)
                 ) {
 
                     no
@@ -2810,12 +2817,12 @@ function abrirCaminhoMedicamento(
 
 
             if (
-                indice === 4 &&
+                indice === niveis.length - 1 &&
                 wrapper
                     .querySelectorAll(
-                        ".tree-product"
+                        ":scope > .product-children .tree-product"
                     )
-                    .length > 1
+                    .length > 0
             ) {
 
                 wrapper
