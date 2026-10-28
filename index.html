@@ -51,7 +51,7 @@ body {
     height: 100dvh;
     overflow: hidden;
     display: grid;
-    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
 
     font-family:
         -apple-system,
@@ -1743,7 +1743,7 @@ header h1 { margin-bottom: 2px; font-size: 1.4rem; }
 header p { font-size: .82rem; }
 .search-area { margin: 9px auto; }
 .search-box { padding: 10px 44px 10px 14px; }
-.workspace { max-width: 1700px; padding-bottom: 10px; gap: 14px; }
+.workspace { max-width: 1700px; padding-bottom: 10px; gap: 10px; }
 .atc-panel { padding: 8px 9px; }
 .atc-panel h2 { margin: 0 5px 4px; font-size: .94rem; }
 .atc-help { margin: 0 5px 5px; line-height: 1.2; color: #64748b; }
@@ -1775,7 +1775,24 @@ header p { font-size: .82rem; }
     flex-direction: column;
 }
 #atcTree:not(:has(.atc-node.open, .atc-node.show-products)) > .atc-node > .atc-row { flex: 1; }
-.search-result.keyboard-active, .search-choice.keyboard-active { background: var(--accent-soft); outline: 2px solid var(--accent); outline-offset: -2px; }
+.search-result.keyboard-active, .search-choice.keyboard-active { background: var(--accent-soft); outline: 2px solid #668eaa; outline-offset: -2px; }
+.search-result { width: 100%; }
+.search-result > * { pointer-events: none; }
+.search-group-more { font-size: .8rem; font-weight: 600; }
+.search-expand-arrow { display: inline-block; margin-left: 4px; color: #526d86; font-size: 1rem; line-height: 1; transition: transform .15s ease; }
+.search-result[aria-expanded="true"] .search-expand-arrow { transform: rotate(180deg); }
+.search-result[aria-expanded]:hover .search-group-more, .search-result[aria-expanded].keyboard-active .search-group-more { color: #33536e; }
+.atc-name { font-weight: 400; }
+.atc-row.active .atc-name, .atc-row.substance .atc-name { font-weight: 650; }
+.campo-texto { white-space: pre-wrap; line-height: 1.7; }
+.campo-sub { padding-top: 12px; padding-bottom: 12px; }
+.campo-sub > strong { margin-bottom: 5px; }
+.medicine-panel { overflow-anchor: none; }
+.medicine-identity { position: sticky; top: 0; z-index: 5; display: grid; gap: 1px; padding: 6px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 10px; color: var(--text); font-size: .78rem; line-height: 1.35; }
+.medicine-identity[hidden] { display: none; }
+.medicine-identity strong { color: var(--primary); font-size: .88rem; }
+.medicine-identity span { overflow-wrap: anywhere; }
+.search-results { border-color: #c4d3df; box-shadow: 0 8px 24px rgba(30, 50, 70, .16), 0 2px 5px rgba(30, 50, 70, .08); }
 #detalhe-medicamento { padding: 16px; }
 .empty-state { min-height: 220px; }
 /* Preencher o painel apenas enquanto a mensagem inicial estiver presente. */
@@ -1832,6 +1849,91 @@ header p { font-size: .82rem; }
     .search-box { padding-top: 8px; padding-bottom: 8px; }
 }
 
+/* Colunas independentes: a pesquisa pertence apenas à área de consulta. */
+.workspace { padding-top: 9px; }
+.consultation-column { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 9px; min-width: 0; min-height: 0; }
+.consultation-column > .search-area { max-width: none; width: 100%; padding: 0; margin: 0; }
+@media (max-width: 950px) {
+    .workspace { grid-template-rows: minmax(0, 1fr) minmax(0, 2fr); }
+}
+@media (max-height: 500px) {
+    .workspace { padding-top: 5px; }
+    .consultation-column { gap: 6px; }
+}
+
+.atc-panel { position: relative; }
+.atc-panel > h2 { padding-right: 28px; }
+.atc-toggle { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; flex: 0 0 26px; padding: 3px; border: 1px solid var(--border); border-radius: 6px; background: var(--card); color: var(--muted); cursor: pointer; }
+.atc-toggle:hover { background: var(--accent-soft); color: var(--primary); }
+.atc-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.atc-toggle svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.atc-toggle-hide { position: absolute; right: 8px; top: 5px; }
+.atc-toggle[hidden], .atc-panel[hidden] { display: none; }
+.consultation-column > .search-area { display: flex; align-items: center; gap: 8px; }
+.consultation-column .search-wrapper { flex: 1; min-width: 0; }
+.workspace.atc-collapsed { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+@media (prefers-reduced-motion: no-preference) {
+    .workspace.atc-changing .consultation-column { animation: atc-toggle-fade .16s ease-out; }
+    @keyframes atc-toggle-fade { from { opacity: .85; } to { opacity: 1; } }
+}
+
+/* Modelo RCM global: estrutura explícita e texto original sempre disponível. */
+.rcm-document { color: #526477; font-size: .9rem; line-height: 1.65; text-align: left; text-indent: 0; white-space: normal; overflow-wrap: anywhere; }
+.rcm-document p { margin: 0 0 .65em; max-width: 92ch; }
+.rcm-document > :last-child { margin-bottom: 0; }
+.rcm-line { display: block; white-space: normal; text-indent: 0; }
+.rcm-gap { display: block; height: .35em; white-space: normal; }
+.rcm-heading { margin: .8em 0 .3em; font-size: .92rem; line-height: 1.45; font-weight: 650; color: var(--primary); }
+.rcm-document > .rcm-heading:first-child { margin-top: 0; }
+.rcm-list { margin: .3em 0 .65em; padding: 0; list-style: none; }
+.rcm-list li { margin: .25em 0; padding-left: .75em; text-indent: -.75em; }
+.rcm-note { margin: .5em 0; padding: .35em .65em; border-left: 2px solid var(--border); white-space: normal; }
+.rcm-table-wrap { overflow-x: auto; max-width: 100%; margin: .5em 0; }
+.rcm-table-wrap:focus-visible { outline: 2px solid var(--accent); }
+.rcm-table { width: 100%; border-collapse: collapse; table-layout: fixed; font: inherit; }
+.rcm-table th, .rcm-table td { padding: .6em; text-align: left; vertical-align: top; border: 1px solid var(--border); overflow-wrap: anywhere; }
+.rcm-table th { background: #f8fafc; color: var(--primary); font-weight: 650; }
+.rcm-source-separator { display: none; }
+.rcm-model .campo-sub { padding-top: 10px; padding-bottom: 10px; }
+.rcm-model .campo-sub > strong { margin-bottom: 6px; }
+.rcm-document { hyphens: auto; }
+.rcm-document p { max-width: 110ch; }
+.rcm-source { margin-top: 5px; font-size: .76rem; color: var(--muted); }
+.rcm-source > summary { cursor: pointer; width: fit-content; padding: 3px 0; }
+.rcm-source pre { margin: 6px 0 0; padding: 8px; border: 1px solid var(--border); border-radius: 6px; background: white; white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; line-height: 1.6; }
+.rcm-status-group { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.rcm-status { padding: 3px 7px; border: 1px solid var(--border); border-radius: 6px; font-size: .75rem; color: #526477; background: #f8fafc; }
+.rcm-status[data-tone="green"] { color: #245b49; background: #eef9f5; border-color: #cee9df; }
+.rcm-status[data-tone="yellow"] { color: #665724; background: #fff9e8; border-color: #e9dfbd; }
+.rcm-status[data-tone="red"] { color: #7b3541; background: #fcf2f4; border-color: #ead1d8; }
+.rcm-warning-count { margin-bottom: 7px; font-size: .8rem; font-weight: 600; color: var(--primary); }
+.rcm-warnings .rcm-list { counter-reset: rcm-warning; }
+.rcm-warnings .rcm-list li { counter-increment: rcm-warning; padding: 7px 9px; text-indent: 0; border-bottom: 1px solid var(--border); }
+.rcm-warnings .rcm-list li::before { content: counter(rcm-warning) ". "; font-weight: 600; color: var(--primary); }
+.rcm-excipients .rcm-list { columns: 2 16rem; column-gap: 24px; }
+.rcm-excipients .rcm-list li { break-inside: avoid; }
+.rcm-ingredient-list { list-style: disc; padding-left: 18px; }
+.rcm-ingredient-list li { padding-left: 0; text-indent: 0; }
+@media (min-width: 951px) { .rcm-document p { text-align: justify; text-align-last: left; } }
+@media (max-width: 650px) { .rcm-excipients .rcm-list { columns: 1; } }
+@media (max-width: 650px) { .rcm-table { min-width: 480px; } }
+
+.rcm-clinical-block { margin: 10px 0; padding-top: 9px; border-top: 1px solid var(--border); }
+.rcm-clinical-block h4 { margin: 0 0 7px; color: var(--primary); font-size: .94rem; font-weight: 650; }
+.rcm-clinical-block p { margin: 0; }
+.rcm-components p { max-width: none; }
+.rcm-instructions { list-style: none; padding: 0; margin: 0; }
+.rcm-instructions li { padding: 8px 0; border-bottom: 1px solid #edf1f4; }
+.rcm-instructions li:last-child { border-bottom: 0; }
+.rcm-warning-block { padding: 12px 0; }
+.rcm-block-number { font-variant-numeric: tabular-nums; }
+.rcm-adverse-table th:first-child { width: 30%; }
+.rcm-adverse-table th:nth-child(2) { width: 24%; }
+.rcm-original-all { margin-top: 14px; border-top: 1px solid var(--border); padding-top: 8px; color: var(--muted); font-size: .78rem; }
+.rcm-original-all > summary { cursor: pointer; padding: 4px 0; }
+.rcm-original-all h4 { color: var(--primary); margin-bottom: 5px; }
+.rcm-original-all pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; line-height: 1.6; margin: 0 0 14px; }
+
 </style>
 
 </head>
@@ -1854,56 +1956,61 @@ header p { font-size: .82rem; }
 
 
 <!-- =====================================================
-     PESQUISA
-===================================================== -->
-
-<div class="search-area">
-
-    <div class="search-wrapper">
-
-        <input
-            id="searchBar"
-            class="search-box"
-            type="text"
-            autocomplete="off"
-            placeholder="Pesquisar por medicamento, substância ativa ou número de registo..."
-        >
-
-        <span class="search-icon">
-            ⌕
-        </span>
-
-        <div
-            id="searchResults"
-            class="search-results"
-        ></div>
-
-    </div>
-
-</div>
-
-
-<!-- =====================================================
      CONTEÚDO
 ===================================================== -->
 
 <div class="workspace">
 
 
-    <aside class="atc-panel">
+    <aside class="atc-panel" id="atcPanel">
+
+        <button type="button" class="atc-toggle atc-toggle-hide" id="hideATC" aria-label="Ocultar classificação ATC" title="Ocultar classificação ATC" aria-controls="atcPanel" aria-expanded="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+        </button>
 
         <h2>
             Classificação ATC
         </h2>
 
         <div class="atc-help">
-            Expanda os níveis ATC. Na substância, clique novamente para ver os medicamentos.
+            Explore a classificação ATC e selecione uma substância para consultar os medicamentos.
         </div>
 
         <div id="atcTree"></div>
 
     </aside>
 
+
+    <div class="consultation-column">
+
+        <div class="search-area">
+
+            <button type="button" class="atc-toggle" id="showATC" aria-label="Mostrar classificação ATC" title="Mostrar classificação ATC" aria-controls="atcPanel" aria-expanded="false" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+            </button>
+
+            <div class="search-wrapper">
+
+                <input
+                    id="searchBar"
+                    class="search-box"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Pesquisar por medicamento, substância ativa ou número de registo..."
+                >
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <div
+                    id="searchResults"
+                    class="search-results"
+                ></div>
+
+            </div>
+
+        </div>
 
     <main class="medicine-panel">
 
@@ -1920,7 +2027,7 @@ header p { font-size: .82rem; }
                 </strong>
 
                 <span>
-                    Utilize a pesquisa ou navegue pela classificação ATC.
+                    Pesquise por nome, substância ativa ou número de registo.
                 </span>
 
             </div>
@@ -1928,6 +2035,8 @@ header p { font-size: .82rem; }
         </div>
 
     </main>
+
+    </div>
 
 
 </div>
@@ -1946,7 +2055,6 @@ let arvoreATC = {};
 
 let medicamentoSelecionado = null;
 
-let ultimoCliqueFolha = null;
 
 
 /* =========================================================
@@ -2070,6 +2178,25 @@ function formaParaNavegacao(valor) {
     return original || "Forma não indicada";
 }
 
+function ordenarApresentacoes(lista) {
+    // Ordenar apenas doses simples, na mesma forma e unidade, sem conversões.
+    const formas = new Set(lista.map(med => norm(med.forma_farmaceutica).trim()));
+    if (formas.size !== 1) return lista;
+    const doses = lista.map(med => {
+        const match = String(med.dosagem || "").trim().match(
+            /^(\d+(?:[.,]\d+)?)\s*(mg|g|µg|μg|mcg|ug|ml|l|ui|u\.i\.|%)(?:\s*\/\s*(ml|l|g|mg))?$/i
+        );
+        if (!match) return null;
+        // Não interpretar separadores que também possam representar milhares.
+        if (/^[1-9]\d*[.,]\d{3}$/.test(match[1])) return null;
+        return {valor: Number(match[1].replace(",", ".")), unidade: (match[2] + "/" + (match[3] || "")).toLowerCase()};
+    });
+    if (doses.some(dose => !dose || !Number.isFinite(dose.valor)) || new Set(doses.map(dose => dose.unidade)).size !== 1) return lista;
+    return lista.map((med, indice) => ({med, indice}))
+        .sort((a, b) => doses[a.indice].valor - doses[b.indice].valor || a.indice - b.indice)
+        .map(item => item.med);
+}
+
 function formasDoGrupo(grupo) {
     const mapa = new Map();
     grupo.meds.forEach(med => {
@@ -2078,10 +2205,19 @@ function formasDoGrupo(grupo) {
         if (!mapa.has(chave)) mapa.set(chave, {nome: forma, meds: []});
         mapa.get(chave).meds.push(med);
     });
-    return [...mapa.values()].sort((a,b) => a.nome.localeCompare(b.nome,"pt"));
+    return [...mapa.values()].sort((a,b) => a.nome.localeCompare(b.nome,"pt"))
+        .map(forma => ({...forma, meds: ordenarApresentacoes(forma.meds)}));
 }
-function nomeApresentacao(med) {
-    return med.dosagem || (med.numero_registo ? "N.º " + med.numero_registo : "Ver ficha");
+function nomeApresentacao(med, contexto = []) {
+    const nome = med.dosagem || "Apresentação";
+    const iguais = contexto.filter(item => norm(item.dosagem).trim() === norm(med.dosagem).trim());
+    if (iguais.length < 2) return nome;
+    const descricoes = iguais.map(item => String(item.descricao_forma_farmaceutica || "").trim());
+    const validas = descricoes.every(texto => texto.length > 0 && texto.length <= 100 && !/^(não dispon[ií]vel|n\/d|n[aã]o aplic[aá]vel)\.?$/i.test(texto));
+    if (validas && new Set(descricoes.map(norm)).size === iguais.length) {
+        return nome + " · " + descricoes[iguais.indexOf(med)];
+    }
+    return nome;
 }
 function escolherApresentacao(med) {
     selecionarMedicamento(med);
@@ -2109,7 +2245,7 @@ function adicionarSeletorApresentacoes(med) {
             const botao = document.createElement("button");
             botao.type = "button";
             botao.className = "presentation-option" + (item._id === med._id ? " active" : "");
-            botao.textContent = nomeApresentacao(item);
+            botao.textContent = nomeApresentacao(item, forma.meds);
             botao.addEventListener("click", () => selecionarMedicamento(item));
             opcoes.appendChild(botao);
         });
@@ -2543,7 +2679,7 @@ function criarNoATC(no) {
                     botao.type = "button";
                     botao.className = "tree-product";
                     botao.dataset.medId = med._id;
-                    botao.textContent = nomeApresentacao(med);
+                    botao.textContent = nomeApresentacao(med, forma.meds);
                     botao.addEventListener("click", evento => {evento.stopPropagation();selecionarMedicamento(med);});
                     apresentacoes.appendChild(botao);
                 });
@@ -2573,82 +2709,7 @@ function clicarNoATC(
     no
 ) {
 
-    const level =
-        no.level;
-
-
-    const jaAberto =
-        wrapper.classList.contains(
-            "open"
-        );
-
-
-    if (level === 4) {
-
-        fecharIrmaos(wrapper);
-
-        const chave =
-            no.codigo;
-
-
-        if (
-            ultimoCliqueFolha ===
-            chave
-        ) {
-
-            if (
-                no.medicamentos.length ===
-                1
-            ) {
-
-                selecionarMedicamento(
-                    no.medicamentos[0]
-                );
-
-            } else {
-
-                fecharProdutosDoMesmoNivel(
-                    wrapper
-                );
-
-                wrapper
-                    .classList
-                    .toggle(
-                        "show-products"
-                    );
-
-            }
-
-
-            ultimoCliqueFolha =
-                null;
-
-
-        } else {
-
-            fecharProdutosDoMesmoNivel(
-                wrapper
-            );
-
-
-            marcarNoAtivo(
-                wrapper
-            );
-
-
-            ultimoCliqueFolha =
-                chave;
-
-        }
-
-
-        return;
-
-    }
-
-
-    ultimoCliqueFolha =
-        null;
+    const jaAberto = wrapper.classList.contains("open") || wrapper.classList.contains("show-products");
 
 
     fecharIrmaos(
@@ -3138,7 +3199,7 @@ function pesquisar() {
     grupos.forEach(grupo => {
         const linha = document.createElement("div");
         linha.className = "search-result";
-        linha.innerHTML = `<div><div class="search-result-name">${esc(grupo.nome)}</div><div class="search-result-sub">${esc(grupo.substancia || "")}</div></div><div class="search-group-more">${grupo.meds.length === 1 ? "Ver ficha" : grupo.meds.length + " apresentações ▾"}</div>`;
+        linha.innerHTML = `<div><div class="search-result-name">${esc(grupo.nome)}</div><div class="search-result-sub">${esc(grupo.substancia || "")}${grupo.meds.length === 1 && grupo.meds[0].forma_farmaceutica ? " · " + esc(grupo.meds[0].forma_farmaceutica) : ""}</div></div><div class="search-group-more">${grupo.meds.length === 1 ? "Ver ficha" : grupo.meds.length + ' apresentações <span class="search-expand-arrow" aria-hidden="true">▾</span>'}</div>`;
         searchResults.appendChild(linha);
         if (grupo.meds.length === 1) {
             prepararOpcaoPesquisa(linha, () => escolherApresentacao(grupo.meds[0]));
@@ -3157,7 +3218,7 @@ function pesquisar() {
                     const botao = document.createElement("button");
                     botao.type = "button";
                     botao.className = "search-choice";
-                    botao.textContent = nomeApresentacao(med) + (med.numero_registo ? " · N.º " + med.numero_registo : "");
+                    botao.textContent = nomeApresentacao(med, forma.meds);
                     prepararOpcaoPesquisa(botao, () => escolherApresentacao(med));
                     opcoes.appendChild(botao);
                 });
@@ -3207,6 +3268,49 @@ document.addEventListener(
    SELECIONAR MEDICAMENTO
 ========================================================= */
 
+const painelLeitura = document.querySelector(".medicine-panel");
+const identidadeCompacta = document.createElement("div");
+identidadeCompacta.className = "medicine-identity";
+identidadeCompacta.hidden = true;
+painelLeitura.prepend(identidadeCompacta);
+let navegacaoSecao = false;
+let destinoNavegacaoSecao = null;
+let fimNavegacaoSecao = null;
+
+function posicionarSecaoLeitura(destino) {
+    const oculta = identidadeCompacta.hidden;
+    if (oculta) {
+        identidadeCompacta.style.visibility = "hidden";
+        identidadeCompacta.hidden = false;
+    }
+    const altura = identidadeCompacta.offsetHeight;
+    if (oculta) {
+        identidadeCompacta.hidden = true;
+        identidadeCompacta.style.visibility = "";
+    }
+    const topo = painelLeitura.scrollTop + destino.getBoundingClientRect().top
+        - painelLeitura.getBoundingClientRect().top - altura - 12;
+    painelLeitura.scrollTo({top: Math.max(0, topo), behavior: "smooth"});
+}
+
+function atualizarIdentidadeCompacta() {
+    const identificacao = painelLeitura.querySelector(".med-forma-dose");
+    if (!identificacao) return;
+    const altura = identidadeCompacta.hidden ? 0 : identidadeCompacta.offsetHeight;
+    const mostrar = painelLeitura.scrollTop > 0 && identificacao.getBoundingClientRect().bottom <= painelLeitura.getBoundingClientRect().top + altura;
+    if (mostrar === !identidadeCompacta.hidden) return;
+    const scroll = painelLeitura.scrollTop;
+    identidadeCompacta.hidden = !mostrar;
+    // Compensar o espaço ocupado pela faixa sem deslocar o texto em leitura.
+    painelLeitura.scrollTop = Math.max(0, scroll + (mostrar ? identidadeCompacta.offsetHeight : -altura));
+    if (navegacaoSecao && destinoNavegacaoSecao?.isConnected) {
+        posicionarSecaoLeitura(destinoNavegacaoSecao);
+    }
+}
+
+painelLeitura.addEventListener("scroll", atualizarIdentidadeCompacta, {passive: true});
+window.addEventListener("resize", atualizarIdentidadeCompacta);
+
 function selecionarMedicamento(
     med
 ) {
@@ -3225,6 +3329,19 @@ function selecionarMedicamento(
     );
 
     adicionarSeletorApresentacoes(med);
+    aplicarModeloRCM(med);
+
+    clearTimeout(fimNavegacaoSecao);
+    navegacaoSecao = false;
+    destinoNavegacaoSecao = null;
+    identidadeCompacta.replaceChildren();
+    [med.nome_medicamento, [med.substancia_ativa, med.forma_farmaceutica, med.dosagem].filter(Boolean).join(" · ")].forEach((texto, indice) => {
+        const linha = document.createElement(indice === 0 ? "strong" : "span");
+        linha.textContent = texto || "N/D";
+        identidadeCompacta.appendChild(linha);
+    });
+    identidadeCompacta.hidden = true;
+    painelLeitura.scrollTop = 0;
 
 }
 
@@ -3318,8 +3435,8 @@ function criarAtalhosClinicos(
         <button
             class="clinical-button shortcut-gravidez"
             type="button"
-            onclick="irParaSecao('gravidez-aleitamento', 'gravidez')"
-            title="Ir para informação sobre gravidez"
+            onclick="irParaSecao('gravidez-aleitamento')"
+            title="Ir para a secção 4.6 completa: Fertilidade, Gravidez e Aleitamento"
         >
 
             <span class="clinical-icon">
@@ -3329,7 +3446,7 @@ function criarAtalhosClinicos(
             </span>
 
             <span class="clinical-label">
-                Gravidez
+                Fertilidade, Gravidez<br>e Aleitamento
             </span>
 
             <span class="clinical-info">
@@ -3339,28 +3456,6 @@ function criarAtalhosClinicos(
         </button>
 
 
-        <button
-            class="clinical-button shortcut-aleitamento"
-            type="button"
-            onclick="irParaSecao('gravidez-aleitamento', 'aleitamento')"
-            title="Ir para informação sobre aleitamento"
-        >
-
-            <span class="clinical-icon">
-
-                ${ICONES.aleitamento}
-
-            </span>
-
-            <span class="clinical-label">
-                Aleitamento
-            </span>
-
-            <span class="clinical-info">
-                + info
-            </span>
-
-        </button>
 
 
         <button
@@ -3424,6 +3519,391 @@ function criarAtalhosClinicos(
 /* =========================================================
    EXCIPIENTES
 ========================================================= */
+
+// Só delimitadores explícitos autorizam estruturação; não se analisam frases clínicas.
+function criarDocumentoRCM(valor) {
+    const original = valor == null ? "" : String(valor);
+    const documento = document.createElement("div");
+    documento.className = "rcm-document";
+    documento.lang = "pt-PT";
+    const linhas = (original.match(/[^\r\n]*(?:\r\n|\r|\n|$)/g) || []).filter(Boolean);
+    const conteudo = linha => linha.replace(/[\r\n]+$/, "");
+    const subtitulo = linha => {
+        const texto = conteudo(linha).trim();
+        return /^(Fertilidade|Gravidez|Aleitamento|Amamentação|Sintomas|Tratamento|Modo de administração|População pediátrica)$/i.test(texto)
+            || (texto.length > 0 && texto.length <= 90 && /:$/.test(texto));
+    };
+    const itemLista = linha => /^\s*(?:[•*\-]|\d+[.)])\s+\S/.test(linha);
+    const separador = texto => {
+        const span = document.createElement("span");
+        span.className = "rcm-source-separator";
+        span.setAttribute("aria-hidden", "true");
+        span.textContent = texto;
+        return span;
+    };
+    // Tabelas apenas com cabeçalhos explícitos e colunas tabuladas retangulares.
+    const cabecalhosPermitidos = new Set(["frequencia", "classes de sistemas de orgaos", "classe de sistemas de orgaos", "reacoes adversas", "interacao", "interacoes", "descricao", "medicamento", "substancia", "medicamento ou substancia", "descricao da interacao", "consequencias", "recomendacoes", "consequencias e recomendacoes"]);
+    for (let i = 0; i < linhas.length;) {
+        const texto = conteudo(linhas[i]);
+        const colunas = texto.split("\t");
+        if (colunas.length >= 2 && colunas.every(c => cabecalhosPermitidos.has(norm(c.trim())))) {
+            let fim = i + 1;
+            while (fim < linhas.length && conteudo(linhas[fim]).split("\t").length === colunas.length
+                && conteudo(linhas[fim]).split("\t").every(c => c.trim())) fim++;
+            if (fim > i + 1 && !linhas.slice(i, fim).some(linha => linha.includes('"'))) {
+                const wrap = document.createElement("div");
+                wrap.className = "rcm-table-wrap";
+                wrap.tabIndex = 0;
+                wrap.setAttribute("role", "region");
+                wrap.setAttribute("aria-label", "Tabela do texto original do RCM");
+                const tabela = document.createElement("table");
+                tabela.className = "rcm-table";
+                const thead = tabela.createTHead(), tbody = tabela.createTBody();
+                for (let k = i; k < fim; k++) {
+                    const tr = (k === i ? thead : tbody).insertRow();
+                    const partes = conteudo(linhas[k]).split("\t");
+                    partes.forEach((parte, j) => {
+                        const cell = document.createElement(k === i ? "th" : "td");
+                        if (k === i) cell.scope = "col";
+                        cell.textContent = parte;
+                        const delimitador = j < partes.length - 1 ? "\t" : linhas[k].slice(conteudo(linhas[k]).length);
+                        if (delimitador) cell.appendChild(separador(delimitador));
+                        tr.appendChild(cell);
+                    });
+                }
+                wrap.appendChild(tabela);
+                documento.appendChild(wrap);
+                i = fim;
+                continue;
+            }
+        }
+        if (!texto.trim()) {
+            const gap = document.createElement("span");
+            gap.className = "rcm-gap";
+            gap.textContent = linhas[i++];
+            while (i < linhas.length && !conteudo(linhas[i]).trim()) gap.textContent += linhas[i++];
+            documento.appendChild(gap);
+        } else if (subtitulo(linhas[i])) {
+            const heading = document.createElement("h4");
+            heading.className = "rcm-heading";
+            heading.textContent = linhas[i++];
+            documento.appendChild(heading);
+        } else if (itemLista(linhas[i]) && i + 1 < linhas.length && itemLista(linhas[i + 1])) {
+            const lista = document.createElement("ul");
+            lista.className = "rcm-list";
+            while (i < linhas.length && itemLista(linhas[i])) {
+                const li = document.createElement("li");
+                li.textContent = linhas[i++];
+                lista.appendChild(li);
+            }
+            documento.appendChild(lista);
+        } else if (/^\s*(?:Nota|Notas|Observação|Observações):/i.test(texto)) {
+            const nota = document.createElement("div");
+            nota.className = "rcm-note";
+            nota.textContent = linhas[i++];
+            documento.appendChild(nota);
+        } else {
+            const anterior = documento.lastElementChild;
+            const p = anterior?.tagName === "P" ? anterior : document.createElement("p");
+            const linha = document.createElement("span");
+            linha.className = "rcm-line";
+            const fonteLinha = linhas[i++];
+            const prefixo = fonteLinha.match(/^(\s*(?:Posologia|Modo de administração|Forma pura|Forma diluída)\s*:)/i);
+            if (prefixo) {
+                const destaque = document.createElement("strong");
+                destaque.textContent = prefixo[0];
+                linha.append(destaque, document.createTextNode(fonteLinha.slice(prefixo[0].length)));
+            } else {
+                linha.textContent = fonteLinha;
+            }
+            p.appendChild(linha);
+            documento.appendChild(p);
+        }
+    }
+    // Verificação exata, incluindo espaços, pontuação e separadores originais.
+    if (documento.textContent !== original) documento.replaceChildren(document.createTextNode(original));
+    return documento;
+}
+
+const CAMPOS_RCM = {
+    indicacoes: "indicacao_terapeutica", posologia: "posologia", contraindicacoes: "contra_indicacoes",
+    advertencias: "advertencias", interacoes: "interacoes", "gravidez-aleitamento": "gravidez_aleitamento",
+    "conducao-maquinas": "conducao_maquinas", "efeitos-indesejaveis": "efeitos_indesejaveis", sobredosagem: "sobredosagem",
+    farmacodinamica: "propriedades_farmacodinamicas", farmacocinetica: "propriedades_farmacocineticas",
+    "alvo-terapeutico": "alvo_terapeutico", "grupo-farmacoterapeutico": "grupo_farmacoterapeutico",
+    "forma-farmaceutica": "descricao_forma_farmaceutica", composicao: "composicao", excipientes: "excipientes",
+    incompatibilidades: "incompatibilidades", conservacao: "conservacao", "instrucoes-utilizacao": "instrucoes_utilizacao"
+};
+
+// Integração futura: apenas classificações validadas e com referência explícita.
+const classificacoesRCMValidadas = new WeakMap();
+const ESTADOS_RCM = {
+    fertilidade: {permitida: ["Utilização permitida nas condições descritas", "green"], dados_insuficientes: ["Dados insuficientes / segurança não estabelecida", "yellow"], contraindicada: ["Utilização contraindicada", "red"], nao_recomendada: ["Utilização não recomendada", "red"]},
+    conducao: {sem_efeitos: ["Sem efeitos conhecidos", "green"], pode_afetar: ["Pode afetar a condução", "yellow"], dados_insuficientes: ["Dados insuficientes", "yellow"]}
+};
+function registarClassificacaoRCMValidada(med, ambito, estado, validacao) {
+    const tabela = ambito === "conducao" ? ESTADOS_RCM.conducao : ESTADOS_RCM.fertilidade;
+    if (!["fertilidade", "gravidez", "aleitamento", "conducao"].includes(ambito)
+        || !tabela[estado] || validacao?.validado !== true || !String(validacao.referencia || "").trim()) return false;
+    const atuais = classificacoesRCMValidadas.get(med) || {};
+    classificacoesRCMValidadas.set(med, {...atuais, [ambito]: {estado, referencia: validacao.referencia}});
+    return true;
+}
+function criarIndicadoresRCM(med, ambitos) {
+    const grupo = document.createElement("div");
+    grupo.className = "rcm-status-group";
+    const etiquetas = {fertilidade: "Fertilidade", gravidez: "Gravidez", aleitamento: "Aleitamento", conducao: "Condução"};
+    for (const ambito of ambitos) {
+        const validado = classificacoesRCMValidadas.get(med)?.[ambito];
+        const tabela = ambito === "conducao" ? ESTADOS_RCM.conducao : ESTADOS_RCM.fertilidade;
+        const [texto, cor] = tabela[validado?.estado] || ["Por classificar", "neutral"];
+        const badge = document.createElement("span");
+        badge.className = "rcm-status";
+        badge.dataset.tone = cor;
+        badge.textContent = etiquetas[ambito] + " — " + texto;
+        if (validado) badge.title = "Classificação validada: " + validado.referencia;
+        grupo.appendChild(badge);
+    }
+    return grupo;
+}
+function criarListaExcipientesSegura(texto) {
+    const documento = criarDocumentoRCM(texto);
+    documento.classList.add("rcm-excipients");
+    // O ponto e vírgula só separa itens fora de parênteses/colchetes.
+    const itens = [];
+    let inicio = 0;
+    const pilha = [];
+    let seguro = !/["“”]/.test(texto);
+    for (let i = 0; i < texto.length; i++) {
+        const c = texto[i];
+        if (c === "(" || c === "[") pilha.push(c);
+        if (c === ")" || c === "]") {
+            if (pilha.pop() !== (c === ")" ? "(" : "[")) seguro = false;
+        }
+        if ((c === ";" || (c === "," && /\s/.test(texto[i + 1] || ""))) && pilha.length === 0) {
+            itens.push(texto.slice(inicio, i + 1));
+            inicio = i + 1;
+        }
+    }
+    itens.push(texto.slice(inicio));
+    const minimo = texto.includes(";") ? 2 : 3;
+    if (seguro && !pilha.length && itens.length >= minimo && itens.every(item => item.replace(/[;,]$/, "").trim())) {
+        const lista = document.createElement("ul");
+        lista.className = "rcm-list rcm-ingredient-list";
+        for (const item of itens) {
+            const li = document.createElement("li");
+            li.textContent = item;
+            lista.appendChild(li);
+        }
+        if (lista.textContent === texto) documento.replaceChildren(lista);
+    }
+    return documento;
+}
+function contarAdvertenciasExplicitas(texto) {
+    const linhas = texto.split(/\r\n|\n|\r/).filter(linha => linha.trim());
+    const marcas = linhas.map(linha => linha.match(/^(\s*)([-•])\s+\S/));
+    return linhas.length > 1 && marcas.every(Boolean)
+        && marcas.every(marca => marca[1] === marcas[0][1] && marca[2] === marcas[0][2]) ? linhas.length : null;
+}
+// Modelos de apresentação usam exclusivamente intervalos do texto original.
+function estruturarCampoClinico(original, tipo) {
+    const texto = String(original ?? "");
+    const modelo = {original: texto, tipo, blocos: []};
+    const trecho = (inicio, fim) => ({inicio, fim});
+    if (tipo === "posologia") {
+        const rotulos = /(?:Instruções de uso\s*:?\s*(?=1\s*[-.)]))|(?:(?:Posologia|Modo de administração|Forma pura|Forma diluída|Adultos|Crianças|Adolescentes|Idosos|População pediátrica|Insuficiência renal|Insuficiência hepática)(?:\s*\([^:\r\n]{1,90}\))?\s*:\s*)|(?:N\.B\.\s*-\s*)/gi;
+        const encontrados = [...texto.matchAll(rotulos)];
+        // Rótulos só são aceites no início ou após separação explícita.
+        const labels = encontrados.filter(m => m.index === 0 || /[.\r\n]\s*$/.test(texto.slice(0, m.index)) || /^Instruções de uso/i.test(m[0]));
+        if (labels.length) {
+            if (labels[0].index) modelo.blocos.push({tipo: "texto", corpo: trecho(0, labels[0].index)});
+            labels.forEach((m, i) => {
+                const fim = labels[i + 1]?.index ?? texto.length;
+                modelo.blocos.push({tipo: /^(Adultos|Crianças|Adolescentes|Idosos)/i.test(m[0]) ? "idade" : "secao", titulo: trecho(m.index, m.index + m[0].length), corpo: trecho(m.index + m[0].length, fim)});
+            });
+        }
+    } else if (tipo === "efeitos-indesejaveis") {
+        const frequencia = "(?:Muito frequentes?|Pouco frequentes?|Frequentes?|Muito rar[oa]s?|Rar[oa]s?|Desconhecid[oa]s?|Frequência desconhecida)(?:\\s*\\([^:\\r\\n]*\\))?\\s*:\\s*";
+        const classes = new RegExp("(?:^|[.!?]\\s+)((?:Doenças|Afeções|Afecções|Perturbações|Lesões)[^:\\r\\n]{1,110}:\\s*)(?=" + frequencia + ")", "g");
+        const grupos = [...texto.matchAll(classes)].map(m => ({inicio: m.index + m[0].length - m[1].length, titulo: m[1]}));
+        let seguro = grupos.length > 0;
+        const blocos = [];
+        if (grupos[0]?.inicio) blocos.push({tipo: "texto", corpo: trecho(0, grupos[0].inicio)});
+        grupos.forEach((grupo, i) => {
+            const inicio = grupo.inicio + grupo.titulo.length, fim = grupos[i + 1]?.inicio ?? texto.length;
+            const corpo = texto.slice(inicio, fim);
+            const todas = [...corpo.matchAll(new RegExp(frequencia, "g"))];
+            const marcas = todas.filter(m => m.index === 0 || /[.;]\s*$/.test(corpo.slice(0, m.index)));
+            // Outro rótulo com dois pontos pode mudar o âmbito: não associar por inferência.
+            if (/:\s/.test(corpo.replace(new RegExp(frequencia, "g"), ""))) seguro = false;
+            if (!marcas.length || marcas[0].index !== 0 || marcas.length !== todas.length || /\b(?:Doenças|Afeções|Afecções|Perturbações|Lesões)\s/.test(corpo)) seguro = false;
+            const linhas = marcas.map((m, j) => {
+                const fimReacao = inicio + (marcas[j + 1]?.index ?? corpo.length);
+                const fimFreq = inicio + m.index + m[0].length;
+                if (!texto.slice(fimFreq, fimReacao).trim()) seguro = false;
+                return {frequencia: trecho(inicio + m.index, fimFreq), reacao: trecho(fimFreq, fimReacao)};
+            });
+            blocos.push({tipo: "reacoes", titulo: trecho(grupo.inicio, inicio), linhas});
+        });
+        if (seguro) modelo.blocos = blocos;
+    } else if (["gravidez-aleitamento", "advertencias"].includes(tipo)) {
+        // Apenas títulos em linhas próprias: nunca procurar palavras dentro de frases.
+        const re = tipo === "gravidez-aleitamento"
+            ? /^[ \t]*(?:Fertilidade|Gravidez|Aleitamento|Amamentação)[ \t]*:?[ \t]*(?:\r\n|\n|\r)/gmi
+            : /^[ \t]*[^\r\n:]{2,90}:[ \t]*(?:\r\n|\n|\r)/gm;
+        const labels = [...texto.matchAll(re)];
+        if (labels.length && (tipo !== "advertencias" || labels.length >= 2)) {
+            if (labels[0].index) modelo.blocos.push({tipo: "texto", corpo: trecho(0, labels[0].index)});
+            labels.forEach((m, i) => modelo.blocos.push({tipo: tipo === "advertencias" ? "advertencia" : "secao", titulo: trecho(m.index, m.index + m[0].length), corpo: trecho(m.index + m[0].length, labels[i + 1]?.index ?? texto.length)}));
+        }
+    }
+    return modelo;
+}
+
+function reconstruirComponenteClinico(elemento) {
+    const partes = [...elemento.querySelectorAll("[data-rcm-inicio]")].sort((a, b) => Number(a.dataset.rcmInicio) - Number(b.dataset.rcmInicio));
+    if (!partes.length) return elemento.textContent;
+    let fim = 0, texto = "";
+    for (const parte of partes) {
+        if (Number(parte.dataset.rcmInicio) !== fim || parte.textContent.length !== Number(parte.dataset.rcmFim) - fim) return null;
+        texto += parte.textContent;
+        fim = Number(parte.dataset.rcmFim);
+    }
+    return texto;
+}
+
+function renderizarComponentesClinicos(modelo) {
+    const {original, blocos} = modelo;
+    const root = document.createElement("div");
+    root.className = "rcm-document rcm-components";
+    root.lang = "pt-PT";
+    const fonte = intervalo => {
+        const span = document.createElement("span");
+        span.dataset.rcmInicio = intervalo.inicio;
+        span.dataset.rcmFim = intervalo.fim;
+        span.textContent = original.slice(intervalo.inicio, intervalo.fim);
+        return span;
+    };
+    const paragrafo = intervalo => {
+        const p = document.createElement("p");
+        p.appendChild(fonte(intervalo));
+        return p;
+    };
+    const tabela = cabecalhos => {
+        const wrap = document.createElement("div");
+        wrap.className = "rcm-table-wrap"; wrap.tabIndex = 0;
+        wrap.setAttribute("role", "region"); wrap.setAttribute("aria-label", cabecalhos.join("; "));
+        const table = document.createElement("table"); table.className = "rcm-table";
+        const tr = table.createTHead().insertRow();
+        cabecalhos.forEach(titulo => {const th = document.createElement("th"); th.scope = "col"; th.textContent = titulo; tr.appendChild(th);});
+        const body = table.createTBody(); wrap.appendChild(table); root.appendChild(wrap);
+        return body;
+    };
+    let numeroAdvertencia = 0;
+    for (let i = 0; i < blocos.length; i++) {
+        const bloco = blocos[i];
+        if (bloco.tipo === "texto") {root.appendChild(paragrafo(bloco.corpo)); continue;}
+        if (bloco.tipo === "idade") {
+            const body = tabela(["Grupo etário", "Posologia — texto integral"]);
+            do {
+                const idade = blocos[i], tr = body.insertRow();
+                tr.insertCell().appendChild(fonte(idade.titulo)); tr.insertCell().appendChild(fonte(idade.corpo));
+                if (blocos[i + 1]?.tipo !== "idade") break;
+                i++;
+            } while (i < blocos.length);
+            continue;
+        }
+        if (bloco.tipo === "reacoes") {
+            // A ordem classe → frequência → reação reproduz a sequência do original.
+            const anterior = root.lastElementChild;
+            const body = anterior?.classList.contains("rcm-adverse-table") ? anterior.querySelector("tbody") : tabela(["Classes de sistemas de órgãos", "Frequência", "Reações adversas"]);
+            body.closest(".rcm-table-wrap").classList.add("rcm-adverse-table");
+            bloco.linhas.forEach((linha, j) => {
+                const tr = body.insertRow();
+                if (j === 0) {const cell = tr.insertCell(); cell.rowSpan = bloco.linhas.length; cell.appendChild(fonte(bloco.titulo));}
+                tr.insertCell().appendChild(fonte(linha.frequencia)); tr.insertCell().appendChild(fonte(linha.reacao));
+            });
+            continue;
+        }
+        const section = document.createElement("section");
+        section.className = "rcm-clinical-block" + (bloco.tipo === "advertencia" ? " rcm-warning-block" : "");
+        const titulo = document.createElement("h4");
+        if (bloco.tipo === "advertencia") {
+            const numero = document.createElement("span"); numero.className = "rcm-block-number"; numero.textContent = ++numeroAdvertencia + ". "; titulo.appendChild(numero);
+        }
+        titulo.appendChild(fonte(bloco.titulo)); section.appendChild(titulo);
+        // Instruções numeradas só com sequência explícita 1, 2, ... e rótulo próprio.
+        const corpo = original.slice(bloco.corpo.inicio, bloco.corpo.fim);
+        const passos = [...corpo.matchAll(/(?:^|\s)(\d+\s+[-.)]\s+)(?=[A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][a-záàâãéêíóôõúç]{2,})/g)].map(m => ({inicio: bloco.corpo.inicio + m.index + m[0].length - m[1].length, numero: Number(m[1].match(/\d+/)[0])}));
+        if (/^Instruções de uso/i.test(original.slice(bloco.titulo.inicio, bloco.titulo.fim)) && passos.length >= 2 && passos.every((p, j) => p.numero === j + 1)) {
+            if (passos[0].inicio > bloco.corpo.inicio) section.appendChild(paragrafo({inicio: bloco.corpo.inicio, fim: passos[0].inicio}));
+            const lista = document.createElement("ol"); lista.className = "rcm-instructions";
+            passos.forEach((passo, j) => {const li = document.createElement("li"); li.appendChild(fonte({inicio: passo.inicio, fim: passos[j + 1]?.inicio ?? bloco.corpo.fim})); lista.appendChild(li);});
+            section.appendChild(lista);
+        } else section.appendChild(paragrafo(bloco.corpo));
+        root.appendChild(section);
+    }
+    return blocos.length && reconstruirComponenteClinico(root) === original ? root : criarDocumentoRCM(original);
+}
+
+function aplicarModeloRCM(med) {
+    const detalhe = document.getElementById("detalhe-medicamento");
+    detalhe.classList.add("rcm-model");
+    for (const [id, campo] of Object.entries(CAMPOS_RCM)) {
+        const secao = detalhe.querySelector("#" + id);
+        const alvo = secao?.querySelector(".campo-texto, .excipientes-lista");
+        if (!alvo) continue;
+        const original = med[campo] == null ? "" : String(med[campo]);
+        let apresentado = original;
+        if (!apresentado && id === "forma-farmaceutica") apresentado = med.forma_farmaceutica || "";
+        if (!apresentado && id === "composicao") apresentado = med.substancia_ativa || "";
+        const documento = id === "excipientes" ? criarListaExcipientesSegura(apresentado) : renderizarComponentesClinicos(estruturarCampoClinico(apresentado, id));
+        if (!apresentado) documento.textContent = "N/D";
+        const bloco = document.createElement("div");
+        bloco.className = "rcm-field";
+        if (id === "advertencias") {
+            const total = contarAdvertenciasExplicitas(original);
+            if (total) {
+                const contagem = document.createElement("div");
+                contagem.className = "rcm-warning-count";
+                contagem.textContent = total + " advertências em itens explícitos";
+                bloco.appendChild(contagem);
+                documento.classList.add("rcm-warnings");
+                documento.querySelectorAll("li").forEach(li => {
+                    const texto = li.textContent;
+                    const prefixo = texto.match(/^\s*[-•]\s+/);
+                    if (!prefixo) return;
+                    const marcador = document.createElement("span");
+                    marcador.className = "rcm-source-separator";
+                    marcador.setAttribute("aria-hidden", "true");
+                    marcador.textContent = prefixo[0];
+                    li.replaceChildren(marcador, document.createTextNode(texto.slice(prefixo[0].length)));
+                });
+            }
+        }
+        bloco.appendChild(documento);
+        if (original.length) {
+            const fonte = document.createElement("details");
+            fonte.className = "rcm-source";
+            const summary = document.createElement("summary");
+            summary.textContent = "Ver texto original";
+            const texto = document.createElement("pre");
+            texto.textContent = original;
+            fonte.append(summary, texto);
+            bloco.appendChild(fonte);
+        }
+        alvo.replaceWith(bloco);
+    }
+    // Uma única entrada discreta para o texto integral de todos os campos.
+    const arquivo = document.createElement("details"); arquivo.className = "rcm-original-all";
+    const acesso = document.createElement("summary"); acesso.textContent = "Consultar texto original do RCM"; arquivo.appendChild(acesso);
+    detalhe.querySelectorAll(".rcm-source").forEach(fonte => {
+        const campo = document.createElement("section");
+        const titulo = document.createElement("h4"); titulo.textContent = fonte.closest(".campo-sub").querySelector(":scope > strong").textContent.trim();
+        campo.append(titulo, fonte.querySelector("pre")); arquivo.appendChild(campo); fonte.remove();
+    });
+    detalhe.querySelector(".sections").appendChild(arquivo);
+}
 
 function criarListaExcipientes(
     texto
@@ -3496,86 +3976,8 @@ function criarListaExcipientes(
 ========================================================= */
 
 function formatarGravidezAleitamento(texto) {
-
-    if (!texto) {
-        return `<div class="campo-texto">N/D</div>`;
-    }
-
-    const original = String(texto).trim();
-
-    /*
-       O RCM chega muitas vezes como texto corrido:
-       "Gravidez ... Amamentação ..." ou "Gravidez ... Aleitamento ...".
-       Aqui apenas melhoramos a apresentação visual; o conteúdo permanece igual.
-    */
-    const marcadores = [
-        { regex: /\bFertilidade\b\s*:?\s*/gi, titulo: "Fertilidade", id: "fertilidade" },
-        { regex: /\bGravidez\b\s*:?\s*/gi, titulo: "Gravidez", id: "gravidez" },
-        { regex: /\b(?:Amamentação|Aleitamento)\b\s*:?\s*/gi, titulo: "Aleitamento", id: "aleitamento" }
-    ];
-
-    let ocorrencias = [];
-
-    marcadores.forEach(marcador => {
-        let match;
-        marcador.regex.lastIndex = 0;
-
-        while ((match = marcador.regex.exec(original)) !== null) {
-            ocorrencias.push({
-                index: match.index,
-                fim: match.index + match[0].length,
-                titulo: marcador.titulo,
-                id: marcador.id
-            });
-
-            if (match[0].length === 0) break;
-        }
-    });
-
-    ocorrencias.sort((a, b) => a.index - b.index);
-
-    // Evita falsos positivos repetidos dentro do corpo do texto.
-    const primeiras = [];
-    const idsVistos = new Set();
-
-    ocorrencias.forEach(item => {
-        if (!idsVistos.has(item.id)) {
-            idsVistos.add(item.id);
-            primeiras.push(item);
-        }
-    });
-
-    primeiras.sort((a, b) => a.index - b.index);
-
-    if (!primeiras.length) {
-        return `<div class="campo-texto">${esc(original)}</div>`;
-    }
-
-    let html = "";
-
-    // Preserva eventual texto introdutório antes do primeiro subtítulo.
-    if (primeiras[0].index > 0) {
-        const intro = original.slice(0, primeiras[0].index).trim();
-        if (intro) {
-            html += `<div class="campo-texto">${esc(intro)}</div>`;
-        }
-    }
-
-    primeiras.forEach((item, indice) => {
-        const proximo = primeiras[indice + 1];
-        const conteudo = original
-            .slice(item.fim, proximo ? proximo.index : original.length)
-            .trim();
-
-        html += `
-            <div class="rcm-subbloco" id="${item.id}">
-                <strong class="rcm-subtitulo">${esc(item.titulo)}</strong>
-                <div class="campo-texto">${esc(conteudo || "N/D")}</div>
-            </div>
-        `;
-    });
-
-    return html;
+    // Texto integral: as palavras no corpo das frases nunca criam subtítulos.
+    return `<div class="campo-texto">${esc(texto == null || texto === "" ? "N/D" : texto)}</div>`;
 }
 
 
@@ -4480,15 +4882,16 @@ function irParaSecao(
                 alvo || elemento;
 
 
-            destino.scrollIntoView({
-
-                behavior:
-                    "smooth",
-
-                block:
-                    "center"
-
-            });
+            if (!destino.isConnected) return;
+            navegacaoSecao = true;
+            destinoNavegacaoSecao = destino;
+            clearTimeout(fimNavegacaoSecao);
+            posicionarSecaoLeitura(destino);
+            fimNavegacaoSecao = setTimeout(() => {
+                navegacaoSecao = false;
+                destinoNavegacaoSecao = null;
+                atualizarIdentidadeCompacta();
+            }, 1200);
 
 
             destino
@@ -4521,6 +4924,46 @@ function irParaSecao(
 /* =========================================================
    INICIAR
 ========================================================= */
+
+// Alternar a visibilidade sem reconstruir a árvore nem a ficha.
+const painelATC = document.getElementById("atcPanel");
+const ocultarATC = document.getElementById("hideATC");
+const mostrarATC = document.getElementById("showATC");
+const areaTrabalho = document.querySelector(".workspace");
+let scrollATCGuardado = 0;
+let animacaoATC = null;
+function definirVisibilidadeATC(visivel) {
+    if (!visivel) scrollATCGuardado = painelATC.scrollTop;
+    painelATC.hidden = !visivel;
+    mostrarATC.hidden = visivel;
+    areaTrabalho.classList.toggle("atc-collapsed", !visivel);
+    ocultarATC.setAttribute("aria-expanded", String(visivel));
+    mostrarATC.setAttribute("aria-expanded", String(visivel));
+    clearTimeout(animacaoATC);
+    areaTrabalho.classList.remove("atc-changing");
+    if (visivel) painelATC.scrollTop = scrollATCGuardado;
+    (visivel ? ocultarATC : mostrarATC).focus({preventScroll: true});
+    ajustarAlturaSugestoes();
+    requestAnimationFrame(() => {
+        areaTrabalho.classList.add("atc-changing");
+        animacaoATC = setTimeout(() => areaTrabalho.classList.remove("atc-changing"), 180);
+    });
+}
+ocultarATC.addEventListener("click", () => definirVisibilidadeATC(false));
+mostrarATC.addEventListener("click", () => definirVisibilidadeATC(true));
+
+// Limitar a lista à altura realmente disponível abaixo da pesquisa.
+function ajustarAlturaSugestoes() {
+    const caixa = searchBar.closest(".search-wrapper").getBoundingClientRect();
+    const limite = window.visualViewport
+        ? window.visualViewport.offsetTop + window.visualViewport.height
+        : document.documentElement.clientHeight;
+    searchResults.style.maxHeight = Math.max(0, Math.min(430, limite - caixa.bottom - 16)) + "px";
+}
+const observadorColunaConsulta = new ResizeObserver(ajustarAlturaSugestoes);
+observadorColunaConsulta.observe(document.querySelector(".consultation-column"));
+window.visualViewport?.addEventListener("resize", ajustarAlturaSugestoes);
+ajustarAlturaSugestoes();
 
 carregarDados();
 
