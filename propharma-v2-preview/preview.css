@@ -1,0 +1,54 @@
+/* ProPharma V2 — isolated local preview. */
+html, body { width: 100%; min-width: 0; }
+body { height: 100vh; height: 100dvh; }
+header { text-align: left; padding: 13px 22px; }
+header h1 { display: flex; align-items: center; gap: 12px; letter-spacing: -.025em; }
+.preview-label { font-size: .66rem; font-weight: 500; letter-spacing: .04em; padding: 4px 8px; border: 1px solid #658096; border-radius: 20px; color: #e4edf5; }
+.workspace { width: 100%; height: 100%; min-height: 0; min-width: 0; align-items: stretch; overflow: hidden; }
+.atc-panel, .consultation-column, .medicine-panel { min-width: 0; min-height: 0; height: 100%; }
+.atc-panel, .medicine-panel { overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; scrollbar-gutter: stable; }
+.medicine-panel { background: white; }
+#detalhe-medicamento { min-height: 100%; width: 100%; }
+#detalhe-medicamento:has(> .empty-state) { min-height: 100%; align-items: stretch; }
+.empty-state { width: 100%; align-content: center; }
+.trading-card-header { align-items: start; }
+.produto-info-principal { min-width: 0; overflow-wrap: anywhere; }
+.clinical-button { background: #f7fafc; border: 1px solid #dce5ed; color: #263b50; box-shadow: none; }
+.clinical-button:hover { background: #edf4f8; border-color: #9eb5c8; }
+.rcm-document { color: #334155; font-size: .94rem; line-height: 1.75; }
+.rcm-document p { text-align: left; }
+.rcm-line { white-space: pre-wrap; }
+.rcm-clinical-block { border: 1px solid #dce5ed; border-radius: 9px; padding: 14px 16px; margin: 10px 0; background: #fafcfd; }
+.rcm-clinical-block h4 { font-size: .91rem; padding-bottom: 8px; border-bottom: 1px solid #e4ebf0; }
+.rcm-components [data-rcm-inicio] { white-space: pre-wrap; }
+.rcm-list li { margin-bottom: 8px; }
+.rcm-warnings .rcm-list li { background: #f8fafc; border: 1px solid #e1e8ee; border-radius: 7px; padding: 12px; margin: 8px 0; }
+.rcm-ingredient-list { list-style: none; padding: 0; }
+.rcm-ingredient-list li { padding: 9px 12px; border: 1px solid #e1e8ee; border-radius: 6px; background: #fafcfd; }
+#conducao-maquinas .rcm-field { border-left: 3px solid #839aad; background: #f7fafc; padding: 12px 15px; border-radius: 4px; }
+.provenance-overview { margin: 12px 0; padding: 12px 14px; border: 1px solid #dce5ed; border-radius: 9px; background: #f8fafc; font-size: .8rem; line-height: 1.6; }
+.provenance-overview p { margin: 4px 0; }
+.provenance-overview a { color: #245c85; }
+.field-provenance { margin: 8px 0 0; color: #64748b; font-size: .75rem; }
+.field-provenance summary { cursor: pointer; }
+.field-provenance dl { display: grid; grid-template-columns: minmax(110px,1fr) minmax(0,3fr); gap: 5px 12px; margin: 8px 0; padding: 10px; background: #f8fafc; }
+.field-provenance dt { font-weight: 600; }
+.field-provenance dd { margin: 0; overflow-wrap: anywhere; }
+.official-rcm { display: inline-block; padding: 7px 11px; border: 1px solid #a4bbcc; border-radius: 6px; text-decoration: none; }
+.rcm-table { min-width: 0; }
+.atc-row, .search-result { min-width: 0; }
+.atc-name, .search-result-name { overflow-wrap: anywhere; }
+:focus-visible { outline: 2px solid #258fc9; outline-offset: 3px; }
+@media(max-width:950px) {
+  .workspace { grid-template-columns: minmax(0,1fr); grid-template-rows: minmax(100px, .8fr) minmax(0,2fr); }
+  .workspace.atc-collapsed { grid-template-rows: minmax(0,1fr); }
+}
+@media(max-width:650px) {
+  header { padding: 9px 12px; }
+  header p { font-size: .74rem; }
+  .workspace { padding: 7px; gap: 7px; }
+  .rcm-clinical-block { padding: 11px; }
+  .rcm-excipients .rcm-list { columns: 1; }
+  .field-provenance dl { grid-template-columns: 1fr; }
+  .rcm-table th,.rcm-table td { padding: 6px; font-size: .8rem; }
+}

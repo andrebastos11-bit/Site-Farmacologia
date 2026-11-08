@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0"
 >
 
-<title>Vademecum | Consulta de Medicamentos</title>
+<title>ProPharma | Base de Dados de Medicamentos</title>
 
 
 <style>
@@ -291,6 +291,8 @@ header p {
 .workspace {
 
     width: 100%;
+    height: 100%;
+    min-width: 0;
     min-height: 0;
     max-width: 1500px;
 
@@ -327,8 +329,10 @@ header p {
 
     min-width: 0;
     min-height: 0;
+    height: 100%;
 
     overflow-y: auto;
+    overflow-x: hidden;
     overscroll-behavior-y: contain;
 
     box-shadow:
@@ -646,7 +650,9 @@ header p {
 
     min-width: 0;
     min-height: 0;
+    height: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
     overscroll-behavior-y: contain;
     overflow-wrap: anywhere;
 
@@ -655,6 +661,7 @@ header p {
 
 #detalhe-medicamento {
 
+    min-height: 100%;
     background: white;
 
     border:
@@ -1851,7 +1858,7 @@ header p { font-size: .82rem; }
 
 /* Colunas independentes: a pesquisa pertence apenas à área de consulta. */
 .workspace { padding-top: 9px; }
-.consultation-column { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 9px; min-width: 0; min-height: 0; }
+.consultation-column { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 9px; min-width: 0; min-height: 0; height: 100%; }
 .consultation-column > .search-area { max-width: none; width: 100%; padding: 0; margin: 0; }
 @media (max-width: 950px) {
     .workspace { grid-template-rows: minmax(0, 1fr) minmax(0, 2fr); }

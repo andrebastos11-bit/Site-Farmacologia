@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "descricao": "Metadados por chave json:índice e campo clínico. Cada registo exige identidade = JSON.stringify([numero_registo,nome_medicamento,forma_farmaceutica,dosagem]). O número de registo importado não é único. Campos ausentes herdam o estado importado, com revisão pendente. Não inserir estados verificados sem evidência documental.",
+  "estados_permitidos": ["importado", "pendente_revisao", "verificado"],
+  "modelo_campo": {
+    "origem_importacao": "medicamentos.json",
+    "fonte_oficial": null,
+    "url_rcm": null,
+    "secao_rcm": null,
+    "data_versao_documento": null,
+    "data_ultima_verificacao": null,
+    "estado_validacao": "importado",
+    "evidencia_validacao": null,
+    "observacoes": "Pendente de revisão por fonte oficial."
+  },
+  "apresentacoes": {}
+}

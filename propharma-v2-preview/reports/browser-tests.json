@@ -1,0 +1,330 @@
+[
+  {
+    "browser": "Chrome",
+    "test": "Catálogo carregado",
+    "result": 4846
+  },
+  {
+    "browser": "Chrome",
+    "test": "Estado vazio 1440x1000",
+    "result": {
+      "width": 1440,
+      "overflow": false,
+      "panelHeight": 857,
+      "detailHeight": 857,
+      "panelBounded": true
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Estado vazio 768x1024",
+    "result": {
+      "width": 768,
+      "overflow": false,
+      "panelHeight": 608,
+      "detailHeight": 608.15625,
+      "panelBounded": true
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Estado vazio 390x844",
+    "result": {
+      "width": 390,
+      "overflow": false,
+      "panelHeight": 495,
+      "detailHeight": 494.578125,
+      "panelBounded": true
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Pesquisa Tantum Verde",
+    "result": 2
+  },
+  {
+    "browser": "Chrome",
+    "test": "Pesquisa Fluoreto de sódio",
+    "result": 3
+  },
+  {
+    "browser": "Chrome",
+    "test": "Pesquisa 4781688",
+    "result": 1
+  },
+  {
+    "browser": "Chrome",
+    "test": "Pesquisa Eutirox",
+    "result": 1
+  },
+  {
+    "browser": "Chrome",
+    "test": "Seleção pelo registo via teclado",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Ficha real responsiva Duraphat 5000",
+    "result": {
+      "nome": "Duraphat 5000",
+      "id": 0,
+      "campos": 19
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Texto original acessível Duraphat 5000",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Ficha real responsiva Tantum Verde",
+    "result": {
+      "nome": "Tantum Verde",
+      "id": 3,
+      "campos": 19
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Texto original acessível Tantum Verde",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Ficha real responsiva Eutirox",
+    "result": {
+      "nome": "Eutirox",
+      "id": 1970,
+      "campos": 19
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Texto original acessível Eutirox",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Cartão de consulta rápida",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Seletor de apresentações",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Ocultar/mostrar árvore e expandir ficha",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Expandir/recolher nível ATC",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Selecionar apresentação pela árvore",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Scroll independente",
+    "result": true
+  },
+  {
+    "browser": "Chrome",
+    "test": "Preservação integral de todos os campos clínicos",
+    "result": {
+      "total": 92074,
+      "structured": 19,
+      "failed": []
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Ausência de ligações inventadas e filtro de domínio",
+    "result": {
+      "count": 0,
+      "invalid": null,
+      "valid": "https://www.ema.europa.eu/test.pdf"
+    }
+  },
+  {
+    "browser": "Chrome",
+    "test": "Erros JavaScript",
+    "result": []
+  },
+  {
+    "browser": "Edge",
+    "test": "Catálogo carregado",
+    "result": 4846
+  },
+  {
+    "browser": "Edge",
+    "test": "Estado vazio 1440x1000",
+    "result": {
+      "width": 1440,
+      "overflow": false,
+      "panelHeight": 857,
+      "detailHeight": 857,
+      "panelBounded": true
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Estado vazio 768x1024",
+    "result": {
+      "width": 768,
+      "overflow": false,
+      "panelHeight": 608,
+      "detailHeight": 608.15625,
+      "panelBounded": true
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Estado vazio 390x844",
+    "result": {
+      "width": 390,
+      "overflow": false,
+      "panelHeight": 495,
+      "detailHeight": 494.578125,
+      "panelBounded": true
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Pesquisa Tantum Verde",
+    "result": 2
+  },
+  {
+    "browser": "Edge",
+    "test": "Pesquisa Fluoreto de sódio",
+    "result": 3
+  },
+  {
+    "browser": "Edge",
+    "test": "Pesquisa 4781688",
+    "result": 1
+  },
+  {
+    "browser": "Edge",
+    "test": "Pesquisa Eutirox",
+    "result": 1
+  },
+  {
+    "browser": "Edge",
+    "test": "Seleção pelo registo via teclado",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Ficha real responsiva Duraphat 5000",
+    "result": {
+      "nome": "Duraphat 5000",
+      "id": 0,
+      "campos": 19
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Texto original acessível Duraphat 5000",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Ficha real responsiva Tantum Verde",
+    "result": {
+      "nome": "Tantum Verde",
+      "id": 3,
+      "campos": 19
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Texto original acessível Tantum Verde",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Ficha real responsiva Eutirox",
+    "result": {
+      "nome": "Eutirox",
+      "id": 1970,
+      "campos": 19
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Texto original acessível Eutirox",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Cartão de consulta rápida",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Seletor de apresentações",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Ocultar/mostrar árvore e expandir ficha",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Expandir/recolher nível ATC",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Selecionar apresentação pela árvore",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Scroll independente",
+    "result": true
+  },
+  {
+    "browser": "Edge",
+    "test": "Preservação integral de todos os campos clínicos",
+    "result": {
+      "total": 92074,
+      "structured": 19,
+      "failed": []
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Ausência de ligações inventadas e filtro de domínio",
+    "result": {
+      "count": 0,
+      "invalid": null,
+      "valid": "https://www.ema.europa.eu/test.pdf"
+    }
+  },
+  {
+    "browser": "Edge",
+    "test": "Erros JavaScript",
+    "result": []
+  },
+  {
+    "browser": "Ficheiros",
+    "test": "Alterações externas nos originais desde o snapshot",
+    "result": [
+      "medicamentos.xlsx"
+    ]
+  },
+  {
+    "browser": "Ficheiros",
+    "test": "Cópia Excel preserva snapshot inicial; JSON igual ao original",
+    "result": true
+  }
+]

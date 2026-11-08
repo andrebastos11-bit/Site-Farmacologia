@@ -1,0 +1,45 @@
+{
+  "json": {
+    "apresentacoes": 4846,
+    "nomes_distintos": 3185,
+    "codigos": 1617,
+    "codigos_multiplas_composicoes": 97,
+    "apresentacoes_suspeitas": 707,
+    "erros_clinicos_confirmados": 0,
+    "alertas": {
+      "Sem alerta estrutural": 10,
+      "Substâncias/composições distintas no mesmo ATC": 618,
+      "Rótulo de grupo potencialmente indevido na árvore": 618,
+      "Composição requer confronto lexical": 2,
+      "Substância isolada e associação no mesmo ATC": 188,
+      "Composição não disponível para confronto": 4831,
+      "ATC de grupo — nível terminal não disponível": 152,
+      "Divergência entre ATC e caminho da árvore": 71,
+      "Designações divergentes para o mesmo nível ATC": 609
+    }
+  },
+  "excel": {
+    "apresentacoes": 4844,
+    "nomes_distintos": 3185,
+    "codigos": 1631,
+    "codigos_multiplas_composicoes": 92,
+    "apresentacoes_suspeitas": 671,
+    "erros_clinicos_confirmados": 0,
+    "alertas": {
+      "Sem alerta estrutural": 10,
+      "Substâncias/composições distintas no mesmo ATC": 598,
+      "Rótulo de grupo potencialmente indevido na árvore": 598,
+      "Composição requer confronto lexical": 2,
+      "Substância isolada e associação no mesmo ATC": 191,
+      "Composição não disponível para confronto": 4829,
+      "ATC de grupo — nível terminal não disponível": 149,
+      "Designações divergentes para o mesmo nível ATC": 616
+    }
+  },
+  "registos_duplicados_json": {
+    "9999999": 4827
+  },
+  "diferencas_excel_json": 163,
+  "sem_rcm_json": 4846,
+  "sem_rcm_nomes_distintos": 3185
+}
