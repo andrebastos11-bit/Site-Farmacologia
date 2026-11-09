@@ -6169,7 +6169,7 @@
     "efeitos_indesejaveis": "Não Disponível",
     "sobredosagem": "Não Disponível",
     "grupo_farmacoterapeutico": "Não Disponível",
-    "atc": "A06AB56",
+    "atc": "A06AB06",
     "propriedades_farmacodinamicas": "Não Disponível",
     "alvo_terapeutico": "Não Disponível",
     "propriedades_farmacocineticas": "Não Disponível",
@@ -6203,8 +6203,8 @@
         "nome": "Laxantes de contacto"
       },
       {
-        "codigo": "A06AB56",
-        "nome": "Glicósidos de sene, associações"
+        "codigo": "A06AB06",
+        "nome": "Glicósidos de sene"
       }
     ]
   },
@@ -6224,7 +6224,7 @@
     "efeitos_indesejaveis": "Não Disponível",
     "sobredosagem": "Não Disponível",
     "grupo_farmacoterapeutico": "Não Disponível",
-    "atc": "A06AB56",
+    "atc": "A06AC51",
     "propriedades_farmacodinamicas": "Não Disponível",
     "alvo_terapeutico": "Não Disponível",
     "propriedades_farmacocineticas": "Não Disponível",
@@ -6254,12 +6254,12 @@
         "nome": "Fármacos para a obstipação"
       },
       {
-        "codigo": "A06AB",
-        "nome": "Laxantes de contacto"
+        "codigo": "A06AC",
+        "nome": "Laxantes expansores do volume fecal"
       },
       {
-        "codigo": "A06AB56",
-        "nome": "Sene, combinações"
+        "codigo": "A06AC51",
+        "nome": "Ispagula, associações"
       }
     ]
   },
@@ -46328,7 +46328,7 @@
       },
       {
         "codigo": "B05XC",
-        "nome": "Vitaminas"
+        "nome": "Vitaminas para perfusão"
       },
       null
     ]
@@ -46382,10 +46382,7 @@
         "codigo": "B05XC",
         "nome": "Vitaminas para perfusão"
       },
-      {
-        "codigo": "B05XC",
-        "nome": "Multivitaminas hidrossolúveis e lipossolúveis com ácido fólico"
-      }
+      null
     ]
   },
   {
@@ -46437,10 +46434,7 @@
         "codigo": "B05XC",
         "nome": "Vitaminas para perfusão"
       },
-      {
-        "codigo": "B05XC",
-        "nome": "Multivitaminas hidrossolúveis e lipossolúveis com ácido fólico"
-      }
+      null
     ]
   },
   {
@@ -46492,10 +46486,7 @@
         "codigo": "B05XC",
         "nome": "Vitaminas para perfusão"
       },
-      {
-        "codigo": "B05XC",
-        "nome": "Multivitaminas lipossolúveis para nutrição parentérica"
-      }
+      null
     ]
   },
   {
@@ -46547,10 +46538,7 @@
         "codigo": "B05XC",
         "nome": "Vitaminas para perfusão"
       },
-      {
-        "codigo": "B05XC",
-        "nome": "Multivitaminas lipossolúveis para nutrição parentérica"
-      }
+      null
     ]
   },
   {
@@ -129644,7 +129632,7 @@
       },
       {
         "codigo": "J07BX05",
-        "nome": "Vírus sincicial respiratório, antigénio purificado recombinante"
+        "nome": "Vacinas contra o vírus sincicial respiratório"
       }
     ]
   },
@@ -129699,7 +129687,7 @@
       },
       {
         "codigo": "J07BX05",
-        "nome": "Vírus sincicial respiratório, antigénio purificado recombinante"
+        "nome": "Vacinas contra o vírus sincicial respiratório"
       }
     ]
   },
@@ -153019,7 +153007,7 @@
       },
       {
         "codigo": "L04AA06",
-        "nome": "Micofenolato de mofetil"
+        "nome": "Ácido micofenólico"
       }
     ]
   },
@@ -153074,7 +153062,7 @@
       },
       {
         "codigo": "L04AA06",
-        "nome": "Micofenolato de mofetil"
+        "nome": "Ácido micofenólico"
       }
     ]
   },
@@ -153129,7 +153117,7 @@
       },
       {
         "codigo": "L04AA06",
-        "nome": "Micofenolato de mofetil"
+        "nome": "Ácido micofenólico"
       }
     ]
   },
@@ -153184,7 +153172,7 @@
       },
       {
         "codigo": "L04AA06",
-        "nome": "Micofenolato de mofetil"
+        "nome": "Ácido micofenólico"
       }
     ]
   },
@@ -153239,7 +153227,7 @@
       },
       {
         "codigo": "L04AA06",
-        "nome": "Micofenolato de mofetil"
+        "nome": "Ácido micofenólico"
       }
     ]
   },
@@ -153294,7 +153282,7 @@
       },
       {
         "codigo": "L04AA06",
-        "nome": "Micofenolato de mofetil"
+        "nome": "Ácido micofenólico"
       }
     ]
   },
@@ -172014,7 +172002,7 @@
     "efeitos_indesejaveis": "Não Disponível",
     "sobredosagem": "Não Disponível",
     "grupo_farmacoterapeutico": "Não Disponível",
-    "atc": "M02AA",
+    "atc": "M02AA28",
     "propriedades_farmacodinamicas": "Não Disponível",
     "alvo_terapeutico": "Não Disponível",
     "propriedades_farmacocineticas": "Não Disponível",
@@ -172048,7 +172036,7 @@
         "nome": "Preparações anti-inflamatórias não esteroides para uso tópico"
       },
       {
-        "codigo": "M02AA",
+        "codigo": "M02AA28",
         "nome": "Picetoprofeno"
       }
     ]
@@ -172069,7 +172057,7 @@
     "efeitos_indesejaveis": "Não Disponível",
     "sobredosagem": "Não Disponível",
     "grupo_farmacoterapeutico": "Não Disponível",
-    "atc": "M02AA",
+    "atc": "M02AA28",
     "propriedades_farmacodinamicas": "Não Disponível",
     "alvo_terapeutico": "Não Disponível",
     "propriedades_farmacocineticas": "Não Disponível",
@@ -172103,7 +172091,7 @@
         "nome": "Preparações anti-inflamatórias não esteroides para uso tópico"
       },
       {
-        "codigo": "M02AA",
+        "codigo": "M02AA28",
         "nome": "Picetoprofeno"
       }
     ]
@@ -172157,10 +172145,7 @@
         "codigo": "M02AA",
         "nome": "Preparações anti-inflamatórias não esteroides para uso tópico"
       },
-      {
-        "codigo": "M02AA",
-        "nome": "Picetoprofeno"
-      }
+      null
     ]
   },
   {
@@ -172179,7 +172164,7 @@
     "efeitos_indesejaveis": "Não Disponível",
     "sobredosagem": "Não Disponível",
     "grupo_farmacoterapeutico": "Não Disponível",
-    "atc": "M02AA",
+    "atc": "M02AA28",
     "propriedades_farmacodinamicas": "Não Disponível",
     "alvo_terapeutico": "Não Disponível",
     "propriedades_farmacocineticas": "Não Disponível",
@@ -172213,7 +172198,7 @@
         "nome": "Preparações anti-inflamatórias não esteroides para uso tópico"
       },
       {
-        "codigo": "M02AA",
+        "codigo": "M02AA28",
         "nome": "Picetoprofeno"
       }
     ]
@@ -172234,7 +172219,7 @@
     "efeitos_indesejaveis": "Não Disponível",
     "sobredosagem": "Não Disponível",
     "grupo_farmacoterapeutico": "Não Disponível",
-    "atc": "M02AA",
+    "atc": "M02AA28",
     "propriedades_farmacodinamicas": "Não Disponível",
     "alvo_terapeutico": "Não Disponível",
     "propriedades_farmacocineticas": "Não Disponível",
@@ -172268,7 +172253,7 @@
         "nome": "Preparações anti-inflamatórias não esteroides para uso tópico"
       },
       {
-        "codigo": "M02AA",
+        "codigo": "M02AA28",
         "nome": "Picetoprofeno"
       }
     ]
