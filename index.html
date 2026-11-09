@@ -2527,21 +2527,8 @@ function criarNoATC(no) {
     }
 
 
-    let nomeVisivel =
+    const nomeVisivel =
         no.nome;
-
-
-    if (
-        eSubstancia &&
-        no.medicamentos.length
-    ) {
-
-        nomeVisivel =
-            no.medicamentos[0]
-                .substancia_ativa
-            || no.nome;
-
-    }
 
 
     row.innerHTML = `
